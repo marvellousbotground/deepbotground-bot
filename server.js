@@ -1,222 +1,174 @@
-require("dotenv").config();
+const {
+    SlashCommandBuilder,
+    EmbedBuilder
+} = require("discord.js");
 
-const express = require("express");
-const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 
-const app = express();
-
 const profilesPath = path.join(
     __dirname,
+    "..",
     "database",
     "profiles.json"
 );
 
 function loadProfiles() {
-
     if (!fs.existsSync(profilesPath)) {
-
-        fs.writeFileSync(
-            profilesPath,
-            JSON.stringify({}, null, 2)
-        );
+        fs.writeFileSync(profilesPath, JSON.stringify({}, null, 2));
     }
 
-    return JSON.parse(
-        fs.readFileSync(profilesPath, "utf8")
-    );
+    return JSON.parse(fs.readFileSync(profilesPath, "utf8"));
 }
 
 function saveProfiles(data) {
-
-    fs.writeFileSync(
-        profilesPath,
-        JSON.stringify(data, null, 2)
-    );
+    fs.writeFileSync(profilesPath, JSON.stringify(data, null, 2));
 }
 
-app.get("/", (req, res) => {
+function createDefaultMainGame() {
+    return {
+        wins: 0,
+        kills: 0,
+        pvps: 0,
+        mainCharacters: ["None", "None", "None"],
+        favoriteSkin: "None",
+        ranked: {
+            rank: "Unranked",
+            points: 0
+        },
+        casual: {
+            level: 1,
+            xp: 0
+        },
+        mainCharacterImage: null
+    };
+}
 
-    res.send(
-        "✅ Roblox OAuth server is running."
-    );
-});
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName("profile")
+        .setDescription("View your profile or another user's profile.")
+        .addUserOption(option =>
+            option
+                .setName("user")
+                .setDescription("User to view.")
+                .setRequired(false)
+        ),
 
-app.get("/roblox/login", (req, res) => {
+    async execute(interaction) {
+        const profiles = loadProfiles();
 
-    const discordId = req.query.discordId;
+        const targetUser =
+            interaction.options.getUser("user") || interaction.user;
 
-    if (!discordId) {
+        const targetId = targetUser.id;
 
-        return res.send(
-            "Missing Discord ID."
-        );
-    }
-
-    const redirectUri =
-        encodeURIComponent(
-            "https://deepbotground.onrender.com/roblox/callback"
-        );
-
-    const robloxAuthUrl =
-        `https://apis.roblox.com/oauth/v1/authorize?` +
-        `client_id=${process.env.ROBLOX_CLIENT_ID}` +
-        `&redirect_uri=${redirectUri}` +
-        `&response_type=code` +
-        `&scope=openid+profile` +
-        `&state=${discordId}`;
-
-    res.redirect(robloxAuthUrl);
-});
-
-app.get("/roblox/callback", async (req, res) => {
-
-    const code = req.query.code;
-
-    const discordId = req.query.state;
-
-    if (!code || !discordId) {
-
-        return res.send(
-            "Missing code or state."
-        );
-    }
-
-    try {
-
-        const tokenResponse =
-            await axios.post(
-
-                "https://apis.roblox.com/oauth/v1/token",
-
-                new URLSearchParams({
-
-                    grant_type: "authorization_code",
-
-                    code,
-
-                    client_id:
-                        process.env.ROBLOX_CLIENT_ID,
-
-                    client_secret:
-                        process.env.ROBLOX_CLIENT_SECRET,
-
-                    redirect_uri:
-                        "https://deepbotground.onrender.com/roblox/callback"
-                }),
-
-                {
-                    headers: {
-                        "Content-Type":
-                            "application/x-www-form-urlencoded"
-                    }
-                }
-            );
-
-        const accessToken =
-            tokenResponse.data.access_token;
-
-        const userResponse =
-            await axios.get(
-
-                "https://apis.roblox.com/oauth/v1/userinfo",
-
-                {
-                    headers: {
-                        Authorization:
-                            `Bearer ${accessToken}`
-                    }
-                }
-            );
-
-        const robloxUser =
-            userResponse.data;
-
-        const profiles =
-            loadProfiles();
-
-        if (!profiles[discordId]) {
-
-            profiles[discordId] = {};
+        if (!profiles[targetId]) {
+            profiles[targetId] = {};
         }
 
-        profiles[discordId].roblox = {
+        const targetProfile = profiles[targetId];
 
-            verified: true,
+        if (!targetProfile.roblox) {
+            targetProfile.roblox = {
+                verified: false,
+                id: null,
+                username: "Not verified",
+                displayName: "Not verified"
+            };
+        }
 
-            userId:
-                robloxUser.sub,
+        if (!targetProfile.mainGame) {
+            targetProfile.mainGame = createDefaultMainGame();
+        }
 
-            username:
-                robloxUser.preferred_username
-        };
+        const gameProfile = targetProfile.mainGame;
+
+        if (!gameProfile.mainCharacters) {
+            gameProfile.mainCharacters = ["None", "None", "None"];
+        }
+
+        if (!gameProfile.ranked) {
+            gameProfile.ranked = {
+                rank: "Unranked",
+                points: 0
+            };
+        }
+
+        if (!gameProfile.casual) {
+            gameProfile.casual = {
+                level: 1,
+                xp: 0
+            };
+        }
+
+        if (!gameProfile.favoriteSkin) {
+            gameProfile.favoriteSkin = "None";
+        }
+
+        if (!gameProfile.mainCharacterImage) {
+            gameProfile.mainCharacterImage = null;
+        }
 
         saveProfiles(profiles);
 
-        console.log(
-            `✅ ${discordId} verified as ${robloxUser.preferred_username}`
-        );
+        const mainCharacters = gameProfile.mainCharacters;
 
-        res.send(`
+        const embed = new EmbedBuilder()
+            .setColor("#2b2d31")
+            .setTitle(`${targetUser.username}'s Profile`)
+            .setThumbnail(targetUser.displayAvatarURL({ dynamic: true }))
+            .addFields(
+                {
+                    name: "Roblox",
+                    value: targetProfile.roblox.verified
+                        ? `✅ ${targetProfile.roblox.displayName || targetProfile.roblox.username || "Unknown"}`
+                        : "❌ Not verified",
+                    inline: false
+                },
+                {
+                    name: "Main Characters",
+                    value:
+                        `1. ${mainCharacters[0] || "None"}\n` +
+                        `2. ${mainCharacters[1] || "None"}\n` +
+                        `3. ${mainCharacters[2] || "None"}`,
+                    inline: true
+                },
+                {
+                    name: "Favorite Skin",
+                    value: gameProfile.favoriteSkin || "None",
+                    inline: true
+                },
+                {
+                    name: "Stats",
+                    value:
+                        `Wins: ${gameProfile.wins || 0}\n` +
+                        `Kills: ${gameProfile.kills || 0}\n` +
+                        `PvPs: ${gameProfile.pvps || 0}`,
+                    inline: true
+                },
+                {
+                    name: "Ranked",
+                    value:
+                        `${gameProfile.ranked.rank || "Unranked"}\n` +
+                        `${gameProfile.ranked.points || 0} RP`,
+                    inline: true
+                },
+                {
+                    name: "Casual",
+                    value:
+                        `Level ${gameProfile.casual.level || 1}\n` +
+                        `${gameProfile.casual.xp || 0} XP`,
+                    inline: true
+                }
+            );
 
-            <html>
+        if (gameProfile.mainCharacterImage) {
+            embed.setImage(gameProfile.mainCharacterImage);
+        }
 
-                <body style="
-                    background:#0f1115;
-                    color:white;
-                    font-family:sans-serif;
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
-                    height:100vh;
-                    text-align:center;
-                ">
-
-                    <div>
-
-                        <h1>
-                            ✅ Verification Successful
-                        </h1>
-
-                        <p>
-                            Connected as
-                            <b>
-                                ${robloxUser.preferred_username}
-                            </b>
-                        </p>
-
-                        <p>
-                            You can now return to Discord.
-                        </p>
-
-                    </div>
-
-                </body>
-
-            </html>
-        `);
-
-    } catch (error) {
-
-        console.error(
-
-            "OAuth Error:",
-
-            error.response?.data || error.message
-        );
-
-        res.send(
-            "Verification failed."
-        );
+        await interaction.reply({
+            embeds: [embed]
+        });
     }
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-
-    console.log(
-        `✅ OAuth server running on port ${PORT}`
-    );
-});
+};
