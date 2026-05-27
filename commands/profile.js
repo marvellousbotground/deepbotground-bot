@@ -3,139 +3,179 @@ const {
     EmbedBuilder
 } = require("discord.js");
 
-const fs = require("fs");
-const path = require("path");
+const connectDB = require("../database/mongo");
 
-const profilesPath = path.join(__dirname, "..", "database", "profiles.json");
-
-function loadProfiles() {
-    if (!fs.existsSync(profilesPath)) {
-        fs.writeFileSync(profilesPath, JSON.stringify({}, null, 2));
-    }
-
-    return JSON.parse(fs.readFileSync(profilesPath, "utf8"));
+function createDefaultMainGame() {
+    return {
+        wins: 0,
+        kills: 0,
+        pvps: 0,
+        mainCharacters: ["None", "None", "None"],
+        favoriteSkin: "None",
+        ranked: {
+            rank: "Unranked",
+            points: 0
+        },
+        casual: {
+            level: 1,
+            xp: 0
+        },
+        mainCharacterImage: null
+    };
 }
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("profile")
-        .setDescription("View a player's game profile.")
+        .setDescription("View your profile or another user's profile.")
         .addUserOption(option =>
             option
                 .setName("user")
-                .setDescription("The user whose profile you want to view.")
+                .setDescription("User to view.")
                 .setRequired(false)
         ),
 
     async execute(interaction) {
+        const db = await connectDB();
+        const profiles = db.collection("profiles");
 
-        const profiles = loadProfiles();
-
-        const authorId = interaction.user.id;
-
-        // CHECK IF AUTHOR HAS CONNECTED PROFILE
-        if (!profiles[authorId] || !profiles[authorId].roblox?.verified) {
-
-            const noProfileEmbed = new EmbedBuilder()
-                .setColor("Red")
-                .setTitle("⚠️ Roblox account not connected")
-                .setDescription(
-                    "You must connect your Roblox account before viewing profiles.\n\n" +
-                    "Use:\n`/editprofile roblox username:YourRobloxUsername`"
-                );
-
-            return interaction.reply({
-                embeds: [noProfileEmbed],
-                ephemeral: true
-            });
-        }
-
-        // TARGET USER
         const targetUser =
             interaction.options.getUser("user") || interaction.user;
 
-        const targetProfile = profiles[targetUser.id];
+        const targetId = targetUser.id;
 
-        // IF TARGET HAS NO PROFILE
-        if (!targetProfile || !targetProfile.roblox?.verified) {
+        let targetProfile = await profiles.findOne({
+            discordId: targetId
+        });
 
-            const missingEmbed = new EmbedBuilder()
-                .setColor("Orange")
-                .setTitle("❌ Profile not found")
-                .setDescription(
-                    `${targetUser.username} has not connected their Roblox account yet.`
-                );
+        if (!targetProfile) {
+            targetProfile = {
+                discordId: targetId,
+                roblox: {
+                    verified: false,
+                    id: null,
+                    username: "Not verified",
+                    displayName: "Not verified"
+                },
+                mainGame: createDefaultMainGame()
+            };
 
-            return interaction.reply({
-                embeds: [missingEmbed]
-            });
+            await profiles.insertOne(targetProfile);
+        }
+
+        if (!targetProfile.roblox) {
+            targetProfile.roblox = {
+                verified: false,
+                id: null,
+                username: "Not verified",
+                displayName: "Not verified"
+            };
+        }
+
+        if (!targetProfile.mainGame) {
+            targetProfile.mainGame = createDefaultMainGame();
         }
 
         const gameProfile = targetProfile.mainGame;
 
-        // MAIN CHARACTER IMAGE
-        const mainImage =
-            gameProfile.mainCharacterImage ||
-            "https://tr.rbxcdn.com/180DAY-6d8d4d9ec5f0b4d95a4df2e6f6e0c1cf/420/420/Image/Png/noFilter";
+        if (!gameProfile.mainCharacters) {
+            gameProfile.mainCharacters = ["None", "None", "None"];
+        }
+
+        if (!gameProfile.ranked) {
+            gameProfile.ranked = {
+                rank: "Unranked",
+                points: 0
+            };
+        }
+
+        if (!gameProfile.casual) {
+            gameProfile.casual = {
+                level: 1,
+                xp: 0
+            };
+        }
+
+        if (!gameProfile.favoriteSkin) {
+            gameProfile.favoriteSkin = "None";
+        }
+
+        if (!gameProfile.mainCharacterImage) {
+            gameProfile.mainCharacterImage = null;
+        }
+
+        await profiles.updateOne(
+            { discordId: targetId },
+            {
+                $set: {
+                    roblox: targetProfile.roblox,
+                    mainGame: gameProfile
+                }
+            }
+        );
+
+        const mainCharacters = gameProfile.mainCharacters;
 
         const embed = new EmbedBuilder()
             .setColor("#2b2d31")
-            .setAuthor({
-                name: targetUser.username,
-                iconURL: targetUser.displayAvatarURL()
-            })
-            .setTitle("🎮 MAIN GAME PROFILE")
-            .setImage(mainImage)
+            .setTitle(`${targetUser.username}'s Profile`)
+            .setThumbnail(
+                targetUser.displayAvatarURL({
+                    dynamic: true
+                })
+            )
             .addFields(
                 {
-                    name: "🟩 Roblox",
-                    value: targetProfile.roblox.username || "Unknown",
+                    name: "Roblox",
+                    value: targetProfile.roblox.verified
+                        ? `✅ ${targetProfile.roblox.displayName || targetProfile.roblox.username || "Unknown"}`
+                        : "❌ Not verified",
+                    inline: false
+                },
+                {
+                    name: "Main Characters",
+                    value:
+                        `1. ${mainCharacters[0] || "None"}\n` +
+                        `2. ${mainCharacters[1] || "None"}\n` +
+                        `3. ${mainCharacters[2] || "None"}`,
                     inline: true
                 },
                 {
-                    name: "🏆 Wins",
-                    value: `${gameProfile.wins || 0}`,
-                    inline: true
-                },
-                {
-                    name: "☠ Kills",
-                    value: `${gameProfile.kills || 0}`,
-                    inline: true
-                },
-                {
-                    name: "⚔ PvPs",
-                    value: `${gameProfile.pvps || 0}`,
-                    inline: true
-                },
-                {
-                    name: "🎨 Favorite Skin",
+                    name: "Favorite Skin",
                     value: gameProfile.favoriteSkin || "None",
                     inline: true
                 },
                 {
-                    name: "🏅 Ranked",
+                    name: "Stats",
                     value:
-                        `${gameProfile.ranked?.rank || "Unranked"} ` +
-                        `(${gameProfile.ranked?.points || 0} RP)`,
+                        `Wins: ${gameProfile.wins || 0}\n` +
+                        `Kills: ${gameProfile.kills || 0}\n` +
+                        `PvPs: ${gameProfile.pvps || 0}`,
                     inline: true
                 },
                 {
-                    name: "⭐ Casual Level",
-                    value: `Lv. ${gameProfile.casual?.level || 1}`,
+                    name: "Ranked",
+                    value:
+                        `${gameProfile.ranked.rank || "Unranked"}\n` +
+                        `${gameProfile.ranked.points || 0} RP`,
                     inline: true
                 },
                 {
-                    name: "🔥 Main Characters",
+                    name: "Casual",
                     value:
-                        `• ${gameProfile.mainCharacters?.[0] || "None"}\n` +
-                        `• ${gameProfile.mainCharacters?.[1] || "None"}\n` +
-                        `• ${gameProfile.mainCharacters?.[2] || "None"}`,
-                    inline: false
+                        `Level ${gameProfile.casual.level || 1}\n` +
+                        `${gameProfile.casual.xp || 0} XP`,
+                    inline: true
                 }
             );
 
-        interaction.reply({
-            embeds: [embed]
+        if (gameProfile.mainCharacterImage) {
+            embed.setImage(gameProfile.mainCharacterImage);
+        }
+
+        await interaction.reply({
+            embeds: [embed],
+            ephemeral: true
         });
     }
 };
