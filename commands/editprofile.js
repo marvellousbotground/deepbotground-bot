@@ -5,27 +5,35 @@ const {
 
 const fs = require("fs");
 const path = require("path");
+const connectDB = require("../database/mongo.js");
 
-const profilesPath = path.join(__dirname, "..", "database", "profiles.json");
 const dataPath = path.join(__dirname, "..", "data");
 
-function loadProfiles() {
-    if (!fs.existsSync(profilesPath)) {
-        fs.writeFileSync(profilesPath, JSON.stringify({}, null, 2));
-    }
-
-    return JSON.parse(fs.readFileSync(profilesPath, "utf8"));
-}
-
-function saveProfiles(data) {
-    fs.writeFileSync(profilesPath, JSON.stringify(data, null, 2));
+function createDefaultMainGame() {
+    return {
+        wins: 0,
+        kills: 0,
+        pvps: 0,
+        mainCharacters: ["None", "None", "None"],
+        favoriteSkin: "None",
+        ranked: {
+            rank: "Unranked",
+            points: 0
+        },
+        casual: {
+            level: 1,
+            xp: 0
+        },
+        mainCharacterImage: null
+    };
 }
 
 function getCharactersAndSkins() {
     const characters = [];
     const skins = [];
 
-    const files = fs.readdirSync(dataPath)
+    const files = fs
+        .readdirSync(dataPath)
         .filter(file => file.endsWith(".json"));
 
     for (const file of files) {
@@ -154,10 +162,16 @@ module.exports = {
     },
 
     async execute(interaction) {
-        const profiles = loadProfiles();
+        const db = await connectDB();
+        const profiles = db.collection("profiles");
+
         const userId = interaction.user.id;
 
-        if (!profiles[userId] || !profiles[userId].roblox?.verified) {
+        let profile = await profiles.findOne({
+            discordId: userId
+        });
+
+        if (!profile || !profile.roblox?.verified) {
             const embed = new EmbedBuilder()
                 .setColor("Red")
                 .setTitle("❌ Roblox account not connected")
@@ -167,6 +181,28 @@ module.exports = {
                 embeds: [embed],
                 ephemeral: true
             });
+        }
+
+        if (!profile.mainGame) {
+            profile.mainGame = createDefaultMainGame();
+        }
+
+        if (!profile.mainGame.mainCharacters) {
+            profile.mainGame.mainCharacters = ["None", "None", "None"];
+        }
+
+        if (!profile.mainGame.ranked) {
+            profile.mainGame.ranked = {
+                rank: "Unranked",
+                points: 0
+            };
+        }
+
+        if (!profile.mainGame.casual) {
+            profile.mainGame.casual = {
+                level: 1,
+                xp: 0
+            };
         }
 
         const main1 = interaction.options.getString("main1");
@@ -179,7 +215,7 @@ module.exports = {
                 .setColor("Orange")
                 .setTitle("⚠️ Nothing selected")
                 .setDescription(
-                    "Use the command options to edit your profile.\n\n" +
+                    "Use the options to edit your profile.\n\n" +
                     "`/editprofile main1:Character main2:Character main3:Character skin:Skin`"
                 );
 
@@ -187,27 +223,6 @@ module.exports = {
                 embeds: [embed],
                 ephemeral: true
             });
-        }
-
-        const profile = profiles[userId];
-
-        if (!profile.mainGame) {
-            profile.mainGame = {
-                wins: 0,
-                kills: 0,
-                pvps: 0,
-                mainCharacters: ["None", "None", "None"],
-                favoriteSkin: "None",
-                ranked: {
-                    rank: "Unranked",
-                    points: 0
-                },
-                casual: {
-                    level: 1,
-                    xp: 0
-                },
-                mainCharacterImage: null
-            };
         }
 
         const changes = [];
@@ -239,7 +254,14 @@ module.exports = {
             changes.push(`🎨 Favorite Skin: **${skin}**`);
         }
 
-        saveProfiles(profiles);
+        await profiles.updateOne(
+            { discordId: userId },
+            {
+                $set: {
+                    mainGame: profile.mainGame
+                }
+            }
+        );
 
         const embed = new EmbedBuilder()
             .setColor("Green")
