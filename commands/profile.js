@@ -3,7 +3,7 @@ const {
     EmbedBuilder
 } = require("discord.js");
 
-const connectDB = require("../database/mongo");
+const connectDB = require("../database/mongo.js");
 
 function createDefaultMainGame() {
     return {
@@ -37,6 +37,7 @@ module.exports = {
 
     async execute(interaction) {
         const db = await connectDB();
+
         const profiles = db.collection("profiles");
 
         const targetUser =
@@ -79,7 +80,11 @@ module.exports = {
         const gameProfile = targetProfile.mainGame;
 
         if (!gameProfile.mainCharacters) {
-            gameProfile.mainCharacters = ["None", "None", "None"];
+            gameProfile.mainCharacters = [
+                "None",
+                "None",
+                "None"
+            ];
         }
 
         if (!gameProfile.ranked) {
@@ -105,7 +110,9 @@ module.exports = {
         }
 
         await profiles.updateOne(
-            { discordId: targetId },
+            {
+                discordId: targetId
+            },
             {
                 $set: {
                     roblox: targetProfile.roblox,
@@ -142,7 +149,8 @@ module.exports = {
                 },
                 {
                     name: "Favorite Skin",
-                    value: gameProfile.favoriteSkin || "None",
+                    value:
+                        gameProfile.favoriteSkin || "None",
                     inline: true
                 },
                 {
@@ -170,12 +178,13 @@ module.exports = {
             );
 
         if (gameProfile.mainCharacterImage) {
-            embed.setImage(gameProfile.mainCharacterImage);
+            embed.setImage(
+                gameProfile.mainCharacterImage
+            );
         }
 
         await interaction.reply({
-            embeds: [embed],
-            ephemeral: true
+            embeds: [embed]
         });
     }
 };
