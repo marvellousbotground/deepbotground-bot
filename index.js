@@ -1,57 +1,76 @@
-const { Client, GatewayIntentBits, Collection } = require("./server");
-const fs = require('fs');
-require('dotenv').config();
+require("./server");
+
+const {
+    Client,
+    GatewayIntentBits,
+    Collection
+} = require("discord.js");
+
+const fs = require("fs");
+const path = require("path");
+require("dotenv").config();
 
 const client = new Client({
-    intents: [GatewayIntentBits.Guilds]
+    intents: [
+        GatewayIntentBits.Guilds
+    ]
 });
 
 client.commands = new Collection();
 
+const commandsPath = path.join(__dirname, "commands");
 const commandFiles = fs
-    .readdirSync('./commands')
-    .filter(file => file.endsWith('.js'));
+    .readdirSync(commandsPath)
+    .filter(file => file.endsWith(".js"));
 
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    client.commands.set(command.data.name, command);
+    const filePath = path.join(commandsPath, file);
+    const command = require(filePath);
+
+    if ("data" in command && "execute" in command) {
+        client.commands.set(command.data.name, command);
+    } else {
+        console.log(`[WARNING] ${file} is missing data or execute.`);
+    }
 }
 
-client.once('clientReady', () => {
+client.once("ready", () => {
     console.log(`Bot conectado como ${client.user.tag}`);
 });
 
-client.on('interactionCreate', async interaction => {
+client.on("interactionCreate", async interaction => {
+    try {
+        if (interaction.isAutocomplete()) {
+            const command = client.commands.get(interaction.commandName);
 
-    if (interaction.isAutocomplete()) {
-        const command = client.commands.get(interaction.commandName);
+            if (!command || !command.autocomplete) return;
 
-        if (!command || !command.autocomplete) return;
-
-        try {
             await command.autocomplete(interaction);
-        } catch (error) {
-            console.error(error);
+            return;
         }
 
-        return;
-    }
+        if (!interaction.isChatInputCommand()) return;
 
-    if (!interaction.isChatInputCommand()) return;
+        const command = client.commands.get(interaction.commandName);
 
-    const command = client.commands.get(interaction.commandName);
+        if (!command) return;
 
-    if (!command) return;
-
-    try {
         await command.execute(interaction);
+
     } catch (error) {
         console.error(error);
 
-        await interaction.reply({
-            content: 'There was an error executing this command.',
-            ephemeral: true
-        });
+        if (interaction.replied || interaction.deferred) {
+            await interaction.followUp({
+                content: "❌ There was an error while executing this command.",
+                ephemeral: true
+            });
+        } else {
+            await interaction.reply({
+                content: "❌ There was an error while executing this command.",
+                ephemeral: true
+            });
+        }
     }
 });
 
