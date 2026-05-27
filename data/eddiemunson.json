@@ -1,0 +1,93 @@
+{
+  "name": "Eddie Munson",
+
+  "aliases": [
+  "Eddie",
+  "eddie munson"
+],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "Stranger Things",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "shieldbreak",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506781917846966393/5c787a5b760d1a29c17b40ab6e885379.png?ex=6a0f8383&is=6a0e3203&hm=87e4cb749ccfb4c1dd6cd76c3f2058fb42d4b178497e0f12b99ea04d3a58a217&=&format=webp&quality=lossless&width=350&height=350",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Hellfire Skewer",
+      "damage": 24,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Dirty Mattress",
+      "damage": 6,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Trashcan Spike Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Hellride Escape",
+      "damage": 15,
+      "cooldown": "15s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Corrupted Hellfire Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Master of Puppets",
+      "damage": 40,
+      "cooldown": "35.5s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+    "Shool",
+    "Bonding",
+    "Suspect",
+    "Dustin"
+  ],
+
+  "lore": "Eddie Munson is a character from Stranger Things known for leading the Hellfire Club and his love for heavy metal music. Despite his rebellious appearance, he is loyal, courageous, and willing to risk everything to protect his friends from the dangers of the Upside Down."
+}

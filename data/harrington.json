@@ -1,0 +1,113 @@
+{
+  "name": "Steve Harrington",
+
+  "aliases": [
+    "steve harrington",
+    "the babysitter",
+    "hair king"
+  ],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "Stranger Things",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "extra",
+      "ranged",
+      "shieldbreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507555947365797928/b241339b370c09a795461ee1a4838e3f3e9aa98d.png?ex=6a125462&is=6a1102e2&hm=04c18b5e5993120acd9d0a0c8fe2e823204f8e1892021675598b8d51f13a6e65&=&format=webp&quality=lossless&width=350&height=350",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 8,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Homerun",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Vine Slammer",
+      "damage": 16,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "King Steve Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Stealthy Ninja",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Melt With You Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Firework Throw",
+      "damage": 15,
+      "cooldown": "31s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Acid Throw",
+      "damage": 15,
+      "cooldown": "31s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Molotov Throw",
+      "damage": 8,
+      "cooldown": "31s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+    "Messed Up",
+    "Tunnel Bandit",
+    "Ahoy",
+    "Ugly Sweater",
+    "Upside Down",
+    "Demodogs",
+    "The Rightside Up",
+    "Lake"
+  ],
+
+  "lore": "Steve Harrington is a major character from Stranger Things. Initially introduced as a popular high school student, he eventually became one of the group’s bravest protectors, known for fighting creatures from the Upside Down with his iconic nail bat and caring deeply for his friends."
+}

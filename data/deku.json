@@ -1,0 +1,104 @@
+{
+  "name": "Deku",
+
+"aliases": [
+  "izuku",
+  "midoriya",
+  "izuku midoriya"
+],
+
+  "origin": [
+    "anime"
+  ],
+
+  "universe": "My Hero Academia",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "shieldbreak",
+      "counter",
+      "finisher",
+      "extra",
+      "ranged"
+    ]
+  },
+
+  "image": "https://cdn.discordapp.com/attachments/1506572642860273714/1506761677545406634/d348c3e711d8fe006b25391c757a553e.png?ex=6a0f70aa&is=6a0e1f2a&hm=1b43e30444e1463c8e0ce2b9883a40b15d12edeab51bfa75a87ec038f9bc1535&",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Strong Punch",
+      "damage": 12,
+      "cooldown": "9s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Delaware Smash",
+      "damage": 6,
+      "cooldown": "9.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Wyoming Counter",
+      "damage": 24,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Smoke Blinding",
+      "damage": 5,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "1 Million Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Backwhip Swing",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [],
+
+  "techs": [
+    {
+      "name": "Backwhip Swing",
+      "video": "https://youtu.be/Ev2lbcrtmEg",
+      "credits": "AL3X"
+    },
+
+    {
+      "name": "Strong Punch",
+      "video": "https://youtu.be/7kGtDOf8QK4",
+      "credits": "AL3X"
+    }
+  ],
+
+  "lore": "Deku, also known as Izuku Midoriya, is the main protagonist of My Hero Academia. After inheriting the legendary One For All quirk from All Might, he developed immense strength, speed, and combat abilities while striving to become the world's greatest hero."
+}

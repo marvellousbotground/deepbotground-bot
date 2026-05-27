@@ -1,0 +1,105 @@
+{
+  "name": "L Lawliet",
+
+  "aliases": [
+    "ryuzaki",
+    "lawliet",
+    "l lawliet"
+  ],
+
+  "origin": [
+    "anime"
+  ],
+
+  "universe": "Death Note",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "extra",
+      "rng",
+      "shieldbreak",
+      "heal",
+      "ranged",
+      "transformation",
+      "finisher"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507181209506283600/63436b6d049deef692464a6ef6870035.png?ex=6a10f762&is=6a0fa5e2&hm=e15287e7a5177aea1327a70c890ad987583a32853a35d5270582443920270ca6&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Pinpoint Kick",
+      "damage": 12,
+      "cooldown": "8.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Tennis Insight",
+      "damage": 10,
+      "cooldown": "10s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Truth for Truth Counter",
+      "damage": 15,
+      "cooldown": "15s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bound deduction Counter",
+      "damage": 0,
+      "cooldown": "20s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "You are Kira Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Sugar Rush",
+      "damage": 0,
+      "cooldown": "13s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Helicopter Chase",
+      "damage": 200,
+      "cooldown": "37s",
+      "shieldBreak": true
+    }
+  ],
+
+  "skins": [
+    "Church",
+    "Christmas",
+    "Beyond",
+    "Near"
+  ],
+
+  "lore": "L, also known as L Lawliet, is the worlds greatest detective from Death Note. Eccentric, highly intelligent, and unpredictable, he dedicates himself to capturing Kira through psychological warfare, deduction, and relentless investigation."
+}

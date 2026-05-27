@@ -1,0 +1,164 @@
+{
+  "name": "Pennywise",
+
+  "aliases": [
+    "pennywise",
+    "it",
+    "pw",
+    "the dancing clown",
+    "clown"
+  ],
+
+  "origin": [
+    "movie"
+  ],
+
+  "universe": "IT",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "monster",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "teleportation",
+      "shieldBreak",
+      "extra",
+      "RNG",
+      "transformation"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507505837986287666/d675ecaca2799b8657848fb16a913464.png?ex=6a1225b7&is=6a10d437&hm=7ca31d626fa75c79b1c24676f3d8efc48a4ac5e4831adee645da3a06389abf9b&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 11,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Spider Maul",
+      "damage": 18,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Take It",
+      "damage": 8,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Manifest Fear Counter - Hey Beverly",
+      "damage": 0,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Manifest Fear Counter - Black Maw",
+      "damage": 12,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+        {
+      "name": "Manifest Fear Counter - Black Vomit",
+      "damage": 3,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Coffin Ambush",
+      "damage": 12,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Deadlights Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fear Rush - 1",
+      "damage": 10,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fear Rush - 2",
+      "damage": 15,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fear Rush - 3",
+      "damage": 20,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Spider Destruction",
+      "damage": 15,
+      "cooldown": "0s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Neibolt",
+    "image": "",
+    "lore": "Inside the abandoned Neibolt house in Derry, the Losers Club confront Pennywise in one of their final battles. During the fight, Beverly attacks him with a metal rod after the group invades the creature's lair hidden beneath the old house that survived decades of tragedy and violence."
+  },
+
+  {
+    "name": "Derry",
+    "image": "",
+    "lore": "This skin represents Pennywise's appearance in Welcome to Derry, the prequel series exploring the earlier massacres, disappearances, and supernatural events connected to the entity's influence over the town.",
+    "dataFile": "derry.json"
+  },
+
+  {
+    "name": "Resting",
+    "image": "",
+    "lore": "At the end of Welcome to Derry, Pennywise is shown in a dormant resting state covered in blood from the head down after years of feeding and violence beneath the town before eventually awakening once again.",
+    "dataFile": "resting.json"
+  },
+
+  {
+    "name": "1933",
+    "image": "",
+    "lore": "Set during the black-and-white events of the 1930s, this skin references the moment Bob Gray's daughter follows another child into a basement after hearing stories about a clown. When she encounters Pennywise, she calmly refers to him as 'Papa,' revealing a disturbing connection between the entity and the Gray family.",
+    "dataFile": "1933.json"
+  },
+
+  {
+    "name": "Old School",
+    "image": "",
+    "lore": "This skin represents Pennywise from the 1990 IT miniseries, the classic portrayal that introduced the character to a generation of horror fans long before the modern film adaptations.",
+    "dataFile": "oldschool.json"
+  }
+],
+
+  "lore": "Pennywise is the ancient cosmic entity from Stephen King's IT. Taking the form of a dancing clown, it feeds on fear and terrorizes the town of Derry through illusions, shapeshifting, and horrifying manifestations drawn from its victims' deepest fears."
+}

@@ -1,0 +1,142 @@
+{
+  "name": "Reverse Flash",
+
+  "aliases": [
+    "reverse flash",
+    "reverseflash",
+    "eobard thawne",
+    "thawne",
+    "yellow flash"
+  ],
+
+  "origin": [
+    "comic",
+    "tvseries"
+  ],
+
+  "universe": "DC",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "speedster",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "teleportation",
+      "extra",
+      "shieldBreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507515874309967985/c32e8fe2de6672d512ddc88c8a319e50.png?ex=6a122f10&is=6a10dd90&hm=7a9f2c517cd11479780f48e1b240ef57182669423cf6da3deb6e09144db4cbb5&=&format=webp&quality=lossless&width=350&height=350",
+
+  "stats": {
+    "hp": 185,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Rampant Flurry",
+      "damage": 18,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Super Speed",
+      "damage": 10,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Reverse Spin Counter",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Rush",
+      "damage": 10,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Heart Attack Finisher",
+      "damage": 0,
+      "cooldown": "2s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Negative Release",
+      "damage": 15,
+      "cooldown": "13s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Wells",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508304136305639435/696f96ab7a6114e42aa063dcbebed89e.png?ex=6a150d31&is=6a13bbb1&hm=2061417a7817bfcb31cb83e7f6f0bb8183684b68aecaf3a33992701b236c4adf&=&format=webp&quality=lossless",
+    "lore": "Eobard Thawne disguises himself as Harrison Wells during Season 1 of The Flash after murdering the real Wells and stealing his identity to manipulate Barry Allen from inside S.T.A.R. Labs."
+  },
+
+  {
+    "name": "2049",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508317276909207572/Web_Photo_Editor_38.jpg?ex=6a15196d&is=6a13c7ed&hm=3500f62d58991f46f9a031ee76849606327cbbca5354c91f061607554dc4b67c&=&format=webp",
+    "lore": "future version of Reverse-Flash seen in Season 5 of The Flash episode 22"
+  },
+
+  {
+    "name": "Dark Flash",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508318341494997313/Web_Photo_Editor_39.jpg?ex=6a151a6b&is=6a13c8eb&hm=7e6a08aa3964eac11a8b0ef8afbbb12b96465a9e93a1e74424a93851bc433dd6&=&format=webp",
+    "lore": "A corrupted speedster form from the DCEU associated with dark energy, unstable speed force powers, and a monstrous appearance."
+  },
+
+  {
+    "name": "Metal",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508318489184571492/5c0ee34f2ab42cd52bac435ec0e33c35.png?ex=6a151a8f&is=6a13c90f&hm=3d4561d2d43ace609460a7d48547a9a922ddd73bc6bfbdef5d6667b833c159d1&=&format=webp&quality=lossless",
+    "lore": "Metal Sonic from the Sonic franchise, combining artificial machinery with extreme speed abilities."
+  },
+
+  {
+    "name": "Earth X",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508328940719181824/content.png?ex=6a15244a&is=6a13d2ca&hm=955fe0abba9dc5e6bdb9e7dc5a907cfe628d46accbdb61f718df53c48963bb49&=&format=webp&quality=lossless",
+    "lore": "During Crisis on Earth-X, Reverse-Flash allies himself with the Nazi-controlled Earth-X forces and fights alongside Dark Arrow and Overgirl against the heroes."
+  },
+
+  {
+    "name": "DCAMU",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508318894530625666/500f4c0a85fad8f56593a11f687d1c44.png?ex=6a151aef&is=6a13c96f&hm=48136cabbffa9a6704bd23da695bcbd8e8291513ffedeb25dcfdceede7d92fc2&=&format=webp&quality=lossless",
+    "lore": "Reverse-Flash's appearance from the DC Animated Movie Universe, featuring the animated adaptation of Eobard Thawne and his battles against The Flash."
+  },
+
+  {
+    "name": "Flashpoint",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508329423382777916/Web_Photo_Editor_40.jpg?ex=6a1524bd&is=6a13d33d&hm=311a68feebb49fa4d86ad19853ac918604e68f16f3af9792a5d9ab1f1bf273ab&=&format=webp",
+    "lore": "After Barry creates the Flashpoint timeline in Season 3, Reverse-Flash becomes trapped within the altered reality and later forces Barry to restore the original timeline."
+  },
+
+  {
+    "name": "Resurrection",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508330407740047370/Web_Photo_Editor_41.jpg?ex=6a1525a8&is=6a13d428&hm=c9e175679793b7116482bf820bcc61a1f4a17ddbc6679355afa32abbb3da4acf&=&format=webp",
+    "lore": "Following the Armageddon event in Season 8 of The Flash, Eobard Thawne returns once again after seemingly losing everything, rebuilding himself through hatred and obsession with Barry Allen."
+  }
+],
+
+  "lore": "Reverse Flash, also known as Eobard Thawne, is one of The Flash’s greatest enemies from DC Comics. Fueled by the Negative Speed Force, he possesses incredible super speed, time travel abilities, phasing powers, and an obsessive hatred toward Barry Allen."
+}

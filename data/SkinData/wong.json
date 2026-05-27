@@ -1,0 +1,49 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Portal Bullets",
+      "damage": 2,
+      "cooldown": "8s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Magic Whip",
+      "damage": 12,
+      "cooldown": "12.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Soul Counter",
+      "damage": 10,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Seven Suns of Cinnibus",
+      "damage": 10,
+      "cooldown": "30s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Icy Tendrils of Ikthalon",
+      "damage": 16,
+      "cooldown": "9s",
+      "shieldBreak": false
+    }
+  ],
+
+  "techs": []
+}

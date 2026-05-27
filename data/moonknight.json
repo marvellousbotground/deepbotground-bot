@@ -1,0 +1,246 @@
+{
+  "name": "Moon Knight",
+
+  "aliases": [
+    "moon knight",
+    "moonknight",
+    "marc spector",
+    "mr knight",
+    "steven grant",
+    "jake lockley"
+  ],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "Marvel",
+
+  "tags": {
+
+    "type": [
+      "antihero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "heal",
+      "shieldbreak",
+      "transformation",
+      "ranged",
+      "passive",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507224677125325073/moon-knight-trailer-buttonbestof-1644855733291.png?ex=6a111fdd&is=6a0fce5d&hm=39ae5f26b44f78a02378cacd39000e7466af3f0f8e9a8c395bf75999518ad31f&=&format=webp&quality=lossless",
+
+  "versions": [
+
+    {
+      "id": "human",
+
+      "name": "Marc Spector",
+
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507218469148430367/ad05d764c6e5f849f23ee5b2bded7925.png?ex=6a111a15&is=6a0fc895&hm=853ec335400a6f903122b0d3ab0da43235c44cbb88cc3db60edfca26e8c38064&=&format=webp&quality=lossless",
+
+      "stats": {
+        "hp": 200,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": true,
+        "canHeal": false
+      },
+
+      "attacks": [
+        {
+          "name": "Baseball Slam",
+          "damage": 10,
+          "cooldown": "6s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Gun Shoot",
+          "damage": 12,
+          "cooldown": "13s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Reflex",
+          "damage": 0,
+          "cooldown": "12s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Lockley Grab",
+          "damage": 20,
+          "cooldown": "15s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Khonshu Slam",
+          "damage": 15,
+          "cooldown": "15s",
+          "shieldBreak": true
+        }
+      ],
+
+      "skins": [
+        "Jake",
+        "Marc",
+        "Freezing",
+        "Undercover"
+      ],
+
+      "techs": [
+  {
+    "name": "Khonshu Slam",
+    "video": "https://youtu.be/9LCUjAuLCIw",
+    "credits": "AL3X"
+  },
+
+    {
+    "name": "Baseball Slam",
+    "video": "https://youtu.be/oX8HK7WedR0",
+    "credits": "AL3X"
+  }
+],
+
+      "lore": "Marc Spector is the original identity behind Moon Knight. A former mercenary with exceptional combat training, he became the avatar of Khonshu after surviving near death in Egypt."
+    },
+
+    {
+      "id": "moonknight",
+
+      "name": "Moon Knight",
+
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507220397869764819/ef299437e1124881c23f379e7cf67c6b.png?ex=6a111be1&is=6a0fca61&hm=ba3eb60a0d92fd6c886a12f3aefc0e73344f171ab33d046d07f1a24337973020&=&format=webp&quality=lossless",
+
+      "stats": {
+        "hp": 200,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": true,
+        "canHeal": false
+      },
+
+      "attacks": [
+        {
+          "name": "Heavy Punch",
+          "damage": 10,
+          "cooldown": "7s",
+          "shieldBreak": true
+        },
+
+        {
+          "name": "Crescent Splash",
+          "damage": 10,
+          "cooldown": "8s",
+          "shieldBreak": true
+        },
+
+        {
+          "name": "Punshing Counter",
+          "damage": 20,
+          "cooldown": "10s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Grapple Kick",
+          "damage": 7,
+          "cooldown": "15s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Finisher",
+          "damage": 0,
+          "cooldown": "0.6s",
+          "shieldBreak": false
+        }
+      ],
+
+      "skins": [
+        "Jake",
+        "Marc",
+        "Freezing",
+        "Undercover"
+      ],
+
+      "lore": "Moon Knight is the supernatural vigilante identity empowered by Khonshu. With enhanced strength, healing, and brutal fighting techniques, he serves as the protector of travelers of the night."
+    },
+
+    {
+      "id": "mrknight",
+
+      "name": "Mr. Knight",
+
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507221620492734675/3b9348db9e3024aabfefadd3bfbf1c0b.png?ex=6a111d05&is=6a0fcb85&hm=816faf1212b1e45a207e0ff77a27476a076d19d7e33313f998d851902288abe7&=&format=webp&quality=lossless",
+
+      "stats": {
+        "hp": 200,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": true,
+        "canHeal": true
+      },
+
+      "attacks": [
+        {
+          "name": "Truncheon Throw",
+          "damage": 6,
+          "cooldown": "9s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Heavy Punch",
+          "damage": 10,
+          "cooldown": "7s",
+          "shieldBreak": true
+        },
+
+        {
+          "name": "Dodge Counter",
+          "damage": 6,
+          "cooldown": "10s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Healing Piramid",
+          "damage": 0,
+          "cooldown": "14.5s",
+          "shieldBreak": false
+        },
+
+        {
+          "name": "Changing The Sky",
+          "damage": 43,
+          "cooldown": "70s",
+          "shieldBreak": true
+        }
+      ],
+
+      "skins": [
+        "Jake",
+        "Marc",
+        "Freezing",
+        "Undercover"
+      ],
+
+      "lore": "Mr. Knight is a more controlled and investigative identity of Moon Knight. Wearing a formal white suit and mask, he combines detective work with precise and efficient combat."
+    }
+
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "base hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Lonely Crusher",
+      "damage": 16,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Worm Pierce",
+      "damage": 8,
+      "cooldown": "14.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Purpose Counter",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Annihilation Clap",
+      "damage": 12,
+      "cooldown": "15.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Disembowel Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "War Flight",
+      "damage": 10,
+      "cooldown": "32.5s",
+      "shieldBreak": false
+    }
+  ],
+
+  "techs": []
+}

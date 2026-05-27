@@ -1,0 +1,49 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Hook Slash",
+      "damage": 10,
+      "cooldown": "7.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Quick Pirate",
+      "damage": 10,
+      "cooldown": "11.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Hook Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "IT'S ME",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    }
+  ],
+
+  "techs": []
+}

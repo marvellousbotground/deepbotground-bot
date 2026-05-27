@@ -1,0 +1,105 @@
+{
+  "name": "Miguel O'Hara",
+
+  "aliases": [
+    "miguel",
+    "spiderman 2099",
+    "spider man 2099",
+    "spiderman2099",
+    "2099"
+  ],
+
+  "origin": [
+    "comic",
+    "movie"
+  ],
+
+  "universe": "Marvel",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "shieldbreak",
+      "finisher",
+      "extra",
+      "passive"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506593709016481843/ldlaibz4hwfb1.png?ex=6a0ed43b&is=6a0d82bb&hm=ff00a3d99fb34bd93559fa5f4a5008660a88c67b3492c390d18ded65496502d0&=&format=webp&quality=lossless&width=350&height=350",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Tackle Claw",
+      "damage": 8,
+      "cooldown": "21.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Webswing",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Prison Counter",
+      "damage": 0,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Web Wrap",
+      "damage": 8,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Canon Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Call for backup",
+      "damage": 23,
+      "cooldown": "16s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Unmasked",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507935126087012412/6cda3fc1e1f3a5878dea506b8553d04c.png?ex=6a13b586&is=6a126406&hm=cfb31e3ebffefe9f439a064916b5bcd16110290f87a2dcf444c926c3fae4b9e4&=&format=webp&quality=lossless",
+    "lore": "The Unmasked skin shows Miguel O'Hara without his Spider-Man 2099 mask, revealing the person behind the futuristic Spider-Man identity."
+  },
+
+  {
+    "name": "Upgraded",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507935406945992855/3bea06ecc9968cf4c5743683ddf61a71.png?ex=6a13b5c9&is=6a126449&hm=516a6b3ae095b0dbac9774a621ecd81e72edde66e20278db4e36e1cc625b08fe&=&format=webp&quality=lossless",
+    "lore": "The Upgraded skin gives Spider-Man 2099 a redesigned suit with a mostly white and red color scheme, mixed with grey tones for a sharper futuristic look."
+  }
+],
+
+  "lore": "Miguel O'Hara, also known as Spider-Man 2099, is a futuristic Spider-Man from Marvel Comics and the Spider-Verse films. Unlike other Spider-People, his powers come from genetic experimentation, granting enhanced strength, claws, heightened senses, and advanced agility."
+}

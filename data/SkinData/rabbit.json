@@ -1,0 +1,49 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Heavy Slam",
+      "damage": 10,
+      "cooldown": "7s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Leap",
+      "damage": 15,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Guitar Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Choke",
+      "damage": 8,
+      "cooldown": "14.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    }
+  ],
+
+  "techs": []
+}

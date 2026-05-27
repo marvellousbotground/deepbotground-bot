@@ -1,0 +1,138 @@
+{
+  "name": "Wednesday Addams",
+
+  "aliases": [
+    "wednesday",
+    "merlina",
+    "wednesday addams",
+    "addams"
+  ],
+
+  "origin": [
+    "tvseries",
+    "movie"
+  ],
+
+  "universe": "Wednesday",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "finisher",
+      "extra",
+      "ranged"    
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507821207679139910/wednesday-addams-pfp-19.png?ex=6a134b6d&is=6a11f9ed&hm=6c48d99268ea67e6c91e4e08ad2ca18518ab4828725000fa300c36edee64eec1&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Flip Kick",
+      "damage": 12,
+      "cooldown": "8.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Thing Throw",
+      "damage": 5,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Psychic Vision",
+      "damage": 0,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Pierce",
+      "damage": 12,
+      "cooldown": "15.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Sting Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Cello",
+      "damage": 10,
+      "cooldown": "28.5s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Goody",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658650976354397/image.png?ex=6a16575b&is=6a1505db&hm=52ea7a92abc3161af3768f23f68a3cd9bc8cbb48dd6a49b3b1c9db7d548b810e&=&format=webp&quality=lossless",
+    "lore": "Goody Addams, Wednesday's ancestor from over 400 years ago, fought against Joseph Crackstone and became one of the most important figures in the Addams bloodline."
+  },
+
+  {
+    "name": "Roommate",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658602867429476/image.png?ex=6a165750&is=6a1505d0&hm=03cba80c05aee3f3f58b894b77f0fa2e70a727a31e909b3af48825de094736ac&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "Wednesday talks with Enid inside their dorm room about her struggles as a werewolf, including Enid admitting she still hasn't fully transformed."
+  },
+
+  {
+    "name": "Dress",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658589605298237/image.png?ex=6a16574d&is=6a1505cd&hm=7047e405d871ffe65808b601f415476c5c66350177db5dfa2f743e6e115cffe1&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "Wednesday wears her iconic black dress during the Rave'N dance at Nevermore Academy."
+  },
+
+  {
+    "name": "Black Cats",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658558902731085/image.png?ex=6a165745&is=6a1505c5&hm=f824f2ad058a92d19b59c4e626a3aaff81afe38579d1dc645b6d9008c2f3e90a&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "Wednesday joins the Black Cats team during the Poe Cup competition at Nevermore Academy."
+  },
+
+  {
+    "name": "Pilgrim",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658534051745883/image.png?ex=6a165740&is=6a1505c0&hm=219f93cb17d46ef8afccb953d77f0415203a406d997c52ebeba6bd02bf08b408&=&format=webp&quality=lossless",
+    "lore": "Wednesday is forced to participate in Pilgrim World activities while uncovering the hidden history behind Jericho and Joseph Crackstone."
+  },
+
+  {
+    "name": "School",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658488341954611/image.png?ex=6a165735&is=6a1505b5&hm=558ac323f5ba1e47299aa0e281625cbb63afc362bb87cb03f003e1f5bbb2879e&=&format=webp&quality=lossless",
+    "lore": "Wednesday wears the standard Nevermore Academy school uniform."
+  },
+
+  {
+    "name": "Blindfolded",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658454045134858/image.png?ex=6a16572c&is=6a1505ac&hm=bec14f2952cd155c2080982fbd2f9d8b660059c1ebb4c83548f41f934565e9be&=&format=webp&quality=lossless",
+    "lore": "Wednesday fights while blindfolded during the events of the newest season alongside her mother."
+  },
+
+  {
+    "name": "Bodyswap",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658438236799036/image.png?ex=6a165729&is=6a1505a9&hm=5450eff234a4005f33e12f8bfb2e4e8ac753f59600ab5122d81656209f538158&=&format=webp&quality=lossless",
+    "lore": "Wednesday and Enid mysteriously swap bodies, forcing both of them to experience life through each other's perspective."
+  }
+],
+
+  "lore": "Wednesday Addams is the darkly intelligent daughter of the Addams Family and the protagonist of the Wednesday series. Known for her gothic personality, sharp wit, psychic visions, and fascination with the macabre, she investigates supernatural mysteries while attending Nevermore Academy."
+}

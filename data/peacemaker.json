@@ -1,0 +1,104 @@
+{
+  "name": "Peacemaker",
+
+  "aliases": [
+    "peacemaker",
+    "christopher smith",
+    "peace maker",
+    "john cena"
+  ],
+
+  "origin": [
+    "movie",
+    "tvseries"
+  ],
+
+  "universe": "DC",
+
+  "tags": {
+
+    "type": [
+      "antihero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "ranged",
+      "extra",
+      "shieldBreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507503705321242674/c2d39c402cf51c3534e6fecf82ac0e44.png?ex=6a1223bb&is=6a10d23b&hm=760e46e0979ec00af518fc83a52e9349fc4ea7121177246e899457815149d7cf&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Shield Cruelty",
+      "damage": 12,
+      "cooldown": "8s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Exploding Compression Bullets",
+      "damage": 15,
+      "cooldown": "10.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Sonic Counter",
+      "damage": 25,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Human Torpedo",
+      "damage": 15,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Peace Out Finisher",
+      "damage": 0,
+      "cooldown": "0.1s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Eagly",
+      "damage": 6,
+      "cooldown": "15s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Underwear",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508284784302886932/Web_Photo_Editor_34.jpg?ex=6a14fb2b&is=6a13a9ab&hm=3e23a72a5f87a0fbecc1dd97a5512706654a877e3442cf45b10a0f50bb8442f1&=&format=webp",
+    "lore": "The Underwear skin references Peacemaker's appearance in The Suicide Squad (2021) during the nighttime forest mission scene."
+  },
+
+  {
+    "name": "Jetpack",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508285616109129851/Web_Photo_Editor_35.jpg?ex=6a14fbf1&is=6a13aa71&hm=3b98a545c0ef55794479b399b5fe218df3adfce6bae7a085e30b5e2904f40d40&=&format=webp",
+    "lore": "The Jetpack skin references the Earth-X version of Peacemaker seen in Season 2."
+  }
+],
+
+  "lore": "Peacemaker, also known as Christopher Smith, is a violent antihero from DC Comics and The Suicide Squad universe. Obsessed with achieving peace no matter how brutal the methods, he combines military training, firearms expertise, and advanced helmets with a surprisingly emotional personality."
+}

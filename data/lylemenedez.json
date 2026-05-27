@@ -1,0 +1,100 @@
+{
+  "name": "Lyle Menendez",
+
+  "aliases": [
+    "lyle",
+    "menendez",
+    "lyle menendez brothers"
+  ],
+
+  "origin": [
+    "reallife",
+    "tvseries"
+  ],
+
+  "universe": "Real Life",
+
+  "tags": {
+
+    "type": [
+      "human",
+      "villain"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "shieldbreak",
+      "heal",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507205727889129713/a302a47118e6ce9c1f19b0bd7e247f8f.png?ex=6a110e38&is=6a0fbcb8&hm=e621c456056a9c4e6739466080183bbc0f7caf811488160b2b56753d97e9cdd8&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Shotgun Blast",
+      "damage": 10,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Escape Plan",
+      "damage": 10,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Dime Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Brother Assist",
+      "damage": 24,
+      "cooldown": "17s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Dont Dream Finisher",
+      "damage": 0,
+      "cooldown": "0.3s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "King Sized Snickers",
+      "damage": 0,
+      "cooldown": "51s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+    "Shooting Range",
+    "Halloween",
+    "Prison",
+    "Erik",
+    "Felix",
+    "Ice Ice",
+    "Mafia",
+    "Red Tie"
+  ],
+
+  "lore": "Lyle Menendez is one of the Menendez brothers involved in the infamous real-life murder case of their parents in 1989. The case became one of the most publicized criminal trials in the United States, later inspiring documentaries, television adaptations, and widespread media attention."
+}

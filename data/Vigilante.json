@@ -1,0 +1,108 @@
+{
+  "name": "Vigilante",
+
+  "aliases": [
+    "vigilante",
+    "adrian chase",
+    "peacemaker friend"
+  ],
+
+  "origin": [
+    "comic",
+    "tvseries"
+  ],
+
+  "universe": "DC",
+
+  "tags": {
+
+    "type": [
+      "antihero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "ranged",
+      "extra",
+      "shieldbreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507815724654002257/f2dba629dd9fbcf8da5e3f30ae12d955.png?ex=6a134652&is=6a11f4d2&hm=38e3dc237fa8518d55713daec94bcacbd58e701cc801b778ab7e0e3d0f9bb5e0&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Double Knife Slash",
+      "damage": 10,
+      "cooldown": "9.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Sword Slicing",
+      "damage": 18,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Taser Counter",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Sniper Stance",
+      "damage": 18,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Rockin Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Dynamite Throw",
+      "damage": 13,
+      "cooldown": "s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Arrow",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508646555014660177/Web_Photo_Editor_55.jpg?ex=6a164c18&is=6a14fa98&hm=70d505fb97497b2f98664bd7875b0370497a5c2422ce8f3ee22707b2c500299a&=&format=webp",
+    "lore": "A violent vigilante inspired by the CW Arrow universe, using a hooded appearance and lethal methods unrelated to Adrian Chase."
+  },
+
+  {
+    "name": "Deadpool",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508646717006938122/45700974b1332ba3b4aefa84f702d034.png?ex=6a164c3e&is=6a14fabe&hm=8779c788e06b0a6a144214e16940e922546b9de7d0f2a88f545f36066692586c&=&format=webp&quality=lossless",
+    "lore": "Wade Wilson becomes Deadpool after a brutal experiment leaves him horribly scarred while granting him accelerated healing and chaotic combat skills."
+  },
+
+  {
+    "name": "Black Noir",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508646778784714933/578adb9847625d57f71a232cc47c018d.png?ex=6a164c4d&is=6a14facd&hm=4247c8ed738cc60fb3957a5b686b21ca7fcfcfcdbaf4863421dfc98134bc7cf1&=&format=webp&quality=lossless&width=339&height=350",
+    "lore": "The silent assassin from The Boys, Black Noir operates as one of Vought's deadliest and most mysterious superheroes."
+  }
+],
+  "lore": "Vigilante, also known as Adrian Chase, is a violent antihero from the Peacemaker series and DC Comics. Despite his cheerful and awkward personality, he is an extremely dangerous vigilante skilled in firearms, hand-to-hand combat, and ruthless executions."
+}

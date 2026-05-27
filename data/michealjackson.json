@@ -1,0 +1,114 @@
+{
+  "name": "Michael Jackson",
+
+  "aliases": [
+    "mj",
+    "king of pop",
+    "michael"
+  ],
+
+  "origin": [
+    "reallife"
+  ],
+
+  "universe": "Real Life",
+
+  "tags": {
+
+    "type": [
+      "human",
+      "neutral"
+    ],
+
+    "ability": [
+      "counter",
+      "heal",
+      "finisher",
+      "shieldbreak",
+      "extra"
+    ]
+  },
+
+  "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1507210199973498930/13jmieqvywyc1.png?ex=6a111262&is=6a0fc0e2&hm=c11ad18f6ae8eeaa32f2124b905a27f41e674f9a63c50821c2c1af4c8806743c&",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Smooth Tornado",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Billie kick",
+      "damage": 8,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Bad Counter",
+      "damage": 20,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Moonwalk",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Thriller Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Earth Healing",
+      "damage": 7,
+      "cooldown": "68s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Thriller",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231481586356377/091371673cd73deff809e8f4bfbc4429.png?ex=6a14c986&is=6a137806&hm=b1fd2a4ac7e012adb5b1446c77745b3d48b9588798a056ff06b2680e627085af&=&format=webp&quality=lossless",
+    "lore": "The Thriller skin references Michael Jackson's iconic zombie appearance from the legendary Thriller music video."
+  },
+
+  {
+    "name": "Bad",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231577572999219/9fa0ebda680627d6f64918bbb289034f.png?ex=6a14c99d&is=6a13781d&hm=ada916a143361e571ea4c5a558a7d0ca411b99cb5f6ac95772d0fc8afd7b3fdf&=&format=webp&quality=lossless",
+    "lore": "The Bad skin references Michael Jackson's appearance from the Bad album era, inspired by the cover and music video aesthetic."
+  },
+
+  {
+    "name": "Muzan",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231735660384387/186bcae5ddaccd623a84220ec0eef043.png?ex=6a14c9c3&is=6a137843&hm=c9dec3ab01e19be70daaa6941ac459b4d645a4674a7db93a6091c722d6ab6370&=&format=webp&quality=lossless",
+    "lore": "The Muzan skin references Muzan Kibutsuji from Demon Slayer, a character heavily inspired by Michael Jackson's appearance and style."
+  },
+
+  {
+    "name": "Captain EO",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231980532367522/Web_Photo_Editor_26.jpg?ex=6a14c9fd&is=6a13787d&hm=77fd89390d24bc07ec0941ef9f57557b932633c066b90f776a29eea260a23d67&=&format=webp",
+    "lore": "The Captain EO skin references Michael Jackson's role in Captain EO, the science fiction musical film created for Disney theme parks."
+  }
+],
+
+  "lore": "Michael Jackson was an iconic singer, dancer, and performer known worldwide as the King of Pop. Through legendary albums, groundbreaking music videos, and revolutionary dance moves such as the moonwalk, he became one of the most influential entertainers in music history."
+}

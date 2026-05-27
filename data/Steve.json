@@ -1,0 +1,136 @@
+{
+  "name": "Steve Minecraft",
+
+  "aliases": [
+    "steve",
+    "minecraft steve",
+    "block man"
+  ],
+
+  "origin": [
+    "game"
+  ],
+
+  "universe": "Minecraft",
+
+  "tags": {
+
+    "type": [
+      "human"
+    ],
+
+    "ability": [
+      "shieldbreak",
+      "RNG"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507552064664768662/minecraft-steve-render-v0-z1ase7tkycje1.png?ex=6a1250c5&is=6a10ff45&hm=54728f3db3bf94fd390bc2831c3447658fde765457515df56b61651a4ffaebb4&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 8,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Mine",
+      "damage": 0,
+      "cooldown": "2s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bow",
+      "damage": 6,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bow - 3",
+      "damage": 18,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Block Place",
+      "damage": 10,
+      "cooldown": "5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Flint n Steel",
+      "damage": 1,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "TNT",
+      "damage": 15,
+      "cooldown": "10s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Minecart",
+      "damage": 20,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Invisibility Potion",
+      "damage": 0,
+      "cooldown": "66s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Pumpkin",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367258445942804/638846499711675517.png?ex=6a1547fa&is=6a13f67a&hm=449d0ca5effaafa85b617774af42cc06cef595bd33a3e81794147250df745991&=&format=webp&quality=lossless",
+    "lore": "Steve wears a carved pumpkin on his head, a classic Minecraft feature often used by players to avoid angering Enderman."
+  },
+
+  {
+    "name": "Zombie",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367269745660015/35e6fe561bfbe0c0367e0e4edbc14f62.png?ex=6a1547fd&is=6a13f67d&hm=b75dbd17ddee46d0306b7f493eaa96ffae0d0bc35fa717acbe2a602f1e2e46b2&=&format=webp&quality=lossless",
+    "lore": "The hostile Zombie mob from Minecraft, known for attacking players during the night and burning in sunlight."
+  },
+
+  {
+    "name": "Herobrine",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367350242742372/b06ce5e54e7717b4ef2069a9b041ecd2.png?ex=6a154810&is=6a13f690&hm=a95aae1165a5c1c7658a0f371df3cb9694bb234d39e6856cc1a0910005218145&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "A legendary Minecraft creepypasta entity said to haunt worlds with glowing white eyes, mysterious structures, and unexplained sightings."
+  },
+
+  {
+    "name": "Alex",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367424083460096/ba1713efd59b1918e2cebe2a570ed479.png?ex=6a154822&is=6a13f6a2&hm=9b7e87f51adb6c7a9203371b1ac9578abd67782d76da334beb4f3f3e67896456&=&format=webp&quality=lossless",
+    "lore": "Alex is the default female Minecraft protagonist introduced alongside Steve as one of the game's main playable skins."
+  },
+
+  {
+    "name": "Dont Mine At Night",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367836370960404/Web_Photo_Editor_47.jpg?ex=6a154884&is=6a13f704&hm=09e04b5312be9003fcb72aa24a9769a45f98c11a7fc42025306e13244a6709b8&=&format=webp",
+    "lore": "Inspired by the famous Minecraft parody song 'Don't Mine at Night,' recreating the music video's nostalgic early Minecraft aesthetic."
+  },
+
+  {
+    "name": "Jack",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367932156018688/e2eb1da8666f5ac937b6ac40d69c3f57.png?ex=6a15489b&is=6a13f71b&hm=f3bef12238c42342c4dcaa33630a0e7c1d396753a5479a10faae3990d34595bf&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "Jack Black's version of Steve from the Minecraft movie adaptation."
+  }
+],
+
+  "lore": "Steve is the default protagonist of Minecraft and one of gaming’s most iconic characters. Armed with limitless creativity and survival skills, he can craft tools, build structures, explore dangerous dimensions, and battle powerful enemies using resources gathered from the blocky world around him."
+}

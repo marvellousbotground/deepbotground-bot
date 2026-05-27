@@ -1,0 +1,95 @@
+{
+  "name": "Tara Carpenter",
+
+  "aliases": [
+    "tara",
+    "tara carpenter",
+    "ghostface survivor"
+  ],
+
+  "origin": [
+    "movie"
+  ],
+
+  "universe": "Scream",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "heal",
+      "extra",
+      "shieldbreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507561577220538529/wp12713871.png?ex=6a1259a1&is=6a110821&hm=d7b775ca44501440829c23c6d3080f7bfbe9566fba7885af63a82afcc19f2c36&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Brick Slam",
+      "damage": 10,
+      "cooldown": "10s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Crutch Fury",
+      "damage": 20,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Punch Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Landline Phone",
+      "damage": 0,
+      "cooldown": "13.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Inhaler",
+      "damage": 0,
+      "cooldown": "23s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+    "Subway",
+    "Pirate",
+    "V",
+    "The Ladder"
+  ],
+
+  "lore": "Tara Carpenter is one of the main survivors of the modern Scream films. After becoming a target of Ghostface, she proved herself resourceful and resilient, fighting back against multiple killers while enduring the trauma surrounding the Woodsboro murders."
+}

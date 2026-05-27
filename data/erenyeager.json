@@ -1,0 +1,127 @@
+{
+  "name": "Eren Yeager",
+
+  "aliases": [
+  "Eren yeager",
+  "titan",
+  "Eren"
+],
+
+  "origin": [
+    "anime"
+  ],
+
+  "universe": "Attack on Titan",
+
+  "tags": {
+
+    "type": [
+      "antihero",
+      "human"
+    ],
+
+    "ability": [
+      "heal",
+      "shieldbreak",
+      "counter",
+      "finisher",
+      "transformation",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1508003659378724934/340239f2537bf2cc21bb5b155b664daf.png?ex=6a13f559&is=6a12a3d9&hm=96d99eb43687cba62b79096f4b578cac3b248c6f41d1235f1a79902418ec3174&=&format=webp&quality=lossless",
+  "stats": {
+    "hp": 200,
+    "speed": "Fast",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Threatening Grab",
+      "damage": 11,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fair Fight",
+      "damage": 20,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Crystalize Counter",
+      "damage": 10,
+      "cooldown": "22s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Charge Up",
+      "damage": 0,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Handshake Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Titan Beatdown",
+      "damage": 79,
+      "cooldown": "0s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "The Rumbling",
+      "damage": 10000,
+      "cooldown": "0s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Yeagerist",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508004888506929223/18d187d867756f7f18d695257cf2ee3f.png?ex=6a13f67e&is=6a12a4fe&hm=d27bf868f73b94838af04271ee37e94b578d68a5e43fed96aa48ad6c8e2a1c48&=&format=webp&quality=lossless",
+    "lore": "The Yeagerist skin represents adult Eren Yeager with his hair tied back during his final transformation into the leader and symbol of the Yeagerist movement."
+  },
+
+  {
+    "name": "The Paths",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508005132875337770/ccbb46d32f3cdafe81d0af37346890e3.png?ex=6a13f6b9&is=6a12a539&hm=945f87c43d8d287de68f250982cbb27a73fbf7e364383222ee33258ce820a132&=&format=webp&quality=lossless",
+    "lore": "The Paths skin represents Eren inside the dimension known as The Paths, where he appears with loose hair while connected to the power of the Founding Titan and Ymir."
+  },
+
+  {
+    "name": "Marley",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508006536549503098/a8286ac3d3acc510a6fab1636a53fca6.png?ex=6a13f807&is=6a12a687&hm=98fb0afee7cf0f9eea8a5383bce3a712fa9725c17526557984f1ddd63975c568&=&format=webp&quality=lossless",
+    "lore": "The Marley skin represents Eren during the Survey Corps' secret visit to Marley, where he wore formal civilian clothing to blend in while searching for a peaceful solution. After witnessing the world's hatred toward Paradis, Eren lost faith in diplomacy and later separated from the group to begin his own plan."
+  },
+
+  {
+    "name": "Mountain",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508007061177372703/a590104b0cf14a1fabbc477743041019.png?ex=6a13f884&is=6a12a704&hm=a852f9da22ddbf618cd3b2ae1ff7c049f633a933529808efc20331b454fe02bf&=&format=webp&quality=lossless",
+    "lore": "The Mountain skin represents Eren after escaping imprisonment and meeting Floch and the Yeagerists on a hill at sunset, where Floch gives him the long black jacket that becomes part of his iconic final-season appearance."
+  },
+
+  {
+    "name": "Cabin",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508007377444671488/aefffdd9d77724bf9ffbb275b0409e4c.png?ex=6a13f8d0&is=6a12a750&hm=6660dada5cc9c27f8678efe067e9d3a69e024edc30078e056b52c604217801cb&=&format=webp&quality=lossless",
+    "lore": "The Cabin skin represents the peaceful alternate reality Eren created for Mikasa through The Paths near the end of the story. In this vision, Eren and Mikasa abandon the war and live together in a mountain cabin during Eren's final years, serving as his emotional farewell to her."
+  }
+],
+
+  "lore": "Eren Yeager is the main protagonist of Attack on Titan. After gaining the power of the Titans, he developed incredible strength, regeneration, and transformation abilities while fighting for freedom against the Titans and uncovering the truth about the world."
+}

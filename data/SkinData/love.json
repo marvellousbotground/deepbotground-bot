@@ -1,0 +1,49 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Runners High",
+      "damage": 12,
+      "cooldown": "8s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Stranglehold",
+      "damage": 11,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "For Her Counter",
+      "damage": 24,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "The Cage",
+      "damage": 0,
+      "cooldown": "35s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Pages Finisher",
+      "damage": 0,
+      "cooldown": "0.3s",
+      "shieldBreak": false
+    }
+  ],
+
+  "techs": []
+}

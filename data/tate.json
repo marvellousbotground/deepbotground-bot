@@ -1,0 +1,83 @@
+{
+  "name": "Tate Langdon",
+
+  "aliases": [
+    "tate",
+    "tate langdon",
+    "rubber man",
+    "american horror story"
+  ],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "American Horror Story",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "human",
+      "monster"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507563036875952208/15ddbcf378e8c009901853bbd0bee56c.png?ex=6a125afd&is=6a11097d&hm=c1ed32b5ae3c8ee516db97790f71538e5b05117270e5687e47551de4dcde7b7b&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Axe Rush",
+      "damage": 10,
+      "cooldown": "11.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Shotgun",
+      "damage": 5,
+      "cooldown": "13s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Normal People Scare Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Benzine Spill",
+      "damage": 15,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+  ],
+
+  "lore": "Tate Langdon is a major character from American Horror Story: Murder House. A troubled ghost tied to the infamous Murder House, he is known for his violent past, manipulative behavior, and disturbing relationship with the supernatural events surrounding the house."
+}

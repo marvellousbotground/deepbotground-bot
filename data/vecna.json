@@ -1,0 +1,112 @@
+{
+  "name": "Vecna",
+
+  "aliases": [
+    "vecna",
+    "henry creel",
+    "001",
+    "will"
+  ],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "Stranger Things",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "monster",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "extra",
+      "ranged",
+      "transformation",
+      "heal"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507811792670429215/latest.png?ex=6a1342a9&is=6a11f129&hm=4208e899b153b525c808842a19e6773571a939b8d5d10aea14af7f47ccfb8a5b&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 8,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Piercing Shards",
+      "damage": 9,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Vine Pull",
+      "damage": 8,
+      "cooldown": "10.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Crucify Counter",
+      "damage": 24,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Clock Hallucination",
+      "damage": 0,
+      "cooldown": "15s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Times Up Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "It is time",
+      "damage": 0,
+      "cooldown": "10000s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Vine Pierce",
+      "damage": 15,
+      "cooldown": "9.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "The Mind Flayer",
+      "damage": 135,
+      "cooldown": "8.5s",
+      "shieldBreak": true
+    }
+  ],
+
+  "skins": [
+    "001",
+    "Mr. Whatsit",
+    "The sorcerer",
+    "The forest"
+  ],
+
+  "lore": "Vecna is the main antagonist of Stranger Things Season 4 and the true mastermind behind many events connected to the Upside Down. Originally Henry Creel, also known as One, he possesses immense psychic abilities that allow him to manipulate minds, invade memories, and brutally kill his victims from another dimension."
+}

@@ -1,0 +1,133 @@
+{
+  "name": "Spring Bonnie",
+
+  "aliases": [
+    "springbonnie",
+    "spring bonnie",
+    "movietrap",
+    "yellow rabbit",
+    "afton",
+    "william afton",
+   "bonnie", 
+   "the rabbit"
+  ],
+
+  "origin": [
+    "movie"
+  ],
+
+  "universe": "FNAF",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "robot",
+      "slasher"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "ranged",
+      "extra",
+      "shieldbreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507540250656899184/06fa0934d75ccbe688632b2602a3abe0.png?ex=6a1245c4&is=6a10f444&hm=2b0745288e69e54d65a89898997878ff909687bff143c009d47ccc0e6578a55b&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Symmetry Thrust",
+      "damage": 10,
+      "cooldown": "11s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Spring Strike",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Cupcake Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Ghost Children",
+      "damage": 14,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Party Trick Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Aftons Embrace",
+      "damage": 0,
+      "cooldown": "38s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Yellow Rabbit",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508358754729463868/adf85943f069d2773c24ffffeb3b35af.png?ex=6a15400f&is=6a13ee8f&hm=5001b60a06dffe9ecfe4dd6bbb8f078f0deb7c51163c2084a93a95d0d79b7098&=&format=webp&quality=lossless",
+    "lore": "William Afton wears the cleaner and less damaged Spring Bonnie suit seen during flashbacks throughout the Five Nights at Freddy's movie timeline."
+  },
+
+  {
+    "name": "Unmasked",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508358797083672637/64678c0d37bad02bbe3f8aea7f830392.png?ex=6a154019&is=6a13ee99&hm=113504ab544f5a230c08a5653f56d3167a099e38e7ef68afbf80c51dcbac3b60&=&format=webp&quality=lossless",
+    "lore": "After the final battle of the Five Nights at Freddy's movie, the damaged Spring Bonnie suit reveals William Afton beneath the mask while he suffers inside the springlock costume."
+  },
+
+  {
+    "name": "The Media",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508359974701760684/Web_Photo_Editor_45.jpg?ex=6a154131&is=6a13efb1&hm=dad7d4b53ab32f155a843a83767874197867a3dca8bb9d48c8a6c5cb83f20a3c&=&format=webp",
+    "lore": "Originally used as Movietrap's old design in Marvellous Playground before becoming its own character, this version later returned as a Movietrap skin featuring the viral voice line: 'It’s perfect, first I rizz your brother, now I rizz you.'"
+  },
+
+  {
+    "name": "Arcade",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508360241358573578/1719d2289b2f58ba81e63b3ee4482f0a.png?ex=6a154171&is=6a13eff1&hm=843cd4281c9f110b2294e061cd87d5ad09b54d7146e9e92f5c42b35c59869411&=&format=webp&quality=lossless",
+    "lore": "A pixelated version inspired by Spring Bonnie's appearance in the retro 8-bit minigames from Five Nights at Freddy's 3."
+  },
+
+  {
+    "name": "The Rabbit",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508360333914407024/3f8b2ffc9e38b963db54b0c923fe6f0e.png?ex=6a154187&is=6a13f007&hm=b14923984ebd38973a6d2a07d55996852febd1056657dc7d4b0fc67fc67898c2&=&format=webp&quality=lossless",
+    "lore": "Bonnie from the Five Nights at Freddy's movie appears wearing the large blue animatronic rabbit suit seen throughout Freddy Fazbear's Pizza.",
+    "dataFile": "rabbit.json"
+  },
+
+  {
+    "name": "Raglan",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508360403439194244/8096b2ede4235fc1fdf374c469790340.png?ex=6a154198&is=6a13f018&hm=23ef0e66230d47179d31159f09aa39d0e91cc148393674a0b8fbdfd78aababdc&=&format=webp&quality=lossless",
+    "lore": "Before revealing himself as William Afton, he hides under the fake identity of Steve Raglan while manipulating Mike throughout the Five Nights at Freddy's movie."
+  }
+],
+
+  "lore": "Spring Bonnie is the yellow rabbit suit used by William Afton in the Five Nights at Freddy’s universe. In the FNAF movie adaptation, the suit becomes a terrifying symbol of manipulation, murder, and animatronic horror as Afton uses it to control and terrorize his victims."
+}

@@ -1,0 +1,63 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Psycho Slip",
+      "damage": 12,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Shotgun Blast",
+      "damage": 8,
+      "cooldown": "12.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bellystab Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "The Voicechanger",
+      "damage": 18,
+      "cooldown": "15.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Final Act Finisher",
+      "damage": 0,
+      "cooldown": "0.65s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "The Reveal",
+      "damage": 0,
+      "cooldown": "98s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Psycho Strike",
+      "damage": 17,
+      "cooldown": "8s",
+      "shieldBreak": true
+    }
+  ],
+
+  "techs": []
+}

@@ -1,0 +1,84 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 10,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Knife Slash",
+      "damage": 12,
+      "cooldown": "8.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Take It",
+      "damage": 8,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Manifest Fear Counter - I Want You",
+      "damage": 25,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Manifest Fear Counter - Laughter",
+      "damage": 0,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Coffin Ambush",
+      "damage": 12,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Deadlights Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fear Rush - 1",
+      "damage": 10,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fear Rush - 2",
+      "damage": 15,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Fear Rush - 3",
+      "damage": 20,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Spider Destruction",
+      "damage": 15,
+      "cooldown": "0s",
+      "shieldBreak": true
+    }
+  ],
+
+  "techs": []
+}

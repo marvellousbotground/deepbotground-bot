@@ -1,0 +1,117 @@
+{
+  "name": "Walter White",
+
+  "aliases": [
+    "walter",
+    "walter white",
+    "heisenberg",
+    "ww"
+  ],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "Breaking Bad",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "shieldBreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507818679121739948/7838-walter-smoking.png?ex=6a134913&is=6a11f793&hm=728492cef22e09874043272076ed808fce59609074cf0da78583f5e47712a7f6&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Chemical Burn",
+      "damage": 15,
+      "cooldown": "7s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "This Is Not Meth",
+      "damage": 10,
+      "cooldown": "12.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Point-Blank Cruelty Counter",
+      "damage": 30,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Gray Matter",
+      "damage": 8,
+      "cooldown": "18.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Car Explosion",
+      "damage": 25,
+      "cooldown": "61s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Pilot",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648024958828755/9f143e3910f8425fbe6f516f21cc61a9.png?ex=6a164d76&is=6a14fbf6&hm=ac224cb283a3031c45ab9fa53f5d896ebda48bbba432b77e9b7fdfc9f398f37f&=&format=webp&quality=lossless",
+    "lore": "Walter White appears during the early days of cooking meth in the desert, still with hair and awkwardly missing his pants after his first chaotic criminal experiences."
+  },
+
+  {
+    "name": "Heisenberg",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648297425014875/5884d911926792b69a53926e4f9d9e48.png?ex=6a164db7&is=6a14fc37&hm=8be530d3a94dbf8b9fcef297aa91cfeaa053ff3f8343e47a5dabb5bdc9e5a9eb&=&format=webp&quality=lossless",
+    "lore": "Walter White fully embraces the Heisenberg identity, becoming the feared drug kingpin of Albuquerque."
+  },
+
+  {
+    "name": "Hazardous",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648371513069592/ee875f686c36e14eee4598e32868dd18.png?ex=6a164dc9&is=6a14fc49&hm=ea82be8c02ec0385c3b2404c0a0fd58cc3ed751584a60e1c9ff2044c171fe28f&=&format=webp&quality=lossless",
+    "lore": "Walter wears the iconic yellow hazmat suit used while cooking meth alongside Jesse Pinkman in hidden laboratories and houses."
+  },
+
+  {
+    "name": "Joker",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648612236886156/9b550099441c1b6aa2cb19289b68168b.png?ex=6a164e02&is=6a14fc82&hm=711ed5d46532cbda88cd9bd983ecc3750f8ef40b9763321fd5304f44b0d4d214&=&format=webp&quality=lossless",
+    "lore": "Arthur Fleck descends into madness and transforms into the Joker, becoming Gotham City's infamous clown criminal."
+  },
+
+  {
+    "name": "Masuka",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508649058703642724/07bb193a611d783b13de8a149f47d527.png?ex=6a164e6c&is=6a14fcec&hm=36ca3554ffb9f22fdfd097f601e84b628027c51df1ed4526c4487d49f54daeeb&=&format=webp&quality=lossless",
+    "lore": "Vince Masuka, the eccentric forensic analyst from Dexter known for his inappropriate humor and work at Miami Metro."
+  },
+
+  {
+    "name": "Bones",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508652113020850236/Web_Photo_Editor_56.jpg?ex=6a165145&is=6a14ffc5&hm=02fb9de9e6ef7c384d45b0beddc0e8f81c20dee6a28adf95a0e662a0eb9ac5c2&=&format=webp",
+    "lore": "A skeletal version of Heisenberg wearing Walter White's signature criminal outfit (just his hat)."
+  }
+],
+
+  "lore": "Walter White is the main protagonist of Breaking Bad. Originally a high school chemistry teacher, he transformed into the infamous drug kingpin Heisenberg after being diagnosed with cancer, using his intelligence and ruthlessness to build a criminal empire."
+}

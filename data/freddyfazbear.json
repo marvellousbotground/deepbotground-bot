@@ -1,0 +1,94 @@
+{
+  "name": "Freddy Fazbear",
+
+  "aliases": [
+  "freddy",
+  "freddy fazbear"
+],
+
+  "origin": [
+    "gaming"
+  ],
+
+  "universe": "FNAF",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "robot"
+    ],
+
+    "ability": [
+      "shieldbreak",
+      "counter",
+      "finisher",
+      "teleportation"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506875447080783993/370.png?ex=6a0fda9e&is=6a0e891e&hm=c743ef5878b47cfd03b3e91889e6c39f9c10aa782c3b32e3f249da23af3daaa5&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Mic Slam",
+      "damage": 15,
+      "cooldown": "7s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Leap",
+      "damage": 15,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "87 Counter",
+      "damage": 10,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "IT'S ME",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Foxy",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508008661467791390/e1d42c003b3b7e5831775f9eaaf8ca22.png?ex=6a13fa02&is=6a12a882&hm=7de278b3f49c932a47427d41abe1316ae1179efeb87720551fe8fa630613927f&=&format=webp&quality=lossless",
+    "lore": "The Foxy skin references Foxy the Pirate Fox from Five Nights at Freddy's, one of the original animatronics known for sprinting out of Pirate Cove and aggressively attacking the night guard.",
+    "dataFile": "foxy.json"
+  },
+
+  {
+    "name": "Chica",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508010383577972860/fe5db37581ebdaa4bca13ea633b2bf0d.png?ex=6a13fb9c&is=6a12aa1c&hm=2fdf41a0bbf045bb80a2c451c5c2c7713e31fccb223288d9007fcc668152aab6&=&format=webp&quality=lossless",
+    "lore": "The Chica skin references Toy Chica from Five Nights at Freddy's, the redesigned toy animatronic introduced in Five Nights at Freddy's 2."
+  }
+],
+
+  "lore": "Freddy Fazbear is the mascot animatronic of the Five Nights at Freddy’s franchise. Performing as the lead singer of Freddy Fazbear’s Pizza by day, he becomes a terrifying haunted animatronic at night, known for his eerie presence, mechanical strength, and deadly jumpscares."
+}

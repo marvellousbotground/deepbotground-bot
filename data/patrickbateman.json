@@ -1,0 +1,122 @@
+{
+  "name": "Patrick Bateman",
+
+  "aliases": [
+    "patrick",
+    "bateman",
+    "sigma",
+    "american psycho"
+  ],
+
+  "origin": [
+    "movie"
+  ],
+
+  "universe": "American Psycho",
+
+  "tags": {
+
+    "type": [
+      "human",
+      "villain",
+      "slasher"
+    ],
+
+    "ability": [
+      "counter",
+      "heal",
+      "shieldbreak",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507496835596685463/bc2713a369730a7e1088e3d5d7618488.png?ex=6a121d55&is=6a10cbd5&hm=dfe13e53382fcc26e447d3b924f15bf0503056a7ce3ba7339281a1b1729f4d09&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Hey Paul!",
+      "damage": 8,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Business Card",
+      "damage": 5,
+      "cooldown": "13s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Stary Cat Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Chainsaw Rampage",
+      "damage": 12,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Hip To Be Square Finisher",
+      "damage": 0,
+      "cooldown": "0.7s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Stereo Psychosis",
+      "damage": 0,
+      "cooldown": "200s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+  {
+    "name": "Raincoat",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508272702669062195/ad289704bcaf871aaf16ec226945e771.png?ex=6a14efea&is=6a139e6a&hm=2c3575f63b2f827faa7b2acb047d69b0084f5ce8322e55e36a1c2545efc44a7e&=&format=webp&quality=lossless",
+    "lore": "The Raincoat skin references Patrick Bateman during the famous scene where he murders Paul Allen with an axe while wearing a transparent raincoat."
+  },
+
+  {
+    "name": "Sunglasses",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508272900728295555/1e12fe2b4eecf600d540fdde448320fb.png?ex=6a14f019&is=6a139e99&hm=3692a691cfa051ff3c1ceb3f92a393e1c189727cefcd9e05ce62c1025147a18a&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "The Sunglasses skin references Patrick Bateman during the scene where he invites his secretary Jean to dinner and allows her to choose the restaurant herself."
+  },
+
+  {
+    "name": "Brown Overcoat",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508273210930630778/d826ebcc2ed4c581023f2e9341e11e54.png?ex=6a14f063&is=6a139ee3&hm=8bef6fab3954922ad0dc594f14f5c4d8bce2e890718e16239d9c486f0dde304c&=&format=webp&quality=lossless",
+    "lore": "The Brown Overcoat skin references Patrick Bateman during the hallucination scene where he imagines an ATM telling him to feed it a stray cat before accidentally killing an old woman instead."
+  },
+
+  {
+    "name": "Morning Routine",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508273130060386354/0eb6174fb5973763ef96fc2b414d999f.png?ex=6a14f050&is=6a139ed0&hm=02ea6888d8c989c2dd99bcb461017cf5ba44e28de324b243c961cf38a48277d5&=&format=webp&quality=lossless&width=372&height=350",
+    "lore": "The Morning Routine skin references the opening sequence of American Psycho where Patrick Bateman describes and performs his obsessive daily self-care routine."
+  },
+
+  {
+    "name": "Book",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508275326856462487/ba79c4c08970ddbcbc0d7949bd536e47.png?ex=6a14f25c&is=6a13a0dc&hm=ed4a9f37bafac479d21343146f15627eb148572032cfc7ad1214134987c189f9&=&format=webp&quality=lossless",
+    "lore": "The Book skin references Patrick Bateman's appearance from the cover art of the American Psycho novel."
+  }
+],
+
+  "lore": "Patrick Bateman is the main character of American Psycho. Beneath his appearance as a wealthy and successful businessman hides a violent and unstable serial killer obsessed with status, perfection, and control."
+}

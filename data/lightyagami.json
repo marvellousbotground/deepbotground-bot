@@ -1,0 +1,96 @@
+{
+  "name": "Light Yagami",
+
+  "aliases": [
+    "light",
+    "kira"
+  ],
+
+  "origin": [
+    "anime"
+  ],
+
+  "universe": "Death Note",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "human"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "extra",
+      "heal",
+      "shieldbreak",
+      "ranged"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507172297885224970/df1f103bd8a0c7e8fdcda7c38e856fd5.png?ex=6a10ef15&is=6a0f9d95&hm=ef637b445448929950aa7cea356bce222dba24426cb82e9b39c9389baef23321&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Cardiac Judgement",
+      "damage": 12,
+      "cooldown": "8s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Compelled End",
+      "damage": 10,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Shinigami Counter",
+      "damage": 0,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Written Collision",
+      "damage": 20,
+      "cooldown": "22.5s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Eyes of Death Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "The New Wolrd",
+      "damage": 0,
+      "cooldown": "33s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+    "Final",
+    "V Sweater",
+    "Snowy Day",
+    "Mikami",
+    "Misa"
+  ],
+
+  "lore": "Light Yagami is the main protagonist of Death Note. After discovering a supernatural notebook capable of killing anyone whose name is written inside it, he adopts the identity of Kira and begins a ruthless mission to create what he believes to be a perfect new world."
+}

@@ -1,0 +1,128 @@
+{
+  "name": "The Deep",
+
+  "aliases": [
+    "deep",
+    "the deep",
+    "kevin",
+    "the peak",
+    "thepeak",
+    "peak"
+  ],
+
+  "origin": [
+    "comic",
+    "tvseries"
+  ],
+
+  "universe": "The Boys",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "superhuman"
+    ],
+
+    "ability": [
+      "heal",
+      "shieldbreak",
+      "counter",
+      "finisher",
+      "extra",
+      "rng"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506756449420972082/ef845622da5fdf419487f20451579b08.png?ex=6a0f6bcb&is=6a0e1a4b&hm=4c9c687a9b2d0643137ed6cabcaad2766887f44ffc34ec3df6c0679f6c591055&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 9,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Ambrosius Slam",
+      "damage": 12,
+      "cooldown": "11s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Wave Rider",
+      "damage": 6,
+      "cooldown": "13s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Sea Brawn Combo Counter",
+      "damage": 12,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Shark Swarm",
+      "damage": 22,
+      "cooldown": "26s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Deep Descent Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Deep Thoughts - Prision",
+      "damage": 0,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Deep Thoughts - Realization",
+      "damage": 0,
+      "cooldown": "16s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Deep Thoughts - Love",
+      "damage": 0,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Deep Thoughts - Frogs",
+      "damage": 10,
+      "cooldown": "16s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Comic",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507981389415321681/Web_Photo_Editor_10.jpg?ex=6a13e09c&is=6a128f1c&hm=eab44482bb4243e98a5e547363bdb0bc46dc7a170afc07fd48850dcfdd9e1ace&=&format=webp",
+    "lore": "The Comic skin represents The Deep's appearance from The Boys comic series, where the character has a more exaggerated and darker portrayal compared to the television adaptation."
+  },
+
+  {
+    "name": "Aquarus",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507981105133916241/fe601b657e7adfcc710656ec9f320344.png?ex=6a13e058&is=6a128ed8&hm=dd88ce0fad4a9d2b0b2192298c4c0551f23fdf3701a3c2a7c1a7ec546721e7ee&=&format=webp&quality=lossless",
+    "lore": "The Aquarus skin references Aquarus from Invincible, the underwater king and member of the Guardians of the Globe known for his aquatic abilities and royal status."
+  }
+],
+
+  "lore": "The Deep is a member of The Seven from The Boys series with aquatic abilities and the power to communicate with sea life. Despite his impressive control over ocean creatures and underwater combat skills, he is often underestimated by both allies and enemies."
+}

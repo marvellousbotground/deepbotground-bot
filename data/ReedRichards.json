@@ -1,0 +1,118 @@
+{
+  "name": "Mr. Fantastic",
+
+  "aliases": [
+    "mrfantastic",
+    "mr fantastic",
+    "reed richards",
+    "reed"
+  ],
+
+  "origin": [
+    "comic",
+    "movie"
+  ],
+
+  "universe": "Marvel",
+
+  "tags": {
+    "type": [
+      "hero",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "RNG",
+      "heal",
+      "shieldbreak",
+      "ranged",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507490260312133722/image.png?ex=6a121735&is=6a10c5b5&hm=2484e7135b262ceaeb0cc30669d26f7ed45e0c0447d0a1a53071c2fbf2b323de&=&format=webp&quality=lossless&width=350&height=350",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Elastic Strike",
+      "damage": 12,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+    {
+      "name": "Rubber Lunge",
+      "damage": 12,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+    {
+      "name": "Wrap-Up Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+    {
+      "name": "Tornado Stretch",
+      "damage": 32,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+    {
+      "name": "Fantastic Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+    {
+      "name": "Reeds Reflection",
+      "damage": 1234,
+      "cooldown": "32s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "2005",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508240795311014068/e3ddffd3dc85c5283147925c9a3e017a.png?ex=6a14d233&is=6a1380b3&hm=ecafe53ba9ae3a8ca4106843f61499f67ff440c0c710f57c1abf07cc43065d3a&=&format=webp&quality=lossless",
+    "lore": "The 2005 skin references Reed Richards from the 2005 Fantastic Four movie adaptation."
+  },
+
+  {
+    "name": "Fant4stic",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508241490374164652/Web_Photo_Editor_28.jpg?ex=6a14d2d9&is=6a138159&hm=a1b84196c6f54f8ba2442e4ec8ee899bfc2ce25b44f7a6baef3de25130733fb4&=&format=webp",
+    "lore": "The Fant4stic skin references Reed Richards from the 2015 Fantastic Four reboot film."
+  },
+
+  {
+    "name": "Elongated",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508241569650704485/298535db3fb500e99de8f881f8ecd2b0.png?ex=6a14d2eb&is=6a13816b&hm=540ae46c714d7537c9a064e44c302e9f5feded72c07105d671d224d40b9084c0&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "The Elongated skin references Ralph Dibny, also known as Elongated Man from the Arrowverse."
+  },
+
+  {
+    "name": "The Maker",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508242042671599768/3fecb1cdabb232545595d64656f7c7fe.png?ex=6a14d35c&is=6a1381dc&hm=76fba110799018cbd1869e2806eb8a85b374326c241be557f21c81f5843988f4&=&format=webp&quality=lossless",
+    "lore": "The The Maker skin references the evil alternate version of Reed Richards from Marvel Comics who became one of the most dangerous geniuses in the multiverse."
+  },
+
+  {
+    "name": "Madness",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508241977655693504/9fa1874a17c265700d7d34c9264aa05c.png?ex=6a14d34d&is=6a1381cd&hm=f1361ea11d07a831d5bf9749703a5a7c4cac78547af8f95694921539fb86b514&=&format=webp&quality=lossless",
+    "lore": "The Madness skin references Reed Richards from Doctor Strange in the Multiverse of Madness."
+  }
+],
+
+  "lore": "Mr. Fantastic, also known as Reed Richards, is the leader of the Fantastic Four from Marvel Comics. After gaining elastic powers from cosmic radiation, he became one of the smartest minds in the Marvel universe, using his intelligence and stretching abilities to protect the world."
+}

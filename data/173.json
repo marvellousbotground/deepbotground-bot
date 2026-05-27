@@ -1,0 +1,71 @@
+{
+  "name": "SCP-173",
+
+  "aliases": [
+    "scp173",
+    "scp 173",
+    "173",
+    "the sculpture",
+    "peanut"
+  ],
+
+  "origin": [
+    "game"
+  ],
+
+  "universe": "SCP Foundation",
+
+  "tags": {
+
+    "type": [
+      "monster",
+      "villain",
+      "superhuman"
+    ],
+
+    "ability": [
+      "teleportation"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507518320872783942/latest.png?ex=6a123158&is=6a10dfd8&hm=cc3514cc2f8820649c4a7981c0d54ac515dd04f33845364a4043b078783b279d&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Slow",
+    "damage": 5,
+    "skills": 3,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+
+   {
+      "name": "move",
+      "damage": 0,
+      "cooldown": "1s",
+      "shieldBreak": false
+    }, 
+
+   {
+      "name": "Dash",
+      "damage": 10,
+      "cooldown": "10s",
+      "shieldBreak": false
+    }, 
+
+    {
+      "name": "Blink Rush",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+
+  ],
+
+  "lore": "SCP-173 is one of the most iconic entities from the SCP Foundation universe. A hostile statue-like creature capable of moving at extreme speed when not being observed, it is infamous for snapping the necks of anyone who blinks or looks away."
+}

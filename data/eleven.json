@@ -1,0 +1,97 @@
+{
+  "name": "Eleven",
+
+"aliases": [
+  "11"
+],
+
+  "origin": [
+    "tvseries"
+  ],
+
+  "universe": "Stranger Things",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "human"
+    ],
+
+    "ability": [
+      "heal",
+      "counter",
+      "shieldbreak",
+      "ranged",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506867111669010513/1475272545-1475088497-index-eleven-stranger-things.png?ex=6a0fd2db&is=6a0e815b&hm=5a153aa08fbd6ac954e5a446cd6b3b54498353d157f71ad2700e37333266f6b9&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Psychic Fracture",
+      "damage": 15,
+      "cooldown": "10.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Telekinetic Launch",
+      "damage": 6,
+      "cooldown": "13s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Mind-Slam Counter",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Psionic Shockwave",
+      "damage": 20,
+      "cooldown": "14s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Disintegration Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Enter the Void",
+      "damage": 0,
+      "cooldown": "38s",
+      "shieldBreak": true
+    }
+  ],
+
+  "skins": [
+    "Blonde",
+    "Bithing",
+    "The Mall",
+    "A New End",
+    "BlueBandana",
+    "The Rightside Up",
+    "Fantastic"
+  ],
+
+  "lore": "Eleven is a powerful psychic from Stranger Things with telekinetic and telepathic abilities developed through secret experiments. Using her mind, she can manipulate objects, overpower enemies, and connect to the Upside Down, making her one of the strongest characters in the series."
+}

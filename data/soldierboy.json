@@ -1,0 +1,123 @@
+{
+  "name": "Soldier Boy",
+
+  "aliases": [
+    "soldierboy",
+    "soldier boy",
+    "ben"
+  ],
+
+  "origin": [
+    "comic",
+    "tvseries"
+  ],
+
+  "universe": "The Boys",
+
+  "tags": {
+
+    "type": [
+      "antihero",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "shieldbreak",
+      "extra",
+      "ranged",
+      "heal"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507521191571619860/soldier-boy-from-the-boys-build-v0-je4u3z8ymvj91.png?ex=6a123404&is=6a10e284&hm=0949a90c58d8edf810d7e987b38778ad41a3cced2fe4e9ced5f62f0f396496c8&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Shield Bash",
+      "damage": 16,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bayonet Toss",
+      "damage": 10,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "5th Of July Counter",
+      "damage": 25,
+      "cooldown": "17s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Radiation Beam",
+      "damage": 42,
+      "cooldown": "22s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Radiation Nuke",
+      "damage": 50,
+      "cooldown": "35s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Shield Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "PTSD",
+      "damage": 0,
+      "cooldown": "15s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Helmet",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508331986928930916/979c5110d6d845c466d9b2e61120da51.png?ex=6a152721&is=6a13d5a1&hm=a611c55c1b15c7423937f24aac529a7c5fbd08cb4f7f68bb72d6070f25b8471e&=&format=webp&quality=lossless",
+    "lore": "Soldier Boy wearing his standard suit alongside his classic military helmet."
+  },
+
+  {
+    "name": "WW2",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508332845779914803/Web_Photo_Editor_43.jpg?ex=6a1527ed&is=6a13d66d&hm=883648082cba32d2fd745de2039e34f8dbc419cd7bf7e86b4eeb6af52934384f&=&format=webp",
+    "lore": "Soldier Boy during World War II when Vought presented him as America's greatest wartime superhero."
+  },
+
+  {
+    "name": "Rising",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508332164943708230/Web_Photo_Editor_42.jpg?ex=6a15274b&is=6a13d5cb&hm=c78d74b9833cffb0b4c49b9057a20d182a587e085a033a39c5ba50d2673cd156&=&format=webp",
+    "lore": "Soldier Boy's appearance in Vought Rising, exploring the earlier years of Vought and its superheroes."
+  },
+
+  {
+    "name": "Russia",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508332665110134794/f5aed7f0563ae5a992fcc7d07118d63b.png?ex=6a1527c2&is=6a13d642&hm=b0935c858b3e9f9f479e5099fbb3a81d458995d0d21472d07aa98fc4a432fd37&=&format=webp&quality=lossless",
+    "lore": "Soldier Boy after awakening in the 21st century following decades of imprisonment and experimentation in Russia."
+  }
+],
+
+  "lore": "Soldier Boy is the original superhero from The Boys universe and the former leader of Payback. Enhanced with immense strength, durability, combat experience, and a devastating radioactive energy blast, he is one of the most dangerous supes ever created."
+}

@@ -1,0 +1,117 @@
+{
+  "name": "Paul Atreides",
+
+  "aliases": [
+    "paul",
+    "atreides",
+    "muad dib",
+    "muaddib",
+    "the kwisatz haderach",
+    "dune guy"
+  ],
+
+  "origin": [
+    "movie"
+  ],
+
+  "universe": "Dune",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "shieldBreak",
+      "extra",
+      "ranged"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507501491999609005/7c663e7d6170d42a9c0de8f199821978.png?ex=6a1221ab&is=6a10d02b&hm=97aee0235c074ddb70cb6a8dfa96fe5dd5a5eb521ffbecdecd82b3e9cb79d2a5&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Headbump",
+      "damage": 15,
+      "cooldown": "10.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Voice",
+      "damage": 12,
+      "cooldown": "13s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Reversal Counter",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Long Live Fighters!",
+      "damage": 15,
+      "cooldown": "27s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Backstab Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Forcefield",
+      "damage": 0,
+      "cooldown": "31s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Home",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508276711337361428/5b2452afc80b69b016d3b7dc9ee47586.png?ex=6a14f3a6&is=6a13a226&hm=8168ca1e86d70a69cdd75c1626e3e28da28e6a0b9ad1571e7091f6c8993e3347&=&format=webp&quality=lossless",
+    "lore": "The Home skin references Paul Atreides at the beginning of Dune while living on his home planet Caladan, wearing elegant noble clothing before House Atreides is sent to Arrakis."
+  },
+
+  {
+    "name": "Wonka",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508278786368602234/881be6a2f3e51d0ac8a96312838252de.png?ex=6a14f595&is=6a13a415&hm=4ecccedc42cf759be2e0495cf1b4067a967302fe0275f2354789562081339528&=&format=webp&quality=lossless",
+    "lore": "The Wonka skin references Willy Wonka from the movie Wonka, portrayed by the same actor as Paul Atreides."
+  },
+
+  {
+    "name": "Muad dib",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508277025335414794/a86d730c9dd8c80cd7ca2989a20b5ce5.png?ex=6a14f3f1&is=6a13a271&hm=5ebd5b2577f3137c3fd3611f312ca026699aa77e297fb2ea5f58a63d61f5fdb0&=&format=webp&quality=lossless",
+    "lore": "The Muad dib skin references Paul Atreides after joining the Fremen on Arrakis, where he earns the name Muad'Dib, meaning desert mouse, and begins his rise as their prophetic leader."
+  },
+
+  {
+    "name": "Armor",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508278469396660315/Web_Photo_Editor_33.jpg?ex=6a14f549&is=6a13a3c9&hm=ce703cb86a392fff077555eb35e4a97c5849b57b3d6fb83c3ec221be53eb6bf9&=&format=webp",
+    "lore": "The Armor skin references Paul Atreides wearing combat armor during the later conflicts and wars of the Dune saga."
+  }
+],
+
+  "lore": "Paul Atreides is the protagonist of Dune, heir to House Atreides and the future Muad'Dib. After arriving on the desert planet Arrakis, he develops extraordinary mental and prophetic abilities while becoming a legendary leader among the Fremen."
+}

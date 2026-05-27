@@ -1,0 +1,106 @@
+{
+  "name": "Iris",
+
+  "aliases": [
+    "companion",
+    "robot iris"
+  ],
+
+  "origin": [
+    "movie"
+  ],
+
+  "universe": "Companion",
+
+  "tags": {
+
+    "type": [
+      "neutral",
+      "robot"
+    ],
+
+    "ability": [
+      "counter",
+      "shieldbreak",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507080941154209842/9f8808d69ce0a838fc72b403d5edac94.png?ex=6a109a00&is=6a0f4880&hm=ee263286d686eb771016b612e54d0e0c076501ec447de9a3a561c7968017de66&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Bottle Smack",
+      "damage": 15,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Window Breaker",
+      "damage": 21,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Neckstab Counter",
+      "damage": 15,
+      "cooldown": "26s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Deafening Blast",
+      "damage": 8,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Corkscrew Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Total Self Control",
+      "damage": 0,
+      "cooldown": "100s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Robot",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508195731310379009/Web_Photo_Editor_21.jpg?ex=6a14a83b&is=6a1356bb&hm=7b19705bb04b9d22578f6bb444eb58beea70ef11a6d2f24d8b3150c61b65e3e8&=&format=webp",
+    "lore": "The Robot skin references the ending of Companion where Iris escapes with the stolen money, changes clothes, and removes the synthetic skin from her damaged hand, fully embracing her identity as a robot."
+  },
+
+  {
+    "name": "Sue",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508195892761727118/8a70f8e27bb73f735f568a391ee29646.png?ex=6a14a861&is=6a1356e1&hm=1d8fc66b11fe61f4c8de2dfb048a23ecaa24807ebca1edbc02e1c7bfd558a9ee&=&format=webp&quality=lossless",
+    "lore": "The Sue skin references Sue, the younger second body created from Elisabeth in The Substance, representing her attempt to regain youth and perfection through the experimental substance."
+  },
+
+  {
+    "name": "Debra",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508196754208854056/fc5ac7fa47f51469dd18a78e3ed471c6.png?ex=6a14a92f&is=6a1357af&hm=4bc5f8bd7ddd197d684cbdda3ab090bb8bd17191d7b5e2841fcfebebf252bec7&=&format=webp&quality=lossless",
+    "lore": "The Debra skin references Debra Morgan from Dexter, the detective sister of Dexter Morgan known for her emotional personality and determination within Miami Metro."
+  }
+],
+
+  "lore": "Iris is the android companion from the sci-fi horror film Companion. Designed to appear caring and human, she hides advanced combat capabilities and dangerous programmed behaviors beneath her artificial personality."
+}

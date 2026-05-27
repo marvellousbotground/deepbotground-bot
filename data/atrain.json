@@ -1,0 +1,145 @@
+{
+  "name": "A-Train",
+
+"aliases": [
+  "A Train",
+  "Reggie"
+],
+
+  "origin": [
+    "comic",
+    "tvseries"
+  ],
+
+  "universe": "The Boys",
+
+  "tags": {
+
+    "type": [
+      "antihero",
+      "speedster",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "heal",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506597149230759966/ugc_1929248595926766966_AA328516CA6A1D86996C31EB6209509363085DB5_.png?ex=6a0ed76f&is=6a0d85ef&hm=d023acd8a961d3abccd797438899341a79be88f338a455f21fa1af7bbb17efca&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 185,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Shoulder Bash",
+      "damage": 10,
+      "cooldown": "8s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Super Speed",
+      "damage": 15,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Always Hated You Counter",
+      "damage": 8,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Grab",
+      "damage": 14,
+      "cooldown": "15s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bloody Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "SlowDown",
+      "damage": 0,
+      "cooldown": "125s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Compound V",
+      "damage": 0,
+      "cooldown": "60s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Africa",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507936913837916180/hmky1dtw1gdb1.png?ex=6a13b730&is=6a1265b0&hm=47fe29d9d9e84a7455e3e23f25c9995470774a0a936e32691e1387c3b58571e2&=&format=webp&quality=lossless",
+    "lore": "The Africa skin references A-Train's redesigned suit made to reconnect with his African roots and improve his public image after criticism from the media and fans."
+  },
+
+  {
+    "name": "Marathon",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937082180636852/91b5a75be393f543df88466c53f7284e.png?ex=6a13b758&is=6a1265d8&hm=d7b6e9cf27b8b5d20a033194f8c77020060737e6f89d22aefa0bf2c3d4fdbe7a&=&format=webp&quality=lossless",
+    "lore": "The Marathon skin is based on Mister Marathon, a speedster superhero parody from The Boys universe known for his exaggerated classic superhero style."
+  },
+
+  {
+    "name": "Quicksilver",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937319930433636/f9f36452a7e1398800e539550f5393ef.png?ex=6a13b791&is=6a126611&hm=de22ae7984e12001b5211132d320b40f154865e0c840b001e4d731bd85441aa8&=&format=webp&quality=lossless",
+    "lore": "The Quicksilver skin references Marvel's famous speedster Quicksilver, known for his super speed and connection to the X-Men universe."
+  },
+
+  {
+    "name": "Sportacus",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937462578581565/3ba797f4ae129216c535fbd30af2815a.png?ex=6a13b7b3&is=6a126633&hm=6a84ee477b8fd321eb3309fcf23e06589d93ca56edf7c3aa30aba608f94132cb&=&format=webp&quality=lossless",
+    "lore": "The Sportacus skin references the energetic hero from LazyTown, recognized for his athletic abilities, acrobatics, and healthy lifestyle."
+  },
+
+  {
+    "name": "Quickster",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937573534830613/438f5ea6a7b5bf3eaadf5ca23d512dbe.png?ex=6a13b7cd&is=6a12664d&hm=163095cbb1c1e39f0b9b02020540eaea229841876391de053ccee82101537c13&=&format=webp&quality=lossless",
+    "lore": "The Quickster skin references SpongeBob SquarePants acting as a superhero speedster during the Mermaid Man and Barnacle Boy episodes."
+  },
+
+  {
+    "name": "Shockwave",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507938117112434739/Web_Photo_Editor.jpg?ex=6a13b84f&is=6a1266cf&hm=68dd2e69589fff9f82147f881ecef9fa62f294be64d3d0dcfbd0dcd48cfd81f3&=&format=webp",
+    "lore": "The Shockwave skin represents the speedster from The Boys who competed against A-Train in a public race during the early seasons of the series."
+  },
+
+  {
+    "name": "RedRush",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507938344925921361/Web_Photo_Editor_1.jpg?ex=6a13b885&is=6a126705&hm=20f143e375c71072ba85a060e1da83cc1037054bde0555fe4e0f73e48ac3fbbf&=&format=webp",
+    "lore": "The RedRush skin references Red Rush from Invincible, the super speed hero and member of the Guardians of the Globe."
+  },
+
+  {
+    "name": "Reggie",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507939749711577088/3893c671f702578ed2c9ac09b4191aa3.png?ex=6a13b9d4&is=6a126854&hm=c1f3bba0f2d24f9c214919bf72b351fe7248469bef15728e1e8b3fef6e9eb3b7&=&format=webp&quality=lossless",
+    "lore": "The Reggie skin shows A-Train in civilian clothing as Reggie Franklin, away from his superhero identity and public persona."
+  }
+],
+
+  "lore": "A-Train is a speedster superhero from The Boys television series and comics. As the fastest member of The Seven, he uses incredible super speed for devastating attacks and rapid movement, though his powers come with dangerous physical consequences."
+}

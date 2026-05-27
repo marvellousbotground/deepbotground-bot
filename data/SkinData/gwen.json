@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal":false
+  },
+
+  "attacks": [
+    {
+      "name": "Tripple Shot",
+      "damage": 15,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Webswing",
+      "damage": 10,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Leg Counter",
+      "damage": 8,
+      "cooldown": "16s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Jump Kick",
+      "damage": 10,
+      "cooldown": "10.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Slinging Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Spidey Sense",
+      "damage": 0,
+      "cooldown": "55s",
+      "shieldBreak": false
+    }
+  ],
+
+  "techs": []
+}

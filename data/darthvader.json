@@ -1,0 +1,122 @@
+{
+  "name": "Darth Vader",
+
+"aliases": [
+  "vader",
+  "Darth",
+  "Darth vader"
+],
+
+  "origin": [
+    "movie",
+    "tvseries"
+  ],
+
+  "universe": "Star Wars",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "human"
+    ],
+
+    "ability": [
+      "heal",
+      "shieldbreak",
+      "ranged",
+      "finisher",
+      "extra"
+    ]
+  },
+
+  "image": "https://cdn.discordapp.com/attachments/1506572642860273714/1506659841333006428/z0d46uv8gn291.png?ex=6a0f11d2&is=6a0dc052&hm=614e8a9db0e51954b68c34eae03262af210718bcbca9d71138581dfcffeef782&",
+
+  "stats": {
+    "hp": 260,
+    "speed": "Slow",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "name": "Heavy Strike",
+      "damage": 10,
+      "cooldown": "8s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Saber Throw",
+      "damage": 20,
+      "cooldown": "11s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Leap",
+      "damage": 0,
+      "cooldown": "6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Force Pull",
+      "damage": 2,
+      "cooldown": "22s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "DarkSide Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Rage",
+      "damage": 8,
+      "cooldown": "120s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Force Chocke",
+      "damage": 25,
+      "cooldown": "11s",
+      "shieldBreak": true
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Knight",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507979316997263472/Web_Photo_Editor_7.jpg?ex=6a13deae&is=6a128d2e&hm=7c65dbe82fa85a2017d0f93146b21a460facea70db025bb2866f61a088fd97cd&=&format=webp",
+    "lore": "The Knight skin references a medieval knight inspired by the Dark Souls series, reimagining Darth Vader as a dark fantasy warrior."
+  },
+
+  {
+    "name": "White",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507979715674247259/84b5de892deeed358a0991a93422092f.png?ex=6a13df0d&is=6a128d8d&hm=b2fab44392f98f457bc007ec128557e20b4f66ff33840375356bd44723221fee&=&format=webp&quality=lossless",
+    "lore": "The White skin represents an alternate version of Darth Vader wearing white armor instead of his traditional black Sith suit."
+  },
+
+  {
+    "name": "Chirstmas",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507980007576829952/Web_Photo_Editor_8.jpg?ex=6a13df52&is=6a128dd2&hm=34b7e1b066072c199dcfeacae0b6d572a3cbf17f8bcc5e4b4300f6c4491d9cba&=&format=webp",
+    "lore": "The Chirstmas skin is a festive version of Darth Vader themed around Christmas and holiday celebrations."
+  },
+
+  {
+    "name": "Hot Pink",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507980574630088864/Web_Photo_Editor_9.jpg?ex=6a13dfd9&is=6a128e59&hm=a40235ffa8b8f8bdc66c2530bbaa3e11e84879b0d0fed09564d53f695a2a2ed0&=&format=webp",
+    "lore": "The Hot Pink skin represents a humorous alternate version of Darth Vader with a bright pink Sith outfit."
+  }
+],
+
+  "lore": "Darth Vader is one of the most iconic Sith Lords from the Star Wars franchise. Once known as Anakin Skywalker, he fell to the dark side and became the feared enforcer of the Galactic Empire, using immense Force abilities, cybernetic strength, and deadly lightsaber combat."
+}

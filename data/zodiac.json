@@ -1,0 +1,116 @@
+{
+  "name": "The Zodiac Killer",
+
+  "aliases": [
+    "zodiac",
+    "zodiac killer",
+    "the zodiac",
+    "cipher killer"
+  ],
+
+  "origin": [
+    "reallife"
+  ],
+
+  "universe": "Real Life",
+
+  "tags": {
+
+    "type": [
+      "villain",
+      "human",
+      "slasher"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "shieldBreak",
+      "extra",
+      "ranged"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507824225094729849/138ed2476bf947d3e5f5e80d8d09c3d7.png?ex=6a134e3d&is=6a11fcbd&hm=01971c1fed96173d324980e59fed67acc4472b083e6ff5e7abdf7519dd09a351&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Blinded Shoot",
+      "damage": 10,
+      "cooldown": "10s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Noose of Night",
+      "damage": 5,
+      "cooldown": "15s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Backstab Counter",
+      "damage": 12,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Graveyard Stomp",
+      "damage": 13,
+      "cooldown": "12s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Dear Editor Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Killers Mark",
+      "damage": 0,
+      "cooldown": "41s",
+      "shieldBreak": false
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Riddler",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682500518445206/28638468ab76296b65079cec23a4a55b.png?ex=6a166d92&is=6a151c12&hm=0219fe39557d8fc9a415a78b28e7c2afd455d82b45d8882f2d7f0dde093ae62d&=&format=webp&quality=lossless",
+    "lore": "Edward Nashton operates as the Riddler in The Batman (2022), exposing Gotham's corruption through cryptic riddles, livestreams, and brutal murders."
+  },
+
+  {
+    "name": "Red Hood",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682578922700820/570f94d42913b43daa65f11df4b3d60e.png?ex=6a166da4&is=6a151c24&hm=dec04989e66004a0d226df3a5e95cb0df0dc109c663af1442c4e6b455c218afe&=&format=webp&quality=lossless",
+    "lore": "Jason Todd returns as the Red Hood after surviving his apparent death, becoming a violent antihero who wages war on Gotham's criminals."
+  },
+
+  {
+    "name": "Doakes",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682869323862087/71c58c1e272b17de0019373ff5a11d7f.png?ex=6a166dea&is=6a151c6a&hm=106c66097b314d75a74b904c756e2d4cde9b425c5e5543dc589252d4ca8a4b94&=&format=webp&quality=lossless",
+    "lore": "James Doakes is the aggressive Miami Metro detective from Dexter who becomes obsessed with exposing Dexter Morgan's true nature."
+  },
+
+  {
+    "name": "Squid Doll",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682967059271720/d109b062f7342b0ac99441575e417177.png?ex=6a166e01&is=6a151c81&hm=2f4b5cede8514f9de91c3ec986f8553395cb88d723e92ad52f0710b43933dcd2&=&format=webp&quality=lossless",
+    "lore": "Young-hee, the giant motion-detecting doll from Squid Game, oversees the deadly Red Light, Green Light game."
+  }
+],
+
+  "lore": "The Zodiac Killer is the unidentified serial killer responsible for a series of murders in Northern California during the late 1960s. Infamous for sending cryptic letters and ciphers to newspapers, the Zodiac became one of the most mysterious and feared killers in criminal history."
+}

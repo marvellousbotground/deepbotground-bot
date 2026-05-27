@@ -1,0 +1,96 @@
+{
+  "name": "Monkey D. Luffy",
+
+  "aliases": [
+    "luffy",
+    "straw hat",
+    "mugiwara",
+    "gear 5"
+  ],
+
+  "origin": [
+    "anime"
+  ],
+
+  "universe": "One Piece",
+
+  "tags": {
+
+    "type": [
+      "hero",
+      "superhuman"
+    ],
+
+    "ability": [
+      "counter",
+      "finisher",
+      "extra",
+      "shieldbreak"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507186457926697081/8d3786f8fbd3e166c8c58e6c020ed06b.png?ex=6a10fc45&is=6a0faac5&hm=0210280f082884a00039413ae5896f65baf5643ab9747d1fc7c0636374c02021&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "name": "Pistol",
+      "damage": 15,
+      "cooldown": "9s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Gatling",
+      "damage": 11,
+      "cooldown": "14s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Bell Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Battle Axe",
+      "damage": 12,
+      "cooldown": "13s",
+      "shieldBreak": true
+    },
+
+    {
+      "name": "Rocket Finisher",
+      "damage": 0,
+      "cooldown": "0.6s",
+      "shieldBreak": false
+    },
+
+    {
+      "name": "Rubber Dodge",
+      "damage": 0,
+      "cooldown": "0s",
+      "shieldBreak": false
+    }
+  ],
+
+  "skins": [
+    "Hawaii",
+    "White and Red",
+    "Cooking",
+    "Little Garden",
+    "Waistband"
+  ],
+
+  "lore": "Monkey D. Luffy is the captain of the Straw Hat Pirates and the main protagonist of One Piece. After eating the Gum-Gum Fruit, his body gained rubber-like properties, allowing him to develop creative and powerful fighting techniques while pursuing his dream of becoming the King of the Pirates."
+}
