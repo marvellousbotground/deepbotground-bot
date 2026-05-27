@@ -1,8 +1,9 @@
+require("dotenv").config();
+
 const express = require("express");
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
-require("dotenv").config();
 
 const app = express();
 
@@ -35,145 +36,187 @@ function saveProfiles(data) {
     );
 }
 
+app.get("/", (req, res) => {
+
+    res.send(
+        "✅ Roblox OAuth server is running."
+    );
+});
+
 app.get("/roblox/login", (req, res) => {
 
     const discordId = req.query.discordId;
 
     if (!discordId) {
-        return res.send("Missing Discord ID.");
+
+        return res.send(
+            "Missing Discord ID."
+        );
     }
 
-    const authUrl =
-        "https://apis.roblox.com/oauth/v1/authorize" +
-        `?client_id=${process.env.ROBLOX_CLIENT_ID}` +
-        `&redirect_uri=${encodeURIComponent(process.env.ROBLOX_REDIRECT_URI)}` +
+    const redirectUri =
+        encodeURIComponent(
+            "https://deepbotground.onrender.com/roblox/callback"
+        );
+
+    const robloxAuthUrl =
+        `https://apis.roblox.com/oauth/v1/authorize?` +
+        `client_id=${process.env.ROBLOX_CLIENT_ID}` +
+        `&redirect_uri=${redirectUri}` +
         `&response_type=code` +
-        `&scope=openid profile` +
+        `&scope=openid+profile` +
         `&state=${discordId}`;
 
-    res.redirect(authUrl);
+    res.redirect(robloxAuthUrl);
 });
 
 app.get("/roblox/callback", async (req, res) => {
 
     const code = req.query.code;
+
     const discordId = req.query.state;
 
     if (!code || !discordId) {
-        return res.send("Missing code or state.");
+
+        return res.send(
+            "Missing code or state."
+        );
     }
 
     try {
 
-        const tokenResponse = await axios.post(
-            "https://apis.roblox.com/oauth/v1/token",
+        const tokenResponse =
+            await axios.post(
 
-            new URLSearchParams({
-                grant_type: "authorization_code",
-                code: code,
-                client_id: process.env.ROBLOX_CLIENT_ID,
-                client_secret: process.env.ROBLOX_CLIENT_SECRET,
-                redirect_uri: process.env.ROBLOX_REDIRECT_URI
-            }),
+                "https://apis.roblox.com/oauth/v1/token",
 
-            {
-                headers: {
-                    "Content-Type":
-                        "application/x-www-form-urlencoded"
+                new URLSearchParams({
+
+                    grant_type: "authorization_code",
+
+                    code,
+
+                    client_id:
+                        process.env.ROBLOX_CLIENT_ID,
+
+                    client_secret:
+                        process.env.ROBLOX_CLIENT_SECRET,
+
+                    redirect_uri:
+                        "https://deepbotground.onrender.com/roblox/callback"
+                }),
+
+                {
+                    headers: {
+                        "Content-Type":
+                            "application/x-www-form-urlencoded"
+                    }
                 }
-            }
-        );
+            );
 
         const accessToken =
             tokenResponse.data.access_token;
 
-        const userResponse = await axios.get(
-            "https://apis.roblox.com/oauth/v1/userinfo",
+        const userResponse =
+            await axios.get(
 
-            {
-                headers: {
-                    Authorization:
-                        `Bearer ${accessToken}`
+                "https://apis.roblox.com/oauth/v1/userinfo",
+
+                {
+                    headers: {
+                        Authorization:
+                            `Bearer ${accessToken}`
+                    }
                 }
-            }
-        );
+            );
 
-        const robloxUser = userResponse.data;
+        const robloxUser =
+            userResponse.data;
 
-        const profiles = loadProfiles();
+        const profiles =
+            loadProfiles();
 
-        // CREATE PROFILE IF NOT EXISTS
         if (!profiles[discordId]) {
 
-            profiles[discordId] = {
-
-                roblox: {},
-
-                mainGame: {
-
-                    wins: 0,
-                    kills: 0,
-                    pvps: 0,
-
-                    mainCharacters: [
-                        "None",
-                        "None",
-                        "None"
-                    ],
-
-                    favoriteSkin: "None",
-
-                    ranked: {
-                        rank: "Unranked",
-                        points: 0
-                    },
-
-                    casual: {
-                        level: 1,
-                        xp: 0
-                    },
-
-                    mainCharacterImage: null
-                }
-            };
+            profiles[discordId] = {};
         }
 
         profiles[discordId].roblox = {
 
             verified: true,
 
-            id: robloxUser.sub,
+            userId:
+                robloxUser.sub,
 
             username:
-                robloxUser.preferred_username,
-
-            displayName:
-                robloxUser.name
+                robloxUser.preferred_username
         };
 
         saveProfiles(profiles);
 
+        console.log(
+            `✅ ${discordId} verified as ${robloxUser.preferred_username}`
+        );
+
         res.send(`
-            <h1>✅ Roblox account connected</h1>
-            <p>You can now return to Discord.</p>
+
+            <html>
+
+                <body style="
+                    background:#0f1115;
+                    color:white;
+                    font-family:sans-serif;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    height:100vh;
+                    text-align:center;
+                ">
+
+                    <div>
+
+                        <h1>
+                            ✅ Verification Successful
+                        </h1>
+
+                        <p>
+                            Connected as
+                            <b>
+                                ${robloxUser.preferred_username}
+                            </b>
+                        </p>
+
+                        <p>
+                            You can now return to Discord.
+                        </p>
+
+                    </div>
+
+                </body>
+
+            </html>
         `);
 
     } catch (error) {
 
-        console.log(
+        console.error(
+
+            "OAuth Error:",
+
             error.response?.data || error.message
         );
 
-        res.send(`
-            <h1>❌ OAuth Error</h1>
-            <p>Failed to connect Roblox account.</p>
-        `);
+        res.send(
+            "Verification failed."
+        );
     }
 });
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
 
     console.log(
-        "✅ OAuth server running on port 3000"
+        `✅ OAuth server running on port ${PORT}`
     );
 });
