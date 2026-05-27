@@ -6,7 +6,28 @@ const {
     ButtonStyle
 } = require("discord.js");
 
-const connectDB = require("../database/mongo.js");
+const fs = require("fs");
+const path = require("path");
+
+const profilesPath = path.join(
+    __dirname,
+    "..",
+    "database",
+    "profiles.json"
+);
+
+function loadProfiles() {
+    if (!fs.existsSync(profilesPath)) {
+        fs.writeFileSync(
+            profilesPath,
+            JSON.stringify({}, null, 2)
+        );
+    }
+
+    return JSON.parse(
+        fs.readFileSync(profilesPath, "utf8")
+    );
+}
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -14,14 +35,9 @@ module.exports = {
         .setDescription("Connect your Roblox account."),
 
     async execute(interaction) {
-        const db = await connectDB();
-        const profiles = db.collection("profiles");
-
+        const profiles = loadProfiles();
         const userId = interaction.user.id;
-
-        const profile = await profiles.findOne({
-            discordId: userId
-        });
+        const profile = profiles[userId];
 
         const isVerified = profile?.roblox?.verified;
 
