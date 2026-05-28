@@ -1,0 +1,7 @@
+tunnel: b99c8f55-ec1a-4a4f-85f1-a076ff23c919
+credentials-file: C:\Users\admin\.cloudflared\b99c8f55-ec1a-4a4f-85f1-a076ff23c919.json
+
+ingress:
+  - hostname: verify.marvellousbot.win
+    service: http://38.60.209.215:5012
+  - service: http_status:404
