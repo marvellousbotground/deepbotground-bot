@@ -1,7 +1,6 @@
 const app = require("./server");
 
-const PORT = process.env.PORT || 3000;
-
+const PORT = process.env.SERVER_PORT || 5012;
 app.listen(PORT, () => {
     console.log(`✅ OAuth server running on port ${PORT}`);
 });

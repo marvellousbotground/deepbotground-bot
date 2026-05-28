@@ -36,13 +36,14 @@ module.exports = {
 
     async execute(interaction) {
         const profiles = loadProfiles();
+
         const userId = interaction.user.id;
         const profile = profiles[userId];
 
         const isVerified = profile?.roblox?.verified;
 
         const verifyUrl =
-            `https://deepbotground.onrender.com/roblox/login?discordId=${userId}`;
+            `https://verify.marvellousbot.win/roblox/login?discordId=${userId}`;
 
         const embed = new EmbedBuilder()
             .setColor(isVerified ? "Green" : "Red")
