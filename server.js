@@ -56,7 +56,7 @@ app.get("/roblox/login", (req, res) => {
 
     const redirectUri =
         encodeURIComponent(
-            "https://deepbotground.onrender.com/roblox/callback"
+            "https://verify.marvellousbot.win/roblox/callback"
         );
 
     const robloxAuthUrl =
@@ -103,7 +103,7 @@ app.get("/roblox/callback", async (req, res) => {
                         process.env.ROBLOX_CLIENT_SECRET,
 
                     redirect_uri:
-                        "https://deepbotground.onrender.com/roblox/callback"
+                        "https://verify.marvellousbot.win/roblox/callback"
                 }),
 
                 {
