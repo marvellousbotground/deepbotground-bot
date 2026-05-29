@@ -30,6 +30,34 @@ const RANKS = [
     { name: "Obsidian", rp: 3000 }
 ];
 
+const RANK_EMOJIS = {
+    "Unranked": "<:unranked:1508994732733370479>",
+
+    "Bronze I": "<:Rbronze:1509002737549971507>",
+    "Bronze II": "<:Rbronze:1509002737549971507>",
+    "Bronze III": "<:Rbronze:1509002737549971507>",
+
+    "Silver I": "<:Rsilver:1509006126694535198>",
+    "Silver II": "<:Rsilver:1509006126694535198>",
+    "Silver III": "<:Rsilver:1509006126694535198>",
+
+    "Gold I": "<:Rgold:1509351714518728824>",
+    "Gold II": "<:Rgold:1509351714518728824>",
+    "Gold III": "<:Rgold:1509351714518728824>",
+
+    "Platinum I": "<:Rplatinum:1509354547200528404>",
+    "Platinum II": "<:Rplatinum:1509354547200528404>",
+    "Platinum III": "<:Rplatinum:1509354547200528404>",
+
+    "Diamond I": "<:Rdiamond:1509355553980420248>",
+    "Diamond II": "<:Rdiamond:1509355553980420248>",
+    "Diamond III": "<:Rdiamond:1509355553980420248>",
+
+    "Ruby": "<:Rruby:1509358608335503520>",
+    "Emerald": "<:Remerald:1509360948509540352>",
+    "Obsidian": "<:Robsidian:1509361944816259314>"
+};
+
 function loadProfiles() {
     if (!fs.existsSync(profilesPath)) {
         fs.writeFileSync(profilesPath, JSON.stringify({}, null, 2));
@@ -51,11 +79,13 @@ function getRankInfo(points) {
         }
     }
 
+    const emoji = RANK_EMOJIS[currentRank.name] || "";
+
     if (!nextRank) {
         return {
             rank: currentRank.name,
-            currentRp: currentRank.rp,
-            nextRp: currentRank.rp,
+            emoji,
+            points,
             progress: 100,
             bar: "██████████",
             text: `${points} RP`
@@ -64,16 +94,20 @@ function getRankInfo(points) {
 
     const needed = nextRank.rp - currentRank.rp;
     const gained = points - currentRank.rp;
-    const progress = Math.max(0, Math.min(100, Math.floor((gained / needed) * 100)));
+    const progress = Math.max(
+        0,
+        Math.min(100, Math.floor((gained / needed) * 100))
+    );
 
     const filled = Math.floor(progress / 10);
     const empty = 10 - filled;
 
     return {
         rank: currentRank.name,
-        currentRp: currentRank.rp,
-        nextRp: nextRank.rp,
+        emoji,
+        points,
         nextRank: nextRank.name,
+        nextRp: nextRank.rp,
         progress,
         bar: "█".repeat(filled) + "░".repeat(empty),
         text: `${points} / ${nextRank.rp} RP`
@@ -119,20 +153,52 @@ module.exports = {
         }
 
         const gameProfile = targetProfile.mainGame || {};
-        const mainCharacters = gameProfile.mainCharacters || ["None", "None", "None"];
+        const mainCharacters = gameProfile.mainCharacters || [
+            "None",
+            "None",
+            "None"
+        ];
 
         const rankedPoints = gameProfile.ranked?.points || 0;
         const rankInfo = getRankInfo(rankedPoints);
 
+        const robloxName =
+            targetProfile.roblox.displayName ||
+            targetProfile.roblox.username ||
+            "Unknown";
+
         const embed = new EmbedBuilder()
             .setColor("#2b2d31")
-            .setTitle(`${targetUser.username}'s Profile`)
+            .setAuthor({
+                name: `${targetUser.username}'s Profile`,
+                iconURL: targetUser.displayAvatarURL({ dynamic: true })
+            })
             .setThumbnail(targetUser.displayAvatarURL({ dynamic: true }))
+            .setTitle(`${rankInfo.emoji} ${rankInfo.rank}`)
+            .setDescription(
+                `**${rankInfo.text}**\n` +
+                `${rankInfo.bar} ${rankInfo.progress}%`
+            )
             .addFields(
                 {
                     name: "Roblox",
-                    value: `✅ ${targetProfile.roblox.displayName || targetProfile.roblox.username || "Unknown"}`,
-                    inline: false
+                    value: `✅ ${robloxName}`,
+                    inline: true
+                },
+                {
+                    name: "Casual",
+                    value:
+                        `Level ${gameProfile.casual?.level || 1}\n` +
+                        `${gameProfile.casual?.xp || 0} XP`,
+                    inline: true
+                },
+                {
+                    name: "Stats",
+                    value:
+                        `Wins: ${gameProfile.wins || 0}\n` +
+                        `Kills: ${gameProfile.kills || 0}\n` +
+                        `PvPs: ${gameProfile.pvps || 0}`,
+                    inline: true
                 },
                 {
                     name: "Main Characters",
@@ -145,29 +211,6 @@ module.exports = {
                 {
                     name: "Favorite Skin",
                     value: gameProfile.favoriteSkin || "None",
-                    inline: true
-                },
-                {
-                    name: "Stats",
-                    value:
-                        `Wins: ${gameProfile.wins || 0}\n` +
-                        `Kills: ${gameProfile.kills || 0}\n` +
-                        `PvPs: ${gameProfile.pvps || 0}`,
-                    inline: true
-                },
-                {
-                    name: "Ranked",
-                    value:
-                        `**${rankInfo.rank}**\n` +
-                        `${rankInfo.text}\n` +
-                        `${rankInfo.bar} ${rankInfo.progress}%`,
-                    inline: false
-                },
-                {
-                    name: "Casual",
-                    value:
-                        `Level ${gameProfile.casual?.level || 1}\n` +
-                        `${gameProfile.casual?.xp || 0} XP`,
                     inline: true
                 }
             );
