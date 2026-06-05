@@ -1,11 +1,11 @@
 {
   "name": "Atom Eve",
 
-"aliases": [
-  "atom eve",
-  "eve",
-  "atom"
-],
+  "aliases": [
+    "atom eve",
+    "eve",
+    "atom"
+  ],
 
   "origin": [
     "comic",
@@ -15,20 +15,9 @@
   "universe": "Invincible",
 
   "tags": {
-
     "type": [
       "hero",
       "superhuman"
-    ],
-
-    "ability": [
-      "flight",
-      "heal",
-      "shieldbreak",
-      "counter",
-      "ranged",
-      "finisher",
-      "extra"
     ]
   },
 
@@ -46,73 +35,108 @@
   "attacks": [
     {
       "name": "Sharp Spear",
+      "slot": "1",
       "damage": 8,
       "cooldown": "9.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lrp"
+      ]
     },
 
     {
       "name": "Hammer of Doom",
+      "slot": "2",
       "damage": 15,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "push",
+        "range"
+      ]
     },
 
     {
       "name": "Armor Counter",
+      "slot": "3",
       "damage": 0,
       "cooldown": "17s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "area",
+        "coun",
+        "heal"
+      ]
     },
 
     {
       "name": "Crushing Plates",
+      "slot": "4",
       "damage": 12,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "noti",
+        "range"
+      ]
     },
 
     {
       "name": "Mace Finisher",
+      "slot": "5",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "cine",
+        "heal",
+        "finish"
+      ]
     },
 
     {
       "name": "Flight",
+      "slot": "E",
       "damage": 10,
       "cooldown": "32.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push"
+      ]
     },
 
     {
       "name": "Atom Blast",
+      "slot": "E",
       "damage": 60,
       "cooldown": "62s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "lr"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Resistance",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892453317935205/d98756ad9d05655fa83d299cd811bb4a.png?ex=6a138dc8&is=6a123c48&hm=6f3fbd008f39274ec2664621a0f10985bd9c14f19192ca1bca08cf66928811ff&=&format=webp&quality=lossless",
-    "lore": "The Resistance skin represents an alternate Atom Eve from a ruined universe shown in Invincible. In this reality, Eve lost her hair and was left permanently paralyzed after being brutally attacked by a variant from her own universe."
-  },
+  "skins": [
+    {
+      "name": "Resistance",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892453317935205/d98756ad9d05655fa83d299cd811bb4a.png?ex=6a138dc8&is=6a123c48&hm=6f3fbd008f39274ec2664621a0f10985bd9c14f19192ca1bca08cf66928811ff&=&format=webp&quality=lossless",
+      "lore": "The Resistance skin represents an alternate Atom Eve from a ruined universe shown in Invincible. In this reality, Eve lost her hair and was left permanently paralyzed after being brutally attacked by a variant from her own universe."
+    },
 
-  {
-    "name": "Y2K",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892607785893908/bb4a3364f78f2155b6de3b38078bd479.png?ex=6a138dec&is=6a123c6c&hm=404a0be80675a3e6e8d5ea1ddff3401a9d7a79362cb2b8004cf62b39bb885b8b&=&format=webp&quality=lossless",
-    "lore": "The Y2K skin features Atom Eve wearing a more casual early-2000s inspired outfit with a white shirt, cropped pink jacket, grey jeans, belt, and a white bag while keeping her recognizable pink aesthetic."
-  },
+    {
+      "name": "Y2K",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892607785893908/bb4a3364f78f2155b6de3b38078bd479.png?ex=6a138dec&is=6a123c6c&hm=404a0be80675a3e6e8d5ea1ddff3401a9d7a79362cb2b8004cf62b39bb885b8b&=&format=webp&quality=lossless",
+      "lore": "The Y2K skin features Atom Eve wearing a more casual early-2000s inspired outfit with a white shirt, cropped pink jacket, grey jeans, belt, and a white bag while keeping her recognizable pink aesthetic."
+    },
 
-  {
-    "name": "Laundry Day",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892907049357403/eve.jpg?ex=6a138e34&is=6a123cb4&hm=685388ed602176476a48e9051ef0e4f5d188ad3b57ec17cb5190ec528c667bff&=&format=webp",
-    "lore": "The Laundry Day skin is based on a comic appearance where Atom Eve temporarily wears Invincible's suit, creating one of the most memorable alternate looks for the character."
-  }
-],
+    {
+      "name": "Laundry Day",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892907049357403/eve.jpg?ex=6a138e34&is=6a123cb4&hm=685388ed602176476a48e9051ef0e4f5d188ad3b57ec17cb5190ec528c667bff&=&format=webp",
+      "lore": "The Laundry Day skin is based on a comic appearance where Atom Eve temporarily wears Invincible's suit, creating one of the most memorable alternate looks for the character."
+    }
+  ],
 
   "lore": "Atom Eve is a superhero from the Invincible comic and animated series with the ability to manipulate matter and energy at the atomic level. Using powerful energy constructs, barriers, flight, and healing abilities, she is considered one of the most versatile heroes in the series."
 }

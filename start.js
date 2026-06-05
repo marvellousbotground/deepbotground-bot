@@ -10,6 +10,16 @@ try {
     console.error("❌ chmod failed:", error);
 }
 
+try {
+    console.log("🔄 Deploying slash commands...");
+    execFileSync("node", ["deploy-commands.js"], {
+        stdio: "inherit"
+    });
+    console.log("✅ Slash commands deployed");
+} catch (error) {
+    console.error("❌ Slash command deploy failed:", error);
+}
+
 const tunnel = spawn(cloudflaredPath, ["tunnel", "run", "marvellous"], {
     stdio: "inherit"
 });

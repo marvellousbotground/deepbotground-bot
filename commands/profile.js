@@ -31,7 +31,7 @@ const RANKS = [
 ];
 
 const RANK_EMOJIS = {
-    "Unranked": "<:unranked:1508994732733370479>",
+    "Unranked": "<:Runranked:1508994732733370479>",
 
     "Bronze I": "<:Rbronze:1509002737549971507>",
     "Bronze II": "<:Rbronze:1509002737549971507>",
@@ -80,6 +80,7 @@ function getRankInfo(points) {
     }
 
     const emoji = RANK_EMOJIS[currentRank.name] || "";
+    const totalBars = 6;
 
     if (!nextRank) {
         return {
@@ -87,20 +88,24 @@ function getRankInfo(points) {
             emoji,
             points,
             progress: 100,
-            bar: "██████████",
+            bar: "🟩".repeat(totalBars),
             text: `${points} RP`
         };
     }
 
     const needed = nextRank.rp - currentRank.rp;
     const gained = points - currentRank.rp;
+
     const progress = Math.max(
         0,
-        Math.min(100, Math.floor((gained / needed) * 100))
+        Math.min(
+            100,
+            Math.floor((gained / needed) * 100)
+        )
     );
 
-    const filled = Math.floor(progress / 10);
-    const empty = 10 - filled;
+    const filled = Math.floor((progress / 100) * totalBars);
+    const empty = totalBars - filled;
 
     return {
         rank: currentRank.name,
@@ -109,9 +114,42 @@ function getRankInfo(points) {
         nextRank: nextRank.name,
         nextRp: nextRank.rp,
         progress,
-        bar: "█".repeat(filled) + "░".repeat(empty),
-        text: `${points} / ${nextRank.rp} RP`
+        bar: "🟩".repeat(filled) + ":black_large_square:".repeat(empty),
+        text: `${points} RP`
     };
+}
+
+function getProfileThumbnail(gameProfile, targetUser) {
+    const source = gameProfile.imageSource || "skin";
+
+    const discordAvatar = targetUser.displayAvatarURL({
+        dynamic: true,
+        size: 1024
+    });
+
+    if (source === "discord") {
+        return discordAvatar;
+    }
+
+    if (source === "main") {
+        return (
+            gameProfile.mainCharacterImages?.[0] ||
+            discordAvatar
+        );
+    }
+
+    if (source === "skin") {
+        return (
+            gameProfile.favoriteSkinImage ||
+            discordAvatar
+        );
+    }
+
+    return discordAvatar;
+}
+
+function isValidHexColor(color) {
+    return /^#[0-9A-Fa-f]{6}$/.test(color);
 }
 
 module.exports = {
@@ -129,7 +167,8 @@ module.exports = {
         const profiles = loadProfiles();
 
         const targetUser =
-            interaction.options.getUser("user") || interaction.user;
+            interaction.options.getUser("user") ||
+            interaction.user;
 
         const targetId = targetUser.id;
         const targetProfile = profiles[targetId];
@@ -138,7 +177,7 @@ module.exports = {
             const isSelf = targetId === interaction.user.id;
 
             const embed = new EmbedBuilder()
-                .setColor("#ff4d4d")
+                .setColor("#2b2d31")
                 .setTitle("Profile unavailable")
                 .setDescription(
                     isSelf
@@ -153,6 +192,7 @@ module.exports = {
         }
 
         const gameProfile = targetProfile.mainGame || {};
+
         const mainCharacters = gameProfile.mainCharacters || [
             "None",
             "None",
@@ -167,57 +207,74 @@ module.exports = {
             targetProfile.roblox.username ||
             "Unknown";
 
+        const thumbnail = getProfileThumbnail(
+            gameProfile,
+            targetUser
+        );
+
+        const embedColor =
+            gameProfile.embedColor &&
+            isValidHexColor(gameProfile.embedColor)
+                ? gameProfile.embedColor
+                : "#2b2d31";
+
         const embed = new EmbedBuilder()
-            .setColor("#2b2d31")
+            .setColor(embedColor)
             .setAuthor({
                 name: `${targetUser.username}'s Profile`,
-                iconURL: targetUser.displayAvatarURL({ dynamic: true })
+                iconURL: targetUser.displayAvatarURL({
+                    dynamic: true
+                })
             })
-            .setThumbnail(targetUser.displayAvatarURL({ dynamic: true }))
-            .setTitle(`${rankInfo.emoji} ${rankInfo.rank}`)
-            .setDescription(
-                `**${rankInfo.text}**\n` +
-                `${rankInfo.bar} ${rankInfo.progress}%`
-            )
+            .setThumbnail(thumbnail)
+            .setDescription("🎮 **MAIN GAME PROFILE**")
             .addFields(
                 {
-                    name: "Roblox",
-                    value: `✅ ${robloxName}`,
+                    name: "🟩 Roblox",
+                    value: robloxName,
                     inline: true
                 },
                 {
-                    name: "Casual",
-                    value:
-                        `Level ${gameProfile.casual?.level || 1}\n` +
-                        `${gameProfile.casual?.xp || 0} XP`,
+                    name: "🏆 Wins",
+                    value: `${gameProfile.wins || 0}`,
                     inline: true
                 },
                 {
-                    name: "Stats",
-                    value:
-                        `Wins: ${gameProfile.wins || 0}\n` +
-                        `Kills: ${gameProfile.kills || 0}\n` +
-                        `PvPs: ${gameProfile.pvps || 0}`,
+                    name: "💀 Kills",
+                    value: `${gameProfile.kills || 0}`,
                     inline: true
                 },
                 {
-                    name: "Main Characters",
-                    value:
-                        `1. ${mainCharacters[0] || "None"}\n` +
-                        `2. ${mainCharacters[1] || "None"}\n` +
-                        `3. ${mainCharacters[2] || "None"}`,
+                    name: "⚔️ PvPs",
+                    value: `${gameProfile.pvps || 0}`,
                     inline: true
                 },
                 {
-                    name: "Favorite Skin",
+                    name: "🎨 Favorite Skin",
                     value: gameProfile.favoriteSkin || "None",
                     inline: true
+                },
+                {
+                    name: `${rankInfo.emoji} ${rankInfo.rank}`,
+                    value:
+                        `${rankedPoints} RP\n` +
+                        `${rankInfo.bar}`,
+                    inline: true
+                },
+                {
+                    name: "⭐ Level",
+                    value: `${gameProfile.casual?.level || 1}`,
+                    inline: true
+                },
+                {
+                    name: "🔥 Main Characters",
+                    value:
+                        `• ${mainCharacters[0] || "None"}\n` +
+                        `• ${mainCharacters[1] || "None"}\n` +
+                        `• ${mainCharacters[2] || "None"}`,
+                    inline: false
                 }
             );
-
-        if (gameProfile.mainCharacterImage) {
-            embed.setImage(gameProfile.mainCharacterImage);
-        }
 
         return interaction.reply({
             embeds: [embed]

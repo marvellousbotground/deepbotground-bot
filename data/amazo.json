@@ -2,8 +2,8 @@
   "name": "Amazo",
 
   "aliases": [
-  "Amazon"
-],
+    "Amazon"
+  ],
 
   "origin": [
     "comic",
@@ -13,20 +13,10 @@
   "universe": "DC",
 
   "tags": {
-
     "type": [
       "villain",
       "robot",
       "speedster"
-    ],
-
-    "ability": [
-      "shieldbreak",
-      "counter",
-      "ranged",
-      "passive",
-      "finisher",
-      "extra"
     ]
   },
 
@@ -44,66 +34,97 @@
   "attacks": [
     {
       "name": "Freeze Breath",
+      "slot": "1",
       "damage": 7,
       "cooldown": "10.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
       "name": "Super Speed",
+      "slot": "2",
       "damage": 10,
       "cooldown": "18s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push"
+      ]
     },
 
     {
       "name": "Phase Stretch Counter",
+      "slot": "3",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range",
+        "coun"
+      ]
     },
 
     {
       "name": "Cold Strike",
+      "slot": "4",
       "damage": 10,
       "cooldown": "13.5s",
-      "shieldBreak": false
-    },
-
-    {
-      "name": "Shattering Finisher",
-      "damage": 0,
-      "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "push",
+        "move",
+        "mele"
+      ]
     },
 
     {
       "name": "Laser Blast",
+      "slot": "5",
       "damage": 10,
       "cooldown": "31s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "push",
+        "lr"
+      ]
+    },
+
+    {
+      "name": "Shattering Finisher",
+      "slot": "E",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "attributes": [
+        "ignore",
+        "cine",
+        "heal",
+        "finish"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Crisis",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507941929051095202/Web_Photo_Editor_3.jpg?ex=6a13bbdc&is=6a126a5c&hm=b76dcac2e04938c2d77b656c36d664979ab15ca2cbd0efc2a8cdc4dc67fc1b58&=&format=webp",
-    "lore": "The Crisis skin is based on the Amazo android from the Arrowverse crossover events. This version of Amazo was created using advanced technology and was later connected to the return of a black-suited Superman during the multiverse crisis."
-  },
+  "skins": [
+    {
+      "name": "Crisis",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507941929051095202/Web_Photo_Editor_3.jpg?ex=6a13bbdc&is=6a126a5c&hm=b76dcac2e04938c2d77b656c36d664979ab15ca2cbd0efc2a8cdc4dc67fc1b58&=&format=webp",
+      "lore": "The Crisis skin is based on the Amazo android from the Arrowverse crossover events. This version of Amazo was created using advanced technology and was later connected to the return of a black-suited Superman during the multiverse crisis."
+    },
 
-  {
-    "name": "DCAU",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507942309952491641/Web_Photo_Editor_4.jpg?ex=6a13bc36&is=6a126ab6&hm=0977094cdd59fc8f52c59bfa0432ee800035d9286dd1dc06a8226620e6b54b25&=&format=webp",
-    "lore": "The DCAU skin is based on Amazo's appearance from the DC Animated Universe, where he evolved into one of the Justice League's most powerful enemies after copying countless superhero abilities."
-  },
+    {
+      "name": "DCAU",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507942309952491641/Web_Photo_Editor_4.jpg?ex=6a13bc36&is=6a126ab6&hm=0977094cdd59fc8f52c59bfa0432ee800035d9286dd1dc06a8226620e6b54b25&=&format=webp",
+      "lore": "The DCAU skin is based on Amazo's appearance from the DC Animated Universe, where he evolved into one of the Justice League's most powerful enemies after copying countless superhero abilities."
+    },
 
-  {
-    "name": "DCAU Returned",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507942071976329338/32ee24090541746396bfe1bd75dc757e.png?ex=6a13bbfe&is=6a126a7e&hm=82ee7ac916b755eb9271977e43b7f171b4cbd88293325ac26ed33603530d7599&=&format=webp&quality=lossless",
-    "lore": "The DCAU Returned skin references Amazo's later appearance in the DC Animated Universe, featuring his iconic golden form after returning with even greater cosmic-level power."
-  }
-],
+    {
+      "name": "DCAU Returned",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507942071976329338/32ee24090541746396bfe1bd75dc757e.png?ex=6a13bbfe&is=6a126a7e&hm=82ee7ac916b755eb9271977e43b7f171b4cbd88293325ac26ed33603530d7599&=&format=webp&quality=lossless",
+      "lore": "The DCAU Returned skin references Amazo's later appearance in the DC Animated Universe, featuring his iconic golden form after returning with even greater cosmic-level power."
+    }
+  ],
 
   "lore": "Amazo is a powerful android from DC Comics capable of copying the powers and abilities of other superheroes. Created by Professor Ivo, Amazo can replicate powers such as super strength, speed, flight, and energy projection, making him one of the most dangerous artificial beings in the DC universe."
 }

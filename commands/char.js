@@ -8,8 +8,87 @@ const {
 const fs = require('fs');
 const path = require('path');
 
+const ATTRIBUTE_EMOJIS = {
+    push: "<:Push:1510718003661111556>",
+    noti: "<:Noticeable:1510718001517822142>",
+    coun: "<:Counter:1510717999458418718>",
+    inv: "<:Vanish:1510717997713719478>",
+    brut: "<:Brutality:1511496907007066262>",
+    area: "<:Area:1510717995914231949>",
+    trans: "<:Transformation:1510717993959559209>",
+    cine: "<:Cinema:1510717991908540466>",
+    rng: "<:Rng:1510717989874307122>",
+    heal: "<:Heal:1510717987794194502>",
+    finish: "<:Finisher:1510717985818673293>",
+    move: "<:Movement:1510717983700422694>",
+    ex: "<:Explode:1510717981510860930>",
+    grab: "<:Grab:1510717979115917454>",
+    mele: "<:Mele:1510717976226300126>",
+    bruta: "<:Brutality:1511496907007066262>",
+
+    range: "<:Range:1511468297445572618>",
+    lr: "<:RangePlus:1511468293700059417>",
+    lrp: "<:RangePlusPlus:1511468289946161192>",
+
+    blind: "<:blindness:1511468288318636083>",
+    charge: "<:charge:1511468284921253908>",
+    tp: "<:Teleport:1511468300830376098>",
+
+    break: "<:Break:1509366823236145162>",
+    ignore: "<:Ignore:1509365768993771570>",
+    block: "<:Block:1509363951874605219>"
+};
+
 function normalize(text) {
     return String(text || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function getAttributeEmojis(attack) {
+    const rawAttributes =
+        attack.attributes ||
+        attack.atributes ||
+        attack.attribute ||
+        attack.atribute ||
+        [];
+
+    const attributes = Array.isArray(rawAttributes)
+        ? rawAttributes
+        : [rawAttributes];
+
+    const emojis = attributes
+        .map(attribute => ATTRIBUTE_EMOJIS[normalize(attribute)])
+        .filter(Boolean);
+
+    return emojis.length
+        ? emojis.join(' ')
+        : 'None';
+}
+
+function getAttackIcon(attack, index) {
+    if (attack.slot !== undefined && attack.slot !== null) {
+        const slot = String(attack.slot).trim().toUpperCase();
+
+        const slotIcons = {
+            "1": "1️⃣",
+            "2": "2️⃣",
+            "3": "3️⃣",
+            "4": "4️⃣",
+            "5": "5️⃣",
+            "E": "🇪"
+        };
+
+        return slotIcons[slot] || slot;
+    }
+
+    const numbers = [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣",
+        "4️⃣",
+        "5️⃣"
+    ];
+
+    return numbers[index] || `${index + 1}`;
 }
 
 function getAllCharacters() {
@@ -250,11 +329,11 @@ function createCharacterEmbed(characterData, action, selectedSkin = null) {
             embed.setDescription('This character does not have any attacks registered yet.');
         } else {
             embed.setDescription(
-                gameplayData.attacks.map(a =>
-                    `**${a.name}**\n` +
+                gameplayData.attacks.map((a, index) =>
+                    `**${getAttackIcon(a, index)} ${a.name}**\n` +
                     `Damage: ${a.damage}\n` +
                     `Cooldown: ${a.cooldown}\n` +
-                    `Shield Break: ${a.shieldBreak ? '🟢' : '🔴'}`
+                    `Attributes: ${getAttributeEmojis(a)}`
                 ).join('\n\n')
             );
         }

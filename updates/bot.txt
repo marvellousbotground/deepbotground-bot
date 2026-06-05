@@ -1,10 +1,26 @@
-Version: 1.0.0
-Last Update: May 23, 2026
-
+Version: 1.0.2
+Last Update: May 29, 2026
 
 Added:
-• Official beta release
-• Search Command
-• Char Command
-• Update command
-• All Free Character Data
+• Roblox OAuth Verification System
+• Roblox Account Linking
+• Verification Dashboard
+• Profile Verification Status
+• Re-Verify Button
+• Unlink Roblox Button
+• Verification Data Management
+• Marvellous BOTground Website
+• Privacy Policy Page
+• Terms of Service Page
+• Custom Domain Support (marvellousbot.win)
+
+Improved:
+• Verification Flow
+• OAuth Security
+• User Profile Integration
+• Website Design and Navigation
+
+Fixed:
+• Various verification system issues
+• OAuth callback handling
+• Account linking reliability

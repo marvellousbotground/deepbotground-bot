@@ -141,17 +141,23 @@ app.get("/roblox/callback", async (req, res) => {
             profiles[discordId] = {};
         }
 
-        profiles[discordId].roblox = {
+profiles[discordId].roblox = {
 
-            verified: true,
+    verified: true,
 
-            userId:
-                robloxUser.sub,
+    id:
+        robloxUser.sub,
 
-            username:
-                robloxUser.preferred_username
-        };
+    userId:
+        robloxUser.sub,
 
+    username:
+        robloxUser.preferred_username,
+
+    displayName:
+        robloxUser.name
+        || robloxUser.preferred_username
+};
         saveProfiles(profiles);
 
         console.log(

@@ -1,11 +1,11 @@
 {
   "name": "Billy Loomis",
 
-"aliases": [
-  "Billy",
-  "Loomis",
-  "Billy loomis"
-],
+  "aliases": [
+    "Billy",
+    "Loomis",
+    "Billy loomis"
+  ],
 
   "origin": [
     "movie"
@@ -14,19 +14,10 @@
   "universe": "Scream",
 
   "tags": {
-
     "type": [
       "villain",
       "slasher",
       "human"
-    ],
-
-    "ability": [
-      "heal",
-      "counter",
-      "finisher",
-      "extra",
-      "shieldbreak"
     ]
   },
 
@@ -43,93 +34,126 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Psycho Slip",
       "damage": 12,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Hidden Piece",
       "damage": 12,
       "cooldown": "10.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lrp",
+        "push"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Bellystab Counter",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "The Voicechanger",
       "damage": 18,
       "cooldown": "15.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "area",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Final Act Finisher",
       "damage": 0,
       "cooldown": "0.65s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "The Reveal",
       "damage": 0,
       "cooldown": "98s",
-      "shieldBreak": false
+      "attributes": [
+        "heal",
+        "trans"
+      ]
     },
 
     {
+      "slot": "1",
       "name": "Psycho Strike",
       "damage": 17,
       "cooldown": "8s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Stu",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946035274584186/1568b9115360af61b1bc8e5dcda259d2.png?ex=6a13bfaf&is=6a126e2f&hm=f9c9b9d69fb6c20e884e17225c7ec59980599e193005c261282576fb541dc394&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "The Stu skin represents Stu Macher, Billy Loomis' best friend and accomplice in the original Scream film. Beneath his goofy and energetic personality, Stu was revealed to be one of the first Ghostface killers."
-  },
+  "skins": [
+    {
+      "name": "Stu",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946035274584186/1568b9115360af61b1bc8e5dcda259d2.png?ex=6a13bfaf&is=6a126e2f&hm=f9c9b9d69fb6c20e884e17225c7ec59980599e193005c261282576fb541dc394&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "The Stu skin represents Stu Macher, Billy Loomis' best friend and accomplice in the original Scream film. Beneath his goofy and energetic personality, Stu was revealed to be one of the first Ghostface killers."
+    },
 
-  {
-    "name": "Jill",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946211678752789/9473ff39002e7656a2187fa3b268603a.png?ex=6a13bfd9&is=6a126e59&hm=d9a4e572d476b4e676ad716af76c6058f9c9d923e462eefcd4fd425ec039d107&=&format=webp&quality=lossless",
-    "lore": "The Jill skin represents Jill Roberts from Scream 4, a manipulative Ghostface killer obsessed with fame and becoming the sole survivor of her own horror story."
-  },
+    {
+      "name": "Jill",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946211678752789/9473ff39002e7656a2187fa3b268603a.png?ex=6a13bfd9&is=6a126e59&hm=d9a4e572d476b4e676ad716af76c6058f9c9d923e462eefcd4fd425ec039d107&=&format=webp&quality=lossless",
+      "lore": "The Jill skin represents Jill Roberts from Scream 4, a manipulative Ghostface killer obsessed with fame and becoming the sole survivor of her own horror story."
+    },
 
-  {
-    "name": "Roman",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946412686704770/9358481c6f45cb0355ec6b47932388d6.png?ex=6a13c009&is=6a126e89&hm=b1944ef73145aea6104ff0160125074c946ee0f05c3bc7203c2386359d7bb781&=&format=webp&quality=lossless",
-    "lore": "The Roman skin represents Roman Bridger from Scream 3, the director secretly responsible for orchestrating many events of the franchise while operating as Ghostface."
-  },
+    {
+      "name": "Roman",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946412686704770/9358481c6f45cb0355ec6b47932388d6.png?ex=6a13c009&is=6a126e89&hm=b1944ef73145aea6104ff0160125074c946ee0f05c3bc7203c2386359d7bb781&=&format=webp&quality=lossless",
+      "lore": "The Roman skin represents Roman Bridger from Scream 3, the director secretly responsible for orchestrating many events of the franchise while operating as Ghostface."
+    },
 
-  {
-    "name": "Amber",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946565975937175/5d16aec5e0b6ebc6cd819f20955e1d5a.png?ex=6a13c02d&is=6a126ead&hm=38d697aacb5bbd831d18f2407f00ca090b76627f2644b6f28ae77f325b14fcd7&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "The Amber skin represents Amber Freeman from Scream 5, a violent Ghostface killer heavily inspired by horror fandom obsession and the original Woodsboro murders."
-  },
+    {
+      "name": "Amber",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946565975937175/5d16aec5e0b6ebc6cd819f20955e1d5a.png?ex=6a13c02d&is=6a126ead&hm=38d697aacb5bbd831d18f2407f00ca090b76627f2644b6f28ae77f325b14fcd7&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "The Amber skin represents Amber Freeman from Scream 5, a violent Ghostface killer heavily inspired by horror fandom obsession and the original Woodsboro murders."
+    },
 
-  {
-    "name": "Ethan",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946722339586098/5a6257f9cd283366f15ba97becf5b21f.png?ex=6a13c052&is=6a126ed2&hm=bf23ccb3bf2f95d90c14359e8a27e1e52890a384f6168ffb3cb49922174988c9&=&format=webp&quality=lossless",
-    "lore": "The Ethan skin represents Ethan Landry from Scream 6, one of the Ghostface killers who participated in a revenge-driven murder spree tied to Richie Kirsch's family.",
-    "dataFile": "ethan.json"
-  },
+    {
+      "name": "Ethan",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507946722339586098/5a6257f9cd283366f15ba97becf5b21f.png?ex=6a13c052&is=6a126ed2&hm=bf23ccb3bf2f95d90c14359e8a27e1e52890a384f6168ffb3cb49922174988c9&=&format=webp&quality=lossless",
+      "lore": "The Ethan skin represents Ethan Landry from Scream 6, one of the Ghostface killers who participated in a revenge-driven murder spree tied to Richie Kirsch's family.",
+      "dataFile": "ethan.json"
+    },
 
-  {
-    "name": "Hallucination",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507947657383907549/Web_Photo_Editor_5.jpg?ex=6a13c131&is=6a126fb1&hm=1befb55d920862100c611ec18388fa4074ea908700a20453dc5dd12d8951ea68&=&format=webp",
-    "lore": "The Hallucination skin represents Billy Loomis appearing as a disturbing hallucination years after his death, showing a more pale, damaged, and unsettling version of himself."
-  }
-],
+    {
+      "name": "Hallucination",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507947657383907549/Web_Photo_Editor_5.jpg?ex=6a13c131&is=6a126fb1&hm=1befb55d920862100c611ec18388fa4074ea908700a20453dc5dd12d8951ea68&=&format=webp",
+      "lore": "The Hallucination skin represents Billy Loomis appearing as a disturbing hallucination years after his death, showing a more pale, damaged, and unsettling version of himself."
+    }
+  ],
 
   "lore": "Billy Loomis is one of the main killers from the Scream horror franchise. Manipulative, violent, and calculating, he hides behind the Ghostface identity to terrorize victims using stealth, psychological intimidation, and brutal knife attacks."
 }

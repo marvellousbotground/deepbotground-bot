@@ -2,9 +2,9 @@
   "name": "Anakin Skywalker",
 
   "aliases": [
-  "ani",
-  "skywalker"
-],
+    "ani",
+    "skywalker"
+  ],
 
   "origin": [
     "movie"
@@ -13,19 +13,9 @@
   "universe": "Star Wars",
 
   "tags": {
-
     "type": [
       "hero",
       "human"
-    ],
-
-    "ability": [
-      "heal",
-      "shieldbreak",
-      "counter",
-      "finisher",
-      "extra",
-      "transformation"
     ]
   },
 
@@ -43,85 +33,122 @@
   "attacks": [
     {
       "name": "Precise Strike",
+      "slot": "1",
       "damage": 12,
       "cooldown": "8.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele",
+        "bruta"
+      ]
     },
 
     {
       "name": "Fallen Angel",
+      "slot": "2",
       "damage": 12,
       "cooldown": "12.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break", 
+        "mele",
+        "range",
+        "move"
+      ]
     },
 
     {
       "name": "Force Grip Counter",
+      "slot": "3",
       "damage": 12,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "coun",
+        "cine"
+      ]
     },
 
     {
       "name": "Force Push",
+      "slot": "4",
       "damage": 13,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "lrp",
+        "push"
+      ]
     },
 
     {
       "name": "Double Saber Finisher",
+      "slot": "5",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
       "name": "Sith Rage",
+      "slot": "E",
       "damage": 0,
       "cooldown": "624s",
-      "shieldBreak": false
+      "attributes": [
+        "trans",
+        "heal"
+      ]
     },
 
     {
       "name": "Retribution",
+      "slot": "4",
       "damage": 0,
       "cooldown": "15.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "grab",
+        "range",
+        "area"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Robed",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943634962616330/87c526946371722da5f06ba08348258a.png?ex=6a13bd72&is=6a126bf2&hm=c63f2458af134ddf3e53bba892a275075cc73f9cea58db9dd2a8f58e5cb12be9&=&format=webp&quality=lossless",
-    "lore": "The Robed skin represents Anakin Skywalker wearing a dark hooded robe during his fall to the dark side, likely around the events after betraying the Jedi Order and confronting Mace Windu."
-  },
+  "skins": [
+    {
+      "name": "Robed",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943634962616330/87c526946371722da5f06ba08348258a.png?ex=6a13bd72&is=6a126bf2&hm=c63f2458af134ddf3e53bba892a275075cc73f9cea58db9dd2a8f58e5cb12be9&=&format=webp&quality=lossless",
+      "lore": "The Robed skin represents Anakin Skywalker wearing a dark hooded robe during his fall to the dark side, likely around the events after betraying the Jedi Order and confronting Mace Windu."
+    },
 
-  {
-    "name": "Episode II",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943830954180678/d08f4a28b2050c1ddf712d2c8a4acaa3.png?ex=6a13bda1&is=6a126c21&hm=7bbf8cda32b078c494a5a6cf3aa9ed85848fe4ff7101854e579d0bf5dba5f703&=&format=webp&quality=lossless",
-    "lore": "The Episode II skin is based on Anakin Skywalker as a Padawan during Attack of the Clones, where he wielded a green lightsaber and trained under Obi-Wan Kenobi."
-  },
+    {
+      "name": "Episode II",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943830954180678/d08f4a28b2050c1ddf712d2c8a4acaa3.png?ex=6a13bda1&is=6a126c21&hm=7bbf8cda32b078c494a5a6cf3aa9ed85848fe4ff7101854e579d0bf5dba5f703&=&format=webp&quality=lossless",
+      "lore": "The Episode II skin is based on Anakin Skywalker as a Padawan during Attack of the Clones, where he wielded a green lightsaber and trained under Obi-Wan Kenobi."
+    },
 
-  {
-    "name": "Bananakin",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943931646840932/da42cf55f656437dd65644fc2af95fc1.png?ex=6a13bdb9&is=6a126c39&hm=e0c2c8e10af08bc8b81c2e017e81d6b97b3f34414b4a8a74f71c15a52487e100&=&format=webp&quality=lossless",
-    "lore": "The Bananakin skin is a joke variant featuring Anakin Skywalker wearing a banana costume while still keeping his Jedi abilities."
-  },
+    {
+      "name": "Bananakin",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943931646840932/da42cf55f656437dd65644fc2af95fc1.png?ex=6a13bdb9&is=6a126c39&hm=e0c2c8e10af08bc8b81c2e017e81d6b97b3f34414b4a8a74f71c15a52487e100&=&format=webp&quality=lossless",
+      "lore": "The Bananakin skin is a joke variant featuring Anakin Skywalker wearing a banana costume while still keeping his Jedi abilities."
+    },
 
-  {
-  "name": "Bird",
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507944885779566732/c03b909d55070eed509bdacc458c9266.png?ex=6a13be9d&is=6a126d1d&hm=53e3e30c7f6a4a59b17ef1da654b16da63c7db3271680e31e39823976b11ed96&=&format=webp&quality=lossless",
-  "lore": "Its Red the main character from the Angry Birds franchise. Known for his bad temper and leadership."
-  },
+    {
+      "name": "Bird",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507944885779566732/c03b909d55070eed509bdacc458c9266.png?ex=6a13be9d&is=6a126d1d&hm=53e3e30c7f6a4a59b17ef1da654b16da63c7db3271680e31e39823976b11ed96&=&format=webp&quality=lossless",
+      "lore": "Its Red the main character from the Angry Birds franchise. Known for his bad temper and leadership."
+    },
 
-  {
-    "name": "Kenobi",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507944216498798612/e7af50444469dc90681b3e3d29b393fd.png?ex=6a13bdfd&is=6a126c7d&hm=b6ff18c9a1cbe10dc87f9aaf43170b71147473fbf09fb73dc36710a9a45a5058&=&format=webp&quality=lossless",
-    "lore": "The Kenobi skin represents Obi-Wan Kenobi from Revenge of the Sith, Anakin's former Jedi Master and the opponent who defeated him on Mustafar."
-  }
-],
+    {
+      "name": "Kenobi",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507944216498798612/e7af50444469dc90681b3e3d29b393fd.png?ex=6a13bdfd&is=6a126c7d&hm=b6ff18c9a1cbe10dc87f9aaf43170b71147473fbf09fb73dc36710a9a45a5058&=&format=webp&quality=lossless",
+      "lore": "The Kenobi skin represents Obi-Wan Kenobi from Revenge of the Sith, Anakin's former Jedi Master and the opponent who defeated him on Mustafar."
+    }
+  ],
 
   "lore": "Anakin Skywalker is a legendary Force user from the Star Wars saga who was once considered the Chosen One destined to bring balance to the Force. A powerful Jedi Knight with exceptional combat skills and Force abilities, his fear and anger eventually led him down the path of the dark side."
 }
