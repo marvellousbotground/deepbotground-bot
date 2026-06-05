@@ -1,12 +1,12 @@
 {
   "name": "Brian Moser",
 
-"aliases": [
-  "Brian",
-  "Moser",
-  "Ice Truck killer",
-  "Brian moser"
-],
+  "aliases": [
+    "Brian",
+    "Moser",
+    "Ice Truck killer",
+    "Brian moser"
+  ],
 
   "origin": [
     "tvseries"
@@ -15,17 +15,10 @@
   "universe": "Dexter",
 
   "tags": {
-
     "type": [
       "villain",
       "slasher",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "shieldbreak"
     ]
   },
 
@@ -42,97 +35,127 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Ankle Breaker",
       "damage": 12,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele",
+        "brutal"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Head Toss",
       "damage": 10,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "ChokeHold Counter",
       "damage": 12,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Surgical Strike",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "UpsideDown Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Born in Blood",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "area",
+        "mele"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Biney",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507959573682847934/319185564264a8c3bac15229dd342e42.png?ex=6a13cc4a&is=6a127aca&hm=b03e6355d51fd1c91505a8308b71c5010ca0ad8d48ed2408234994c132a92362&=&format=webp&quality=lossless",
-    "lore": "The Biney skin represents the moment Dexter finally recognizes Brian Moser as both the Ice Truck Killer and his biological brother. DEXTER (S1 EP12)"
-  },
+  "skins": [
+    {
+      "name": "Biney",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507959573682847934/319185564264a8c3bac15229dd342e42.png?ex=6a13cc4a&is=6a127aca&hm=b03e6355d51fd1c91505a8308b71c5010ca0ad8d48ed2408234994c132a92362&=&format=webp&quality=lossless",
+      "lore": "The Biney skin represents the moment Dexter finally recognizes Brian Moser as both the Ice Truck Killer and his biological brother. DEXTER (S1 EP12)"
+    },
 
-  {
-    "name": "Married",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507959497723871334/d9f4b5b781cc48f9efce0e55d2aefbc3.png?ex=6a13cc38&is=6a127ab8&hm=475cdec59a38de6601f5adf86601f76336f6a2eb197cf0937accf4f4841c2b94&=&format=webp&quality=lossless",
-    "lore": "The Married skin represents Brian Moser when he tricks Debra Morgan with a fake marriage proposal as part of his plan to kill her. DEXTER (S1 EP12)"
-  },
+    {
+      "name": "Married",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507959497723871334/d9f4b5b781cc48f9efce0e55d2aefbc3.png?ex=6a13cc38&is=6a127ab8&hm=475cdec59a38de6601f5adf86601f76336f6a2eb197cf0937accf4f4841c2b94&=&format=webp&quality=lossless",
+      "lore": "The Married skin represents Brian Moser when he tricks Debra Morgan with a fake marriage proposal as part of his plan to kill her. DEXTER (S1 EP12)"
+    },
 
-  {
-    "name": "Casual",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507959776150294638/28d249e83c9d799ba4066e13d467ded8.png?ex=6a13cc7b&is=6a127afb&hm=23c80e478487c2d0456842ba3fb531661e1fbfc00cd2c6d2ff8ecd7ecfd10a1c&=&format=webp&quality=lossless",
-    "lore": "The Casual skin represents the moment Brian Moser enters Dexter's father's house and meets Dexter for the 'first time' without revealing his true identity. DEXTER (S1 EP9)"
-  },
+    {
+      "name": "Casual",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507959776150294638/28d249e83c9d799ba4066e13d467ded8.png?ex=6a13cc7b&is=6a127afb&hm=23c80e478487c2d0456842ba3fb531661e1fbfc00cd2c6d2ff8ecd7ecfd10a1c&=&format=webp&quality=lossless",
+      "lore": "The Casual skin represents the moment Brian Moser enters Dexter's father's house and meets Dexter for the 'first time' without revealing his true identity. DEXTER (S1 EP9)"
+    },
 
-  {
-    "name": "Angel",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507960744270889080/Web_Photo_Editor_6.jpg?ex=6a13cd61&is=6a127be1&hm=c5d0c22308eb392d235d920b08b37f86c4f052cce053d9cee367b645af6b7046&=&format=webp",
-    "lore": "The Angel skin represents Brian Moser attempting to murder Angel Batista while wearing a dark disguise to avoid being identified. DEXTER (S1 EP10)"
-  },
+    {
+      "name": "Angel",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507960744270889080/Web_Photo_Editor_6.jpg?ex=6a13cd61&is=6a127be1&hm=c5d0c22308eb392d235d920b08b37f86c4f052cce053d9cee367b645af6b7046&=&format=webp",
+      "lore": "The Angel skin represents Brian Moser attempting to murder Angel Batista while wearing a dark disguise to avoid being identified. DEXTER (S1 EP10)"
+    },
 
-  {
-    "name": "Original Sin",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507960905369911429/23c3a001463aa32e66c1d52aa554c7ee.png?ex=6a13cd88&is=6a127c08&hm=ece0c013df0cde12e7135261b3811fc63715cc6001a8bdd343595b8c94ac8105&=&format=webp&quality=lossless",
-    "lore": "The Original Sin skin represents Brian Moser's appearance in Dexter: Original Sin during his earliest chronological appearance in the Dexter storyline Dexter O.S. (S1 E2)."
-  },
+    {
+      "name": "Original Sin",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507960905369911429/23c3a001463aa32e66c1d52aa554c7ee.png?ex=6a13cd88&is=6a127c08&hm=ece0c013df0cde12e7135261b3811fc63715cc6001a8bdd343595b8c94ac8105&=&format=webp&quality=lossless",
+      "lore": "The Original Sin skin represents Brian Moser's appearance in Dexter: Original Sin during his earliest chronological appearance in the Dexter storyline Dexter O.S. (S1 E2)."
+    },
 
-  {
-    "name": "Father Knows Best",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507961420225052732/7fbcfc89fd8f667f769890674d4840c7.png?ex=6a13ce03&is=6a127c83&hm=dd45a095ff1486ad1a677fd5089482b9a2a1f980e7470e6b1335a0775bef1865&=&format=webp&quality=lossless",
-    "lore": "The Father Knows Best skin represents Brian Moser dancing to Dexter's deceased father's favorite song. DEXTER (S1 EP9)"
-  },
+    {
+      "name": "Father Knows Best",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507961420225052732/7fbcfc89fd8f667f769890674d4840c7.png?ex=6a13ce03&is=6a127c83&hm=dd45a095ff1486ad1a677fd5089482b9a2a1f980e7470e6b1335a0775bef1865&=&format=webp&quality=lossless",
+      "lore": "The Father Knows Best skin represents Brian Moser dancing to Dexter's deceased father's favorite song. DEXTER (S1 EP9)"
+    },
 
-  {
-    "name": "Hallucination",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507961815219437648/9ffd853dcfb35aaded1ef43a4554c627.png?ex=6a13ce61&is=6a127ce1&hm=4839c6500d2e0160d4a22aab5c8ef7e6170a936bfa8f04a67b9afc7a7f0b9175&=&format=webp&quality=lossless",
-    "lore": "The Hallucination skin represents Dexter hallucinating Brian Moser in Dexter: Resurrection after killing the dwarf man."
-  },
+    {
+      "name": "Hallucination",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507961815219437648/9ffd853dcfb35aaded1ef43a4554c627.png?ex=6a13ce61&is=6a127ce1&hm=4839c6500d2e0160d4a22aab5c8ef7e6170a936bfa8f04a67b9afc7a7f0b9175&=&format=webp&quality=lossless",
+      "lore": "The Hallucination skin represents Dexter hallucinating Brian Moser in Dexter: Resurrection after killing the dwarf man."
+    },
 
-  {
-    "name": "Nebreska",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507961918600515654/b726a54c87cfa4417cae8886d98c5aee.png?ex=6a13ce79&is=6a127cf9&hm=9bfe2aafc90d9feed6586f1550f3d25ae009d07e0a18bce4851568b22d4bb17a&=&format=webp&quality=lossless",
-    "lore": "The Nebreska skin represents Dexter hallucinating Brian Moser as his 'Dark Passenger'. DEXTER (S6 EP7)"
-  }
-],
+    {
+      "name": "Nebreska",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507961918600515654/b726a54c87cfa4417cae8886d98c5aee.png?ex=6a13ce79&is=6a127cf9&hm=9bfe2aafc90d9feed6586f1550f3d25ae009d07e0a18bce4851568b22d4bb17a&=&format=webp&quality=lossless",
+      "lore": "The Nebreska skin represents Dexter hallucinating Brian Moser as his 'Dark Passenger'. DEXTER (S6 EP7)"
+    }
+  ],
 
   "lore": "Brian Moser, also known as the Ice Truck Killer, is a serial killer from the television series Dexter. As Dexter Morgan’s biological brother, Brian is intelligent, manipulative, and deeply disturbed, using psychological games and brutal murders to reconnect with Dexter through their traumatic past."
 }
