@@ -14,21 +14,10 @@
   "universe": "Creepypastas",
 
   "tags": {
-
     "type": [
       "villain",
       "slasher",
       "human"
-    ],
-
-    "ability": [
-      "finisher",
-      "counter",
-      "heal",
-      "shieldbreak",
-      "ranged",
-      "teleportation",
-      "extra"
     ]
   },
 
@@ -45,80 +34,119 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Serial Slicer",
       "damage": 18,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Knife Toss",
       "damage": 10,
       "cooldown": "12s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lrp",
+        "tp"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Drill Counter",
       "damage": 12,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Bedtime Footsteps",
       "damage": 10,
       "cooldown": "16s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "inv",
+        "blind",
+        "push",
+        "move"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Carving Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "charge",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Bloodlust",
       "damage": 0,
-      "cooldown": "107",
-      "shieldBreak": false
+      "cooldown": "107s",
+      "attributes": [
+        "heal",
+        "cine",
+        "trans"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "A Million Slashes",
       "damage": 30,
-      "cooldown": "17",
-      "shieldBreak": false
+      "cooldown": "17s",
+      "attributes": [
+        "ignore",
+        "mele",
+        "area",
+        "push"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Jack",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202703451590686/d04f3d74170004b7b3f739af5994fdfd.png?ex=6a14aeb9&is=6a135d39&hm=3bcd6a72d8cc8ac21c241fc089aad70597b697b16105e0ff4f3c476e10c48e90&=&format=webp&quality=lossless",
-    "lore": "The Jack skin references Eyeless Jack, the supernatural creepypasta killer known for his black eyes, blue mask, and gruesome attacks on victims."
-  },
+  "skins": [
+    {
+      "name": "Jack",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202703451590686/d04f3d74170004b7b3f739af5994fdfd.png?ex=6a14aeb9&is=6a135d39&hm=3bcd6a72d8cc8ac21c241fc089aad70597b697b16105e0ff4f3c476e10c48e90&=&format=webp&quality=lossless",
+      "lore": "The Jack skin references Eyeless Jack, the supernatural creepypasta killer known for his black eyes, blue mask, and gruesome attacks on victims."
+    },
 
-  {
-    "name": "This man",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202778445484113/42439406ea3b185e2af7cbab66ac4260.png?ex=6a14aecb&is=6a135d4b&hm=f9e2d57ff4881261b7d722848218bfbe7914bfca282eb39810ea953972c2eaa4&=&format=webp&quality=lossless",
-    "lore": "The This man skin references the internet urban legend 'Have you ever dreamed this man?', based on the mysterious face supposedly seen by thousands of people in their dreams."
-  },
+    {
+      "name": "This man",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202778445484113/42439406ea3b185e2af7cbab66ac4260.png?ex=6a14aecb&is=6a135d4b&hm=f9e2d57ff4881261b7d722848218bfbe7914bfca282eb39810ea953972c2eaa4&=&format=webp&quality=lossless",
+      "lore": "The This man skin references the internet urban legend 'Have you ever dreamed this man?', based on the mysterious face supposedly seen by thousands of people in their dreams."
+    },
 
-  {
-    "name": "Jane",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202922251653120/99878dc9540937db01bdf5967874c3d2.png?ex=6a14aeed&is=6a135d6d&hm=6d4455f046bb18c8c3f32a84998464055c8b2341ba309cbfb77d4f343aa43b35&=&format=webp&quality=lossless",
-    "lore": "The Jane skin references Jane the Killer, the creepypasta character created as a rival and counterpart to Jeff the Killer."
-  },
+    {
+      "name": "Jane",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202922251653120/99878dc9540937db01bdf5967874c3d2.png?ex=6a14aeed&is=6a135d6d&hm=6d4455f046bb18c8c3f32a84998464055c8b2341ba309cbfb77d4f343aa43b35&=&format=webp&quality=lossless",
+      "lore": "The Jane skin references Jane the Killer, the creepypasta character created as a rival and counterpart to Jeff the Killer."
+    },
 
-  {
-    "name": "Sleep",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508203147456151734/4969100e9329675adb6f71820335706f.png?ex=6a14af23&is=6a135da3&hm=ed4df5963054bd3b3d2f6f765ff5b4aa4075536303d6664a21440755b56b931e&=&format=webp&quality=lossless",
-    "lore": "The Sleep skin references the Russian Sleep Experiment creepypasta, the story about test subjects driven insane after being forced to stay awake for extreme periods of time."
-  }
-],
+    {
+      "name": "Sleep",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508203147456151734/4969100e9329675adb6f71820335706f.png?ex=6a14af23&is=6a135da3&hm=ed4df5963054bd3b3d2f6f765ff5b4aa4075536303d6664a21440755b56b931e&=&format=webp&quality=lossless",
+      "lore": "The Sleep skin references the Russian Sleep Experiment creepypasta, the story about test subjects driven insane after being forced to stay awake for extreme periods of time."
+    }
+  ],
 
   "lore": "Jeff the Killer is one of the most well-known creepypasta characters. Recognized by his pale face, carved smile, and phrase 'Go to sleep', he is portrayed as a violent slasher who stalks victims with disturbing obsession and brutality."
 }

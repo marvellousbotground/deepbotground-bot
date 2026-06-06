@@ -1,14 +1,14 @@
 {
   "name": "In-Ho",
 
-"aliases": [
-  "in ho",
-  "001",
-  "hwang inho",
-  "hwang",
-  "frontman",
-  "front man"
-],
+  "aliases": [
+    "in ho",
+    "001",
+    "hwang inho",
+    "hwang",
+    "frontman",
+    "front man"
+  ],
 
   "origin": [
     "tvseries"
@@ -17,19 +17,9 @@
   "universe": "Squid Game",
 
   "tags": {
-
     "type": [
       "villain",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "shieldbreak",
-      "ranged",
-      "finisher",
-      "extra",
-      "passive"
     ]
   },
 
@@ -46,97 +36,129 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Mingle Shove",
       "damage": 11,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "grab",
+        "push",
+        "mele",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Spinning Tops",
       "damage": 20,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Mealtime Counter",
       "damage": 24,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Mp5 Slaughter",
       "damage": 9,
       "cooldown": "19s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Betraying Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Lights Out",
       "damage": 0,
       "cooldown": "38s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "move",
+        "blind",
+        "vanish"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Front Man",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012567715643473/d67a8983fa4ad127de6bf53344369eff.png?ex=6a13fda5&is=6a12ac25&hm=fb4151571d8e0a81bb30bfb268eb23f8f649ce75ad4ce0733f37f2a3089d05fe&=&format=webp&quality=lossless",
-    "lore": "The Front Man skin represents Hwang In-Ho wearing the iconic black mask and coat while acting as the overseer of the Squid Games."
-  },
+  "skins": [
+    {
+      "name": "Front Man",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012567715643473/d67a8983fa4ad127de6bf53344369eff.png?ex=6a13fda5&is=6a12ac25&hm=fb4151571d8e0a81bb30bfb268eb23f8f649ce75ad4ce0733f37f2a3089d05fe&=&format=webp&quality=lossless",
+      "lore": "The Front Man skin represents Hwang In-Ho wearing the iconic black mask and coat while acting as the overseer of the Squid Games."
+    },
 
-  {
-    "name": "132",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012828458750003/Web_Photo_Editor_16.jpg?ex=6a13fde3&is=6a12ac63&hm=129b5a4689dbe7dbba0252ef1a83790064974562a918919f1303e6e1cdee2db1&=&format=webp",
-    "lore": "The 132 skin represents In-Ho during the time he participated in the Squid Games as Player 132 before eventually becoming the Front Man after winning the competition."
-  },
+    {
+      "name": "132",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012828458750003/Web_Photo_Editor_16.jpg?ex=6a13fde3&is=6a12ac63&hm=129b5a4689dbe7dbba0252ef1a83790064974562a918919f1303e6e1cdee2db1&=&format=webp",
+      "lore": "The 132 skin represents In-Ho during the time he participated in the Squid Games as Player 132 before eventually becoming the Front Man after winning the competition."
+    },
 
-  {
-    "name": "Thanos",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012952866000916/f29c58d9a794d01c26752e4f22f54ffa.png?ex=6a13fe01&is=6a12ac81&hm=850e1dfc577bb9f9c9ee4084089c61a63200c175e4de5dde7af0f0276a7bcfa2&=&format=webp&quality=lossless",
-    "lore": "The Thanos skin references the rapper contestant from Squid Game known for his chaotic personality, drug addiction, and aggressive behavior during the games."
-  },
+    {
+      "name": "Thanos",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012952866000916/f29c58d9a794d01c26752e4f22f54ffa.png?ex=6a13fe01&is=6a12ac81&hm=850e1dfc577bb9f9c9ee4084089c61a63200c175e4de5dde7af0f0276a7bcfa2&=&format=webp&quality=lossless",
+      "lore": "The Thanos skin references the rapper contestant from Squid Game known for his chaotic personality, drug addiction, and aggressive behavior during the games."
+    },
 
-  {
-    "name": "120",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013098911531008/6f8d6d6ec9b52f9742b942ab887e880d.png?ex=6a13fe24&is=6a12aca4&hm=fd7354df8eb69511ce921c36cd70a3ffe14e98d6af1c5a503939dd14e446bbab&=&format=webp&quality=lossless",
-    "lore": "The 120 skin references the transgender former soldier contestant from Squid Game Season 2 who entered the games seeking a new future after leaving the military."
-  },
+    {
+      "name": "120",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013098911531008/6f8d6d6ec9b52f9742b942ab887e880d.png?ex=6a13fe24&is=6a12aca4&hm=fd7354df8eb69511ce921c36cd70a3ffe14e98d6af1c5a503939dd14e446bbab&=&format=webp&quality=lossless",
+      "lore": "The 120 skin references the transgender former soldier contestant from Squid Game Season 2 who entered the games seeking a new future after leaving the military."
+    },
 
-  {
-    "name": "Kang No-eul",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013183422435480/17515b9be66fa971edeb8a2cf052f848.png?ex=6a13fe38&is=6a12acb8&hm=adf1dfb9fdc5edd033a079fc70051e853838cb04832c64ffba2fc6c6caedc55a&=&format=webp&quality=lossless",
-    "lore": "The Kang No-eul skin references the masked guard from Squid Game Season 2 who secretly tries to save a player that is the father of a sick child."
-  },
+    {
+      "name": "Kang No-eul",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013183422435480/17515b9be66fa971edeb8a2cf052f848.png?ex=6a13fe38&is=6a12acb8&hm=adf1dfb9fdc5edd033a079fc70051e853838cb04832c64ffba2fc6c6caedc55a&=&format=webp&quality=lossless",
+      "lore": "The Kang No-eul skin references the masked guard from Squid Game Season 2 who secretly tries to save a player that is the father of a sick child."
+    },
 
-  {
-    "name": "Seong Gi-hun",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013285264592998/352548a36810e88c529e5f25fb8e7f77.png?ex=6a13fe50&is=6a12acd0&hm=f21e3e8ccd1dcdd0884525b5804225f00420c230bafde6534098d25902c0ae0d&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "The Seong Gi-hun skin references the main protagonist of Squid Game, the player who survived the original games and later returned determined to stop them."
-  },
+    {
+      "name": "Seong Gi-hun",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013285264592998/352548a36810e88c529e5f25fb8e7f77.png?ex=6a13fe50&is=6a12acd0&hm=f21e3e8ccd1dcdd0884525b5804225f00420c230bafde6534098d25902c0ae0d&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "The Seong Gi-hun skin references the main protagonist of Squid Game, the player who survived the original games and later returned determined to stop them."
+    },
 
-  {
-    "name": "100",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013381284790312/b7d2312354d83a458fe7f243336f4576.png?ex=6a13fe67&is=6a12ace7&hm=76f12d20ed3ba6e5ca91626207a7a00dd56b29bad9e8a3667df808299dc5b0ff&=&format=webp&quality=lossless&width=331&height=350",
-    "lore": "The 100 skin references Player 100 from Squid Game Season 2, an antagonistic contestant known for constantly demanding one more game during the group votes."
-  },
+    {
+      "name": "100",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013381284790312/b7d2312354d83a458fe7f243336f4576.png?ex=6a13fe67&is=6a12ace7&hm=76f12d20ed3ba6e5ca91626207a7a00dd56b29bad9e8a3667df808299dc5b0ff&=&format=webp&quality=lossless&width=331&height=350",
+      "lore": "The 100 skin references Player 100 from Squid Game Season 2, an antagonistic contestant known for constantly demanding one more game during the group votes."
+    },
 
-  {
-    "name": "We are not horses",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013490147819591/7aecaec7bfa3c356ad57cdd2ea6b1131.png?ex=6a13fe81&is=6a12ad01&hm=d8b88d6da1aa7762fffc01b7c53fdad5be926527ab2fbafa88c00315f57d5379&=&format=webp&quality=lossless",
-    "lore": "The We are not horses skin references Seong Gi-hun wearing an elegant suit during the Squid Game Season 2 finale after delivering his speech about the players not being horses."
-  }
-],
+    {
+      "name": "We are not horses",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013490147819591/7aecaec7bfa3c356ad57cdd2ea6b1131.png?ex=6a13fe81&is=6a12ad01&hm=d8b88d6da1aa7762fffc01b7c53fdad5be926527ab2fbafa88c00315f57d5379&=&format=webp&quality=lossless",
+      "lore": "The We are not horses skin references Seong Gi-hun wearing an elegant suit during the Squid Game Season 2 finale after delivering his speech about the players not being horses."
+    }
+  ],
 
   "lore": "Hwang In-Ho, also known as the Front Man, is a major character from Squid Game. As the mysterious overseer of the deadly games, he commands the masked guards with authority and ruthless efficiency while hiding a tragic past connected to the competition itself."
 }

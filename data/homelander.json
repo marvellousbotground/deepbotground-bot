@@ -2,8 +2,8 @@
   "name": "Homelander",
 
   "aliases": [
-  "Home lander"
-],
+    "Home lander"
+  ],
 
   "origin": [
     "comic",
@@ -13,19 +13,9 @@
   "universe": "The Boys",
 
   "tags": {
-
     "type": [
       "villain",
       "superhuman"
-    ],
-
-    "ability": [
-      "heal",
-      "shieldbreak",
-      "counter",
-      "ranged",
-      "finisher",
-      "passive"
     ]
   },
 
@@ -42,67 +32,95 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Heat Vision",
       "damage": 12,
       "cooldown": "13.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lr",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Fearsome Clap",
       "damage": 10,
       "cooldown": "19s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Alpha Counter",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Eagle Strike",
       "damage": 10,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "move",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Betrayal Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "V1 Intake",
       "damage": 0,
       "cooldown": "84s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Disguise",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190220317884567/0942586fa7ad5f514be01651de94dab5.png?ex=6a14a319&is=6a135199&hm=60c8ffa834448b7995582d86f78aff05f7ae25aa726a3ff5343944b52a414942&=&format=webp&quality=lossless",
-    "lore": "The Disguise skin represents Homelander wearing civilian clothing while secretly visiting Sister Sage to ask for advice before recruiting her into The Seven."
-  },
+  "skins": [
+    {
+      "name": "Disguise",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190220317884567/0942586fa7ad5f514be01651de94dab5.png?ex=6a14a319&is=6a135199&hm=60c8ffa834448b7995582d86f78aff05f7ae25aa726a3ff5343944b52a414942&=&format=webp&quality=lossless",
+      "lore": "The Disguise skin represents Homelander wearing civilian clothing while secretly visiting Sister Sage to ask for advice before recruiting her into The Seven."
+    },
 
-  {
-    "name": "Turkish",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190439780651058/Web_Photo_Editor_20.jpg?ex=6a14a34d&is=6a1351cd&hm=2f58b5be542e30e3831db1c93ddff26795a4059d88c7afc45f1c71cd683caa59&=&format=webp",
-    "lore": "The Turkish skin references a meme version of Homelander wearing a Turkish-inspired outfit that became popular online."
-  },
+    {
+      "name": "Turkish",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190439780651058/Web_Photo_Editor_20.jpg?ex=6a14a34d&is=6a1351cd&hm=2f58b5be542e30e3831db1c93ddff26795a4059d88c7afc45f1c71cd683caa59&=&format=webp",
+      "lore": "The Turkish skin references a meme version of Homelander wearing a Turkish-inspired outfit that became popular online."
+    },
 
-  {
-    "name": "Brightburn",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190676855296192/ed96f75538819380496adbf43842a825.png?ex=6a14a386&is=6a135206&hm=7236b0f28e47963c8d4195940a7c6597e2392a8a5fa7233c61bc3bf87055b21e&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "The Brightburn skin references the main character from the movie Brightburn, a dark and violent reinterpretation of the Superman concept."
-  }
-],
+    {
+      "name": "Brightburn",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190676855296192/ed96f75538819380496adbf43842a825.png?ex=6a14a386&is=6a135206&hm=7236b0f28e47963c8d4195940a7c6597e2392a8a5fa7233c61bc3bf87055b21e&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "The Brightburn skin references the main character from the movie Brightburn, a dark and violent reinterpretation of the Superman concept."
+    }
+  ],
 
-  "lore": "Homelander is the leader of The Seven from The Boys franchise. Possessing immense strength, flight, heat vision, and near invulnerability, he presents himself as humanity’s greatest hero while hiding a narcissistic and deeply unstable personality."
+  "lore": "Homelander is the leader of The Seven from The Boys franchise. Possessing immense strength, flight, heat vision, and near invulnerability, he presents himself as humanity's greatest hero while hiding a narcissistic and deeply unstable personality."
 }

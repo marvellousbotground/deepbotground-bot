@@ -14,18 +14,9 @@
   "universe": "Stranger Things",
 
   "tags": {
-
     "type": [
       "hero",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "ranged",
-      "shieldbreak"
     ]
   },
 
@@ -42,59 +33,100 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Homerun",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Vine Slammer",
       "damage": 16,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "King Steve Counter",
       "damage": 15,
       "cooldown": "17s",
-      "shieldBreak": true
+      "attributes": [
+        "block",
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Stealthy Ninja",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "break",
+        "move",
+        "push",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Melt With You Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Firework Throw",
       "damage": 15,
       "cooldown": "31s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lr",
+        "area"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Acid Throw",
       "damage": 15,
       "cooldown": "31s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range",
+        "area"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Molotov Throw",
       "damage": 8,
       "cooldown": "31s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "range",
+        "area"
+      ]
     }
   ],
 
@@ -109,5 +141,5 @@
     "Lake"
   ],
 
-  "lore": "Steve Harrington is a major character from Stranger Things. Initially introduced as a popular high school student, he eventually became one of the group’s bravest protectors, known for fighting creatures from the Upside Down with his iconic nail bat and caring deeply for his friends."
+  "lore": "Steve Harrington is a major character from Stranger Things. Initially introduced as a popular high school student, he eventually became one of the group's bravest protectors, known for fighting creatures from the Upside Down with his iconic nail bat and caring deeply for his friends."
 }

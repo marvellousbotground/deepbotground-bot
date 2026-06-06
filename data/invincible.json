@@ -15,18 +15,9 @@
   "universe": "Invincible",
 
   "tags": {
-
     "type": [
       "hero",
       "superhuman"
-    ],
-
-    "ability": [
-      "flight",
-      "shieldbreak",
-      "counter",
-      "finisher",
-      "passive"
     ]
   },
 
@@ -43,45 +34,77 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Invincible Swipes",
       "damage": 8,
       "cooldown": "8.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "The Backhand",
       "damage": 12,
       "cooldown": "16s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Slamdown Counter",
       "damage": 12,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
-      "name": "Aerial Strike",
+      "slot": "4",
+      "name": "Drill Uppercut",
       "damage": 24,
       "cooldown": "16s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "noti",
+        "push",
+        "tp",
+        "area",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Stronger Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Flight",
       "damage": 10,
       "cooldown": "32s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push"
+      ]
     }
   ],
 
@@ -111,5 +134,5 @@
     }
   ],
 
-  "lore": "Invincible, also known as Mark Grayson, is the son of Omni-Man from the comic and animated series Invincible. After inheriting Viltrumite powers, he became one of Earth’s strongest heroes while struggling to balance hero life, family, and the brutal truth about the Viltrum Empire."
+  "lore": "Invincible, also known as Mark Grayson, is the son of Omni-Man from the comic and animated series Invincible. After inheriting Viltrumite powers, he became one of Earth's strongest heroes while struggling to balance hero life, family, and the brutal truth about the Viltrum Empire."
 }

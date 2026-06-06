@@ -2,9 +2,9 @@
   "name": "Freddy Fazbear",
 
   "aliases": [
-  "freddy",
-  "freddy fazbear"
-],
+    "freddy",
+    "freddy fazbear"
+  ],
 
   "origin": [
     "gaming"
@@ -13,17 +13,9 @@
   "universe": "FNAF",
 
   "tags": {
-
     "type": [
       "villain",
       "robot"
-    ],
-
-    "ability": [
-      "shieldbreak",
-      "counter",
-      "finisher",
-      "teleportation"
     ]
   },
 
@@ -40,55 +32,78 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Mic Slam",
       "damage": 15,
       "cooldown": "7s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Leap",
       "damage": 15,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "87 Counter",
       "damage": 10,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "IT'S ME",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "tp",
+        "lr"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Foxy",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508008661467791390/e1d42c003b3b7e5831775f9eaaf8ca22.png?ex=6a13fa02&is=6a12a882&hm=7de278b3f49c932a47427d41abe1316ae1179efeb87720551fe8fa630613927f&=&format=webp&quality=lossless",
-    "lore": "The Foxy skin references Foxy the Pirate Fox from Five Nights at Freddy's, one of the original animatronics known for sprinting out of Pirate Cove and aggressively attacking the night guard.",
-    "dataFile": "foxy.json"
-  },
+  "skins": [
+    {
+      "name": "Foxy",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508008661467791390/e1d42c003b3b7e5831775f9eaaf8ca22.png?ex=6a13fa02&is=6a12a882&hm=7de278b3f49c932a47427d41abe1316ae1179efeb87720551fe8fa630613927f&=&format=webp&quality=lossless",
+      "lore": "The Foxy skin references Foxy the Pirate Fox from Five Nights at Freddy's, one of the original animatronics known for sprinting out of Pirate Cove and aggressively attacking the night guard.",
+      "dataFile": "foxy.json"
+    },
 
-  {
-    "name": "Chica",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508010383577972860/fe5db37581ebdaa4bca13ea633b2bf0d.png?ex=6a13fb9c&is=6a12aa1c&hm=2fdf41a0bbf045bb80a2c451c5c2c7713e31fccb223288d9007fcc668152aab6&=&format=webp&quality=lossless",
-    "lore": "The Chica skin references Toy Chica from Five Nights at Freddy's, the redesigned toy animatronic introduced in Five Nights at Freddy's 2."
-  }
-],
+    {
+      "name": "Chica",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508010383577972860/fe5db37581ebdaa4bca13ea633b2bf0d.png?ex=6a13fb9c&is=6a12aa1c&hm=2fdf41a0bbf045bb80a2c451c5c2c7713e31fccb223288d9007fcc668152aab6&=&format=webp&quality=lossless",
+      "lore": "The Chica skin references Toy Chica from Five Nights at Freddy's, the redesigned toy animatronic introduced in Five Nights at Freddy's 2."
+    }
+  ],
 
-  "lore": "Freddy Fazbear is the mascot animatronic of the Five Nights at Freddy’s franchise. Performing as the lead singer of Freddy Fazbear’s Pizza by day, he becomes a terrifying haunted animatronic at night, known for his eerie presence, mechanical strength, and deadly jumpscares."
+  "lore": "Freddy Fazbear is the mascot animatronic of the Five Nights at Freddy's franchise. Performing as the lead singer of Freddy Fazbear's Pizza by day, he becomes a terrifying haunted animatronic at night, known for his eerie presence, mechanical strength, and deadly jumpscares."
 }
