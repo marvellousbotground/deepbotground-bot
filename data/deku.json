@@ -1,11 +1,11 @@
 {
   "name": "Deku",
 
-"aliases": [
-  "izuku",
-  "midoriya",
-  "izuku midoriya"
-],
+  "aliases": [
+    "izuku",
+    "midoriya",
+    "izuku midoriya"
+  ],
 
   "origin": [
     "anime"
@@ -14,18 +14,9 @@
   "universe": "My Hero Academia",
 
   "tags": {
-
     "type": [
       "hero",
       "human"
-    ],
-
-    "ability": [
-      "shieldbreak",
-      "counter",
-      "finisher",
-      "extra",
-      "ranged"
     ]
   },
 
@@ -42,45 +33,76 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Strong Punch",
       "damage": 12,
       "cooldown": "9s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Delaware Smash",
       "damage": 6,
       "cooldown": "9.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Wyoming Counter",
       "damage": 24,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Smoke Blinding",
       "damage": 5,
       "cooldown": "13s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "blind",
+        "area",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "1 Million Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Backwhip Swing",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "mele"
+      ]
     }
   ],
 
