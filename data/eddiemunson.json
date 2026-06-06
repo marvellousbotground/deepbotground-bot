@@ -2,9 +2,9 @@
   "name": "Eddie Munson",
 
   "aliases": [
-  "Eddie",
-  "eddie munson"
-],
+    "Eddie",
+    "eddie munson"
+  ],
 
   "origin": [
     "tvseries"
@@ -13,17 +13,9 @@
   "universe": "Stranger Things",
 
   "tags": {
-
     "type": [
       "hero",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "shieldbreak",
-      "finisher",
-      "extra"
     ]
   },
 
@@ -40,45 +32,75 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Hellfire Skewer",
       "damage": 24,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Dirty Mattress",
       "damage": 6,
       "cooldown": "12s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "push",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Trashcan Spike Counter",
       "damage": 15,
       "cooldown": "17s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Hellride Escape",
       "damage": 15,
       "cooldown": "15s",
-      "shieldBreak": false
+      "attributes": [
+        "move",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Corrupted Hellfire Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Master of Puppets",
       "damage": 40,
       "cooldown": "35.5s",
-      "shieldBreak": false
+      "attributes": [
+        "break",
+        "range",
+        "area"
+      ]
     }
   ],
 

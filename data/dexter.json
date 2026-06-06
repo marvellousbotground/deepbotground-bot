@@ -1,12 +1,12 @@
 {
   "name": "Dexter Morgan",
 
-"aliases": [
-  "Dexter Morgan",
-  "morgan",
-  "bay harbor butcher",
-  "DexterMorgan"
-],
+  "aliases": [
+    "Dexter Morgan",
+    "morgan",
+    "bay harbor butcher",
+    "DexterMorgan"
+  ],
 
   "origin": [
     "tvseries"
@@ -15,17 +15,9 @@
   "universe": "Dexter",
 
   "tags": {
-
     "type": [
       "antihero",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "shieldbreak",
-      "finisher",
-      "extra"
     ]
   },
 
@@ -42,98 +34,132 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Liver Blows",
       "damage": 14,
       "cooldown": "11s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Harpoon Pierce",
       "damage": 8,
       "cooldown": "21s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele",
+        "move"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Lab Geek Counter",
       "damage": 15,
       "cooldown": "22s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Garrote Hold",
       "damage": 11,
       "cooldown": "20s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "grab",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "The Ritual Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "The Needle",
       "damage": 0,
       "cooldown": "40s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "cine",
+        "grab",
+        "blind"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Trashbag Throw",
       "damage": 0,
       "cooldown": "3s",
-      "shieldBreak": false
+      "attributes": [
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Mouse Ears",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999815714476113/89b45e1ec228450a2244b2a378f02fbb.png?ex=6a15ec05&is=6a149a85&hm=245fda7918560ec8d42e817e9f825d97d6abb4b7d7c16416b0d5fc2b711d220a&=&format=webp&quality=lossless",
-    "lore": "Dexter Morgan wears the Mickey Mouse hat gifted to him by Rita's children shortly after Rita's death, showing one of the rare moments where he tries to reconnect with his fractured family life. DEXTER (T5 EP1)"
-  },
+  "skins": [
+    {
+      "name": "Mouse Ears",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999815714476113/89b45e1ec228450a2244b2a378f02fbb.png?ex=6a15ec05&is=6a149a85&hm=245fda7918560ec8d42e817e9f825d97d6abb4b7d7c16416b0d5fc2b711d220a&=&format=webp&quality=lossless",
+      "lore": "Dexter Morgan wears the Mickey Mouse hat gifted to him by Rita's children shortly after Rita's death, showing one of the rare moments where he tries to reconnect with his fractured family life. DEXTER (T5 EP1)"
+    },
 
-  {
-    "name": "Spatter Analyst",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816003747940/604adbe9b3b6c4426a088ddc5e7d46b1.png?ex=6a15ec05&is=6a149a85&hm=df1a2b6559eae758d7a9df7bc799f46082a19000f10025a783ce3e237924f823&=&format=webp&quality=lossless",
-    "lore": "Dexter appears in the professional outfit he regularly uses while working as Miami Metro's blood spatter analyst throughout the original series."
-  },
+    {
+      "name": "Spatter Analyst",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816003747940/604adbe9b3b6c4426a088ddc5e7d46b1.png?ex=6a15ec05&is=6a149a85&hm=df1a2b6559eae758d7a9df7bc799f46082a19000f10025a783ce3e237924f823&=&format=webp&quality=lossless",
+      "lore": "Dexter appears in the professional outfit he regularly uses while working as Miami Metro's blood spatter analyst throughout the original series."
+    },
 
-  {
-    "name": "Dark Defender",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816301547570/Web_Photo_Editor_12.jpg?ex=6a15ec05&is=6a149a85&hm=d47d8ff61d62c2b29670f7c9e07525cc7640261c97e8bdc7dadbd56212b6dbb6&=&format=webp",
-    "lore": "The Dark Defender is a fictional comic book vigilante inspired by the Bay Harbor Butcher case after Dexter's murders become public knowledge. DEXTER (T2 EP5)"
-  },
+    {
+      "name": "Dark Defender",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816301547570/Web_Photo_Editor_12.jpg?ex=6a15ec05&is=6a149a85&hm=d47d8ff61d62c2b29670f7c9e07525cc7640261c97e8bdc7dadbd56212b6dbb6&=&format=webp",
+      "lore": "The Dark Defender is a fictional comic book vigilante inspired by the Bay Harbor Butcher case after Dexter's murders become public knowledge. DEXTER (T2 EP5)"
+    },
 
-  {
-    "name": "New Blood",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816624640061/Web_Photo_Editor_13.jpg?ex=6a15ec05&is=6a149a85&hm=cafb81059f3d6ce3c92a5056740e9901e8fd3eb582100faf570172e18a877990&=&format=webp",
-    "lore": "After years in hiding, Dexter Morgan returns to killing while living under the identity of Jim Lindsay in Dexter: New Blood."
-  },
+    {
+      "name": "New Blood",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816624640061/Web_Photo_Editor_13.jpg?ex=6a15ec05&is=6a149a85&hm=cafb81059f3d6ce3c92a5056740e9901e8fd3eb582100faf570172e18a877990&=&format=webp",
+      "lore": "After years in hiding, Dexter Morgan returns to killing while living under the identity of Jim Lindsay in Dexter: New Blood."
+    },
 
-  {
-    "name": "Original Sin",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816993476669/3b64bc0314de186be7479470354308ae.png?ex=6a15ec05&is=6a149a85&hm=c8df7c0008cd67849e5d1c723b0006da89502cf93b3811147aac99da8b9ff92f&=&format=webp&quality=lossless",
-    "lore": "A younger Dexter Morgan during his early years learning forensic work and beginning his first murders under Harry's code. Dexter: Original Sin"
-  },
+    {
+      "name": "Original Sin",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816993476669/3b64bc0314de186be7479470354308ae.png?ex=6a15ec05&is=6a149a85&hm=c8df7c0008cd67849e5d1c723b0006da89502cf93b3811147aac99da8b9ff92f&=&format=webp&quality=lossless",
+      "lore": "A younger Dexter Morgan during his early years learning forensic work and beginning his first murders under Harry's code. Dexter: Original Sin"
+    },
 
-  {
-    "name": "Comic",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999817316434012/Web_Photo_Editor_14.jpg?ex=6a15ec05&is=6a149a85&hm=e1b371af871fdc4641c9688ec3f19f55edc4fa1a85be70091ee9de7bd6fd259b&=&format=webp",
-    "lore": "Dexter Morgan's appearance from the Marvel comic adaptation of the Dexter universe."
-  },
+    {
+      "name": "Comic",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999817316434012/Web_Photo_Editor_14.jpg?ex=6a15ec05&is=6a149a85&hm=e1b371af871fdc4641c9688ec3f19f55edc4fa1a85be70091ee9de7bd6fd259b&=&format=webp",
+      "lore": "Dexter Morgan's appearance from the Marvel comic adaptation of the Dexter universe."
+    },
 
-  {
-    "name": "Red",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999817627078736/Web_Photo_Editor_15.jpg?ex=6a15ec05&is=6a149a85&hm=a78f1649d3591685024f09ddc14d9320f73a341be7544b259704897b5e252d80&=&format=webp",
-    "lore": "While in New York, Dexter adopts the identity of the vigilante Red after discovering that the name 'Dark Passenger' had already been taken."
-  }
-],
+    {
+      "name": "Red",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999817627078736/Web_Photo_Editor_15.jpg?ex=6a15ec05&is=6a149a85&hm=a78f1649d3591685024f09ddc14d9320f73a341be7544b259704897b5e252d80&=&format=webp",
+      "lore": "While in New York, Dexter adopts the identity of the vigilante Red after discovering that the name 'Dark Passenger' had already been taken."
+    }
+  ],
 
   "lore": "Dexter Morgan is the main character from the television series Dexter. Working as a blood spatter analyst for Miami Metro Police, he secretly lives as a vigilante serial killer guided by his Dark Passenger and a strict code taught by his adoptive father."
 }

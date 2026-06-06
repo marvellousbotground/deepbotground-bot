@@ -1,9 +1,9 @@
 {
   "name": "Eleven",
 
-"aliases": [
-  "11"
-],
+  "aliases": [
+    "11"
+  ],
 
   "origin": [
     "tvseries"
@@ -12,19 +12,9 @@
   "universe": "Stranger Things",
 
   "tags": {
-
     "type": [
       "hero",
       "human"
-    ],
-
-    "ability": [
-      "heal",
-      "counter",
-      "shieldbreak",
-      "ranged",
-      "finisher",
-      "extra"
     ]
   },
 
@@ -41,45 +31,77 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Psychic Fracture",
       "damage": 15,
       "cooldown": "10.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "range",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Telekinetic Launch",
       "damage": 6,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Mind-Slam Counter",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Psionic Shockwave",
       "damage": 20,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "ex",
+        "area",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Disintegration Finisher",
       "damage": 0,
       "cooldown": "1s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Enter the Void",
       "damage": 0,
       "cooldown": "38s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "area",
+        "heal",
+        "range"
+      ]
     }
   ],
 

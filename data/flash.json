@@ -17,19 +17,10 @@
   "universe": "DC",
 
   "tags": {
-
     "type": [
       "hero",
       "speedster",
       "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "shieldbreak",
-      "heal"
     ]
   },
 
@@ -46,97 +37,128 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Speedblitz",
       "damage": 8,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Super Speed",
       "damage": 10,
       "cooldown": "12.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Flashtime Counter",
       "damage": 5,
       "cooldown": "20s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "coun",
+        "push",
+        "area"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Lightning Throw",
       "damage": 12,
       "cooldown": "12s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lrp",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Super Sonic Punch Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Cycole Vortex",
       "damage": 30,
       "cooldown": "30s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "area",
+        "push"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "First Run",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508576276812795944/Web_Photo_Editor_50.jpg?ex=6a160aa4&is=6a14b924&hm=6a72a66dfa11f4c5e37d20fc07b2f6619bf7b2072b1be636e6706636b1ef8662&=&format=webp",
-    "lore": "Barry Allen wears his improvised first Flash suit during the early days of becoming Central City's speedster in Season 1 of The Flash."
-  },
+  "skins": [
+    {
+      "name": "First Run",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508576276812795944/Web_Photo_Editor_50.jpg?ex=6a160aa4&is=6a14b924&hm=6a72a66dfa11f4c5e37d20fc07b2f6619bf7b2072b1be636e6706636b1ef8662&=&format=webp",
+      "lore": "Barry Allen wears his improvised first Flash suit during the early days of becoming Central City's speedster in Season 1 of The Flash."
+    },
 
-  {
-    "name": "Upgraded",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508577125299650600/42bae31c40e5ccc1931df9585c7027fe.png?ex=6a160b6e&is=6a14b9ee&hm=fffd4829e15b1802ea821ef97522c666b60ac22563c36f95193f9f0317096d30&=&format=webp&quality=lossless&width=358&height=350",
-    "lore": "Cisco Ramon creates an upgraded Flash suit for Barry during Season 4, improving both its technology and stability for high-speed combat."
-  },
+    {
+      "name": "Upgraded",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508577125299650600/42bae31c40e5ccc1931df9585c7027fe.png?ex=6a160b6e&is=6a14b9ee&hm=fffd4829e15b1802ea821ef97522c666b60ac22563c36f95193f9f0317096d30&=&format=webp&quality=lossless&width=358&height=350",
+      "lore": "Cisco Ramon creates an upgraded Flash suit for Barry during Season 4, improving both its technology and stability for high-speed combat."
+    },
 
-  {
-    "name": "Golden Boots",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508577337615057047/7cef2691c4a7a487ae85ef9c7006765c.png?ex=6a160ba1&is=6a14ba21&hm=0892e5e0f43cf3997ac8050c049e6e240c17d7232b4d4c0c4f9d7738fc35fd62&=&format=webp&quality=lossless",
-    "lore": "Barry's Season 9 suit featuring the iconic golden boots inspired by the classic comic design finally appears in the Arrowverse."
-  },
+    {
+      "name": "Golden Boots",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508577337615057047/7cef2691c4a7a487ae85ef9c7006765c.png?ex=6a160ba1&is=6a14ba21&hm=0892e5e0f43cf3997ac8050c049e6e240c17d7232b4d4c0c4f9d7738fc35fd62&=&format=webp&quality=lossless",
+      "lore": "Barry's Season 9 suit featuring the iconic golden boots inspired by the classic comic design finally appears in the Arrowverse."
+    },
 
-  {
-    "name": "Past Future",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508577787034734693/Web_Photo_Editor_51.jpg?ex=6a160c0c&is=6a14ba8c&hm=be387336a429f80e27cabc48598bc9e9487bbc09289dee670e59e795962b1446&=&format=webp",
-    "lore": "A version of Barry Allen from the original timeline before the Flashpoint changes rewrote history and altered the future."
-  },
+    {
+      "name": "Past Future",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508577787034734693/Web_Photo_Editor_51.jpg?ex=6a160c0c&is=6a14ba8c&hm=be387336a429f80e27cabc48598bc9e9487bbc09289dee670e59e795962b1446&=&format=webp",
+      "lore": "A version of Barry Allen from the original timeline before the Flashpoint changes rewrote history and altered the future."
+    },
 
-  {
-    "name": "Kid Flash",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508578356524748961/Web_Photo_Editor_52.jpg?ex=6a160c94&is=6a14bb14&hm=5e7655d4089b30d66fc6789eba1a2dbd01bd52c8895bde2b9301ee915a992df8&=&format=webp",
-    "lore": "Wally West becomes Kid Flash after gaining speedster powers, eventually fighting alongside Barry Allen as another protector of Central City."
-  },
+    {
+      "name": "Kid Flash",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508578356524748961/Web_Photo_Editor_52.jpg?ex=6a160c94&is=6a14bb14&hm=5e7655d4089b30d66fc6789eba1a2dbd01bd52c8895bde2b9301ee915a992df8&=&format=webp",
+      "lore": "Wally West becomes Kid Flash after gaining speedster powers, eventually fighting alongside Barry Allen as another protector of Central City."
+    },
 
-  {
-    "name": "ZSJL",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508578569654243488/521c4cab309ac494f22b45e41591e56c.png?ex=6a160cc7&is=6a14bb47&hm=4bddf20fd4b35e0edca080c167e7ce27e0697315786289a77e4ee0f2ced3fa89&=&format=webp&quality=lossless",
-    "lore": "Barry Allen's armored speedster suit from Zack Snyder's Justice League, designed for his first major battles alongside the Justice League."
-  },
+    {
+      "name": "ZSJL",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508578569654243488/521c4cab309ac494f22b45e41591e56c.png?ex=6a160cc7&is=6a14bb47&hm=4bddf20fd4b35e0edca080c167e7ce27e0697315786289a77e4ee0f2ced3fa89&=&format=webp&quality=lossless",
+      "lore": "Barry Allen's armored speedster suit from Zack Snyder's Justice League, designed for his first major battles alongside the Justice League."
+    },
 
-  {
-    "name": "Batsuit",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508584676015734814/Web_Photo_Editor_53.jpg?ex=6a161276&is=6a14c0f6&hm=708c59eca40a6b991ae9c8659f25a24f75fe3cd90d4b76313b92810de43588b9&=&format=webp",
-    "lore": "The younger Barry Allen from The Flash (2023) creates his own speedster suit using pieces of Batman's costume after gaining powers."
-  },
+    {
+      "name": "Batsuit",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508584676015734814/Web_Photo_Editor_53.jpg?ex=6a161276&is=6a14c0f6&hm=708c59eca40a6b991ae9c8659f25a24f75fe3cd90d4b76313b92810de43588b9&=&format=webp",
+      "lore": "The younger Barry Allen from The Flash (2023) creates his own speedster suit using pieces of Batman's costume after gaining powers."
+    },
 
-  {
-    "name": "Channeled",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508587698481270834/Web_Photo_Editor_54.jpg?ex=6a161547&is=6a14c3c7&hm=12cb2f78f2408d4d37ec73e0cb38a381116f5a4a66b44253c301521195ec5041&=&format=webp",
-    "lore": "Barry channels massive amounts of Speed Force energy during The Flash (2023), causing his suit and body to glow with unstable blue electricity."
-  }
-],
+    {
+      "name": "Channeled",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508587698481270834/Web_Photo_Editor_54.jpg?ex=6a161547&is=6a14c3c7&hm=12cb2f78f2408d4d37ec73e0cb38a381116f5a4a66b44253c301521195ec5041&=&format=webp",
+      "lore": "Barry channels massive amounts of Speed Force energy during The Flash (2023), causing his suit and body to glow with unstable blue electricity."
+    }
+  ],
 
-  "lore": "The Flash, also known as Barry Allen, is DC Comics’ legendary Scarlet Speedster. After gaining access to the Speed Force through a laboratory accident, he developed incredible super speed, time travel abilities, phasing powers, and the ability to protect Central City faster than anyone alive."
+  "lore": "The Flash, also known as Barry Allen, is DC Comics' legendary Scarlet Speedster. After gaining access to the Speed Force through a laboratory accident, he developed incredible super speed, time travel abilities, phasing powers, and the ability to protect Central City faster than anyone alive."
 }
