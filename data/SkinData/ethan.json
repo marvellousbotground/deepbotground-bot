@@ -10,52 +10,85 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Psycho Slip",
       "damage": 12,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Shotgun Blast",
       "damage": 8,
       "cooldown": "12.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "range",
+        "push"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Bellystab Counter",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "The Voicechanger",
       "damage": 18,
       "cooldown": "15.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "area",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Final Act Finisher",
       "damage": 0,
       "cooldown": "0.65s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "The Reveal",
       "damage": 0,
       "cooldown": "98s",
-      "shieldBreak": false
+      "attributes": [
+        "heal",
+        "trans"
+      ]
     },
 
     {
+      "slot": "1",
       "name": "Psycho Strike",
       "damage": 17,
       "cooldown": "8s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele"
+      ]
     }
   ],
 

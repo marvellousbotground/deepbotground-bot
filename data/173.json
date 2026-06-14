@@ -15,19 +15,6 @@
 
   "universe": "SCP Foundation",
 
-  "tags": {
-
-    "type": [
-      "monster",
-      "villain",
-      "superhuman"
-    ],
-
-    "ability": [
-      "teleportation"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507518320872783942/latest.png?ex=6a123158&is=6a10dfd8&hm=cc3514cc2f8820649c4a7981c0d54ac515dd04f33845364a4043b078783b279d&=&format=webp&quality=lossless",
 
   "stats": {
@@ -40,26 +27,39 @@
   },
 
   "attacks": [
-
-   {
+    {
+      "slot": "1",
       "name": "move",
       "damage": 0,
       "cooldown": "1s",
-      "shieldBreak": false
-    }, 
+      "attributes": [
+        "move"
+      ]
+    },
 
-   {
+    {
+      "slot": "2",
       "name": "Dash",
       "damage": 10,
       "cooldown": "10s",
-      "shieldBreak": false
-    }, 
+      "attributes": [
+        "block",
+        "move",
+        "mele",
+        "push"
+      ]
+    },
 
     {
+      "slot": "4",
       "name": "Blink Rush",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "tp",
+        "range"
+      ]
     }
   ],
 

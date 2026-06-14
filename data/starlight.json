@@ -14,21 +14,6 @@
 
   "universe": "The Boys",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "shieldbreak"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507548700967174306/d28bf3cd3f58528df241c36d922e623f.png?ex=6a124da3&is=6a10fc23&hm=2fb605e1dc7ae8f2cee1fba25c304a8d25d33f2572b300820bf5cc495f28b88f&=&format=webp&quality=lossless",
 
   "stats": {
@@ -42,52 +27,82 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Lightwave",
       "damage": 8,
       "cooldown": "8s",
-      "shieldBreak": true
+      "attributes": [
+        "ignore",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Ranged Flashbang",
       "damage": 12,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "range"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Retaliation Counter",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Overcharge Smash",
       "damage": 15,
       "cooldown": "13s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "area",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Sparks Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Launch",
       "damage": 0,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "move"
+      ]
     },
 
     {
-      "name": "Foward dash",
+      "slot": "E",
+      "name": "Forward Dash",
       "damage": 0,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "move"
+      ]
     }
   ],
 

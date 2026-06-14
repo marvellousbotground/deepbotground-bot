@@ -118,20 +118,20 @@
       "skins": [
         {
           "name": "Casual",
-          "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1512883778702282873/Web_Photo_Editor_59.jpg?ex=6a25b650&is=6a2464d0&hm=975b31b6dbb1ef209a540423d3e23f77694720e6c81307fa336c4bb0947b868e&",
-          "lore": "Johnny Storm wearing casual clothes in The Fantastic Four: First Steps, flame on version still the same."
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508192904991084646/839bd7b25a2f0edff728e255bc77a176.png?ex=6a14a599&is=6a135419&hm=dfa11483050293b4ebc1500f768516bb9d6fdcde3cfaabde61bd917cf88d3ab8&=&format=webp&quality=lossless",
+          "lore": "Johnny Storm wearing casual clothes while staying inside the Fantastic Four tower in The Fantastic Four: First Steps."
         },
 
         {
           "name": "Multiverse",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1512885426845913238/Web_Photo_Editor_60.jpg?ex=6a25b7d9&is=6a246659&hm=fa4f36456affe11862a6bbcc5397962c2c2f5ed37cac4e25057bcaa95b3ce94e&=&format=webp",
-          "lore": "Johnny, after surprising Deadpool, reveals his identity to the audience by shouting Flames on."
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508192916265500793/731147657983e9e164c1e99aed570f08.png?ex=6a14a59c&is=6a13541c&hm=e3597f37f441674f12785c3a91b3eb4fe89a36f98b06500bccf0d6b46ffe2e5e&=&format=webp&quality=lossless",
+          "lore": "Johnny Storm's appearance in Deadpool & Wolverine during the multiverse crossover events."
         },
 
         {
           "name": "Classic",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1512886870676209674/Web_Photo_Editor_61.jpg?ex=6a25b932&is=6a2467b2&hm=3c0b01833932c646daf8425a912aa88ade7be8739fef057d59e815c9cda8c0a4&=&format=webp",
-          "lore": "Johnny's flames from the 2005 adaptation are more saturated and orange."
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508193060687712428/fcc2e311940754fb6552f6aa8a4ad2cb.png?ex=6a14a5be&is=6a13543e&hm=88e78dd808bde8316d3e0a2ff18ddc6ef6a176f05dc7e858f326eb95a8948dde&=&format=webp&quality=lossless",
+          "lore": "Johnny Storm from the 2005 Fantastic Four movie adaptation."
         }
       ],
 
@@ -176,6 +176,7 @@
           "attributes": [
             "block",
             "move",
+            "push",
             "mele"
           ]
         },
@@ -222,20 +223,20 @@
       "skins": [
         {
           "name": "Casual",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508192904991084646/839bd7b25a2f0edff728e255bc77a176.png?ex=6a14a599&is=6a135419&hm=dfa11483050293b4ebc1500f768516bb9d6fdcde3cfaabde61bd917cf88d3ab8&=&format=webp&quality=lossless",
-          "lore": "Johnny Storm wearing casual clothes while staying inside the Fantastic Four tower in The Fantastic Four: First Steps."
+          "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1512883778702282873/Web_Photo_Editor_59.jpg?ex=6a25b650&is=6a2464d0&hm=975b31b6dbb1ef209a540423d3e23f77694720e6c81307fa336c4bb0947b868e&",
+          "lore": "Johnny Storm wearing casual clothes in The Fantastic Four: First Steps, flame on version still the same."
         },
 
         {
           "name": "Multiverse",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508192916265500793/731147657983e9e164c1e99aed570f08.png?ex=6a14a59c&is=6a13541c&hm=e3597f37f441674f12785c3a91b3eb4fe89a36f98b06500bccf0d6b46ffe2e5e&=&format=webp&quality=lossless",
-          "lore": "Johnny Storm's appearance in Deadpool & Wolverine during the multiverse crossover events."
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1512885426845913238/Web_Photo_Editor_60.jpg?ex=6a25b7d9&is=6a246659&hm=fa4f36456affe11862a6bbcc5397962c2c2f5ed37cac4e25057bcaa95b3ce94e&=&format=webp",
+          "lore": "Johnny, after surprising Deadpool, reveals his identity to the audience by shouting Flames on."
         },
 
         {
           "name": "Classic",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508193060687712428/fcc2e311940754fb6552f6aa8a4ad2cb.png?ex=6a14a5be&is=6a13543e&hm=88e78dd808bde8316d3e0a2ff18ddc6ef6a176f05dc7e858f326eb95a8948dde&=&format=webp&quality=lossless",
-          "lore": "Johnny Storm from the 2005 Fantastic Four movie adaptation."
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1512886870676209674/Web_Photo_Editor_61.jpg?ex=6a25b932&is=6a2467b2&hm=3c0b01833932c646daf8425a912aa88ade7be8739fef057d59e815c9cda8c0a4&=&format=webp",
+          "lore": "Johnny's flames from the 2005 adaptation are more saturated and orange."
         }
       ],
 

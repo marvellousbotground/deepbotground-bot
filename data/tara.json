@@ -13,22 +13,6 @@
 
   "universe": "Scream",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "human"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "heal",
-      "extra",
-      "shieldbreak"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507561577220538529/wp12713871.png?ex=6a1259a1&is=6a110821&hm=d7b775ca44501440829c23c6d3080f7bfbe9566fba7885af63a82afcc19f2c36&=&format=webp&quality=lossless",
 
   "stats": {
@@ -42,45 +26,73 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Brick Slam",
       "damage": 10,
       "cooldown": "10s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Crutch Fury",
       "damage": 20,
       "cooldown": "11s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Punch Counter",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Landline Phone",
       "damage": 0,
       "cooldown": "13.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "area",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Inhaler",
       "damage": 0,
       "cooldown": "23s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 

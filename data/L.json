@@ -14,21 +14,9 @@
   "universe": "Death Note",
 
   "tags": {
-
     "type": [
       "hero",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "extra",
-      "rng",
-      "shieldbreak",
-      "heal",
-      "ranged",
-      "transformation",
-      "finisher"
     ]
   },
 
@@ -45,52 +33,88 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Pinpoint Kick",
       "damage": 12,
       "cooldown": "8.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Tennis Insight",
       "damage": 10,
       "cooldown": "10s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lrp",
+        "charge"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Truth for Truth Counter",
       "damage": 15,
       "cooldown": "15s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Bound deduction Counter",
       "damage": 0,
       "cooldown": "20s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "You are Kira Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Sugar Rush",
       "damage": 0,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "heal",
+        "rng",
+        "charge"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Helicopter Chase",
       "damage": 200,
       "cooldown": "37s",
-      "shieldBreak": true
+      "attributes": [
+        "trans",
+        "break",
+        "move"
+      ]
     }
   ],
 

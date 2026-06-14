@@ -10,68 +10,126 @@
 
 "attacks": [
     {
+      "slot": "1",
       "name": "Spider Maul",
       "damage": 18,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Take It",
       "damage": 8,
       "cooldown": "12s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "charge",
+        "lr"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Manifest Fear Counter - Bob Gray",
       "damage": 0,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "coun",
+        "area",
+        "cine",
+        "charge",
+        "rng"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Coffin Ambush",
       "damage": 12,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "push",
+        "area",
+        "tp",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Deadlights Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Fear Rush - 1",
       "damage": 10,
       "cooldown": "11s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "move",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Fear Rush - 2",
       "damage": 15,
       "cooldown": "11s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "move",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Fear Rush - 3",
       "damage": 20,
       "cooldown": "11s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "move",
+        "mele",
+        "grab",
+        "cine"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Spider Destruction",
       "damage": 15,
       "cooldown": "0s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "trans",
+        "move",
+        "cine",
+        "area"
+      ]
     }
   ],
+
+  
 
   "techs": []
 }

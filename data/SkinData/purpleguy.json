@@ -10,38 +10,62 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Knife slash",
       "damage": 10,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Slaughter Tackle",
       "damage": 10,
       "cooldown": "13.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Stab Counter",
       "damage": 15,
       "cooldown": "17s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Mask Lock",
       "damage": 5,
       "cooldown": "13.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     }
   ],
 

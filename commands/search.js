@@ -9,19 +9,55 @@ const {
 
 const fs = require('fs');
 
-const abilityChoices = [
-    { name: 'Flight', value: 'flight' },
+const attributeChoices = [
+    { name: 'Noticeable', value: 'noti' },
+    { name: 'Vanish', value: 'inv' },
+    { name: 'Area', value: 'area' },
+    { name: 'Cinema', value: 'cine' },
+    { name: 'Rng', value: 'rng' },
+    { name: 'Blindness', value: 'blind' },
+    { name: 'Push', value: 'push' },
+
+    { name: 'Mele', value: 'mele' },
+    { name: 'Range ++', value: 'lrp' },
+    { name: 'Range +', value: 'lr' },
+    { name: 'Range', value: 'range' },
+    { name: 'Explode', value: 'ex' },
+    { name: 'Grab', value: 'grab' },
+
+    { name: 'Break', value: 'break' },
+    { name: 'Ignore', value: 'ignore' },
+    { name: 'Block', value: 'block' },
+
+    { name: 'Movement', value: 'move' },
+    { name: 'Teleport', value: 'tp' },
+
     { name: 'Heal', value: 'heal' },
-    { name: 'Extra', value: 'extra' },
-    { name: 'Shieldbreak', value: 'shieldbreak' },
-    { name: 'RNG', value: 'rng' },
-    { name: 'Ranged', value: 'ranged' },
-    { name: 'Finisher', value: 'finisher' },
-    { name: 'Counter', value: 'counter' },
-    { name: 'Transformation', value: 'transformation' },
-    { name: 'Teleportation', value: 'teleportation' },
-    { name: 'Passive', value: 'passive' }
+    { name: 'Charge', value: 'charge' },
+    { name: 'Transformation', value: 'trans' },
+
+    { name: 'Brutality', value: 'bruta' },
+    { name: 'Finisher', value: 'finish' },
+    { name: 'Counter', value: 'coun' }
 ];
+
+const attributeNames = Object.fromEntries(
+    attributeChoices.map(a => [a.value, a.name])
+);
+
+const attributeAliases = {
+    ranged: 'range',
+    explode: 'ex',
+    tele: 'tp',
+    teleport: 'tp',
+    teleportation: 'tp',
+    transformation: 'trans',
+    transform: 'trans',
+    finisher: 'finish',
+    counter: 'coun',
+    shieldbreak: 'break',
+    shieldBreak: 'break'
+};
 
 const universes = [
     'Invincible',
@@ -56,6 +92,68 @@ const universes = [
     'Breaking Bad'
 ];
 
+function normalizeAttribute(attribute) {
+    return attributeAliases[attribute] || attribute;
+}
+
+function getAttackAttributes(attack) {
+    return (attack.attributes || []).map(normalizeAttribute);
+}
+
+function isSlotFive(attack) {
+    return String(attack.slot) === '5';
+}
+
+function attackMatchesAttribute(attack, attribute) {
+    const normalizedAttribute = normalizeAttribute(attribute);
+    const attackAttributes = getAttackAttributes(attack);
+
+    if (normalizedAttribute === 'heal' && isSlotFive(attack)) {
+        return false;
+    }
+
+    return attackAttributes.includes(normalizedAttribute);
+}
+
+function characterMatchesAttributes(character, attributes) {
+    if (!attributes.length) return true;
+
+    const attacks = character.attacks || [];
+
+    return attributes.every(attribute =>
+        attacks.some(attack => attackMatchesAttribute(attack, attribute))
+    );
+}
+
+function characterOrVersionMatches(character, attributes) {
+    if (!attributes.length) return true;
+
+    if (character.versions && character.versions.length > 0) {
+        return character.versions.some(version =>
+            characterMatchesAttributes(version, attributes)
+        );
+    }
+
+    return characterMatchesAttributes(character, attributes);
+}
+
+function formatAttributes(attack) {
+    const attributes = getAttackAttributes(attack);
+
+    if (!attributes.length) {
+        return 'None';
+    }
+
+    return attributes
+        .map(attribute => attributeNames[attribute] || attribute)
+        .join(', ');
+}
+
+function formatSkin(skin) {
+    if (typeof skin === 'string') return `• ${skin}`;
+    return `• ${skin.name}`;
+}
+
 function createCharacterEmbed(character, action) {
     const colors = {
         attacks: 0xff0000,
@@ -77,17 +175,17 @@ function createCharacterEmbed(character, action) {
     if (action === 'attacks') {
         embed.setDescription(
             character.attacks.map(a =>
-                `**${a.name}**\n` +
+                `**${a.slot ? `${a.slot}. ` : ''}${a.name}**\n` +
                 `Damage: ${a.damage}\n` +
                 `Cooldown: ${a.cooldown}\n` +
-                `Shield Break: ${a.shieldBreak ? '🟢' : '🔴'}`
+                `Attributes: ${formatAttributes(a)}`
             ).join('\n\n')
         );
     }
 
     if (action === 'stats') {
         embed.setDescription(
-            `**HP:** ${character.stats.hp || character.stats["base hp"]}\n` +
+            `**HP:** ${character.stats.hp || character.stats['base hp']}\n` +
             `**Speed:** ${character.stats.speed}\n` +
             `**Damage:** ${character.stats.damage}\n` +
             `**Skills:** ${character.stats.skills}\n` +
@@ -97,14 +195,14 @@ function createCharacterEmbed(character, action) {
     }
 
     if (action === 'lore') {
-        embed.setDescription(character.lore);
+        embed.setDescription(character.lore || 'No lore available.');
     }
 
     if (action === 'skins') {
         if (!character.skins || character.skins.length === 0) {
             embed.setDescription('This character does not have any skins yet.');
         } else {
-            embed.setDescription(character.skins.map(s => `• ${s}`).join('\n'));
+            embed.setDescription(character.skins.map(formatSkin).join('\n'));
         }
     }
 
@@ -233,57 +331,38 @@ function createActionSelect() {
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('search')
-        .setDescription('Search characters by tags')
+        .setDescription('Search characters by universe or attack attributes')
 
         .addStringOption(option =>
             option
-                .setName('type')
-                .setDescription('Character type')
-                .setRequired(true)
-                .addChoices(
-                    { name: 'Hero', value: 'hero' },
-                    { name: 'Villain', value: 'villain' },
-                    { name: 'Antihero', value: 'antihero' },
-                    { name: 'Neutral', value: 'neutral' },
-                    { name: 'Robot', value: 'robot' },
-                    { name: 'Speedster', value: 'speedster' },
-                    { name: 'Slasher', value: 'slasher' },
-                    { name: 'Human', value: 'human' },
-                    { name: 'Monster', value: 'monster' },
-                    { name: 'Superhuman', value: 'superhuman' }
-                )
-        )
-
-        .addStringOption(option =>
-            option
-                .setName('ability1')
-                .setDescription('Required ability')
-                .setRequired(true)
-                .addChoices(...abilityChoices)
-        )
-
-        .addStringOption(option =>
-            option
-                .setName('ability2')
-                .setDescription('Optional ability')
+                .setName('attribute1')
+                .setDescription('Optional attribute')
                 .setRequired(false)
-                .addChoices(...abilityChoices)
+                .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
             option
-                .setName('ability3')
-                .setDescription('Optional ability')
+                .setName('attribute2')
+                .setDescription('Optional attribute')
                 .setRequired(false)
-                .addChoices(...abilityChoices)
+                .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
             option
-                .setName('ability4')
-                .setDescription('Optional ability')
+                .setName('attribute3')
+                .setDescription('Optional attribute')
                 .setRequired(false)
-                .addChoices(...abilityChoices)
+                .addChoices(...attributeChoices)
+        )
+
+        .addStringOption(option =>
+            option
+                .setName('attribute4')
+                .setDescription('Optional attribute')
+                .setRequired(false)
+                .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
@@ -310,17 +389,18 @@ module.exports = {
     },
 
     async execute(interaction) {
-        const type = interaction.options.getString('type');
         const universe = interaction.options.getString('universe');
 
-        const abilities = [
-            interaction.options.getString('ability1'),
-            interaction.options.getString('ability2'),
-            interaction.options.getString('ability3'),
-            interaction.options.getString('ability4')
-        ].filter(Boolean);
+        const attributes = [
+            interaction.options.getString('attribute1'),
+            interaction.options.getString('attribute2'),
+            interaction.options.getString('attribute3'),
+            interaction.options.getString('attribute4')
+        ].filter(Boolean).map(normalizeAttribute);
 
-        const files = fs.readdirSync('./data').filter(file => file.toLowerCase().endsWith('.json'));
+        const files = fs.readdirSync('./data').filter(file =>
+            file.toLowerCase().endsWith('.json')
+        );
 
         const results = [];
 
@@ -330,20 +410,16 @@ module.exports = {
 
                 const character = require(`../data/${file}`);
 
-                const typeTags = character.tags?.type || [];
-                const abilityTags = character.tags?.ability || [];
-
-                const hasType = typeTags.includes(type);
-
-                const hasAbilities = abilities.every(ability =>
-                    abilityTags.includes(ability)
-                );
-
                 const matchesUniverse = universe
                     ? character.universe === universe
                     : true;
 
-                if (hasType && hasAbilities && matchesUniverse) {
+                const matchesAttributes = characterOrVersionMatches(
+                    character,
+                    attributes
+                );
+
+                if (matchesUniverse && matchesAttributes) {
                     results.push(character);
                 }
 

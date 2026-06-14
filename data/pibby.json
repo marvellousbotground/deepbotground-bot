@@ -13,23 +13,6 @@
 
   "universe": "Pibby",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "shieldBreak",
-      "teleportation",
-      "extra",
-      "heal"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507511807043178697/7ee6dcd7b400af24d2c891a5d54ed055.png?ex=6a122b47&is=6a10d9c7&hm=1ea2ca3ead804e8d7b5eb4d464753938be16787c0b5afae8a3a9fd149055a3c0&=&format=webp&quality=lossless",
 
   "stats": {
@@ -43,79 +26,108 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Corrupted Swipe",
       "damage": 12,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Sword Rush",
       "damage": 12,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Hug Counter",
       "damage": 11,
       "cooldown": "16s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "mele",
+        "cine"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Disrupted Dash",
       "damage": 12,
       "cooldown": "15.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range",
+        "push",
+        "tp"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Glitch Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Darkness Heal",
       "damage": 0,
       "cooldown": "74s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Monika",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302181768364092/ac00d67b1791782e8584fcef9c7dee3a.png?ex=6a150b5f&is=6a13b9df&hm=301afaadba3bc091b23c5633a0da2580b1a68234c4fd73d238ddd580bb69dd2f&=&format=webp&quality=lossless",
-    "lore": "Monika is the self-aware antagonist from Doki Doki Literature Club, a visual novel character who manipulates the game's files and reality itself after becoming obsessed with the player."
-  },
+  "skins": [
+    {
+      "name": "Monika",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302181768364092/ac00d67b1791782e8584fcef9c7dee3a.png?ex=6a150b5f&is=6a13b9df&hm=301afaadba3bc091b23c5633a0da2580b1a68234c4fd73d238ddd580bb69dd2f&=&format=webp&quality=lossless",
+      "lore": "Monika is the self-aware antagonist from Doki Doki Literature Club, a visual novel character who manipulates the game's files and reality itself after becoming obsessed with the player."
+    },
 
-  {
-    "name": "Finn",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302395019624459/Web_Photo_Editor_37.jpg?ex=6a150b91&is=6a13ba11&hm=32e19a21571937a39f6a46105565dd1029376e0d4c1dd8a2d19b11fa8039108f&=&format=webp",
-    "lore": "Finn appears corrupted by the glitch from Come and Learn with Pibby, transforming the Adventure Time hero into a distorted and unstable version of himself."
-  },
+    {
+      "name": "Finn",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302395019624459/Web_Photo_Editor_37.jpg?ex=6a150b91&is=6a13ba11&hm=32e19a21571937a39f6a46105565dd1029376e0d4c1dd8a2d19b11fa8039108f&=&format=webp",
+      "lore": "Finn appears corrupted by the glitch from Come and Learn with Pibby, transforming the Adventure Time hero into a distorted and unstable version of himself."
+    },
 
-  {
-    "name": "Fantastic",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302460970864780/98f5df0d594f3bef4ecd6ea7d375fb08.png?ex=6a150ba1&is=6a13ba21&hm=f46c40a99932002b3fcfa63c90f51ea8a4cc2b16e6849c26eb05add567e2a18e&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "A humanoid android inspired by the unsettling viral video 'I Feel Fantastic,' known online for its uncanny appearance and eerie singing performance."
-  },
+    {
+      "name": "Fantastic",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302460970864780/98f5df0d594f3bef4ecd6ea7d375fb08.png?ex=6a150ba1&is=6a13ba21&hm=f46c40a99932002b3fcfa63c90f51ea8a4cc2b16e6849c26eb05add567e2a18e&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "A humanoid android inspired by the unsettling viral video 'I Feel Fantastic,' known online for its uncanny appearance and eerie singing performance."
+    },
 
-  {
-    "name": "XP",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302741678719098/e87fe41eb1b5590f6e082aebfe93722b.png?ex=6a150be4&is=6a13ba64&hm=a8c891f38e2141efcf73ead1c0de53e530789c50a4b6db498aef1bd1bb3dd203&=&format=webp&quality=lossless&width=338&height=350",
-    "lore": "This appearance is based on the classic Windows XP era aesthetic, referencing old computer interfaces, nostalgic desktop visuals, and corrupted digital themes."
-  },
+    {
+      "name": "XP",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302741678719098/e87fe41eb1b5590f6e082aebfe93722b.png?ex=6a150be4&is=6a13ba64&hm=a8c891f38e2141efcf73ead1c0de53e530789c50a4b6db498aef1bd1bb3dd203&=&format=webp&quality=lossless&width=338&height=350",
+      "lore": "This appearance is based on the classic Windows XP era aesthetic, referencing old computer interfaces, nostalgic desktop visuals, and corrupted digital themes."
+    },
 
-  {
-    "name": "Pomni",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302809114873936/ed5bda84debfd166cfa55b53b09fdbe3.png?ex=6a150bf4&is=6a13ba74&hm=ae5cd50901279960068355523f51559406f8919de2bf898e51052ef1e85694ab&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "Pomni is the anxious main character from The Amazing Digital Circus, trapped inside a strange digital world while struggling to maintain her sanity."
-  }
-],
+    {
+      "name": "Pomni",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508302809114873936/ed5bda84debfd166cfa55b53b09fdbe3.png?ex=6a150bf4&is=6a13ba74&hm=ae5cd50901279960068355523f51559406f8919de2bf898e51052ef1e85694ab&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "Pomni is the anxious main character from The Amazing Digital Circus, trapped inside a strange digital world while struggling to maintain her sanity."
+    }
+  ],
 
   "lore": "Pibby is the protagonist of Learning with Pibby, a cartoon character forced to survive a corrupted digital apocalypse consuming animated worlds. As reality breaks apart around her, she learns to fight back against the glitch-like corruption spreading across different universes."
 }

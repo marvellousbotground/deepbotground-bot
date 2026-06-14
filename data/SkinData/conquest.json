@@ -1,6 +1,6 @@
 {
   "stats": {
-    "base hp": 200,
+    "hp": 200,
     "speed": "Normal",
     "damage": 5,
     "skills": 6,
@@ -10,45 +10,79 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Lonely Crusher",
       "damage": 16,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele",
+        "grab"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Worm Pierce",
       "damage": 8,
       "cooldown": "14.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "move",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Purpose Counter",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "coun",
+        "push",
+        "area"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Annihilation Clap",
       "damage": 12,
       "cooldown": "15.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range",
+        "push",
+        "area"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Disembowel Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "War Flight",
       "damage": 10,
       "cooldown": "32.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push",
+        "mele"
+      ]
     }
   ],
 

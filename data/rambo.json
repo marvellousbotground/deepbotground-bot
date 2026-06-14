@@ -13,22 +13,6 @@
 
   "universe": "Rambo",
 
-  "tags": {
-
-    "type": [
-      "human",
-      "hero"
-    ],
-
-    "ability": [
-      "finisher",
-      "ranged",
-      "shieldBreak",
-      "heal",
-      "extra"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507513828093464657/53145c3c-d1b1-4ec4-a89f-733c794659af.png?ex=6a122d28&is=6a10dba8&hm=323dcfcbc42c8cd15707ec2803776458232a3f765d4738aab34880df4ca74eac&=&format=webp&quality=lossless",
 
   "stats": {
@@ -42,55 +26,81 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Cold Blood",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Bullet Rain",
       "damage": 20,
       "cooldown": "25s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "push",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Shoulder Roll",
       "damage": 0,
       "cooldown": "7s",
-      "shieldBreak": false
+      "attributes": [
+        "move"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Spike Trap",
       "damage": 8,
       "cooldown": "10s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Wound Disinfect",
       "damage": 0,
       "cooldown": "27s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Punisher",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508303486075408474/16fbae6ffbeae019f0d2130554811796.png?ex=6a150c96&is=6a13bb16&hm=7a2fc33f9f497c97d3ad755b0a4dbd97947457a929593782f03300640a40748f&=&format=webp&quality=lossless",
-    "lore": "Frank Castle became the Punisher after the murder of his family, turning into a ruthless vigilante from Marvel known for using brutal methods, firearms, and military tactics to wage war against criminals."
-  }
-],
+  "skins": [
+    {
+      "name": "Punisher",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508303486075408474/16fbae6ffbeae019f0d2130554811796.png?ex=6a150c96&is=6a13bb16&hm=7a2fc33f9f497c97d3ad755b0a4dbd97947457a929593782f03300640a40748f&=&format=webp&quality=lossless",
+      "lore": "Frank Castle became the Punisher after the murder of his family, turning into a ruthless vigilante from Marvel known for using brutal methods, firearms, and military tactics to wage war against criminals."
+    }
+  ],
 
   "lore": "John Rambo is a legendary war veteran and action hero from the Rambo film series. Highly trained in survival, guerrilla warfare, and armed combat, he became known as a relentless one-man army capable of overcoming impossible odds."
 }

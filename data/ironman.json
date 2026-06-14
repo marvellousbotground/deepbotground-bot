@@ -1,0 +1,139 @@
+{
+  "name": "IronMan",
+
+  "aliases": [
+    "tony",
+    "tony stark",
+    "iron man",
+    "stark"
+  ],
+
+  "origin": [
+    "comic",
+    "movie"
+  ],
+
+  "universe": "Marvel",
+
+  "image": "https://media.discordapp.net/attachments/1507041233501950142/1515472824314368153/Untitled_Project.jpg?ex=6a2f218d&is=6a2dd00d&hm=0048790c1633b668b504ae1f4b2b51913dade6f7724cbb36d932c41c3ece3ace&=&format=webp",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Repulsor Blast",
+      "damage": 10,
+      "cooldown": "8s",
+      "attributes": [
+        "break",
+        "push",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "1",
+      "name": "Repulsor Blast - full",
+      "damage": 20,
+      "cooldown": "8s",
+      "attributes": [
+        "break",
+        "push",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Energy Blade",
+      "damage": 12,
+      "cooldown": "13s",
+      "attributes": [
+        "block",
+        "mele",
+        "move"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Nanotech Counter",
+      "damage": 20,
+      "cooldown": "14s",
+      "attributes": [
+        "ignore",
+        "coun",
+        "push",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Missile Barrage",
+      "damage": 20,
+      "cooldown": "21.5s",
+      "attributes": [
+        "ignore",
+        "area",
+        "range"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Displacer Finisher",
+      "damage": 0,
+      "cooldown": "1.5s",
+      "attributes": [
+        "ignore",
+        "finish",
+        "heal",
+        "cine"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Flight",
+      "damage": 10,
+      "cooldown": "33s",
+      "attributes": [
+        "block",
+        "move",
+        "push",
+        "mele"
+      ]
+    }
+  ],
+
+ "skins": [
+  {
+    "name": "Superior",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1515477878777581709/b2771945c224bc346e02278a9b81737d.png?ex=6a2f2642&is=6a2dd4c2&hm=6ba3d4fdb0bc109db9b11cf1547c79db5832a7e97fc9e83e5db601a37d939758&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "After the Axis event, Tony Stark embraced a darker and more selfish personality, using advanced technology and his enhanced Endo-Sym armor to pursue his own interests while becoming one of the most dangerous versions of Iron Man."
+  },
+
+  {
+    "name": "Tech",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1515477698632351897/432b957629d6bdfdd1be97d3165481a6.png?ex=6a2f2617&is=6a2dd497&hm=977d2c65689cca5559ce52a761948a561c83182c74fc4879ae2b89323c88f33a&=&format=webp&quality=lossless",
+    "lore": "Female Tech Jacket seen in the animated series, wielding the powerful Geldarian armor capable of flight, energy projection, advanced weaponry, and extreme durability."
+  },
+
+  {
+    "name": "Ilussion",
+    "image": "https://media.discordapp.net/attachments/1507041233501950142/1515477542025298081/0e3dcd5c20a9f280633530ee7ee5fd5a.png?ex=6a2f25f2&is=6a2dd472&hm=de493ffa38cbca3ca2dfb3c1700f3b4fb6ad32774777908c7a2cccb4d86a83ab&=&format=webp&quality=lossless",
+    "lore": "Illusion created by Mysterio in Spider-Man: Far From Home. During Peter Parker's nightmare sequence, a decayed Iron Man rises from his grave and accuses Peter of failing Tony Stark, representing Peter's guilt and Mysterio's psychological manipulation."
+  }
+],
+
+  "lore": "Zoom, also known as Hunter Zolomon, is one of the deadliest speedster villains in DC Comics and The Flash series. Consumed by tragedy and obsession, he uses terrifying speed powers, time manipulation, and psychological torment to break heroes and prove that suffering creates true heroes."
+}

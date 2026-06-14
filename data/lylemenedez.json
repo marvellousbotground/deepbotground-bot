@@ -15,18 +15,9 @@
   "universe": "Real Life",
 
   "tags": {
-
     "type": [
       "human",
       "villain"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "shieldbreak",
-      "heal",
-      "extra"
     ]
   },
 
@@ -43,45 +34,75 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Shotgun Blast",
       "damage": 10,
       "cooldown": "12s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "push",
+        "range"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Escape Plan",
       "damage": 10,
       "cooldown": "13s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "push",
+        "move"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Dime Counter",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+       "ignore",
+        "area",
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Brother Assist",
       "damage": 24,
       "cooldown": "17s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "range",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Dont Dream Finisher",
       "damage": 0,
       "cooldown": "0.3s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "King Sized Snickers",
       "damage": 0,
       "cooldown": "51s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 

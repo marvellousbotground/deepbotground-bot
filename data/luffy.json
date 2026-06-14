@@ -15,17 +15,9 @@
   "universe": "One Piece",
 
   "tags": {
-
     "type": [
       "hero",
       "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "shieldbreak"
     ]
   },
 
@@ -42,45 +34,75 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Pistol",
       "damage": 15,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "break",
+        "push",
+        "range"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Gatling",
       "damage": 11,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele",
+        "grab"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Bell Counter",
       "damage": 15,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "break",
+        "coun",
+        "charge",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Battle Axe",
       "damage": 12,
       "cooldown": "13s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "area",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Rocket Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Rubber Dodge",
       "damage": 0,
       "cooldown": "0s",
-      "shieldBreak": false
+      "attributes": [
+        "move"
+      ]
     }
   ],
 

@@ -15,24 +15,6 @@
 
   "universe": "DC",
 
-  "tags": {
-
-    "type": [
-      "villain",
-      "speedster",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "teleportation",
-      "extra",
-      "shieldBreak",
-      "heal"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507826228030341323/e2d317ee1931d21e68f40b5acb4b81f9.png?ex=6a13501a&is=6a11fe9a&hm=2460a6f635a002c28404488798e3072d2d15bb484183a027531185749f532bfb&=&format=webp&quality=lossless",
 
   "stats": {
@@ -46,80 +28,116 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Speed Demon",
       "damage": 16,
       "cooldown": "11s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Super Speed",
       "damage": 10,
       "cooldown": "16s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "push",
+        "mele",
+        "move"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Vibrate Counter",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Choke",
       "damage": 8,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "cine",
+        "grab",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Neck Snap Finisher",
       "damage": 0,
       "cooldown": "1.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "heal",
+        "cine"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Portal Snatch",
       "damage": 0,
       "cooldown": "33s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "tp",
+        "noti"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Barrys speed",
       "damage": 0,
       "cooldown": "123s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Unmasked",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508684580280860793/5debe7d176a4d34f899fad3c7fb2cd7c.png?ex=6a166f81&is=6a151e01&hm=66953b21d6e9dc598e401937582e3f842bbde3cb437c0e60357fa901156f7252&=&format=webp&quality=lossless",
-    "lore": "Hunter Zolomon reveals his scarred face after removing the Zoom mask during Season 2 of The Flash, exposing his true identity to Team Flash."
-  },
+  "skins": [
+    {
+      "name": "Unmasked",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508684580280860793/5debe7d176a4d34f899fad3c7fb2cd7c.png?ex=6a166f81&is=6a151e01&hm=66953b21d6e9dc598e401937582e3f842bbde3cb437c0e60357fa901156f7252&=&format=webp&quality=lossless",
+      "lore": "Hunter Zolomon reveals his scarred face after removing the Zoom mask during Season 2 of The Flash, exposing his true identity to Team Flash."
+    },
 
-  {
-    "name": "Black Flash",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508684826293702786/Web_Photo_Editor_57.jpg?ex=6a166fbc&is=6a151e3c&hm=daab97629bf166fe0947474600849541e12d158333416695a1a53a2b947b6677&=&format=webp",
-    "lore": "After being consumed by the Speed Force, Zoom transforms into Black Flash, a terrifying speedster entity that hunts other speedsters across The Flash and Legends of Tomorrow."
-  },
+    {
+      "name": "Black Flash",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508684826293702786/Web_Photo_Editor_57.jpg?ex=6a166fbc&is=6a151e3c&hm=daab97629bf166fe0947474600849541e12d158333416695a1a53a2b947b6677&=&format=webp",
+      "lore": "After being consumed by the Speed Force, Zoom transforms into Black Flash, a terrifying speedster entity that hunts other speedsters across The Flash and Legends of Tomorrow."
+    },
 
-  {
-    "name": "EXE",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508685017201639424/29f0aa8cb5a2656879e6c88ec710dde3.png?ex=6a166fea&is=6a151e6a&hm=7655649d1d092596763cfec43b76ee4e2536968c090c7e6a53f209b913a9dfab&=&format=webp&quality=lossless",
-    "lore": "A corrupted demonic speedster inspired by Sonic.EXE, the horror version of Sonic known for supernatural powers and disturbing appearances."
-  },
+    {
+      "name": "EXE",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508685017201639424/29f0aa8cb5a2656879e6c88ec710dde3.png?ex=6a166fea&is=6a151e6a&hm=7655649d1d092596763cfec43b76ee4e2536968c090c7e6a53f209b913a9dfab&=&format=webp&quality=lossless",
+      "lore": "A corrupted demonic speedster inspired by Sonic.EXE, the horror version of Sonic known for supernatural powers and disturbing appearances."
+    },
 
-  {
-    "name": "Fake Garrick",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508685463169532015/Web_Photo_Editor_58.jpg?ex=6a167054&is=6a151ed4&hm=5d02a852d228c9a468b7e7cdbbe2c83bdca023a97f9e0ec1c33cad79f563559a&=&format=webp",
-    "lore": "Hunter Zolomon pretends to be Jay Garrick during Season 2 of The Flash, earning Team Flash's trust before revealing himself as Zoom and murdering the fake version of Garrick."
-  }
-],
+    {
+      "name": "Fake Garrick",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508685463169532015/Web_Photo_Editor_58.jpg?ex=6a167054&is=6a151ed4&hm=5d02a852d228c9a468b7e7cdbbe2c83bdca023a97f9e0ec1c33cad79f563559a&=&format=webp",
+      "lore": "Hunter Zolomon pretends to be Jay Garrick during Season 2 of The Flash, earning Team Flash's trust before revealing himself as Zoom and murdering the fake version of Garrick."
+    }
+  ],
 
   "lore": "Zoom, also known as Hunter Zolomon, is one of the deadliest speedster villains in DC Comics and The Flash series. Consumed by tragedy and obsession, he uses terrifying speed powers, time manipulation, and psychological torment to break heroes and prove that suffering creates true heroes."
 }

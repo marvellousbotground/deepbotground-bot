@@ -9,40 +9,68 @@
   },
 
   "attacks": [
-    {
-      "name": "Runners High",
-      "damage": 12,
-      "cooldown": "8s",
-      "shieldBreak": false
-    },
+  {
+    "slot": "1",
+    "name": "Runners High",
+    "damage": 12,
+    "cooldown": "8s",
+    "attributes": [
+      "block",
+      "push",
+      "move",
+      "mele"
+    ]
+  },
 
-    {
-      "name": "Stranglehold",
-      "damage": 11,
-      "cooldown": "12s",
-      "shieldBreak": false
-    },
+  {
+    "slot": "2",
+    "name": "Stranglehold",
+    "damage": 11,
+    "cooldown": "12s",
+    "attributes": [
+      "ignore",
+      "grab",
+      "mele",
+      "bruta"
+    ]
+  },
 
-    {
-      "name": "For Her Counter",
-      "damage": 24,
-      "cooldown": "14s",
-      "shieldBreak": false
-    },
+  {
+    "slot": "3",
+    "name": "For Her Counter",
+    "damage": 24,
+    "cooldown": "14s",
+    "attributes": [
+      "coun",
+      "cine",
+      "mele"
+    ]
+  },
 
-    {
-      "name": "The Cage",
-      "damage": 0,
-      "cooldown": "35s",
-      "shieldBreak": false
-    },
+  {
+    "slot": "4",
+    "name": "The Cage",
+    "damage": 0,
+    "cooldown": "35s",
+    "attributes": [
+      "ignore",
+      "area"
+    ]
+  },
 
-    {
-      "name": "Pages Finisher",
-      "damage": 0,
-      "cooldown": "0.3s",
-      "shieldBreak": false
-    }
+  {
+    "slot": "5",
+    "name": "Pages Finisher",
+    "damage": 0,
+    "cooldown": "0.3s",
+    "attributes": [
+      "ignore",
+      "finish",
+      "cine",
+      "heal"
+    ]
+  }
+  
   ],
 
   "techs": []

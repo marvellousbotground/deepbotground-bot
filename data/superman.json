@@ -16,24 +16,6 @@
 
   "universe": "DC",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "superhuman"
-    ],
-
-    "ability": [
-      "flight",
-      "counter",
-      "finisher",
-      "heal",
-      "passive",
-      "extra",
-      "shieldbreak"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507559976221020280/12fa54a982fd6f7c6e7463d925df35ac.png?ex=6a125823&is=6a1106a3&hm=39f40d1e85997f8dfc7f9285f265c90e07731e5116db3069f91572c5492ccf3a&=&format=webp&quality=lossless",
 
   "stats": {
@@ -47,73 +29,102 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Kryptonian Grip",
       "damage": 11,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "grab",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Meteor Strike",
       "damage": 15,
       "cooldown": "13s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "area"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Solar Vortex Counter",
       "damage": 40,
       "cooldown": "16s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "range",
+        "area",
+        "push"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Ascension",
       "damage": 10,
       "cooldown": "33.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "grab",
+        "move"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Final Judgement Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Solar Rebirth",
       "damage": 0,
       "cooldown": "10000s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Ultraman",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380681720303798/Web_Photo_Editor_48.jpg?ex=6a15547a&is=6a1402fa&hm=e02b3c156b391bb797c14cd8ba077a1e6e10aee42ddf9b7cb7538fe1f4194c35&=&format=webp",
-    "lore": "An evil Superman clone appearing in Superman (2025), Ultraman serves as a brutal and destructive reflection of Superman with overwhelming power and a far more violent nature."
-  },
+  "skins": [
+    {
+      "name": "Ultraman",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380681720303798/Web_Photo_Editor_48.jpg?ex=6a15547a&is=6a1402fa&hm=e02b3c156b391bb797c14cd8ba077a1e6e10aee42ddf9b7cb7538fe1f4194c35&=&format=webp",
+      "lore": "An evil Superman clone appearing in Superman (2025), Ultraman serves as a brutal and destructive reflection of Superman with overwhelming power and a far more violent nature."
+    },
 
-  {
-    "name": "Supergirl",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380698132873216/c339c80ab08d59dbbfa0c77d444d0d45.png?ex=6a15547e&is=6a1402fe&hm=318998e892d590d13e7f9e60336ebd009896a31c374bd637326b3340c0990fdb&=&format=webp&quality=lossless",
-    "lore": "Kara Zor-El appears in the DCU timeline introduced through Superman (2025), bringing another surviving Kryptonian into Clark Kent's world."
-  },
+    {
+      "name": "Supergirl",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380698132873216/c339c80ab08d59dbbfa0c77d444d0d45.png?ex=6a15547e&is=6a1402fe&hm=318998e892d590d13e7f9e60336ebd009896a31c374bd637326b3340c0990fdb&=&format=webp&quality=lossless",
+      "lore": "Kara Zor-El appears in the DCU timeline introduced through Superman (2025), bringing another surviving Kryptonian into Clark Kent's world."
+    },
 
-  {
-    "name": "Hammer of Boravia",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380910091894854/bd2974f9d08e28b48b7f292fc6c74e72.png?ex=6a1554b1&is=6a140331&hm=a61f3b6e9e934fd9e6b2e3dd82bb533c223b1a2cfeac300a49f702ea1255bc93&=&format=webp&quality=lossless",
-    "lore": "A heavily armored enemy seen in Superman (2025), wielding advanced technology and immense physical strength during the film's large-scale conflicts."
-  },
+    {
+      "name": "Hammer of Boravia",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380910091894854/bd2974f9d08e28b48b7f292fc6c74e72.png?ex=6a1554b1&is=6a140331&hm=a61f3b6e9e934fd9e6b2e3dd82bb533c223b1a2cfeac300a49f702ea1255bc93&=&format=webp&quality=lossless",
+      "lore": "A heavily armored enemy seen in Superman (2025), wielding advanced technology and immense physical strength during the film's large-scale conflicts."
+    },
 
-  {
-    "name": "Starman",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508381090241314816/1f333586378b748f2b0876dce6fe7edd.png?ex=6a1554dc&is=6a14035c&hm=bfca1c48ef8758bbd8471b722c3295bbf8c9021d92b23970a80678dee6590d25&=&format=webp&quality=lossless&width=340&height=350",
-    "lore": "Inspired by the famous Starman meme and comic cover artwork, recreating the emotional floating pose associated with the character."
-  }
-],
+    {
+      "name": "Starman",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508381090241314816/1f333586378b748f2b0876dce6fe7edd.png?ex=6a1554dc&is=6a14035c&hm=bfca1c48ef8758bbd8471b722c3295bbf8c9021d92b23970a80678dee6590d25&=&format=webp&quality=lossless&width=340&height=350",
+      "lore": "Inspired by the famous Starman meme and comic cover artwork, recreating the emotional floating pose associated with the character."
+    }
+  ],
 
-  "lore": "Superman, also known as Clark Kent and Kal-El, is one of DC Comics’ most iconic superheroes. Born on the planet Krypton and raised on Earth, he possesses incredible powers including flight, super strength, heat vision, and near invulnerability, using them to protect humanity as a symbol of hope."
+  "lore": "Superman, also known as Clark Kent and Kal-El, is one of DC Comics' most iconic superheroes. Born on the planet Krypton and raised on Earth, he possesses incredible powers including flight, super strength, heat vision, and near invulnerability, using them to protect humanity as a symbol of hope."
 }

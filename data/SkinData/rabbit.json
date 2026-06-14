@@ -10,38 +10,63 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Heavy Slam",
       "damage": 10,
       "cooldown": "7s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Leap",
       "damage": 15,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "move",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Guitar Counter",
       "damage": 15,
       "cooldown": "17s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Choke",
       "damage": 8,
       "cooldown": "14.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "grab",
+        "move",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     }
   ],
 

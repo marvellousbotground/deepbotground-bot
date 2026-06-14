@@ -14,126 +14,208 @@
 
   "universe": "Sonic",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "speedster",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "shieldBreak",
-      "finisher",
-      "extra",
-      "transformation"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507524783246409738/e3339df6c174c02d31414df3af27cb9f.png?ex=6a12375c&is=6a10e5dc&hm=98ae46a51e2edafb2633aeb6b896de12a9930b9834535d4fe236700d0bdc1114&=&format=webp&quality=lossless",
 
-  "stats": {
-    "hp": 185,
-    "speed": "Fast",
-    "damage": 5,
-    "skills": 11,
-    "lowHpAnimation": false,
-    "canHeal": true
-  },
-
-  "attacks": [
+  "versions": [
     {
-      "name": "Spin Dash",
-      "damage": 10,
-      "cooldown": "11s",
-      "shieldBreak": true
+      "id": "normal",
+
+      "name": "Sonic",
+
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507524783246409738/e3339df6c174c02d31414df3af27cb9f.png?ex=6a12375c&is=6a10e5dc&hm=98ae46a51e2edafb2633aeb6b896de12a9930b9834535d4fe236700d0bdc1114&=&format=webp&quality=lossless",
+
+      "stats": {
+        "hp": 185,
+        "speed": "Fast",
+        "damage": 5,
+        "skills": 6,
+        "lowHpAnimation": false,
+        "canHeal": true
+      },
+
+      "attacks": [
+        {
+          "slot": "1",
+          "name": "Spin Dash",
+          "damage": 10,
+          "cooldown": "11s",
+          "attributes": [
+            "break",
+            "move",
+            "push"
+          ]
+        },
+
+        {
+          "slot": "2",
+          "name": "Super Speed",
+          "damage": 10,
+          "cooldown": "14s",
+          "attributes": [
+            "block",
+            "move",
+            "push"
+          ]
+        },
+
+        {
+          "slot": "3",
+          "name": "Spin Counter",
+          "damage": 15,
+          "cooldown": "15s",
+          "attributes": [
+            "coun",
+            "cine",
+            "mele"
+          ]
+        },
+
+        {
+          "slot": "4",
+          "name": "Electricity Steal",
+          "damage": 15,
+          "cooldown": "12s",
+          "attributes": [
+            "block",
+            "range"
+          ]
+        },
+
+        {
+          "slot": "5",
+          "name": "Blitz Finish",
+          "damage": 0,
+          "cooldown": "0.7s",
+          "attributes": [
+            "ignore",
+            "finish",
+            "cine",
+            "heal"
+          ]
+        },
+
+        {
+          "slot": "E",
+          "name": "Super Sonic",
+          "damage": 0,
+          "cooldown": "10000s",
+          "attributes": [
+            "trans",
+            "heal"
+          ]
+        }
+      ],
+
+      "skins": [
+        {
+          "name": "Sanic",
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343663560757478/d2a2d30a94242ce70030ba6042ddd043.png?ex=6a153201&is=6a13e081&hm=6327769e65276b38424d202d0ddba2e04ab61e116e942905b548cb82de7e2b5a&=&format=webp&quality=lossless",
+          "lore": "Classic internet meme parody of Sonic known for its badly drawn appearance, extreme speed jokes, and the phrase 'Gotta go fast.'"
+        },
+
+        {
+          "name": "Excalibur",
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343614126686259/b1fc1b1a1842e7543babf6a9f080c056.png?ex=6a1531f5&is=6a13e075&hm=82e4b4565e681e427dcc1785f446a6c8d468a4b7509d01e7c94ed90466b6b0e8&=&format=webp&quality=lossless",
+          "lore": "Sonic and the Black Knight, where Sonic wears golden knight armor and wields the legendary sword Excalibur while fighting in a medieval fantasy world inspired by Arthurian legends."
+        }
+      ],
+
+      "lore": "Sonic the Hedgehog is the iconic blue speedster from SEGA's Sonic franchise. Known for his incredible speed, adventurous spirit, and rivalry with Dr. Eggman, Sonic uses his agility and Chaos energy powers to protect the world from evil threats."
     },
 
     {
-      "name": "Super Speed",
-      "damage": 10,
-      "cooldown": "14s",
-      "shieldBreak": false
-    },
+      "id": "supersonic",
 
-    {
-      "name": "Spin Counter",
-      "damage": 15,
-      "cooldown": "15s",
-      "shieldBreak": false
-    },
-
-    {
-      "name": "Electricity Steal",
-      "damage": 15,
-      "cooldown": "12s",
-      "shieldBreak": false
-    },
-
-    {
-      "name": "Blitz Finish",
-      "damage": 0,
-      "cooldown": "0.7s",
-      "shieldBreak": false
-    },
-
-    {
       "name": "Super Sonic",
-      "damage": 0,
-      "cooldown": "10000s",
-      "shieldBreak": false
-    },
 
-    {
-      "name": "Kick Barrage",
-      "damage": 8,
-      "cooldown": "9s",
-      "shieldBreak": false
-    },
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507524783246409738/e3339df6c174c02d31414df3af27cb9f.png?ex=6a12375c&is=6a10e5dc&hm=98ae46a51e2edafb2633aeb6b896de12a9930b9834535d4fe236700d0bdc1114&=&format=webp&quality=lossless",
 
-    {
-      "name": "Flying Strike",
-      "damage": 10,
-      "cooldown": "10s",
-      "shieldBreak": false
-    },
+      "stats": {
+        "hp": 185,
+        "speed": "Fast",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": false,
+        "canHeal": true
+      },
 
-    {
-      "name": "Flying Counter",
-      "damage": 30,
-      "cooldown": "15s",
-      "shieldBreak": false
-    },
+      "attacks": [
+        {
+          "slot": "1",
+          "name": "Kick Barrage",
+          "damage": 8,
+          "cooldown": "9s",
+          "attributes": [
+            "ignore",
+            "mele"
+          ]
+        },
 
-    {
-      "name": "Electrick Shock",
-      "damage": 25,
-      "cooldown": "13s",
-      "shieldBreak": true
-    },
+        {
+          "slot": "2",
+          "name": "Flying Strike",
+          "damage": 10,
+          "cooldown": "10s",
+          "attributes": [
+            "ignore",
+            "move",
+            "mele",
+            "push"
+          ]
+        },
 
-    {
-      "name": "Chilidog",
-      "damage": 0,
-      "cooldown": "16s",
-      "shieldBreak": false
+        {
+          "slot": "3",
+          "name": "Flying Counter",
+          "damage": 30,
+          "cooldown": "15s",
+          "attributes": [
+            "coun",
+            "cine",
+            "mele"
+          ]
+        },
+
+        {
+          "slot": "4",
+          "name": "Electric Shock",
+          "damage": 25,
+          "cooldown": "13s",
+          "attributes": [
+            "break",
+            "area",
+            "ex",
+            "push",
+            "range"
+          ]
+        },
+
+        {
+          "slot": "E",
+          "name": "Chilidog",
+          "damage": 0,
+          "cooldown": "16s",
+          "attributes": [
+            "heal"
+          ]
+        }
+      ],
+
+      "skins": [
+        {
+          "name": "Sanic",
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1514900235250565221/latest.png?ex=6a2d0c49&is=6a2bbac9&hm=880b0fa024ecf6d7c2c32c77fa9060aebd5a7eb6821022454e0cbc25ef93bd47&=&format=webp&quality=lossless",
+          "lore": "Classic internet meme parody of Sonic known for its badly drawn appearance, extreme speed jokes, but now is yellow"
+        },
+
+        {
+          "name": "Excalibur",
+          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343614126686259/b1fc1b1a1842e7543babf6a9f080c056.png?ex=6a1531f5&is=6a13e075&hm=82e4b4565e681e427dcc1785f446a6c8d468a4b7509d01e7c94ed90466b6b0e8&=&format=webp&quality=lossless",
+          "lore": "Sonic and the Black Knight, where Sonic wears golden knight armor and wields the legendary sword Excalibur while fighting in a medieval fantasy world inspired by Arthurian legends his super sonic version keep the same skin."
+        }
+      ],
+
+      "lore": "Super Sonic is Sonic's Chaos Emerald transformation. In this golden form, Sonic becomes faster, stronger, and gains access to enhanced energy-based attacks."
     }
-  ],
-
-"skins": [
-  {
-    "name": "Sanic",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343663560757478/d2a2d30a94242ce70030ba6042ddd043.png?ex=6a153201&is=6a13e081&hm=6327769e65276b38424d202d0ddba2e04ab61e116e942905b548cb82de7e2b5a&=&format=webp&quality=lossless",
-    "lore": "classic internet meme parody of Sonic known for its badly drawn appearance, extreme speed jokes, and the phrase 'Gotta go fast.'"
-  },
-
-  {
-    "name": "Excalibur",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343614126686259/b1fc1b1a1842e7543babf6a9f080c056.png?ex=6a1531f5&is=6a13e075&hm=82e4b4565e681e427dcc1785f446a6c8d468a4b7509d01e7c94ed90466b6b0e8&=&format=webp&quality=lossless",
-    "lore": " Sonic and the Black Knight, where Sonic wears golden knight armor and wields the legendary sword Excalibur while fighting in a medieval fantasy world inspired by Arthurian legends."
-  }
-],
-
-  "lore": "Sonic the Hedgehog is the iconic blue speedster from SEGA's Sonic franchise. Known for his incredible speed, adventurous spirit, and rivalry with Dr. Eggman, Sonic uses his agility and Chaos energy powers to protect the world from evil threats."
+  ]
 }

@@ -10,38 +10,62 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Hook Slash",
       "damage": 10,
       "cooldown": "7.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Quick Pirate",
       "damage": 10,
       "cooldown": "11.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Hook Counter",
       "damage": 15,
       "cooldown": "17s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "IT'S ME",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "tp",
+        "lr"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     }
   ],
 

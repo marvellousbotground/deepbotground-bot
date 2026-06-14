@@ -10,38 +10,62 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Portal Bullets",
       "damage": 2,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Magic Whip",
       "damage": 12,
       "cooldown": "12.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "lr"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Soul Counter",
       "damage": 10,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Seven Suns of Cinnibus",
       "damage": 10,
       "cooldown": "30s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lr",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Icy Tendrils of Ikthalon",
       "damage": 16,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "range",
+        "area",
+        "noti"
+      ]
     }
   ],
 

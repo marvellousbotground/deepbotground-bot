@@ -13,19 +13,9 @@
   "universe": "Death Note",
 
   "tags": {
-
     "type": [
       "villain",
       "human"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "heal",
-      "shieldbreak",
-      "ranged"
     ]
   },
 
@@ -42,45 +32,76 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Cardiac Judgement",
       "damage": 12,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "mele",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Compelled End",
       "damage": 10,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "grab",
+        "mele",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Shinigami Counter",
       "damage": 0,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Written Collision",
       "damage": 20,
       "cooldown": "22.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lr",
+        "push",
+        "bruta"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Eyes of Death Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
-      "name": "The New Wolrd",
+      "slot": "E",
+      "name": "The New World",
       "damage": 0,
       "cooldown": "33s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 

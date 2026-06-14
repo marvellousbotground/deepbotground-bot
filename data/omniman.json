@@ -15,22 +15,6 @@
 
   "universe": "Invincible",
 
-  "tags": {
-    "type": [
-      "antihero",
-      "hero",
-      "superhuman"
-    ],
-
-    "ability": [
-      "flight",
-      "shieldbreak",
-      "finisher",
-      "counter",
-      "passive"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/873771724800417793/1506572283538571344/515c8eb940646c37677be05a8b001392.png?ex=6a0ec047&is=6a0d6ec7&hm=66d191e20fbbde187b1e723e7710ef1f1adf94cae9b7d0471bb4a7a72978a91a&=&format=webp&quality=lossless",
 
   "stats": {
@@ -44,80 +28,118 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Chop",
       "damage": 8,
       "cooldown": "8s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
+
     {
+      "slot": "2",
       "name": "Shockwave Clap",
       "damage": 5,
       "cooldown": "10s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "area",
+        "lr",
+        "push",
+        "bruta"
+      ]
     },
+
     {
+      "slot": "3",
       "name": "Viltrumite Counter",
       "damage": 20,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "area",
+        "coun",
+        "range",
+        "push"
+      ]
     },
+
     {
+      "slot": "4",
       "name": "Spike Stab",
       "damage": 15,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "mele"
+      ]
     },
+
     {
+      "slot": "5",
       "name": "Brutal Finisher",
       "damage": 0,
       "cooldown": "0.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
+
     {
+      "slot": "E",
       "name": "Flight",
       "damage": 10,
       "cooldown": "32s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push"
+      ]
     }
   ],
 
- "skins": [
-  {
-    "name": "Nolan",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507846599555158086/c74905a8a3dc74a7d7a8592a54646f39.png?ex=6a136313&is=6a121193&hm=0b0f32cb25596aa952bb74d86f2a990142af2f7a6cf14b79daf6a41cc986162a&=&format=webp&quality=lossless",
-    "lore": "Nolan is Omni-Man's civilian identity on Earth, where he lived as Mark Grayson's father while secretly carrying out the Viltrum Empire's mission."
-  },
+  "skins": [
+    {
+      "name": "Nolan",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507846599555158086/c74905a8a3dc74a7d7a8592a54646f39.png?ex=6a136313&is=6a121193&hm=0b0f32cb25596aa952bb74d86f2a990142af2f7a6cf14b79daf6a41cc986162a&=&format=webp&quality=lossless",
+      "lore": "Nolan is Omni-Man's civilian identity on Earth, where he lived as Mark Grayson's father while secretly carrying out the Viltrum Empire's mission."
+    },
 
-  {
-    "name": "Prisoner",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507847273101393920/pri.png?ex=6a1363b4&is=6a121234&hm=a318795fbb480af64662c155f87d3d91d57cf4b00e0abf1c61273e9c2a1cb6a0&=&format=webp&quality=lossless",
-    "lore": "The Prisoner skin represents Omni-Man after the battle on Thraxa. Following his defeat against the Viltrumites alongside Invincible, Nolan was captured and taken prisoner by the Viltrum Empire."
-  },
+    {
+      "name": "Prisoner",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507847273101393920/pri.png?ex=6a1363b4&is=6a121234&hm=a318795fbb480af64662c155f87d3d91d57cf4b00e0abf1c61273e9c2a1cb6a0&=&format=webp&quality=lossless",
+      "lore": "The Prisoner skin represents Omni-Man after the battle on Thraxa. Following his defeat against the Viltrumites alongside Invincible, Nolan was captured and taken prisoner by the Viltrum Empire."
+    },
 
-  {
-    "name": "Thraxa",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507848274629886002/thra.jpg?ex=6a1364a3&is=6a121323&hm=febfdbcc8f9706cbd2da012fe31e04adbcfb2dac283902d3d7bfff82eb8a4822&=&format=webp",
-    "lore": "The Thraxa skin is based on Omni-Man's life on the alien planet Thraxa, where he abandoned Earth and attempted to start over while protecting the Thraxan people."
-  },
+    {
+      "name": "Thraxa",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507848274629886002/thra.jpg?ex=6a1364a3&is=6a121323&hm=febfdbcc8f9706cbd2da012fe31e04adbcfb2dac283902d3d7bfff82eb8a4822&=&format=webp",
+      "lore": "The Thraxa skin is based on Omni-Man's life on the alien planet Thraxa, where he abandoned Earth and attempted to start over while protecting the Thraxan people."
+    },
 
-  {
-    "name": "Planets",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507849646758690907/nose.png?ex=6a1365ea&is=6a12146a&hm=e83fa2d995f430b46e41a2f6caef05aa6bf40a00d7b083df1755bff76870fb03&=&format=webp&quality=lossless",
-    "lore": "The Planets skin references Omni-Man during the Viltrumite War after joining the Coalition of Planets. After abandoning the Empire and realizing the destruction caused by the Viltrumites, Nolan allied himself with the Coalition to help stop Thragg and protect the galaxy."
-  },
+    {
+      "name": "Planets",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507849646758690907/nose.png?ex=6a1365ea&is=6a12146a&hm=e83fa2d995f430b46e41a2f6caef05aa6bf40a00d7b083df1755bff76870fb03&=&format=webp&quality=lossless",
+      "lore": "The Planets skin references Omni-Man during the Viltrumite War after joining the Coalition of Planets. After abandoning the Empire and realizing the destruction caused by the Viltrumites, Nolan allied himself with the Coalition to help stop Thragg and protect the galaxy."
+    },
 
-  {
-    "name": "Depressed",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507850888293646367/8d27a0668d1c4563e9f86ac817ffcae5.png?ex=6a136712&is=6a121592&hm=e6d4697bb145397305edc87149d9a16285f542736c9bcd791946f8544f0d7fa5&=&format=webp&quality=lossless",
-    "lore": "The Depressed skin reflects Nolan's emotional collapse after betraying Earth, abandoning his family, and questioning his loyalty to the Viltrum Empire."
-  },
+    {
+      "name": "Depressed",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507850888293646367/8d27a0668d1c4563e9f86ac817ffcae5.png?ex=6a136712&is=6a121592&hm=e6d4697bb145397305edc87149d9a16285f542736c9bcd791946f8544f0d7fa5&=&format=webp&quality=lossless",
+      "lore": "The Depressed skin reflects Nolan's emotional collapse after betraying Earth, abandoning his family, and questioning his loyalty to the Viltrum Empire."
+    },
 
-  {
-    "name": "Adulthood",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1507851066631393300/061dd003ec4a76867dcce07b667e1cf3.png?ex=6a13673c&is=6a1215bc&hm=8b48f6ef32b9ebcb4f8f2b1ab9ade2ad3cd0110a2dafefa213b152de7c1fbc99&=&format=webp&quality=lossless",
-    "lore": "The Adulthood skin represents a young Nolan during the Viltrumite coming-of-age trials shown in the Invincible animated series, where young Viltrumites were forced to fight and survive brutal tests to prove themselves worthy warriors."
-  }
-],
+    {
+      "name": "Adulthood",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507851066631393300/061dd003ec4a76867dcce07b667e1cf3.png?ex=6a13673c&is=6a1215bc&hm=8b48f6ef32b9ebcb4f8f2b1ab9ade2ad3cd0110a2dafefa213b152de7c1fbc99&=&format=webp&quality=lossless",
+      "lore": "The Adulthood skin represents a young Nolan during the Viltrumite coming-of-age trials shown in the Invincible animated series, where young Viltrumites were forced to fight and survive brutal tests to prove themselves worthy warriors."
+    }
+  ],
 
   "techs": [
     {
@@ -125,6 +147,7 @@
       "video": "https://youtu.be/CsQ-xC3kjKM",
       "credits": "AL3X"
     },
+
     {
       "name": "Shockwave Clap",
       "video": "https://youtu.be/fQu8pfbL5rU",
@@ -132,5 +155,5 @@
     }
   ],
 
-  "lore": "Omni-Man is a powerful Viltrumite warrior from the comic and animated series Invincible. Sent to Earth as part of the Viltrum Empire’s mission, he pretended to be humanity’s greatest hero while secretly preparing the planet for conquest. He possesses immense strength, flight, and near invulnerability."
+  "lore": "Omni-Man is a powerful Viltrumite warrior from the comic and animated series Invincible. Sent to Earth as part of the Viltrum Empire's mission, he pretended to be humanity's greatest hero while secretly preparing the planet for conquest. He possesses immense strength, flight, and near invulnerability."
 }

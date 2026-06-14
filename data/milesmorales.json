@@ -15,21 +15,6 @@
 
   "universe": "Marvel",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "heal"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507213492518654152/7246-miles-morales.png?ex=6a111573&is=6a0fc3f3&hm=993525ad8da0439a0c8a972edb818b03f25cce123d0b8fe090edd63cd8414c87&=&format=webp&quality=lossless",
 
   "stats": {
@@ -43,86 +28,116 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Venom Absorb",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "heal",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Webswing",
       "damage": 10,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Zap Counter",
       "damage": 8,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "area"
+      ]
     },
 
     {
-      "name": "Invisible kick",
+      "slot": "4",
+      "name": "Invisible Kick",
       "damage": 10,
       "cooldown": "10s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "inv",
+        "move",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Beatdown Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Spidey Sense",
       "damage": 0,
       "cooldown": "55s",
-      "shieldBreak": false
+      "attributes": [
+        
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Leap of Faith",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508236276346916894/f8f95bb5b7841c131696aaccf9de76a8.png?ex=6a14cdfd&is=6a137c7d&hm=92e9ecab8c96b6cd581f3d38e862d14e3dc188a03501a88656b3a32596896817&=&format=webp&quality=lossless",
-    "lore": "The Leap of Faith skin references Miles Morales during his iconic leap from the skyscraper in Spider-Man: Into the Spider-Verse after finally embracing his role as Spider-Man."
-  },
+  "skins": [
+    {
+      "name": "Leap of Faith",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508236276346916894/f8f95bb5b7841c131696aaccf9de76a8.png?ex=6a14cdfd&is=6a137c7d&hm=92e9ecab8c96b6cd581f3d38e862d14e3dc188a03501a88656b3a32596896817&=&format=webp&quality=lossless",
+      "lore": "The Leap of Faith skin references Miles Morales during his iconic leap from the skyscraper in Spider-Man: Into the Spider-Verse after finally embracing his role as Spider-Man."
+    },
 
-  {
-    "name": "Storebought",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237045925941308/Web_Photo_Editor_27.jpg?ex=6a14ceb5&is=6a137d35&hm=afb134c6c0d85ba96c71cc97cec34b22875995c11667247db3793330b9890c86&=&format=webp",
-    "lore": "The Storebought skin references the cheap Spider-Man costume Miles buys from Stan's shop before attending the memorial event for Peter Parker."
-  },
+    {
+      "name": "Storebought",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237045925941308/Web_Photo_Editor_27.jpg?ex=6a14ceb5&is=6a137d35&hm=afb134c6c0d85ba96c71cc97cec34b22875995c11667247db3793330b9890c86&=&format=webp",
+      "lore": "The Storebought skin references the cheap Spider-Man costume Miles buys from Stan's shop before attending the memorial event for Peter Parker."
+    },
 
-  {
-    "name": "Porky",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237155917500426/18952aa57aed38d46462ca37ef67dd2a.png?ex=6a14cecf&is=6a137d4f&hm=c9a099eb60ea2624934eb94b7b5e38676252db8dbdb489c7826707e14a73e45c&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "The Porky skin references Spider-Ham, the cartoon pig version of Spider-Man from the Spider-Verse movies."
-  },
+    {
+      "name": "Porky",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237155917500426/18952aa57aed38d46462ca37ef67dd2a.png?ex=6a14cecf&is=6a137d4f&hm=c9a099eb60ea2624934eb94b7b5e38676252db8dbdb489c7826707e14a73e45c&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "The Porky skin references Spider-Ham, the cartoon pig version of Spider-Man from the Spider-Verse movies."
+    },
 
-  {
-    "name": "Gwen",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237256568082462/08795012751c3ec8846f41ff3e2cfab0.png?ex=6a14cee7&is=6a137d67&hm=94eddfb0559254b38df01f7fa84695edf23eacf18b5ccfdc4c37ab12c27b0b54&=&format=webp&quality=lossless&width=358&height=350",
-    "lore": "The Gwen skin references Gwen Stacy, also known as Spider-Woman or Spider-Gwen from the Spider-Verse films.",
-    "dataFile": "gwen.json"
-  },
+    {
+      "name": "Gwen",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237256568082462/08795012751c3ec8846f41ff3e2cfab0.png?ex=6a14cee7&is=6a137d67&hm=94eddfb0559254b38df01f7fa84695edf23eacf18b5ccfdc4c37ab12c27b0b54&=&format=webp&quality=lossless&width=358&height=350",
+      "lore": "The Gwen skin references Gwen Stacy, also known as Spider-Woman or Spider-Gwen from the Spider-Verse films.",
+      "dataFile": "gwen.json"
+    },
 
-  {
-    "name": "Ps5",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237584306802849/49c87bf484420567f76cb3f811e455a5.png?ex=6a14cf35&is=6a137db5&hm=b88b31a87c8d047f9da0c1cf41cecbb3ed314f432a1b8adb7410a25c74d0c9e6&=&format=webp&quality=lossless",
-    "lore": "The Ps5 skin references Miles Morales' appearance and suit from the Marvel's Spider-Man 2 video game on PlayStation 5."
-  },
+    {
+      "name": "Ps5",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508237584306802849/49c87bf484420567f76cb3f811e455a5.png?ex=6a14cf35&is=6a137db5&hm=b88b31a87c8d047f9da0c1cf41cecbb3ed314f432a1b8adb7410a25c74d0c9e6&=&format=webp&quality=lossless",
+      "lore": "The Ps5 skin references Miles Morales' appearance and suit from the Marvel's Spider-Man 2 video game on PlayStation 5."
+    },
 
-  {
-    "name": "Prowler",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508236565116227706/c6ca9e7e8ebf5abefdde38ac68816a71.png?ex=6a14ce42&is=6a137cc2&hm=b479b48b2d9f66bfebe0ed43910758ddbc3ad1a78aa621530fd7d82c6cb90984&=&format=webp&quality=lossless",
-    "lore": "The Prowler skin references the alternate universe version of Miles Morales seen at the end of Spider-Man: Across the Spider-Verse, where Miles became the Prowler instead of Spider-Man."
-  }
-],
+    {
+      "name": "Prowler",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508236565116227706/c6ca9e7e8ebf5abefdde38ac68816a71.png?ex=6a14ce42&is=6a137cc2&hm=b479b48b2d9f66bfebe0ed43910758ddbc3ad1a78aa621530fd7d82c6cb90984&=&format=webp&quality=lossless",
+      "lore": "The Prowler skin references the alternate universe version of Miles Morales seen at the end of Spider-Man: Across the Spider-Verse, where Miles became the Prowler instead of Spider-Man."
+    }
+  ],
 
   "lore": "Miles Morales is a Spider-Man from Marvel Comics and the Spider-Verse films. After being bitten by a radioactive spider, he gained powers similar to Peter Parker alongside unique abilities such as bio-electric venom attacks and camouflage, becoming one of the most popular Spider-Man variants."
 }

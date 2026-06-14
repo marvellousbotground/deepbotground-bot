@@ -10,45 +10,74 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Wrong Answer!",
       "damage": 10,
       "cooldown": "11.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele",
+        "move"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Decoy",
       "damage": 10,
       "cooldown": "10.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "tp",
+        "lr"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Stab Counter",
       "damage": 15,
       "cooldown": "15s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
       "name": "Shotgun",
       "damage": 8,
       "cooldown": "14.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Distraction Call",
       "damage": 0,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "range",
+        "area"
+      ]
     }
   ],
 

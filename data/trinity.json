@@ -14,22 +14,6 @@
 
   "universe": "Dexter",
 
-  "tags": {
-
-    "type": [
-      "villain",
-      "human",
-      "slasher"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "heal",
-      "extra"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507808624238657737/artworks-Au1scPZyugpg8QSG-VWpWjA-t500x500.png?ex=6a133fb5&is=6a11ee35&hm=d80e745fc9969d03f103c49075ff3f734f5f78fd43519a22c0c0f488a05ae505&=&format=webp&quality=lossless",
 
   "stats": {
@@ -42,56 +26,84 @@
   },
 
   "attacks": [
-    { 
+    {
+      "slot": "1",
       "name": "Dumbell Rush",
       "damage": 10,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "push",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Take a Picture",
       "damage": 5,
       "cooldown": "10.5s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Drill Counter",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Bone Smash",
       "damage": 20,
       "cooldown": "13s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Acid Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Party Drink",
       "damage": 0,
       "cooldown": "21.5s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Frank",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508645246404264026/224c33b5f297bd70e3a6a0b914ee5265.png?ex=6a164ae0&is=6a14f960&hm=37a137d689a34cc86307937e07c93e18282cdafaed105858a17b939f83cef7f7&=&format=webp&quality=lossless",
-    "lore": "Frank Heffley, Greg Heffley's older brother from Diary of a Wimpy Kid, known for his lazy personality, heavy metal obsession, and chaotic behavior inside the Heffley family."
-  }
-],
+  "skins": [
+    {
+      "name": "Frank",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508645246404264026/224c33b5f297bd70e3a6a0b914ee5265.png?ex=6a164ae0&is=6a14f960&hm=37a137d689a34cc86307937e07c93e18282cdafaed105858a17b939f83cef7f7&=&format=webp&quality=lossless",
+      "lore": "Frank Heffley, Greg Heffley's older brother from Diary of a Wimpy Kid, known for his lazy personality, heavy metal obsession, and chaotic behavior inside the Heffley family."
+    }
+  ],
 
-  "lore": "Arthur Mitchell, also known as the Trinity Killer, is one of Dexter Morgan’s most infamous enemies from the Dexter series. Living a double life as a seemingly ordinary family man, he secretly carried out a ritualistic cycle of murders that terrorized multiple communities for decades."
+  "lore": "Arthur Mitchell, also known as the Trinity Killer, is one of Dexter Morgan's most infamous enemies from the Dexter series. Living a double life as a seemingly ordinary family man, he secretly carried out a ritualistic cycle of murders that terrorized multiple communities for decades."
 }

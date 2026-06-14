@@ -15,24 +15,6 @@
 
   "universe": "Marvel",
 
-  "tags": {
-
-    "type": [
-      "hero",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "shieldBreak",
-      "ranged",
-      "heal",
-      "extra",
-      "transformation"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345440100290683/642e52202e34b17a2fc2829c23190941.png?ex=6a1533a8&is=6a13e228&hm=a3124c7a5a7829876015e63931706953fe8809833f9aa1670b80c9d6efa180e0&=&format=webp&quality=lossless&width=350&height=350",
 
   "stats": {
@@ -46,104 +28,140 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Spider-Sting",
       "damage": 12,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Web Ball",
       "damage": 12,
       "cooldown": "12s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Blizzard Counter",
       "damage": 5,
       "cooldown": "22s",
-      "shieldBreak": true
+      "attributes": [
+        "ignore",
+        "coun",
+        "area",
+        "mele",
+        "range"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Webswing Kick",
       "damage": 10,
       "cooldown": "17s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "move",
+        "mele",
+        "push"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Sticky Finisher",
       "damage": 0,
       "cooldown": "0.7s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Symbiote Recovery",
       "damage": 0,
       "cooldown": "10000s",
-      "shieldBreak": false
+      "attributes": [
+        "heal",
+        "trans"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Symbiote Strike",
       "damage": 15,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "move",
+        "mele"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Webweaver",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345539786444850/74372b861d46280b74aad5c12dd68dc0.png?ex=6a1533c0&is=6a13e240&hm=36261b014fe8e7714c3f726e30b5d47835206f38b46fc8c26783f5ad40f86cab&=&format=webp&quality=lossless",
-    "lore": "Webweaver from The Boys, a parody Spider-Man-inspired superhero introduced in the series."
-  },
+  "skins": [
+    {
+      "name": "Webweaver",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345539786444850/74372b861d46280b74aad5c12dd68dc0.png?ex=6a1533c0&is=6a13e240&hm=36261b014fe8e7714c3f726e30b5d47835206f38b46fc8c26783f5ad40f86cab&=&format=webp&quality=lossless",
+      "lore": "Webweaver from The Boys, a parody Spider-Man-inspired superhero introduced in the series."
+    },
 
-  {
-    "name": "Ps5",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345628860747806/a7fbc5b154e0489d7147f6b2dec9af86.png?ex=6a1533d5&is=6a13e255&hm=37ca96f11d6ffba16a4362822357b0c0f5f83a1052f8887ab7f99d26eac56e5d&=&format=webp&quality=lossless",
-    "lore": "Spider-Man's appearance and advanced suit from Marvel's Spider-Man 2 on PlayStation 5."
-  },
+    {
+      "name": "Ps5",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345628860747806/a7fbc5b154e0489d7147f6b2dec9af86.png?ex=6a1533d5&is=6a13e255&hm=37ca96f11d6ffba16a4362822357b0c0f5f83a1052f8887ab7f99d26eac56e5d&=&format=webp&quality=lossless",
+      "lore": "Spider-Man's appearance and advanced suit from Marvel's Spider-Man 2 on PlayStation 5."
+    },
 
-  {
-    "name": "The Spider",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508346824690372718/Web_Photo_Editor_44.jpg?ex=6a1534f2&is=6a13e372&hm=a54acda1442f01e2ab7745acc578f6153263d170498907927a1542d0995ff679&=&format=webp",
-    "lore": "fan-made horror short film The Spider, which reimagines Spider-Man as a disturbing horror creature."
-  },
+    {
+      "name": "The Spider",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508346824690372718/Web_Photo_Editor_44.jpg?ex=6a1534f2&is=6a13e372&hm=a54acda1442f01e2ab7745acc578f6153263d170498907927a1542d0995ff679&=&format=webp",
+      "lore": "Fan-made horror short film The Spider, which reimagines Spider-Man as a disturbing horror creature."
+    },
 
-  {
-    "name": "MCU",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508346932962263140/0b1fce816e8a70adf1dd8697c88619a1.png?ex=6a15350c&is=6a13e38c&hm=286e150ff0468f3ec998dc5575a9772cff0d7e8ecbd574052851b54a9300da3a&=&format=webp&quality=lossless",
-    "lore": "Peter Parker from the Marvel Cinematic Universe portrayed by Tom Holland."
-  },
+    {
+      "name": "MCU",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508346932962263140/0b1fce816e8a70adf1dd8697c88619a1.png?ex=6a15350c&is=6a13e38c&hm=286e150ff0468f3ec998dc5575a9772cff0d7e8ecbd574052851b54a9300da3a&=&format=webp&quality=lossless",
+      "lore": "Peter Parker from the Marvel Cinematic Universe portrayed by Tom Holland."
+    },
 
-  {
-    "name": "Homemade",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347013748756593/75ea35e6cdd4e231baace8d47c28d54e.png?ex=6a15351f&is=6a13e39f&hm=735e8dd7c98546a0fda1cbd5aeb71efc9269a830e20051765f3a64ace4606e8f&=&format=webp&quality=lossless",
-    "lore": "Andrew Garfield's homemade Spider-Man suit created before receiving his more advanced costume."
-  },
+    {
+      "name": "Homemade",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347013748756593/75ea35e6cdd4e231baace8d47c28d54e.png?ex=6a15351f&is=6a13e39f&hm=735e8dd7c98546a0fda1cbd5aeb71efc9269a830e20051765f3a64ace4606e8f&=&format=webp&quality=lossless",
+      "lore": "Andrew Garfield's homemade Spider-Man suit created before receiving his more advanced costume."
+    },
 
-  {
-    "name": "Raimi",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347285543587940/bce5b2641495a1688f9ef6d0e9c07ecc.png?ex=6a153560&is=6a13e3e0&hm=a5e3ef76a0c3ceb11f974a09b345d4692bb3e02841de151d4a1cfd02d174d728&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "Spider-Man from Sam Raimi's trilogy portrayed by Tobey Maguire."
-  },
+    {
+      "name": "Raimi",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347285543587940/bce5b2641495a1688f9ef6d0e9c07ecc.png?ex=6a153560&is=6a13e3e0&hm=a5e3ef76a0c3ceb11f974a09b345d4692bb3e02841de151d4a1cfd02d174d728&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "Spider-Man from Sam Raimi's trilogy portrayed by Tobey Maguire."
+    },
 
-  {
-    "name": "Spectacular",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347339969138839/af82bd951ce6e3ada77d5af879eafa57.png?ex=6a15356d&is=6a13e3ed&hm=c32a22940f2aa43aa754894d98637da6f1b095b3add46bde070775edfb6d0b74&=&format=webp&quality=lossless",
-    "lore": "Spiderman from animated series The Spectacular Spider-Man."
-  },
+    {
+      "name": "Spectacular",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347339969138839/af82bd951ce6e3ada77d5af879eafa57.png?ex=6a15356d&is=6a13e3ed&hm=c32a22940f2aa43aa754894d98637da6f1b095b3add46bde070775edfb6d0b74&=&format=webp&quality=lossless",
+      "lore": "Spider-Man from animated series The Spectacular Spider-Man."
+    },
 
-  {
-    "name": "Tasm2",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347496944898168/143832123ee63b815059c0b96d2deda7.png?ex=6a153593&is=6a13e413&hm=bf7edf4900be8fafb12c8f037b056deb7818188e3c48c6494a36af927e3a2f99&=&format=webp&quality=lossless",
-    "lore": "Spider-Man's appearance in The Amazing Spider-Man 2."
-  }
-],
+    {
+      "name": "Tasm2",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347496944898168/143832123ee63b815059c0b96d2deda7.png?ex=6a153593&is=6a13e413&hm=bf7edf4900be8fafb12c8f037b056deb7818188e3c48c6494a36af927e3a2f99&=&format=webp&quality=lossless",
+      "lore": "Spider-Man's appearance in The Amazing Spider-Man 2."
+    }
+  ],
 
-  "lore": "Spider-Man, also known as Peter Parker, is one of Marvel’s most iconic superheroes. After being bitten by a radioactive spider, he gained enhanced strength, agility, spider-sense, and wall-crawling abilities, using his powers to protect New York as the friendly neighborhood Spider-Man."
+  "lore": "Spider-Man, also known as Peter Parker, is one of Marvel's most iconic superheroes. After being bitten by a radioactive spider, he gained enhanced strength, agility, spider-sense, and wall-crawling abilities, using his powers to protect New York as the friendly neighborhood Spider-Man."
 }

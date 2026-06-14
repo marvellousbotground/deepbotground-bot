@@ -14,24 +14,6 @@
 
   "universe": "Stranger Things",
 
-  "tags": {
-
-    "type": [
-      "villain",
-      "monster",
-      "superhuman"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "ranged",
-      "transformation",
-      "heal"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507811792670429215/latest.png?ex=6a1342a9&is=6a11f129&hm=4208e899b153b525c808842a19e6773571a939b8d5d10aea14af7f47ccfb8a5b&=&format=webp&quality=lossless",
 
   "stats": {
@@ -45,59 +27,101 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Piercing Shards",
       "damage": 9,
       "cooldown": "12s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "lr"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Vine Pull",
       "damage": 8,
       "cooldown": "10.5s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "noti",
+        "push"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Crucify Counter",
       "damage": 24,
       "cooldown": "14s",
-      "shieldBreak": true
+      "attributes": [
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Clock Hallucination",
       "damage": 0,
       "cooldown": "15s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "noti",
+        "area",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Times Up Finisher",
       "damage": 0,
       "cooldown": "1s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal",
+        "charge"
+      ]
     },
 
     {
-      "name": "It is time",
+      "slot": "E",
+      "name": "It is Time",
       "damage": 0,
       "cooldown": "10000s",
-      "shieldBreak": false
+      "attributes": [
+        "trans",
+        "heal"
+      ]
     },
 
     {
+      "slot": "1",
       "name": "Vine Pierce",
       "damage": 15,
       "cooldown": "9.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "grab",
+        "range"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "The Mind Flayer",
       "damage": 135,
       "cooldown": "8.5s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "cine",
+        "trans",
+        "cine",
+        "move"
+      ]
     }
   ],
 

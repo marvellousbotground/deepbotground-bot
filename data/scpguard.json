@@ -14,22 +14,6 @@
 
   "universe": "SCP Foundation",
 
-  "tags": {
-
-    "type": [
-      "human",
-      "hero"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "heal",
-      "shieldBreak"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507519332811280444/ugc_1852689753783702476_4116F09374DF83BD5DEC64880FC5B3E7A3A6E5D5_.png?ex=6a123249&is=6a10e0c9&hm=8b86da2481747d26c74d10adfa80a56ba9348dbeae91a42cc912b1f919ed3ad3&=&format=webp&quality=lossless",
 
   "stats": {
@@ -43,55 +27,83 @@
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Shootgun",
       "damage": 8,
       "cooldown": "9s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "range"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Sculpture Bash",
       "damage": 8,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "range"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Grab Counter",
       "damage": 12,
       "cooldown": "14s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "mele"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Grenade",
       "damage": 15,
       "cooldown": "16s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "push",
+        "area",
+        "ex",
+        "range"
+      ]
     },
 
     {
-      "name": "Breakikng Finisher",
+      "slot": "5",
+      "name": "Breaking Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "finish",
+        "cine",
+        "ignore",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "Slime Medication",
       "damage": 0,
       "cooldown": "26s",
-      "shieldBreak": false
+      "attributes": [
+        "heal"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Cop",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508331453036101642/14f46364f46697c767562cf2d7c1bb7d.png?ex=6a1526a1&is=6a13d521&hm=e9356327821e710a7905807f33a50f445691cfc3ccfb1e49ad70a69a15e94728&=&format=webp&quality=lossless",
-    "lore": "classic Roblox police officer style seen in games like Jailbreak and Prison Life."
-  }
-],
+  "skins": [
+    {
+      "name": "Cop",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508331453036101642/14f46364f46697c767562cf2d7c1bb7d.png?ex=6a1526a1&is=6a13d521&hm=e9356327821e710a7905807f33a50f445691cfc3ccfb1e49ad70a69a15e94728&=&format=webp&quality=lossless",
+      "lore": "The Cop skin references the classic Roblox police officer style seen in games like Jailbreak and Prison Life."
+    }
+  ],
 
   "lore": "SCP Guards are security personnel working for the SCP Foundation, tasked with protecting facilities and containing dangerous anomalies. Equipped with firearms, tactical gear, and emergency protocols, they are often the first line of defense during containment breaches."
 }

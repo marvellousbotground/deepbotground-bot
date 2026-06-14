@@ -16,29 +16,9 @@
 
   "universe": "Marvel",
 
-  "tags": {
-
-    "type": [
-      "antihero",
-      "human"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "heal",
-      "shieldbreak",
-      "transformation",
-      "ranged",
-      "passive",
-      "extra"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507224677125325073/moon-knight-trailer-buttonbestof-1644855733291.png?ex=6a111fdd&is=6a0fce5d&hm=39ae5f26b44f78a02378cacd39000e7466af3f0f8e9a8c395bf75999518ad31f&=&format=webp&quality=lossless",
 
   "versions": [
-
     {
       "id": "human",
 
@@ -57,38 +37,62 @@
 
       "attacks": [
         {
+          "slot": "1",
           "name": "Baseball Slam",
           "damage": 10,
           "cooldown": "6s",
-          "shieldBreak": false
+          "attributes": [
+            "block",
+            "mele",
+            "push"
+          ]
         },
 
         {
+          "slot": "2",
           "name": "Gun Shoot",
           "damage": 12,
           "cooldown": "13s",
-          "shieldBreak": false
+          "attributes": [
+            "ignore",
+            "lrp"
+          ]
         },
 
         {
+          "slot": "3",
           "name": "Reflex",
           "damage": 0,
           "cooldown": "12s",
-          "shieldBreak": false
+          "attributes": [
+            "coun"
+          ]
         },
 
         {
+          "slot": "4",
           "name": "Lockley Grab",
           "damage": 20,
           "cooldown": "15s",
-          "shieldBreak": false
+          "attributes": [
+            "ignore",
+            "grab",
+            "cine",
+            "mele"
+          ]
         },
 
         {
+          "slot": "5",
           "name": "Khonshu Slam",
           "damage": 15,
           "cooldown": "15s",
-          "shieldBreak": true
+          "attributes": [
+            "break",
+            "area",
+            "push",
+            "mele"
+          ]
         }
       ],
 
@@ -100,18 +104,17 @@
       ],
 
       "techs": [
-  {
-    "name": "Khonshu Slam",
-    "video": "https://youtu.be/9LCUjAuLCIw",
-    "credits": "AL3X"
-  },
-
-    {
-    "name": "Baseball Slam",
-    "video": "https://youtu.be/oX8HK7WedR0",
-    "credits": "AL3X"
-  }
-],
+        {
+          "name": "Khonshu Slam",
+          "video": "https://youtu.be/9LCUjAuLCIw",
+          "credits": "AL3X"
+        },
+        {
+          "name": "Baseball Slam",
+          "video": "https://youtu.be/oX8HK7WedR0",
+          "credits": "AL3X"
+        }
+      ],
 
       "lore": "Marc Spector is the original identity behind Moon Knight. A former mercenary with exceptional combat training, he became the avatar of Khonshu after surviving near death in Egypt."
     },
@@ -134,38 +137,64 @@
 
       "attacks": [
         {
+          "slot": "1",
           "name": "Heavy Punch",
           "damage": 10,
           "cooldown": "7s",
-          "shieldBreak": true
+          "attributes": [
+            "break",
+            "push",
+            "mele"
+          ]
         },
 
         {
+          "slot": "2",
           "name": "Crescent Splash",
           "damage": 10,
           "cooldown": "8s",
-          "shieldBreak": true
+          "attributes": [
+            "break",
+            "range"
+          ]
         },
 
         {
+          "slot": "3",
           "name": "Punshing Counter",
           "damage": 20,
           "cooldown": "10s",
-          "shieldBreak": false
+          "attributes": [
+            "coun",
+            "cine",
+            "mele"
+          ]
         },
 
         {
+          "slot": "4",
           "name": "Grapple Kick",
           "damage": 7,
           "cooldown": "15s",
-          "shieldBreak": false
+          "attributes": [
+            "block",
+            "noti",
+            "range",
+            "move"
+          ]
         },
 
         {
+          "slot": "5",
           "name": "Finisher",
           "damage": 0,
           "cooldown": "0.6s",
-          "shieldBreak": false
+          "attributes": [
+            "ignore",
+            "finish",
+            "heal",
+            "cine"
+          ]
         }
       ],
 
@@ -197,38 +226,60 @@
 
       "attacks": [
         {
+          "slot": "1",
           "name": "Truncheon Throw",
           "damage": 6,
           "cooldown": "9s",
-          "shieldBreak": false
+          "attributes": [
+            "ignore",
+            "lrp"
+          ]
         },
 
         {
+          "slot": "2",
           "name": "Heavy Punch",
           "damage": 10,
           "cooldown": "7s",
-          "shieldBreak": true
+          "attributes": [
+            "break",
+            "push",
+            "mele"
+          ]
         },
 
         {
+          "slot": "3",
           "name": "Dodge Counter",
           "damage": 6,
           "cooldown": "10s",
-          "shieldBreak": false
+          "attributes": [
+            "ignore",
+            "coun",
+            "lrp"
+          ]
         },
 
         {
+          "slot": "4",
           "name": "Healing Piramid",
           "damage": 0,
           "cooldown": "14.5s",
-          "shieldBreak": false
+          "attributes": [
+            "heal"
+          ]
         },
 
         {
+          "slot": "5",
           "name": "Changing The Sky",
           "damage": 43,
           "cooldown": "70s",
-          "shieldBreak": true
+          "attributes": [
+            "break",
+            "area",
+            "cine"
+          ]
         }
       ],
 
@@ -241,6 +292,5 @@
 
       "lore": "Mr. Knight is a more controlled and investigative identity of Moon Knight. Wearing a formal white suit and mask, he combines detective work with precise and efficient combat."
     }
-
   ]
 }

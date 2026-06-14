@@ -15,119 +15,147 @@
 
   "universe": "FNAF",
 
-  "tags": {
-
-    "type": [
-      "villain",
-      "robot",
-      "monster",
-      "slasher"
-    ],
-
-    "ability": [
-      "counter",
-      "finisher",
-      "extra",
-      "RNG",
-      "shieldbreak"
-    ]
-  },
-
   "image": "https://media.discordapp.net/attachments/1507041233501950142/1507542718132519042/755.png?ex=6a124810&is=6a10f690&hm=5ed238f597c5990212dcc6839bdcdb3b640f15d99d8703bac72c66655aaa3e1a&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
     "speed": "Normal",
     "damage": 5,
-    "skills": 6,
+    "skills": 8,
     "lowHpAnimation": true,
     "canHeal": false
   },
 
   "attacks": [
     {
+      "slot": "1",
       "name": "Breach Jumpscare",
       "damage": 12,
       "cooldown": "9s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "move",
+        "push",
+        "mele"
+      ]
     },
 
     {
+      "slot": "2",
       "name": "Vent Skitter",
       "damage": 20,
       "cooldown": "15s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "mele"
+      ]
     },
 
     {
+      "slot": "3",
       "name": "Mask-Tear Counter",
       "damage": 18,
       "cooldown": "17s",
-      "shieldBreak": false
+      "attributes": [
+        "coun",
+        "cine",
+        "mele",
+        "area"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Hallucination Call - Freddy",
       "damage": 8,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "rng",
+        "blind",
+        "lrp"
+      ]
     },
 
     {
-      "name": "Hallucination Call - foxy",
+      "slot": "4",
+      "name": "Hallucination Call - Foxy",
       "damage": 8,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "rng",
+        "blind",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "4",
       "name": "Hallucination Call - Puppet",
       "damage": 0,
       "cooldown": "15s",
-      "shieldBreak": true
+      "attributes": [
+        "break",
+        "rng",
+        "blind",
+        "lrp"
+      ]
     },
 
     {
+      "slot": "5",
       "name": "Bad Ending Finisher",
       "damage": 0,
       "cooldown": "0.6s",
-      "shieldBreak": false
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
     },
 
     {
+      "slot": "E",
       "name": "System Failure",
       "damage": 0,
       "cooldown": "71s",
-      "shieldBreak": false
+      "attributes": [
+        "block",
+        "blind",
+        "range",
+        "area"
+      ]
     }
   ],
 
-"skins": [
-  {
-    "name": "Scraptrap",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363906438135848/f2a04e41bb75a26cd1885fcdf586da9d.png?ex=6a1544db&is=6a13f35b&hm=f23980eb0094c827f17c7e5158721f0120ea4f0455ae35eb08f8e07d3c416a49&=&format=webp&quality=lossless&width=350&height=350",
-    "lore": "After surviving the fire, William Afton returns in a far more damaged and decayed form as Scraptrap during the events of Freddy Fazbear's Pizzeria Simulator."
-  },
+  "skins": [
+    {
+      "name": "Scraptrap",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363906438135848/f2a04e41bb75a26cd1885fcdf586da9d.png?ex=6a1544db&is=6a13f35b&hm=f23980eb0094c827f17c7e5158721f0120ea4f0455ae35eb08f8e07d3c416a49&=&format=webp&quality=lossless&width=350&height=350",
+      "lore": "After surviving the fire, William Afton returns in a far more damaged and decayed form as Scraptrap during the events of Freddy Fazbear's Pizzeria Simulator."
+    },
 
-  {
-    "name": "Plushtrap",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363984758374451/4e8d9554d3e0b8d3357f8b2e3f9fbc8c.png?ex=6a1544ee&is=6a13f36e&hm=e6a060ba17c046720629febe3dd28d0a0818e2ab232a32e1ccfcf5ef06b8c371&=&format=webp&quality=lossless",
-    "lore": "A small nightmare version of Spring Bonnie that appears in Five Nights at Freddy's 4, stalking dark hallways during the terrifying bedroom minigame sequences."
-  },
+    {
+      "name": "Plushtrap",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363984758374451/4e8d9554d3e0b8d3357f8b2e3f9fbc8c.png?ex=6a1544ee&is=6a13f36e&hm=e6a060ba17c046720629febe3dd28d0a0818e2ab232a32e1ccfcf5ef06b8c371&=&format=webp&quality=lossless",
+      "lore": "A small nightmare version of Spring Bonnie that appears in Five Nights at Freddy's 4, stalking dark hallways during the terrifying bedroom minigame sequences."
+    },
 
-  {
-    "name": "Clowntrap",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508364178849792060/Web_Photo_Editor_46.jpg?ex=6a15451c&is=6a13f39c&hm=7e94dce65b6904d2af1aa65379cba2700328797ea01a03d55d839286264a57d4&=&format=webp&width=350&height=350",
-    "lore": "A colorful circus-themed Springtrap variant released for Five Nights at Freddy's AR: Special Delivery before the game's servers were shut down."
-  },
+    {
+      "name": "Clowntrap",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508364178849792060/Web_Photo_Editor_46.jpg?ex=6a15451c&is=6a13f39c&hm=7e94dce65b6904d2af1aa65379cba2700328797ea01a03d55d839286264a57d4&=&format=webp&width=350&height=350",
+      "lore": "A colorful circus-themed Springtrap variant released for Five Nights at Freddy's AR: Special Delivery before the game's servers were shut down."
+    },
 
-  {
-    "name": "Purple Guy",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363781489561771/8698b9240fcc2c4b0bf49b49093e3774.png?ex=6a1544bd&is=6a13f33d&hm=424648b91efb7f0d903cd0fa8df0457d6efc127b1aa4c122fd4ffe3ad8c4385f&=&format=webp&quality=lossless&width=272&height=350",
-    "lore": "William Afton appears in his classic purple 8-bit minigame form from Five Nights at Freddy's 2, representing the mysterious serial killer hidden behind the tragedies of Freddy Fazbear's Pizza.",
-    "dataFile": "purpleguy.json"
-  }
-],
+    {
+      "name": "Purple Guy",
+      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363781489561771/8698b9240fcc2c4b0bf49b49093e3774.png?ex=6a1544bd&is=6a13f33d&hm=424648b91efb7f0d903cd0fa8df0457d6efc127b1aa4c122fd4ffe3ad8c4385f&=&format=webp&quality=lossless&width=272&height=350",
+      "lore": "William Afton appears in his classic purple 8-bit minigame form from Five Nights at Freddy's 2, representing the mysterious serial killer hidden behind the tragedies of Freddy Fazbear's Pizza.",
+      "dataFile": "purpleguy.json"
+    }
+  ],
 
-  "lore": "Springtrap is the undead animatronic form of William Afton from the Five Nights at Freddy’s series. After becoming trapped inside a faulty springlock suit, Afton survived as a decayed fusion of man and machine, haunting Fazbear locations while driven by agony and immortality."
+  "lore": "Springtrap is the undead animatronic form of William Afton from the Five Nights at Freddy's series. After becoming trapped inside a faulty springlock suit, Afton survived as a decayed fusion of man and machine, haunting Fazbear locations while driven by agony and immortality."
 }
