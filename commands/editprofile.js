@@ -62,6 +62,22 @@ function normalizeHexColor(color) {
     return value;
 }
 
+function makeSkinValue(skinName, characterName) {
+    return `${skinName}|||${characterName}`;
+}
+
+function getSkinDisplayName(value) {
+    if (!value || value === "None") return "None";
+
+    if (!value.includes("|||")) {
+        return value;
+    }
+
+    const [skinName, characterName] = value.split("|||");
+
+    return `${skinName} - ${characterName}`;
+}
+
 function getCharactersAndSkins() {
     const characters = [];
     const skins = [];
@@ -81,6 +97,7 @@ function getCharactersAndSkins() {
             if (character.name) {
                 characters.push({
                     name: character.name,
+                    value: character.name,
                     image: character.image || null
                 });
             }
@@ -89,20 +106,69 @@ function getCharactersAndSkins() {
                 for (const skin of character.skins) {
                     if (typeof skin === "string") {
                         skins.push({
-                            name: skin,
+                            name: `${skin} - ${character.name}`,
+                            value: makeSkinValue(skin, character.name),
+                            skinName: skin,
+                            characterName: character.name,
                             image: character.image || null
                         });
                     } else if (skin?.name) {
                         skins.push({
-                            name: skin.name,
+                            name: `${skin.name} - ${character.name}`,
+                            value: makeSkinValue(skin.name, character.name),
+                            skinName: skin.name,
+                            characterName: character.name,
                             image: skin.image || character.image || null
                         });
 
                         if (skin.dataFile) {
                             characters.push({
                                 name: skin.name,
+                                value: skin.name,
                                 image: skin.image || character.image || null
                             });
+                        }
+                    }
+                }
+            }
+
+            if (Array.isArray(character.versions)) {
+                for (const version of character.versions) {
+                    if (version.name) {
+                        characters.push({
+                            name: version.name,
+                            value: version.name,
+                            image: version.image || character.image || null
+                        });
+                    }
+
+                    if (Array.isArray(version.skins)) {
+                        for (const skin of version.skins) {
+                            if (typeof skin === "string") {
+                                skins.push({
+                                    name: `${skin} - ${version.name}`,
+                                    value: makeSkinValue(skin, version.name),
+                                    skinName: skin,
+                                    characterName: version.name,
+                                    image: version.image || character.image || null
+                                });
+                            } else if (skin?.name) {
+                                skins.push({
+                                    name: `${skin.name} - ${version.name}`,
+                                    value: makeSkinValue(skin.name, version.name),
+                                    skinName: skin.name,
+                                    characterName: version.name,
+                                    image: skin.image || version.image || character.image || null
+                                });
+
+                                if (skin.dataFile) {
+                                    characters.push({
+                                        name: skin.name,
+                                        value: skin.name,
+                                        image: skin.image || version.image || character.image || null
+                                    });
+                                }
+                            }
                         }
                     }
                 }
@@ -123,7 +189,7 @@ function filterChoices(list, focusedValue) {
         .slice(0, 25)
         .map(item => ({
             name: item.name,
-            value: item.name
+            value: item.value || item.name
         }));
 }
 
@@ -131,6 +197,17 @@ function findImageByName(name) {
     if (!name || name === "None") return null;
 
     const { characters, skins } = getCharactersAndSkins();
+
+    if (name.includes("|||")) {
+        const [skinName, characterName] = name.split("|||");
+
+        const foundSkin = skins.find(s =>
+            s.skinName.toLowerCase() === skinName.toLowerCase() &&
+            s.characterName.toLowerCase() === characterName.toLowerCase()
+        );
+
+        return foundSkin?.image || null;
+    }
 
     const foundCharacter = characters.find(
         c => c.name.toLowerCase() === name.toLowerCase()
@@ -141,7 +218,7 @@ function findImageByName(name) {
     }
 
     const foundSkin = skins.find(
-        s => s.name.toLowerCase() === name.toLowerCase()
+        s => s.skinName.toLowerCase() === name.toLowerCase()
     );
 
     if (foundSkin?.image) {
@@ -164,12 +241,8 @@ function syncProfileImage(mainGame) {
     }
 
     if (imageSource === "skin") {
-        const skinName = mainGame.favoriteSkin;
-
         mainGame.mainCharacterImage =
-            mainGame.favoriteSkinImage ||
-            findImageByName(skinName) ||
-            null;
+            mainGame.favoriteSkinImage || null;
     }
 
     if (imageSource === "discord") {
@@ -335,6 +408,10 @@ module.exports = {
             profile.mainGame.favoriteSkin = "None";
         }
 
+        if (!profile.mainGame.favoriteSkinImage) {
+            profile.mainGame.favoriteSkinImage = findImageByName(profile.mainGame.favoriteSkin);
+        }
+
         if (!profile.mainGame.mainCharacterImage) {
             syncProfileImage(profile.mainGame);
         }
@@ -401,11 +478,12 @@ module.exports = {
 
         if (skin) {
             const skinImage = findImageByName(skin);
+            const skinDisplay = getSkinDisplayName(skin);
 
             profile.mainGame.favoriteSkin = skin;
             profile.mainGame.favoriteSkinImage = skinImage;
 
-            changes.push(`🎨 Favorite Skin: **${skin}**`);
+            changes.push(`🎨 Favorite Skin: **${skinDisplay}**`);
         }
 
         if (kills !== null) {
