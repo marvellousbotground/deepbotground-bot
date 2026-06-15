@@ -1,9 +1,17 @@
-Last Update: May 15, 2026
+Last Update: June 13, 2026
 
 
 Added:
-• New Homelander Combatkill Line
-• New Homelander Laser Mechanic
-• Homelander Laser Brutality
-• Homelander E move is now V1
-• Brian Moser Nebraska skin
+•New Character: Ironman
+•New move: Repulsor Blast
+•After 3 seconds it does it automatically.
+•New move: Energy Blade
+•New counter: Nanotech counter
+•New move: Missile Barrage
+•New Finisher: Displacer Finisher
+•New e move: Flight
+•4th move can be used during flight.
+•New skins: Tech jacket, Superior and Illusion.
+•1 in 100 snap on red hp.
+•Guaranteed snap with plot armor.
+•Friday lines on moves.
