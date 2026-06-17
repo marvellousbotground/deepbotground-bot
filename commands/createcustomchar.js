@@ -3,10 +3,76 @@ const {
     EmbedBuilder
 } = require("discord.js");
 
+const {
+    loadCustomCharacters,
+    saveCustomCharacters,
+    loadCustomLikes,
+    saveCustomLikes
+} = require("../utils/customCharacters");
+
+const THIRTY_DAYS = 30 * 24 * 60 * 60;
+
+const MAX_CUSTOMS_PER_USER = 5;
+
+function generateCustomID() {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    let id = "CC-";
+
+    for (let i = 0; i < 6; i++) {
+        id += chars[Math.floor(Math.random() * chars.length)];
+    }
+
+    return id;
+}
+
+function generateUniqueCustomID(customs) {
+    let id;
+
+    do {
+        id = generateCustomID();
+    } while (customs[id]);
+
+    return id;
+}
+
+function getUserCustomCount(customs, userId) {
+    return Object.values(customs).filter(
+        custom => custom.creator === userId
+    ).length;
+}
+
+function userHasCustomWithName(customs, userId, name) {
+    return Object.values(customs).some(custom =>
+        custom.creator === userId &&
+        custom.name.toLowerCase() === name.toLowerCase()
+    );
+}
+
+function removeExpiredCustoms(customs, likes) {
+    const now = Math.floor(Date.now() / 1000);
+
+    let removed = 0;
+
+    for (const id of Object.keys(customs)) {
+        const custom = customs[id];
+
+        if (!custom.lastBoost) continue;
+
+        const expiresAt = custom.lastBoost + THIRTY_DAYS;
+
+        if (expiresAt <= now) {
+            delete customs[id];
+            delete likes[id];
+            removed++;
+        }
+    }
+
+    return removed;
+}
+
 module.exports = {
-
     data: new SlashCommandBuilder()
-
         .setName("createcustomchar")
         .setDescription("Create your own custom character.")
 
@@ -15,6 +81,7 @@ module.exports = {
                 .setName("name")
                 .setDescription("Character name.")
                 .setRequired(true)
+                .setMaxLength(80)
         )
 
         .addAttachmentOption(option =>
@@ -29,6 +96,7 @@ module.exports = {
                 .setName("universe")
                 .setDescription("Character universe.")
                 .setRequired(true)
+                .setMaxLength(80)
         )
 
         .addIntegerOption(option =>
@@ -37,6 +105,7 @@ module.exports = {
                 .setDescription("Character HP.")
                 .setRequired(true)
                 .setMinValue(1)
+                .setMaxValue(9999)
         )
 
         .addStringOption(option =>
@@ -44,7 +113,6 @@ module.exports = {
                 .setName("speed")
                 .setDescription("Character speed.")
                 .setRequired(true)
-
                 .addChoices(
                     {
                         name: "Normal",
@@ -72,53 +140,154 @@ module.exports = {
         ),
 
     async execute(interaction) {
+        const customs = loadCustomCharacters();
+        const likes = loadCustomLikes();
 
-        const name =
-            interaction.options.getString("name");
+        const removed = removeExpiredCustoms(customs, likes);
 
-        const image =
-            interaction.options.getAttachment("image");
+        if (removed > 0) {
+            saveCustomCharacters(customs);
+            saveCustomLikes(likes);
+        }
 
-        const universe =
-            interaction.options.getString("universe");
+        const name = interaction.options.getString("name");
+        const image = interaction.options.getAttachment("image");
+        const universe = interaction.options.getString("universe");
+        const hp = interaction.options.getInteger("hp");
+        const speed = interaction.options.getString("speed");
+        const lowHpAnim = interaction.options.getBoolean("lowhpanim");
+        const canHeal = interaction.options.getBoolean("canheal");
 
-        const hp =
-            interaction.options.getInteger("hp");
+        const userId = interaction.user.id;
 
-        const speed =
-            interaction.options.getString("speed");
+        const userCustomCount = getUserCustomCount(customs, userId);
 
-        const lowHpAnim =
-            interaction.options.getBoolean("lowhpanim");
+        if (userCustomCount >= MAX_CUSTOMS_PER_USER) {
+            const embed = new EmbedBuilder()
+                .setColor("Red")
+                .setTitle("❌ Custom character limit reached")
+                .setDescription(
+                    `You can only own **${MAX_CUSTOMS_PER_USER}** custom characters at the same time.\n\n` +
+                    "Delete one or wait until one expires before creating another."
+                );
 
-        const canHeal =
-            interaction.options.getBoolean("canheal");
+            return interaction.reply({
+                embeds: [embed],
+                ephemeral: true
+            });
+        }
+
+        if (userHasCustomWithName(customs, userId, name)) {
+            const embed = new EmbedBuilder()
+                .setColor("Red")
+                .setTitle("❌ Duplicate custom character name")
+                .setDescription(
+                    `You already have a custom character named **${name}**.\n\n` +
+                    "Use another name or edit your existing custom character."
+                );
+
+            return interaction.reply({
+                embeds: [embed],
+                ephemeral: true
+            });
+        }
+
+        if (!image.contentType || !image.contentType.startsWith("image/")) {
+            const embed = new EmbedBuilder()
+                .setColor("Red")
+                .setTitle("❌ Invalid image")
+                .setDescription(
+                    "The uploaded file must be an image."
+                );
+
+            return interaction.reply({
+                embeds: [embed],
+                ephemeral: true
+            });
+        }
+
+        const id = generateUniqueCustomID(customs);
+
+        const now = Math.floor(Date.now() / 1000);
+        const expiresAt = now + THIRTY_DAYS;
+
+        customs[id] = {
+            id,
+
+            creator: userId,
+
+            createdAt: now,
+            lastBoost: now,
+
+            featured: false,
+
+            name,
+            image: image.url,
+            universe,
+
+            aliases: [],
+
+            origin: [
+                "custom"
+            ],
+
+            stats: {
+                hp,
+                speed,
+                damage: 5,
+                skills: 0,
+                lowHpAnimation: lowHpAnim,
+                canHeal
+            },
+
+            attacks: [],
+            skins: [],
+
+            lore: "",
+
+            techs: []
+        };
+
+        likes[id] = {
+            likes: 0,
+            users: [],
+            featured: false
+        };
+
+        saveCustomCharacters(customs);
+        saveCustomLikes(likes);
 
         const embed = new EmbedBuilder()
-
-            .setColor("Green")
-
-            .setTitle("✅ Custom Character Preview")
-
+            .setColor(0x00ff99)
+            .setTitle("✅ Custom Character Created")
+            .setThumbnail(image.url)
             .setDescription(
-
                 `**Name:** ${name}\n` +
                 `**Universe:** ${universe}\n` +
-                `**HP:** ${hp}\n` +
-                `**Speed:** ${speed}\n` +
-                `**Low HP Anim:** ${lowHpAnim}\n` +
-                `**Can Heal:** ${canHeal}`
-
+                `**Character ID:** \`${id}\`\n` +
+                `**Owner:** <@${userId}>\n` +
+                `**Expires:** <t:${expiresAt}:D> (<t:${expiresAt}:R>)\n\n` +
+                `Use \`/editcustomchar\` with this ID to add attacks, skins, lore, and edit your custom character.`
             )
+            .addFields(
+                {
+                    name: "Stats",
+                    value:
+                        `**HP:** ${hp}\n` +
+                        `**Speed:** ${speed}\n` +
+                        `**Damage:** 5\n` +
+                        `**Skills:** 0\n` +
+                        `**Low HP Animation:** ${lowHpAnim}\n` +
+                        `**Can Heal:** ${canHeal}`,
+                    inline: false
+                }
+            )
+            .setFooter({
+                text: "MarvellousBOTground"
+            });
 
-            .setImage(image.url);
-
-        await interaction.reply({
-
+        return interaction.reply({
             embeds: [embed]
-
         });
-
     }
-
 };
