@@ -2,12 +2,15 @@ const {
     SlashCommandBuilder,
     EmbedBuilder,
     ActionRowBuilder,
-    StringSelectMenuBuilder
+    StringSelectMenuBuilder,
+    ButtonBuilder,
+    ButtonStyle
 } = require("discord.js");
 
 const {
     loadCustomCharacters,
-    loadCustomLikes
+    loadCustomLikes,
+    saveCustomLikes
 } = require("../utils/customCharacters");
 
 const THIRTY_DAYS = 30 * 24 * 60 * 60;
@@ -29,24 +32,19 @@ const ATTRIBUTE_EMOJIS = {
     ex: "<:Explode:1510717981510860930>",
     grab: "<:Grab:1510717979115917454>",
     mele: "<:Mele:1510717976226300126>",
-
     range: "<:Range:1511468297445572618>",
     lr: "<:RangePlus:1511468293700059417>",
     lrp: "<:RangePlusPlus:1511468289946161192>",
-
     blind: "<:blindness:1511468288318636083>",
     charge: "<:charge:1511468284921253908>",
     tp: "<:Teleport:1511468300830376098>",
-
     break: "<:Break:1509366823236145162>",
     ignore: "<:Ignore:1509365768993771570>",
     block: "<:Block:1509363951874605219>"
 };
 
 function normalize(text) {
-    return String(text || "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "");
+    return String(text || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 function getAttributeEmojis(attack) {
@@ -65,9 +63,7 @@ function getAttributeEmojis(attack) {
         .map(attribute => ATTRIBUTE_EMOJIS[normalize(attribute)])
         .filter(Boolean);
 
-    return emojis.length
-        ? emojis.join(" ")
-        : "None";
+    return emojis.length ? emojis.join(" ") : "None";
 }
 
 function getAttackIcon(attack, index) {
@@ -90,17 +86,7 @@ function getAttackIcon(attack, index) {
         return slotIcons[slot] || slot;
     }
 
-    const numbers = [
-        "1️⃣",
-        "2️⃣",
-        "3️⃣",
-        "4️⃣",
-        "5️⃣",
-        "6️⃣",
-        "7️⃣",
-        "8️⃣",
-        "9️⃣"
-    ];
+    const numbers = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"];
 
     return numbers[index] || `${index + 1}`;
 }
@@ -114,37 +100,17 @@ function getExpiresAt(custom) {
     return base + THIRTY_DAYS;
 }
 
-function getTimeLeft(custom) {
-    const expiresAt = getExpiresAt(custom);
-    return `<t:${expiresAt}:R>`;
-}
-
 function createActionSelect() {
     return new ActionRowBuilder().addComponents(
         new StringSelectMenuBuilder()
             .setCustomId("custom_select_action")
             .setPlaceholder("Select what you want to see")
             .addOptions(
-                {
-                    label: "Stats",
-                    value: "stats"
-                },
-                {
-                    label: "Attacks",
-                    value: "attacks"
-                },
-                {
-                    label: "Lore",
-                    value: "lore"
-                },
-                {
-                    label: "Skins",
-                    value: "skins"
-                },
-                {
-                    label: "Techs",
-                    value: "techs"
-                }
+                { label: "Stats", value: "stats" },
+                { label: "Attacks", value: "attacks" },
+                { label: "Lore", value: "lore" },
+                { label: "Skins", value: "skins" },
+                { label: "Techs", value: "techs" }
             )
     );
 }
@@ -177,12 +143,23 @@ function createSkinSelect(custom, selectedSkin = null) {
     );
 }
 
+function createLikeButton(likes) {
+    return new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+            .setCustomId("custom_like_button")
+            .setLabel(`Like (${likes})`)
+            .setEmoji("❤️")
+            .setStyle(ButtonStyle.Secondary)
+    );
+}
+
 function createCustomStartEmbed(custom, likes, selectedSkin = null) {
     const title = selectedSkin
         ? `${custom.name} - ${selectedSkin.name}`
         : custom.name;
 
     const image = selectedSkin?.image || custom.image;
+    const expiresAt = getExpiresAt(custom);
 
     const embed = new EmbedBuilder()
         .setTitle(title)
@@ -192,7 +169,9 @@ function createCustomStartEmbed(custom, likes, selectedSkin = null) {
             `**Custom ID:** \`${custom.id}\`\n` +
             `**Creator:** <@${custom.creator}>\n` +
             `**Likes:** ❤️ ${likes}\n` +
-            `**Expires:** ${getTimeLeft(custom)}`
+            `**Expires:** <t:${expiresAt}:R>\n` +
+            `**Attacks:** ${custom.attacks?.length || 0}\n` +
+            `**Skins:** ${custom.skins?.length || 0}`
         )
         .setFooter({
             text: "Custom Character • MarvellousBOTground"
@@ -231,10 +210,9 @@ function createSkinsInfoEmbed(custom, selectedSkin = null) {
         skinList.push("• Default");
     }
 
-    custom.skins.forEach((skin, index) => {
+    custom.skins.forEach(skin => {
         if (selectedSkin && skin.name === selectedSkin.name) return;
-
-        skinList.push(`• Slot ${index + 1}: ${skin.name}`);
+        skinList.push(`• ${skin.name}`);
     });
 
     embed.setDescription(
@@ -332,7 +310,7 @@ function createCustomEmbed(custom, action, selectedSkin = null) {
     return embed;
 }
 
-function createComponents(custom, currentAction, selectedSkin) {
+function createComponents(custom, currentAction, selectedSkin, likes) {
     const components = [
         createActionSelect()
     ];
@@ -344,6 +322,8 @@ function createComponents(custom, currentAction, selectedSkin) {
     ) {
         components.push(createSkinSelect(custom, selectedSkin));
     }
+
+    components.push(createLikeButton(likes));
 
     return components;
 }
@@ -360,12 +340,10 @@ module.exports = {
         ),
 
     async execute(interaction) {
-        const id = interaction.options
-            .getString("id")
-            .toUpperCase();
+        const id = interaction.options.getString("id").toUpperCase();
 
         const customs = loadCustomCharacters();
-        const likesData = loadCustomLikes();
+        let likesData = loadCustomLikes();
 
         const custom = customs[id];
 
@@ -380,14 +358,23 @@ module.exports = {
         if (!Array.isArray(custom.skins)) custom.skins = [];
         if (!Array.isArray(custom.techs)) custom.techs = [];
 
-        const likes = likesData[id]?.likes || 0;
+        if (!likesData[id]) {
+            likesData[id] = {
+                likes: 0,
+                users: [],
+                featured: false
+            };
 
+            saveCustomLikes(likesData);
+        }
+
+        let likes = likesData[id].likes || 0;
         let currentAction = null;
         let currentSkin = null;
 
         const message = await interaction.reply({
             embeds: [createCustomStartEmbed(custom, likes)],
-            components: [createActionSelect()],
+            components: createComponents(custom, currentAction, currentSkin, likes),
             fetchReply: true
         });
 
@@ -403,6 +390,59 @@ module.exports = {
                 });
             }
 
+            if (i.customId === "custom_like_button") {
+                likesData = loadCustomLikes();
+
+                if (!likesData[id]) {
+                    likesData[id] = {
+                        likes: 0,
+                        users: [],
+                        featured: false
+                    };
+                }
+
+                if (!Array.isArray(likesData[id].users)) {
+                    likesData[id].users = [];
+                }
+
+                if (custom.creator === i.user.id) {
+                    return i.reply({
+                        content: "❌ You cannot like your own custom character.",
+                        ephemeral: true
+                    });
+                }
+
+                if (likesData[id].users.includes(i.user.id)) {
+                    return i.reply({
+                        content: "❌ You already liked this custom character.",
+                        ephemeral: true
+                    });
+                }
+
+                likesData[id].users.push(i.user.id);
+                likesData[id].likes = likesData[id].users.length;
+
+                saveCustomLikes(likesData);
+
+                likes = likesData[id].likes;
+
+                await i.reply({
+                    content: "❤️ You liked this custom character!",
+                    ephemeral: true
+                });
+
+                const embed = currentAction
+                    ? createCustomEmbed(custom, currentAction, currentSkin)
+                    : createCustomStartEmbed(custom, likes, currentSkin);
+
+                await interaction.editReply({
+                    embeds: [embed],
+                    components: createComponents(custom, currentAction, currentSkin, likes)
+                });
+
+                return;
+            }
+
             if (i.customId === "custom_select_skin") {
                 if (i.values[0] === "default") {
                     currentSkin = null;
@@ -410,9 +450,11 @@ module.exports = {
                     currentSkin = custom.skins[Number(i.values[0])];
                 }
 
+                currentAction = null;
+
                 return i.update({
                     embeds: [createCustomStartEmbed(custom, likes, currentSkin)],
-                    components: [createActionSelect()]
+                    components: createComponents(custom, currentAction, currentSkin, likes)
                 });
             }
 
@@ -421,7 +463,7 @@ module.exports = {
 
                 return i.update({
                     embeds: [createCustomEmbed(custom, currentAction, currentSkin)],
-                    components: createComponents(custom, currentAction, currentSkin)
+                    components: createComponents(custom, currentAction, currentSkin, likes)
                 });
             }
         });
