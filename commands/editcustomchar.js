@@ -16,7 +16,20 @@ const {
 
 const THIRTY_DAYS = 30 * 24 * 60 * 60;
 
-const attributeChoices = [
+const ATTACK_SLOT_CHOICES = [
+    { name: "1", value: "1" },
+    { name: "2", value: "2" },
+    { name: "3", value: "3" },
+    { name: "4", value: "4" },
+    { name: "5", value: "5" },
+    { name: "6", value: "6" },
+    { name: "7", value: "7" },
+    { name: "8", value: "8" },
+    { name: "9", value: "9" },
+    { name: "E", value: "E" }
+];
+
+const ATTRIBUTE_CHOICES = [
     { name: "Noticeable", value: "noti" },
     { name: "Vanish", value: "inv" },
     { name: "Area", value: "area" },
@@ -59,147 +72,26 @@ function isExpired(custom) {
 
 function updateSkills(custom) {
     if (!custom.stats) custom.stats = {};
-
-    custom.stats.skills = Array.isArray(custom.attacks)
-        ? custom.attacks.length
-        : 0;
+    custom.stats.skills = Array.isArray(custom.attacks) ? custom.attacks.length : 0;
 }
 
-function getCustomOrReply(interaction, customs, likes, id) {
-    const custom = customs[id];
-
-    if (!custom) {
-        return {
-            error: new EmbedBuilder()
-                .setColor("Red")
-                .setTitle("❌ Custom Character Not Found")
-                .setDescription("No custom character exists with that ID.")
-        };
-    }
-
-    if (isExpired(custom)) {
-        delete customs[id];
-        delete likes[id];
-
-        saveCustomCharacters(customs);
-        saveCustomLikes(likes);
-
-        return {
-            error: new EmbedBuilder()
-                .setColor("Red")
-                .setTitle("❌ Custom Character Expired")
-                .setDescription("This custom character expired and has been deleted.")
-        };
-    }
-
-    if (custom.creator !== interaction.user.id) {
-        return {
-            error: new EmbedBuilder()
-                .setColor("Red")
-                .setTitle("❌ You cannot edit this character")
-                .setDescription("Only the creator of this custom character can edit it.")
-        };
-    }
-
+function normalizeCustom(custom) {
+    if (!custom.stats) custom.stats = {};
     if (!Array.isArray(custom.attacks)) custom.attacks = [];
     if (!Array.isArray(custom.skins)) custom.skins = [];
-    if (!custom.stats) custom.stats = {};
-    if (!custom.techs) custom.techs = [];
-
-    return { custom };
+    if (!Array.isArray(custom.techs)) custom.techs = [];
+    if (!custom.lore) custom.lore = "";
 }
 
-function createConfirmRow(confirmId, cancelId) {
-    return new ActionRowBuilder().addComponents(
-        new ButtonBuilder()
-            .setCustomId(confirmId)
-            .setLabel("Yes, overwrite")
-            .setStyle(ButtonStyle.Danger),
+function sortAttacks(attacks) {
+    const order = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "E"];
 
-        new ButtonBuilder()
-            .setCustomId(cancelId)
-            .setLabel("No, cancel")
-            .setStyle(ButtonStyle.Secondary)
-    );
-}
+    attacks.sort((a, b) => {
+        const aIndex = order.indexOf(String(a.slot).toUpperCase());
+        const bIndex = order.indexOf(String(b.slot).toUpperCase());
 
-async function confirmOverwrite(interaction, embed, applyChanges) {
-    const confirmId = `custom_confirm_${interaction.user.id}_${Date.now()}`;
-    const cancelId = `custom_cancel_${interaction.user.id}_${Date.now()}`;
-
-    const message = await interaction.reply({
-        embeds: [embed],
-        components: [createConfirmRow(confirmId, cancelId)],
-        fetchReply: true,
-        ephemeral: true
+        return aIndex - bIndex;
     });
-
-    try {
-        const button = await message.awaitMessageComponent({
-            componentType: ComponentType.Button,
-            time: 30000,
-            filter: i => i.user.id === interaction.user.id
-        });
-
-        if (button.customId === cancelId) {
-            const cancelledEmbed = new EmbedBuilder()
-                .setColor("Grey")
-                .setTitle("❌ Edit cancelled")
-                .setDescription("No changes were applied.");
-
-            return button.update({
-                embeds: [cancelledEmbed],
-                components: []
-            });
-        }
-
-        const resultEmbed = applyChanges();
-
-        return button.update({
-            embeds: [resultEmbed],
-            components: []
-        });
-
-    } catch {
-        const timeoutEmbed = new EmbedBuilder()
-            .setColor("Grey")
-            .setTitle("⌛ Confirmation expired")
-            .setDescription("No changes were applied.");
-
-        return interaction.editReply({
-            embeds: [timeoutEmbed],
-            components: []
-        });
-    }
-}
-
-function getAttackSlotChoices() {
-    return [
-        { name: "1", value: "1" },
-        { name: "2", value: "2" },
-        { name: "3", value: "3" },
-        { name: "4", value: "4" },
-        { name: "5", value: "5" },
-        { name: "6", value: "6" },
-        { name: "7", value: "7" },
-        { name: "8", value: "8" },
-        { name: "9", value: "9" },
-        { name: "E", value: "E" }
-    ];
-}
-
-function addAttributeOptions(subcommand) {
-    for (let i = 1; i <= 8; i++) {
-        subcommand.addStringOption(option =>
-            option
-                .setName(`attribute${i}`)
-                .setDescription(`Attack attribute ${i}.`)
-                .setRequired(false)
-                .addChoices(...attributeChoices)
-        );
-    }
-
-    return subcommand;
 }
 
 function getAttributes(interaction) {
@@ -216,7 +108,21 @@ function getAttributes(interaction) {
     return attributes;
 }
 
-function successEmbed(title, description, custom) {
+function addAttributeOptions(subcommand) {
+    for (let i = 1; i <= 8; i++) {
+        subcommand.addStringOption(option =>
+            option
+                .setName(`attribute${i}`)
+                .setDescription(`Attack attribute ${i}.`)
+                .setRequired(false)
+                .addChoices(...ATTRIBUTE_CHOICES)
+        );
+    }
+
+    return subcommand;
+}
+
+function createSuccessEmbed(title, description, custom) {
     return new EmbedBuilder()
         .setColor(0x00ff99)
         .setTitle(title)
@@ -227,10 +133,129 @@ function successEmbed(title, description, custom) {
         });
 }
 
+function createErrorEmbed(title, description) {
+    return new EmbedBuilder()
+        .setColor("Red")
+        .setTitle(title)
+        .setDescription(description);
+}
+
+function createWarningEmbed(title, description) {
+    return new EmbedBuilder()
+        .setColor("Orange")
+        .setTitle(title)
+        .setDescription(description);
+}
+
+function createConfirmRow(confirmId, cancelId) {
+    return new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+            .setCustomId(confirmId)
+            .setLabel("Yes, overwrite")
+            .setStyle(ButtonStyle.Danger),
+
+        new ButtonBuilder()
+            .setCustomId(cancelId)
+            .setLabel("No, cancel")
+            .setStyle(ButtonStyle.Secondary)
+    );
+}
+
+async function confirmOverwrite(interaction, warningEmbed, applyChanges) {
+    const confirmId = `confirm_${interaction.user.id}_${Date.now()}`;
+    const cancelId = `cancel_${interaction.user.id}_${Date.now()}`;
+
+    const message = await interaction.reply({
+        embeds: [warningEmbed],
+        components: [createConfirmRow(confirmId, cancelId)],
+        ephemeral: true,
+        fetchReply: true
+    });
+
+    try {
+        const button = await message.awaitMessageComponent({
+            componentType: ComponentType.Button,
+            time: 30000,
+            filter: i => i.user.id === interaction.user.id
+        });
+
+        if (button.customId === cancelId) {
+            return button.update({
+                embeds: [
+                    new EmbedBuilder()
+                        .setColor("Grey")
+                        .setTitle("❌ Edit cancelled")
+                        .setDescription("No changes were applied.")
+                ],
+                components: []
+            });
+        }
+
+        const resultEmbed = applyChanges();
+
+        return button.update({
+            embeds: [resultEmbed],
+            components: []
+        });
+
+    } catch {
+        return interaction.editReply({
+            embeds: [
+                new EmbedBuilder()
+                    .setColor("Grey")
+                    .setTitle("⌛ Confirmation expired")
+                    .setDescription("No changes were applied.")
+            ],
+            components: []
+        });
+    }
+}
+
+function getCustomOrFail(interaction, customs, likes, id) {
+    const custom = customs[id];
+
+    if (!custom) {
+        return {
+            error: createErrorEmbed(
+                "❌ Custom Character Not Found",
+                "No custom character exists with that ID."
+            )
+        };
+    }
+
+    if (isExpired(custom)) {
+        delete customs[id];
+        delete likes[id];
+
+        saveCustomCharacters(customs);
+        saveCustomLikes(likes);
+
+        return {
+            error: createErrorEmbed(
+                "❌ Custom Character Expired",
+                "This custom character expired and has been deleted."
+            )
+        };
+    }
+
+    if (custom.creator !== interaction.user.id) {
+        return {
+            error: createErrorEmbed(
+                "❌ You cannot edit this character",
+                "Only the creator of this custom character can edit it."
+            )
+        };
+    }
+
+    normalizeCustom(custom);
+
+    return { custom };
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("editcustomchar")
-        .setDescription("Edit your custom character.")
+        .setDescription("Edit one of your custom characters.")
 
         .addSubcommand(subcommand =>
             subcommand
@@ -276,14 +301,8 @@ module.exports = {
                         .setDescription("Edit character speed.")
                         .setRequired(false)
                         .addChoices(
-                            {
-                                name: "Normal",
-                                value: "Normal"
-                            },
-                            {
-                                name: "Slow",
-                                value: "Slow"
-                            }
+                            { name: "Normal", value: "Normal" },
+                            { name: "Slow", value: "Slow" }
                         )
                 )
                 .addBooleanOption(option =>
@@ -335,7 +354,7 @@ module.exports = {
                             .setName("slot")
                             .setDescription("Attack slot.")
                             .setRequired(true)
-                            .addChoices(...getAttackSlotChoices())
+                            .addChoices(...ATTACK_SLOT_CHOICES)
                     )
                     .addStringOption(option =>
                         option
@@ -377,7 +396,7 @@ module.exports = {
                         .setName("slot")
                         .setDescription("Attack slot.")
                         .setRequired(true)
-                        .addChoices(...getAttackSlotChoices())
+                        .addChoices(...ATTACK_SLOT_CHOICES)
                 )
         )
 
@@ -394,7 +413,7 @@ module.exports = {
                 .addIntegerOption(option =>
                     option
                         .setName("slot")
-                        .setDescription("Skin slot. Leave empty to use the next free slot.")
+                        .setDescription("Skin slot. Empty = next free slot.")
                         .setRequired(false)
                         .setMinValue(1)
                         .setMaxValue(8)
@@ -448,7 +467,7 @@ module.exports = {
         const customs = loadCustomCharacters();
         const likes = loadCustomLikes();
 
-        const result = getCustomOrReply(interaction, customs, likes, id);
+        const result = getCustomOrFail(interaction, customs, likes, id);
 
         if (result.error) {
             return interaction.reply({
@@ -477,78 +496,91 @@ module.exports = {
                 lowHpAnim === null &&
                 canHeal === null
             ) {
-                const embed = new EmbedBuilder()
-                    .setColor("Orange")
-                    .setTitle("⚠️ Nothing selected")
-                    .setDescription("Use at least one option to edit this custom character.");
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createWarningEmbed(
+                            "⚠️ Nothing selected",
+                            "Use at least one option to edit this custom character."
+                        )
+                    ],
                     ephemeral: true
                 });
             }
 
             if (image && (!image.contentType || !image.contentType.startsWith("image/"))) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Invalid image")
-                    .setDescription("The uploaded file must be an image.");
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid image",
+                            "The uploaded file must be an image."
+                        )
+                    ],
                     ephemeral: true
                 });
             }
 
             const changes = [];
 
-            if (name) changes.push(`**Name:** ${custom.name} → ${name}`);
-            if (image) changes.push("**Image:** will be overwritten");
-            if (universe) changes.push(`**Universe:** ${custom.universe} → ${universe}`);
-            if (hp !== null) changes.push(`**HP:** ${custom.stats.hp} → ${hp}`);
-            if (speed) changes.push(`**Speed:** ${custom.stats.speed} → ${speed}`);
-            if (lowHpAnim !== null) changes.push(`**Low HP Animation:** ${custom.stats.lowHpAnimation} → ${lowHpAnim}`);
-            if (canHeal !== null) changes.push(`**Can Heal:** ${custom.stats.canHeal} → ${canHeal}`);
+            const applyStats = () => {
+                if (name) {
+                    custom.name = name;
+                    changes.push(`**Name:** ${name}`);
+                }
 
-            const warningEmbed = new EmbedBuilder()
-                .setColor("Orange")
-                .setTitle("⚠️ Confirm overwrite")
-                .setDescription(
-                    `You are about to overwrite data from **${custom.name}**.\n\n` +
-                    changes.join("\n") +
-                    "\n\nDo you want to apply these changes?"
-                );
+                if (image) {
+                    custom.image = image.url;
+                    changes.push("**Image:** updated");
+                }
 
-            return confirmOverwrite(interaction, warningEmbed, () => {
-                if (name) custom.name = name;
-                if (image) custom.image = image.url;
-                if (universe) custom.universe = universe;
-                if (hp !== null) custom.stats.hp = hp;
-                if (speed) custom.stats.speed = speed;
-                if (lowHpAnim !== null) custom.stats.lowHpAnimation = lowHpAnim;
-                if (canHeal !== null) custom.stats.canHeal = canHeal;
+                if (universe) {
+                    custom.universe = universe;
+                    changes.push(`**Universe:** ${universe}`);
+                }
+
+                if (hp !== null) {
+                    custom.stats.hp = hp;
+                    changes.push(`**HP:** ${hp}`);
+                }
+
+                if (speed) {
+                    custom.stats.speed = speed;
+                    changes.push(`**Speed:** ${speed}`);
+                }
+
+                if (lowHpAnim !== null) {
+                    custom.stats.lowHpAnimation = lowHpAnim;
+                    changes.push(`**Low HP Animation:** ${lowHpAnim}`);
+                }
+
+                if (canHeal !== null) {
+                    custom.stats.canHeal = canHeal;
+                    changes.push(`**Can Heal:** ${canHeal}`);
+                }
 
                 updateSkills(custom);
                 saveCustomCharacters(customs);
 
-                return successEmbed(
+                return createSuccessEmbed(
                     "✅ Custom Character Updated",
                     `**${custom.name}** has been updated.\n\n${changes.join("\n")}`,
                     custom
                 );
+            };
+
+            return interaction.reply({
+                embeds: [applyStats()]
             });
         }
 
         if (subcommand === "lore") {
             const newLore = interaction.options.getString("lore");
-            const hasOldLore = Boolean(custom.lore && custom.lore.trim().length > 0);
+            const hasOldLore = custom.lore && custom.lore.trim().length > 0;
 
             const applyLore = () => {
                 custom.lore = newLore;
-
                 saveCustomCharacters(customs);
 
-                return successEmbed(
+                return createSuccessEmbed(
                     "✅ Lore Updated",
                     `Lore for **${custom.name}** has been updated.`,
                     custom
@@ -556,27 +588,23 @@ module.exports = {
             };
 
             if (hasOldLore) {
-                const warningEmbed = new EmbedBuilder()
-                    .setColor("Orange")
-                    .setTitle("⚠️ Confirm overwrite")
-                    .setDescription(
-                        `**${custom.name}** already has lore.\n\n` +
-                        "This will overwrite the current lore.\n\n" +
-                        "Do you want to apply this change?"
-                    );
-
-                return confirmOverwrite(interaction, warningEmbed, applyLore);
+                return confirmOverwrite(
+                    interaction,
+                    createWarningEmbed(
+                        "⚠️ Confirm lore overwrite",
+                        `**${custom.name}** already has lore.\n\nThis will overwrite the current lore.\n\nDo you want to apply this change?`
+                    ),
+                    applyLore
+                );
             }
 
-            const embed = applyLore();
-
             return interaction.reply({
-                embeds: [embed]
+                embeds: [applyLore()]
             });
         }
 
         if (subcommand === "attack") {
-            const slot = interaction.options.getString("slot");
+            const slot = interaction.options.getString("slot").toUpperCase();
             const name = interaction.options.getString("name");
             const damage = interaction.options.getInteger("damage");
             const cooldown = interaction.options.getString("cooldown");
@@ -601,16 +629,11 @@ module.exports = {
                     custom.attacks.push(newAttack);
                 }
 
-                custom.attacks.sort((a, b) => {
-                    const order = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "E"];
-                    return order.indexOf(String(a.slot)) - order.indexOf(String(b.slot));
-                });
-
+                sortAttacks(custom.attacks);
                 updateSkills(custom);
-
                 saveCustomCharacters(customs);
 
-                return successEmbed(
+                return createSuccessEmbed(
                     existingIndex >= 0 ? "✅ Attack Overwritten" : "✅ Attack Added",
                     `**${custom.name}** attack slot **${slot}** has been ${existingIndex >= 0 ? "overwritten" : "added"}.\n\n` +
                     `**Name:** ${name}\n` +
@@ -624,82 +647,78 @@ module.exports = {
             if (existingIndex >= 0) {
                 const oldAttack = custom.attacks[existingIndex];
 
-                const warningEmbed = new EmbedBuilder()
-                    .setColor("Orange")
-                    .setTitle("⚠️ Confirm attack overwrite")
-                    .setDescription(
+                return confirmOverwrite(
+                    interaction,
+                    createWarningEmbed(
+                        "⚠️ Confirm attack overwrite",
                         `Attack slot **${slot}** already exists for **${custom.name}**.\n\n` +
                         `**Current:** ${oldAttack.name}\n` +
                         `**New:** ${name}\n\n` +
-                        "This will overwrite the current attack.\n\n" +
-                        "Do you want to apply this change?"
-                    );
-
-                return confirmOverwrite(interaction, warningEmbed, applyAttack);
+                        "This will overwrite the current attack.\n\nDo you want to apply this change?"
+                    ),
+                    applyAttack
+                );
             }
 
             if (custom.attacks.length >= 10) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Attack limit reached")
-                    .setDescription("This custom character already has the maximum amount of attacks.");
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Attack limit reached",
+                            "This custom character already has the maximum amount of attacks."
+                        )
+                    ],
                     ephemeral: true
                 });
             }
 
-            const embed = applyAttack();
-
             return interaction.reply({
-                embeds: [embed]
+                embeds: [applyAttack()]
             });
         }
 
         if (subcommand === "deleteattack") {
-            const slot = interaction.options.getString("slot");
+            const slot = interaction.options.getString("slot").toUpperCase();
 
             const existingIndex = custom.attacks.findIndex(
                 attack => String(attack.slot).toUpperCase() === slot
             );
 
             if (existingIndex < 0) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Attack not found")
-                    .setDescription(`This custom character does not have an attack in slot **${slot}**.`);
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Attack not found",
+                            `This custom character does not have an attack in slot **${slot}**.`
+                        )
+                    ],
                     ephemeral: true
                 });
             }
 
             const oldAttack = custom.attacks[existingIndex];
 
-            const warningEmbed = new EmbedBuilder()
-                .setColor("Orange")
-                .setTitle("⚠️ Confirm attack deletion")
-                .setDescription(
+            return confirmOverwrite(
+                interaction,
+                createWarningEmbed(
+                    "⚠️ Confirm attack deletion",
                     `You are about to delete attack slot **${slot}** from **${custom.name}**.\n\n` +
                     `**Attack:** ${oldAttack.name}\n\n` +
-                    "Attack slots will **not** be reordered.\n\n" +
-                    "Do you want to delete it?"
-                );
+                    "Attack slots will **not** be reordered.\n\nDo you want to delete it?"
+                ),
+                () => {
+                    custom.attacks.splice(existingIndex, 1);
 
-            return confirmOverwrite(interaction, warningEmbed, () => {
-                custom.attacks.splice(existingIndex, 1);
+                    updateSkills(custom);
+                    saveCustomCharacters(customs);
 
-                updateSkills(custom);
-                saveCustomCharacters(customs);
-
-                return successEmbed(
-                    "✅ Attack Deleted",
-                    `Attack slot **${slot}** has been deleted from **${custom.name}**.`,
-                    custom
-                );
-            });
+                    return createSuccessEmbed(
+                        "✅ Attack Deleted",
+                        `Attack slot **${slot}** has been deleted from **${custom.name}**.`,
+                        custom
+                    );
+                }
+            );
         }
 
         if (subcommand === "skin") {
@@ -708,14 +727,14 @@ module.exports = {
             const image = interaction.options.getAttachment("image");
             const lore = interaction.options.getString("lore");
 
-            if (image && (!image.contentType || !image.contentType.startsWith("image/"))) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Invalid image")
-                    .setDescription("The uploaded file must be an image.");
-
+            if (!image.contentType || !image.contentType.startsWith("image/")) {
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid image",
+                            "The uploaded file must be an image."
+                        )
+                    ],
                     ephemeral: true
                 });
             }
@@ -729,31 +748,30 @@ module.exports = {
             }
 
             if (!slot && custom.skins.length >= 8) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Skin limit reached")
-                    .setDescription("This custom character already has 8 skins.");
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Skin limit reached",
+                            "This custom character already has 8 skins."
+                        )
+                    ],
                     ephemeral: true
                 });
             }
 
             if (slot && targetIndex > custom.skins.length) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Invalid skin slot")
-                    .setDescription(
-                        `You cannot use slot **${slot}** yet.\n\n` +
-                        `Next available slot is **${custom.skins.length + 1}**.`
-                    );
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid skin slot",
+                            `You cannot use slot **${slot}** yet.\n\nNext available slot is **${custom.skins.length + 1}**.`
+                        )
+                    ],
                     ephemeral: true
                 });
             }
+
+            const existingSkin = custom.skins[targetIndex];
 
             const newSkin = {
                 name,
@@ -761,14 +779,12 @@ module.exports = {
                 lore
             };
 
-            const existingSkin = custom.skins[targetIndex];
-
             const applySkin = () => {
                 custom.skins[targetIndex] = newSkin;
 
                 saveCustomCharacters(customs);
 
-                return successEmbed(
+                return createSuccessEmbed(
                     existingSkin ? "✅ Skin Overwritten" : "✅ Skin Added",
                     `Skin slot **${targetIndex + 1}** has been ${existingSkin ? "overwritten" : "added"} for **${custom.name}**.\n\n` +
                     `**Name:** ${name}`,
@@ -777,24 +793,21 @@ module.exports = {
             };
 
             if (existingSkin) {
-                const warningEmbed = new EmbedBuilder()
-                    .setColor("Orange")
-                    .setTitle("⚠️ Confirm skin overwrite")
-                    .setDescription(
+                return confirmOverwrite(
+                    interaction,
+                    createWarningEmbed(
+                        "⚠️ Confirm skin overwrite",
                         `Skin slot **${targetIndex + 1}** already exists for **${custom.name}**.\n\n` +
                         `**Current:** ${existingSkin.name}\n` +
                         `**New:** ${name}\n\n` +
-                        "This will overwrite the current skin.\n\n" +
-                        "Do you want to apply this change?"
-                    );
-
-                return confirmOverwrite(interaction, warningEmbed, applySkin);
+                        "This will overwrite the current skin.\n\nDo you want to apply this change?"
+                    ),
+                    applySkin
+                );
             }
 
-            const embed = applySkin();
-
             return interaction.reply({
-                embeds: [embed]
+                embeds: [applySkin()]
             });
         }
 
@@ -803,40 +816,39 @@ module.exports = {
             const index = slot - 1;
 
             if (!custom.skins[index]) {
-                const embed = new EmbedBuilder()
-                    .setColor("Red")
-                    .setTitle("❌ Skin not found")
-                    .setDescription(`This custom character does not have a skin in slot **${slot}**.`);
-
                 return interaction.reply({
-                    embeds: [embed],
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Skin not found",
+                            `This custom character does not have a skin in slot **${slot}**.`
+                        )
+                    ],
                     ephemeral: true
                 });
             }
 
             const oldSkin = custom.skins[index];
 
-            const warningEmbed = new EmbedBuilder()
-                .setColor("Orange")
-                .setTitle("⚠️ Confirm skin deletion")
-                .setDescription(
+            return confirmOverwrite(
+                interaction,
+                createWarningEmbed(
+                    "⚠️ Confirm skin deletion",
                     `You are about to delete skin slot **${slot}** from **${custom.name}**.\n\n` +
                     `**Skin:** ${oldSkin.name}\n\n` +
-                    "Skin slots after this one will be reordered.\n\n" +
-                    "Do you want to delete it?"
-                );
+                    "Skin slots after this one will be reordered.\n\nDo you want to delete it?"
+                ),
+                () => {
+                    custom.skins.splice(index, 1);
 
-            return confirmOverwrite(interaction, warningEmbed, () => {
-                custom.skins.splice(index, 1);
+                    saveCustomCharacters(customs);
 
-                saveCustomCharacters(customs);
-
-                return successEmbed(
-                    "✅ Skin Deleted",
-                    `Skin slot **${slot}** has been deleted from **${custom.name}**.\n\nSkin slots were reordered.`,
-                    custom
-                );
-            });
+                    return createSuccessEmbed(
+                        "✅ Skin Deleted",
+                        `Skin slot **${slot}** has been deleted from **${custom.name}**.\n\nSkin slots were reordered.`,
+                        custom
+                    );
+                }
+            );
         }
     }
 };
