@@ -401,46 +401,45 @@ module.exports = {
                 )
         )
 
-        .addSubcommand(subcommand =>
-            subcommand
-                .setName("skin")
-                .setDescription("Add or edit a skin.")
-                .addStringOption(option =>
-                    option
-                        .setName("id")
-                        .setDescription("Custom Character ID.")
-                        .setRequired(true)
-                )
-                .addIntegerOption(option =>
-                    option
-                        .setName("slot")
-                        .setDescription("Skin slot. Empty = next free slot.")
-                        .setRequired(false)
-                        .setMinValue(1)
-                        .setMaxValue(8)
-                )
-                .addStringOption(option =>
-                    option
-                        .setName("name")
-                        .setDescription("Skin name.")
-                        .setRequired(true)
-                        .setMaxLength(80)
-                )
-                .addAttachmentOption(option =>
-                    option
-                        .setName("image")
-                        .setDescription("Skin image.")
-                        .setRequired(true)
-                )
-                .addStringOption(option =>
-                    option
-                        .setName("lore")
-                        .setDescription("Skin lore.")
-                        .setRequired(true)
-                        .setMaxLength(1000)
-                )
+.addSubcommand(subcommand =>
+    subcommand
+        .setName("skin")
+        .setDescription("Add or edit a skin.")
+        .addStringOption(option =>
+            option
+                .setName("id")
+                .setDescription("Custom Character ID.")
+                .setRequired(true)
         )
-
+        .addStringOption(option =>
+            option
+                .setName("name")
+                .setDescription("Skin name.")
+                .setRequired(true)
+                .setMaxLength(80)
+        )
+        .addAttachmentOption(option =>
+            option
+                .setName("image")
+                .setDescription("Skin image.")
+                .setRequired(true)
+        )
+        .addStringOption(option =>
+            option
+                .setName("lore")
+                .setDescription("Skin lore.")
+                .setRequired(true)
+                .setMaxLength(1000)
+        )
+        .addIntegerOption(option =>
+            option
+                .setName("slot")
+                .setDescription("Skin slot. Empty = next free slot.")
+                .setRequired(false)
+                .setMinValue(1)
+                .setMaxValue(8)
+        )
+)
         .addSubcommand(subcommand =>
             subcommand
                 .setName("deleteskin")
