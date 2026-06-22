@@ -1,4 +1,3 @@
-console.log("✅ LOADED NEW EDITCUSTOMCHAR WITH SUBCOMMANDS");
 const {
     SlashCommandBuilder,
     EmbedBuilder,
@@ -15,6 +14,10 @@ const {
     saveCustomLikes
 } = require("../utils/customCharacters");
 
+const {
+    uploadCustomImage
+} = require("../utils/imageUploader");
+
 const THIRTY_DAYS = 30 * 24 * 60 * 60;
 
 const ATTACK_SLOT_CHOICES = [
@@ -23,11 +26,18 @@ const ATTACK_SLOT_CHOICES = [
     { name: "3", value: "3" },
     { name: "4", value: "4" },
     { name: "5", value: "5" },
-    { name: "6", value: "6" },
-    { name: "7", value: "7" },
-    { name: "8", value: "8" },
-    { name: "9", value: "9" },
-    { name: "E", value: "E" }
+    { name: "E", value: "E" },
+    { name: "1B", value: "1B" },
+    { name: "2B", value: "2B" },
+    { name: "3B", value: "3B" },
+    { name: "4B", value: "4B" },
+    { name: "5B", value: "5B" },
+    { name: "EB", value: "EB" }
+];
+
+const SLOT_ORDER = [
+    "1", "2", "3", "4", "5", "E",
+    "1B", "2B", "3B", "4B", "5B", "EB"
 ];
 
 const ATTRIBUTE_CHOICES = [
@@ -38,29 +48,36 @@ const ATTRIBUTE_CHOICES = [
     { name: "RNG", value: "rng" },
     { name: "Blindness", value: "blind" },
     { name: "Push", value: "push" },
-
+    { name: "Pull", value: "pull" },
+    { name: "Lingering", value: "lin" },
     { name: "Mele", value: "mele" },
     { name: "Range ++", value: "lrp" },
     { name: "Range +", value: "lr" },
     { name: "Range", value: "range" },
     { name: "Explode", value: "ex" },
     { name: "Grab", value: "grab" },
-
     { name: "Break", value: "break" },
     { name: "Ignore", value: "ignore" },
     { name: "Block", value: "block" },
-
     { name: "Movement", value: "move" },
     { name: "Teleport", value: "tp" },
-
     { name: "Heal", value: "heal" },
     { name: "Charge", value: "charge" },
+    { name: "Charges Use", value: "use" },
     { name: "Transformation", value: "trans" },
-
     { name: "Brutality", value: "bruta" },
     { name: "Finisher", value: "finish" },
     { name: "Counter", value: "coun" }
 ];
+
+function containsEmoji(text) {
+    if (!text) return false;
+
+    const discordEmojiRegex = /<a?:\w+:\d+>/g;
+    const unicodeEmojiRegex = /[\p{Extended_Pictographic}\p{Emoji_Presentation}]/u;
+
+    return discordEmojiRegex.test(text) || unicodeEmojiRegex.test(text);
+}
 
 function getExpiresAt(custom) {
     const base = custom.lastBoost || custom.createdAt || Math.floor(Date.now() / 1000);
@@ -85,14 +102,30 @@ function normalizeCustom(custom) {
 }
 
 function sortAttacks(attacks) {
-    const order = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "E"];
-
     attacks.sort((a, b) => {
-        const aIndex = order.indexOf(String(a.slot).toUpperCase());
-        const bIndex = order.indexOf(String(b.slot).toUpperCase());
+        const aIndex = SLOT_ORDER.indexOf(String(a.slot).toUpperCase());
+        const bIndex = SLOT_ORDER.indexOf(String(b.slot).toUpperCase());
 
         return aIndex - bIndex;
     });
+}
+
+function isBSlot(slot) {
+    return String(slot).toUpperCase().endsWith("B");
+}
+
+function getBaseSlot(slot) {
+    const value = String(slot).toUpperCase();
+
+    if (value === "EB") return "E";
+
+    return value.replace("B", "");
+}
+
+function hasSlot(custom, slot) {
+    return custom.attacks.some(
+        attack => String(attack.slot).toUpperCase() === String(slot).toUpperCase()
+    );
 }
 
 function getAttributes(interaction) {
@@ -116,7 +149,7 @@ function addAttributeOptions(subcommand) {
                 .setName(`attribute${i}`)
                 .setDescription(`Attack attribute ${i}.`)
                 .setRequired(false)
-                .addChoices(...ATTRIBUTE_CHOICES)
+                .setAutocomplete(true)
         );
     }
 
@@ -192,19 +225,21 @@ async function confirmOverwrite(interaction, warningEmbed, applyChanges) {
             });
         }
 
-        const resultEmbed = applyChanges();
+        const resultEmbed = await applyChanges();
 
         return button.update({
             embeds: [resultEmbed],
             components: []
         });
 
-    } catch {
+    } catch (error) {
+        console.log("Confirm overwrite error:", error.message);
+
         return interaction.editReply({
             embeds: [
                 new EmbedBuilder()
                     .setColor("Grey")
-                    .setTitle("⌛ Confirmation expired")
+                    .setTitle("⌛ Confirmation expired or failed")
                     .setDescription("No changes were applied.")
             ],
             components: []
@@ -244,6 +279,15 @@ function getCustomOrFail(interaction, customs, likes, id) {
             error: createErrorEmbed(
                 "❌ You cannot edit this character",
                 "Only the creator of this custom character can edit it."
+            )
+        };
+    }
+
+    if (custom.featured || likes[id]?.featured) {
+        return {
+            error: createErrorEmbed(
+                "❌ Featured custom locked",
+                "This custom character is featured and cannot be edited while it is featured."
             )
         };
     }
@@ -401,45 +445,46 @@ module.exports = {
                 )
         )
 
-.addSubcommand(subcommand =>
-    subcommand
-        .setName("skin")
-        .setDescription("Add or edit a skin.")
-        .addStringOption(option =>
-            option
-                .setName("id")
-                .setDescription("Custom Character ID.")
-                .setRequired(true)
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName("skin")
+                .setDescription("Add or edit a skin.")
+                .addStringOption(option =>
+                    option
+                        .setName("id")
+                        .setDescription("Custom Character ID.")
+                        .setRequired(true)
+                )
+                .addStringOption(option =>
+                    option
+                        .setName("name")
+                        .setDescription("Skin name.")
+                        .setRequired(true)
+                        .setMaxLength(80)
+                )
+                .addAttachmentOption(option =>
+                    option
+                        .setName("image")
+                        .setDescription("Skin image.")
+                        .setRequired(true)
+                )
+                .addStringOption(option =>
+                    option
+                        .setName("lore")
+                        .setDescription("Skin lore.")
+                        .setRequired(true)
+                        .setMaxLength(1000)
+                )
+                .addIntegerOption(option =>
+                    option
+                        .setName("slot")
+                        .setDescription("Skin slot. Empty = next free slot.")
+                        .setRequired(false)
+                        .setMinValue(1)
+                        .setMaxValue(8)
+                )
         )
-        .addStringOption(option =>
-            option
-                .setName("name")
-                .setDescription("Skin name.")
-                .setRequired(true)
-                .setMaxLength(80)
-        )
-        .addAttachmentOption(option =>
-            option
-                .setName("image")
-                .setDescription("Skin image.")
-                .setRequired(true)
-        )
-        .addStringOption(option =>
-            option
-                .setName("lore")
-                .setDescription("Skin lore.")
-                .setRequired(true)
-                .setMaxLength(1000)
-        )
-        .addIntegerOption(option =>
-            option
-                .setName("slot")
-                .setDescription("Skin slot. Empty = next free slot.")
-                .setRequired(false)
-                .setMinValue(1)
-                .setMaxValue(8)
-        )
-)
+
         .addSubcommand(subcommand =>
             subcommand
                 .setName("deleteskin")
@@ -459,6 +504,29 @@ module.exports = {
                         .setMaxValue(8)
                 )
         ),
+
+    async autocomplete(interaction) {
+        const focused = interaction.options.getFocused(true);
+
+        if (!focused.name.startsWith("attribute")) {
+            return interaction.respond([]);
+        }
+
+        const query = String(focused.value || "").toLowerCase();
+
+        const results = ATTRIBUTE_CHOICES
+            .filter(attribute =>
+                attribute.name.toLowerCase().includes(query) ||
+                attribute.value.toLowerCase().includes(query)
+            )
+            .slice(0, 25)
+            .map(attribute => ({
+                name: `${attribute.name} (${attribute.value})`,
+                value: attribute.value
+            }));
+
+        return interaction.respond(results);
+    },
 
     async execute(interaction) {
         const subcommand = interaction.options.getSubcommand();
@@ -507,6 +575,30 @@ module.exports = {
                 });
             }
 
+            if (name && containsEmoji(name)) {
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid name",
+                            "Custom character names cannot contain emojis."
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
+
+            if (universe && containsEmoji(universe)) {
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid universe",
+                            "Custom character universes cannot contain emojis."
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
+
             if (image && (!image.contentType || !image.contentType.startsWith("image/"))) {
                 return interaction.reply({
                     embeds: [
@@ -521,14 +613,25 @@ module.exports = {
 
             const changes = [];
 
-            const applyStats = () => {
+            const applyStats = async () => {
                 if (name) {
                     custom.name = name;
                     changes.push(`**Name:** ${name}`);
                 }
 
                 if (image) {
-                    custom.image = image.url;
+                    const permanentImageUrl = await uploadCustomImage(
+                        interaction.client,
+                        image,
+                        {
+                            type: "character",
+                            customId: custom.id,
+                            characterName: custom.name,
+                            creatorId: interaction.user.id
+                        }
+                    );
+
+                    custom.image = permanentImageUrl;
                     changes.push("**Image:** updated");
                 }
 
@@ -567,16 +670,30 @@ module.exports = {
                 );
             };
 
-            return interaction.reply({
-                embeds: [applyStats()]
-            });
+            try {
+                return interaction.reply({
+                    embeds: [await applyStats()]
+                });
+            } catch (error) {
+                console.log("Custom image upload error:", error.message);
+
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Image upload failed",
+                            "The image could not be uploaded to the storage channel."
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
         }
 
         if (subcommand === "lore") {
             const newLore = interaction.options.getString("lore");
             const hasOldLore = custom.lore && custom.lore.trim().length > 0;
 
-            const applyLore = () => {
+            const applyLore = async () => {
                 custom.lore = newLore;
                 saveCustomCharacters(customs);
 
@@ -599,7 +716,7 @@ module.exports = {
             }
 
             return interaction.reply({
-                embeds: [applyLore()]
+                embeds: [await applyLore()]
             });
         }
 
@@ -609,6 +726,34 @@ module.exports = {
             const damage = interaction.options.getInteger("damage");
             const cooldown = interaction.options.getString("cooldown");
             const attributes = getAttributes(interaction);
+
+            if (containsEmoji(name)) {
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid attack name",
+                            "Attack names cannot contain emojis."
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
+
+            if (isBSlot(slot)) {
+                const baseSlot = getBaseSlot(slot);
+
+                if (!hasSlot(custom, baseSlot)) {
+                    return interaction.reply({
+                        embeds: [
+                            createErrorEmbed(
+                                "❌ Missing base slot",
+                                `You cannot create slot **${slot}** before creating slot **${baseSlot}**.`
+                            )
+                        ],
+                        ephemeral: true
+                    });
+                }
+            }
 
             const existingIndex = custom.attacks.findIndex(
                 attack => String(attack.slot).toUpperCase() === slot
@@ -622,7 +767,7 @@ module.exports = {
                 attributes
             };
 
-            const applyAttack = () => {
+            const applyAttack = async () => {
                 if (existingIndex >= 0) {
                     custom.attacks[existingIndex] = newAttack;
                 } else {
@@ -660,7 +805,7 @@ module.exports = {
                 );
             }
 
-            if (custom.attacks.length >= 10) {
+            if (custom.attacks.length >= 12) {
                 return interaction.reply({
                     embeds: [
                         createErrorEmbed(
@@ -673,7 +818,7 @@ module.exports = {
             }
 
             return interaction.reply({
-                embeds: [applyAttack()]
+                embeds: [await applyAttack()]
             });
         }
 
@@ -696,6 +841,20 @@ module.exports = {
                 });
             }
 
+            const linkedBSlot = `${slot}B`;
+
+            if (!isBSlot(slot) && hasSlot(custom, linkedBSlot)) {
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Delete alternate slot first",
+                            `You must delete slot **${linkedBSlot}** before deleting slot **${slot}**.`
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
+
             const oldAttack = custom.attacks[existingIndex];
 
             return confirmOverwrite(
@@ -706,7 +865,7 @@ module.exports = {
                     `**Attack:** ${oldAttack.name}\n\n` +
                     "Attack slots will **not** be reordered.\n\nDo you want to delete it?"
                 ),
-                () => {
+                async () => {
                     custom.attacks.splice(existingIndex, 1);
 
                     updateSkills(custom);
@@ -726,6 +885,18 @@ module.exports = {
             const name = interaction.options.getString("name");
             const image = interaction.options.getAttachment("image");
             const lore = interaction.options.getString("lore");
+
+            if (containsEmoji(name)) {
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Invalid skin name",
+                            "Skin names cannot contain emojis."
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
 
             if (!image.contentType || !image.contentType.startsWith("image/")) {
                 return interaction.reply({
@@ -773,13 +944,25 @@ module.exports = {
 
             const existingSkin = custom.skins[targetIndex];
 
-            const newSkin = {
-                name,
-                image: image.url,
-                lore
-            };
+            const applySkin = async () => {
+                const permanentSkinImageUrl = await uploadCustomImage(
+                    interaction.client,
+                    image,
+                    {
+                        type: "skin",
+                        customId: custom.id,
+                        characterName: custom.name,
+                        skinName: name,
+                        creatorId: interaction.user.id
+                    }
+                );
 
-            const applySkin = () => {
+                const newSkin = {
+                    name,
+                    image: permanentSkinImageUrl,
+                    lore
+                };
+
                 custom.skins[targetIndex] = newSkin;
 
                 saveCustomCharacters(customs);
@@ -806,9 +989,23 @@ module.exports = {
                 );
             }
 
-            return interaction.reply({
-                embeds: [applySkin()]
-            });
+            try {
+                return interaction.reply({
+                    embeds: [await applySkin()]
+                });
+            } catch (error) {
+                console.log("Custom skin image upload error:", error.message);
+
+                return interaction.reply({
+                    embeds: [
+                        createErrorEmbed(
+                            "❌ Image upload failed",
+                            "The skin image could not be uploaded to the storage channel."
+                        )
+                    ],
+                    ephemeral: true
+                });
+            }
         }
 
         if (subcommand === "deleteskin") {
@@ -837,7 +1034,7 @@ module.exports = {
                     `**Skin:** ${oldSkin.name}\n\n` +
                     "Skin slots after this one will be reordered.\n\nDo you want to delete it?"
                 ),
-                () => {
+                async () => {
                     custom.skins.splice(index, 1);
 
                     saveCustomCharacters(customs);
