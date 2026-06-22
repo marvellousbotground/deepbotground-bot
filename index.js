@@ -1,6 +1,7 @@
 const app = require("./server");
 
 const PORT = process.env.SERVER_PORT || 5012;
+
 app.listen(PORT, () => {
     console.log(`✅ OAuth server running on port ${PORT}`);
 });
@@ -15,15 +16,22 @@ const fs = require("fs");
 const path = require("path");
 require("dotenv").config();
 
+const {
+    handleCustomAdmin
+} = require("./utils/customAdmin");
+
 const client = new Client({
     intents: [
-        GatewayIntentBits.Guilds
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent
     ]
 });
 
 client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, "commands");
+
 const commandFiles = fs
     .readdirSync(commandsPath)
     .filter(file => file.endsWith(".js"));
@@ -41,6 +49,14 @@ for (const file of commandFiles) {
 
 client.once("ready", () => {
     console.log(`Bot conectado como ${client.user.tag}`);
+});
+
+client.on("messageCreate", async message => {
+    try {
+        await handleCustomAdmin(message);
+    } catch (error) {
+        console.error("Custom admin error:", error);
+    }
 });
 
 client.on("interactionCreate", async interaction => {

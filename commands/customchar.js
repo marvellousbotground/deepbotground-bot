@@ -20,8 +20,10 @@ const ATTRIBUTE_EMOJIS = {
     noti: "<:Noticeable:1510718001517822142>",
     coun: "<:Counter:1510717999458418718>",
     inv: "<:Vanish:1510717997713719478>",
+
     brut: "<:Brutality:1511496907007066262>",
     bruta: "<:Brutality:1511496907007066262>",
+
     area: "<:Area:1510717995914231949>",
     trans: "<:Transformation:1510717993959559209>",
     cine: "<:Cinema:1510717991908540466>",
@@ -32,19 +34,36 @@ const ATTRIBUTE_EMOJIS = {
     ex: "<:Explode:1510717981510860930>",
     grab: "<:Grab:1510717979115917454>",
     mele: "<:Mele:1510717976226300126>",
+
     range: "<:Range:1511468297445572618>",
     lr: "<:RangePlus:1511468293700059417>",
     lrp: "<:RangePlusPlus:1511468289946161192>",
+
     blind: "<:blindness:1511468288318636083>",
     charge: "<:charge:1511468284921253908>",
     tp: "<:Teleport:1511468300830376098>",
+
     break: "<:Break:1509366823236145162>",
     ignore: "<:Ignore:1509365768993771570>",
-    block: "<:Block:1509363951874605219>"
+    block: "<:Block:1509363951874605219>",
+
+    lin: "<:Lingering:1517666297104699522>",
+    pull: "<:Pull:1517666295133376562>",
+    use: "<:Charges_use:1517666293052866701>"
 };
 
 function normalize(text) {
-    return String(text || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    return String(text || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+}
+
+function getDisplayName(custom, selectedSkin = null) {
+    const star = custom.featured ? "⭐ " : "";
+
+    return selectedSkin
+        ? `${star}${custom.name} - ${selectedSkin.name}`
+        : `${star}${custom.name}`;
 }
 
 function getAttributeEmojis(attack) {
@@ -66,27 +85,38 @@ function getAttributeEmojis(attack) {
     return emojis.length ? emojis.join(" ") : "None";
 }
 
+function getVisibleSlot(slot) {
+    const value = String(slot || "").trim().toUpperCase();
+
+    if (value === "EB") return "E";
+    if (value.endsWith("B")) return value.replace("B", "");
+
+    return value;
+}
+
 function getAttackIcon(attack, index) {
-    if (attack.slot !== undefined && attack.slot !== null) {
-        const slot = String(attack.slot).trim().toUpperCase();
+    const visibleSlot = getVisibleSlot(attack.slot);
 
-        const slotIcons = {
-            "1": "1️⃣",
-            "2": "2️⃣",
-            "3": "3️⃣",
-            "4": "4️⃣",
-            "5": "5️⃣",
-            "6": "6️⃣",
-            "7": "7️⃣",
-            "8": "8️⃣",
-            "9": "9️⃣",
-            "E": "🇪"
-        };
+    const slotIcons = {
+        "1": "1️⃣",
+        "2": "2️⃣",
+        "3": "3️⃣",
+        "4": "4️⃣",
+        "5": "5️⃣",
+        "E": "🇪"
+    };
 
-        return slotIcons[slot] || slot;
+    if (visibleSlot && slotIcons[visibleSlot]) {
+        return slotIcons[visibleSlot];
     }
 
-    const numbers = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"];
+    const numbers = [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣",
+        "4️⃣",
+        "5️⃣"
+    ];
 
     return numbers[index] || `${index + 1}`;
 }
@@ -109,8 +139,7 @@ function createActionSelect() {
                 { label: "Stats", value: "stats" },
                 { label: "Attacks", value: "attacks" },
                 { label: "Lore", value: "lore" },
-                { label: "Skins", value: "skins" },
-                { label: "Techs", value: "techs" }
+                { label: "Skins", value: "skins" }
             )
     );
 }
@@ -154,16 +183,12 @@ function createLikeButton(likes) {
 }
 
 function createCustomStartEmbed(custom, likes, selectedSkin = null) {
-    const title = selectedSkin
-        ? `${custom.name} - ${selectedSkin.name}`
-        : custom.name;
-
     const image = selectedSkin?.image || custom.image;
     const expiresAt = getExpiresAt(custom);
 
     const embed = new EmbedBuilder()
-        .setTitle(title)
-        .setColor(0x00ff99)
+        .setTitle(getDisplayName(custom, selectedSkin))
+        .setColor(custom.featured ? 0xf1c40f : 0x00ff99)
         .setDescription(
             `Select what you want to see.\n\n` +
             `**Custom ID:** \`${custom.id}\`\n` +
@@ -193,7 +218,7 @@ function createCustomStartEmbed(custom, likes, selectedSkin = null) {
 
 function createSkinsInfoEmbed(custom, selectedSkin = null) {
     const embed = new EmbedBuilder()
-        .setTitle(`${custom.name} - Skins Information`)
+        .setTitle(`${getDisplayName(custom)} - Skins Information`)
         .setColor(0x2ecc71)
         .setFooter({
             text: "Custom Character • MarvellousBOTground"
@@ -234,22 +259,17 @@ function createCustomEmbed(custom, action, selectedSkin = null) {
         attacks: 0xff0000,
         stats: 0x0099ff,
         lore: 0x9b59b6,
-        skins: 0x2ecc71,
-        techs: 0xf1c40f
+        skins: 0x2ecc71
     };
 
     if (action === "skins") {
         return createSkinsInfoEmbed(custom, selectedSkin);
     }
 
-    const displayName = selectedSkin
-        ? `${custom.name} - ${selectedSkin.name}`
-        : custom.name;
-
     const image = selectedSkin?.image || custom.image;
 
     const embed = new EmbedBuilder()
-        .setTitle(`${displayName} - ${action.toUpperCase()}`)
+        .setTitle(`${getDisplayName(custom, selectedSkin)} - ${action.toUpperCase()}`)
         .setColor(colors[action] || 0x2b2d31)
         .setFooter({
             text: "Custom Character • MarvellousBOTground"
@@ -293,18 +313,6 @@ function createCustomEmbed(custom, action, selectedSkin = null) {
             custom.lore ||
             "No lore available."
         );
-    }
-
-    if (action === "techs") {
-        if (!custom.techs || custom.techs.length === 0) {
-            embed.setDescription("This custom character does not have any uploaded techs yet.");
-        } else {
-            embed.setDescription(
-                custom.techs.map(tech =>
-                    `**${tech.name}**\n${tech.video}\n\nVideo by: ${tech.credits}`
-                ).join("\n\n")
-            );
-        }
     }
 
     return embed;
@@ -356,7 +364,6 @@ module.exports = {
 
         if (!Array.isArray(custom.attacks)) custom.attacks = [];
         if (!Array.isArray(custom.skins)) custom.skins = [];
-        if (!Array.isArray(custom.techs)) custom.techs = [];
 
         if (!likesData[id]) {
             likesData[id] = {
@@ -397,7 +404,7 @@ module.exports = {
                     likesData[id] = {
                         likes: 0,
                         users: [],
-                        featured: false
+                        featured: custom.featured || false
                     };
                 }
 

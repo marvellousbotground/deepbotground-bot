@@ -9,6 +9,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ATTRIBUTE_EMOJIS = {
+    
+    lin: "<:Lingering:1517666297104699522>",
+    pull: "<:Pull:1517666295133376562>",
+    use: "<:Charges_use:1517666293052866701>",
     push: "<:Push:1510718003661111556>",
     noti: "<:Noticeable:1510718001517822142>",
     coun: "<:Counter:1510717999458418718>",
