@@ -15,7 +15,7 @@
 
   "universe": "DC",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507503705321242674/c2d39c402cf51c3534e6fecf82ac0e44.png?ex=6a1223bb&is=6a10d23b&hm=760e46e0979ec00af518fc83a52e9349fc4ea7121177246e899457815149d7cf&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519026768164552945/65e7df823ca10c18a0e5202c18a4ada7.png?ex=6a3c0f6b&is=6a3abdeb&hm=12bf9aa9a1ab60784b1ad8534ad2b44c32149c525ebcdcfc06d712ede635cc60&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -46,6 +46,7 @@
       "attributes": [
         "ignore",
         "range",
+        "lin",
         "push"
       ]
     },
@@ -72,6 +73,7 @@
       "attributes": [
         "break",
         "move",
+        "lin",
         "mele",
         "push"
       ]
@@ -105,14 +107,14 @@
   "skins": [
     {
       "name": "Underwear",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508284784302886932/Web_Photo_Editor_34.jpg?ex=6a14fb2b&is=6a13a9ab&hm=3e23a72a5f87a0fbecc1dd97a5512706654a877e3442cf45b10a0f50bb8442f1&=&format=webp",
-      "lore": "The Underwear skin references Peacemaker's appearance in The Suicide Squad (2021) during the nighttime forest mission scene."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519026768579792976/Web_Photo_Editor_34.jpg?ex=6a3c0f6b&is=6a3abdeb&hm=3d4523b423d5a01904799b437a0410459b84359e04380c9d330a24e07a97f681&=&format=webp",
+      "lore": "Peacemaker's appearance in The Suicide Squad (2021) during the nighttime forest mission scene."
     },
 
     {
       "name": "Jetpack",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508285616109129851/Web_Photo_Editor_35.jpg?ex=6a14fbf1&is=6a13aa71&hm=3b98a545c0ef55794479b399b5fe218df3adfce6bae7a085e30b5e2904f40d40&=&format=webp",
-      "lore": "The Jetpack skin references the Earth-X version of Peacemaker seen in Season 2."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519026768902623332/2992f8d58ed8e2274a20bf60c90b6de1.png?ex=6a3c0f6b&is=6a3abdeb&hm=8c9fb68d8c2b46483ec9d36805a498f625168c27352e51a6df3727398c4892fa&=&format=webp&quality=lossless",
+      "lore": "Earth-X version of Peacemaker seen in Season 2."
     }
   ],
 

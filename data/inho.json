@@ -23,7 +23,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012494776700948/1bd5ca8f54bf622cca0a61500a959f22.png?ex=6a13fd94&is=6a12ac14&hm=11270ceeaff093716685f0ca478e45121bae726b8094f01169458ee7abd47be7&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716071916605461/d184bd09162dd1c331758fba44cdd12a.png?ex=6a3aee0f&is=6a399c8f&hm=b05c8aae9e4fe6bac2fd5a6ccdbf576f867208ee3bb4b2c72af065eb2d1cc701&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -56,6 +56,7 @@
       "cooldown": "12s",
       "attributes": [
         "ignore",
+        "lin",
         "lrp"
       ]
     },
@@ -67,6 +68,7 @@
       "cooldown": "14s",
       "attributes": [
         "break",
+        "lin",
         "coun",
         "mele"
       ]
@@ -104,6 +106,7 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
         "blind",
         "vanish"
       ]
@@ -113,50 +116,50 @@
   "skins": [
     {
       "name": "Front Man",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012567715643473/d67a8983fa4ad127de6bf53344369eff.png?ex=6a13fda5&is=6a12ac25&hm=fb4151571d8e0a81bb30bfb268eb23f8f649ce75ad4ce0733f37f2a3089d05fe&=&format=webp&quality=lossless",
-      "lore": "The Front Man skin represents Hwang In-Ho wearing the iconic black mask and coat while acting as the overseer of the Squid Games."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716072260272318/243e484855aca4e84685249382ca9e86.png?ex=6a3aee10&is=6a399c90&hm=2783da8c21666f34484006a0da14988a9002ff553a2d79100b2bdca8550867b0&=&format=webp&quality=lossless",
+      "lore": "Hwang In-Ho wearing the iconic black mask and coat while acting as the overseer of the Squid Games."
     },
 
     {
       "name": "132",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012828458750003/Web_Photo_Editor_16.jpg?ex=6a13fde3&is=6a12ac63&hm=129b5a4689dbe7dbba0252ef1a83790064974562a918919f1303e6e1cdee2db1&=&format=webp",
-      "lore": "The 132 skin represents In-Ho during the time he participated in the Squid Games as Player 132 before eventually becoming the Front Man after winning the competition."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716072608661686/0807418d5f43bedd23ec1a38acebaa50.png?ex=6a3aee10&is=6a399c90&hm=204c224755f84d46e0068bf44372af80595a7a02a9d7f2aaa225bcd76f2bc6e6&=&format=webp&quality=lossless",
+      "lore": "In-Ho during the time he participated in the Squid Games as Player 132 before eventually becoming the Front Man after winning the competition."
     },
 
     {
       "name": "Thanos",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508012952866000916/f29c58d9a794d01c26752e4f22f54ffa.png?ex=6a13fe01&is=6a12ac81&hm=850e1dfc577bb9f9c9ee4084089c61a63200c175e4de5dde7af0f0276a7bcfa2&=&format=webp&quality=lossless",
-      "lore": "The Thanos skin references the rapper contestant from Squid Game known for his chaotic personality, drug addiction, and aggressive behavior during the games."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716072981696683/e0f32dd13c1d09c56fac88da60c777c9.png?ex=6a3aee10&is=6a399c90&hm=836b15574914422ecc5d662a227dd99a2f22897ee77403fbeb125ed10d29136c&=&format=webp&quality=lossless",
+      "lore": "The rapper contestant from Squid Game known for his chaotic personality, drug addiction, and aggressive behavior during the games."
     },
 
     {
       "name": "120",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013098911531008/6f8d6d6ec9b52f9742b942ab887e880d.png?ex=6a13fe24&is=6a12aca4&hm=fd7354df8eb69511ce921c36cd70a3ffe14e98d6af1c5a503939dd14e446bbab&=&format=webp&quality=lossless",
-      "lore": "The 120 skin references the transgender former soldier contestant from Squid Game Season 2 who entered the games seeking a new future after leaving the military."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716073321566329/29d6ceda81164620d044dc530cb7909d.png?ex=6a3aee10&is=6a399c90&hm=607c579f88cffd7fb4c14ad34c046c4bcb161a882d0a024a354e9802af282dbd&=&format=webp&quality=lossless",
+      "lore": "Transgender former soldier contestant from Squid Game Season 2 who entered the games seeking a new future after leaving the military."
     },
 
     {
       "name": "Kang No-eul",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013183422435480/17515b9be66fa971edeb8a2cf052f848.png?ex=6a13fe38&is=6a12acb8&hm=adf1dfb9fdc5edd033a079fc70051e853838cb04832c64ffba2fc6c6caedc55a&=&format=webp&quality=lossless",
-      "lore": "The Kang No-eul skin references the masked guard from Squid Game Season 2 who secretly tries to save a player that is the father of a sick child."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716073686339584/2bda2452964cf72b075898088b6de8f8.png?ex=6a3aee10&is=6a399c90&hm=580b880e844aa3be8e5c77d9583db755f3e5ed1ac6d37e2b72ceeb2d433c347f&=&format=webp&quality=lossless",
+      "lore": "Masked guard from Squid Game Season 2 who secretly tries to save a player that is the father of a sick child."
     },
 
     {
       "name": "Seong Gi-hun",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013285264592998/352548a36810e88c529e5f25fb8e7f77.png?ex=6a13fe50&is=6a12acd0&hm=f21e3e8ccd1dcdd0884525b5804225f00420c230bafde6534098d25902c0ae0d&=&format=webp&quality=lossless&width=350&height=350",
-      "lore": "The Seong Gi-hun skin references the main protagonist of Squid Game, the player who survived the original games and later returned determined to stop them."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716074269478922/53932c1d80af24e9e8f16c093bb29dda.png?ex=6a3aee10&is=6a399c90&hm=9b1f8af8722cae3beff4e5e16a70a6e0f0e45a5e5e87345668a923fe94383163&=&format=webp&quality=lossless",
+      "lore": "Main protagonist of Squid Game, the player who survived the original games and later returned determined to stop them."
     },
 
     {
       "name": "100",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013381284790312/b7d2312354d83a458fe7f243336f4576.png?ex=6a13fe67&is=6a12ace7&hm=76f12d20ed3ba6e5ca91626207a7a00dd56b29bad9e8a3667df808299dc5b0ff&=&format=webp&quality=lossless&width=331&height=350",
-      "lore": "The 100 skin references Player 100 from Squid Game Season 2, an antagonistic contestant known for constantly demanding one more game during the group votes."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716074605154416/b7d2312354d83a458fe7f243336f4576.png?ex=6a3aee10&is=6a399c90&hm=b0e63c4fcbd2ce14da594722ed6a8d9289283244df0c97ed9d272e6cb17181d5&=&format=webp&quality=lossless",
+      "lore": "Player 100 from Squid Game Season 2, an antagonistic contestant known for constantly demanding one more game during the group votes."
     },
 
     {
       "name": "We are not horses",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508013490147819591/7aecaec7bfa3c356ad57cdd2ea6b1131.png?ex=6a13fe81&is=6a12ad01&hm=d8b88d6da1aa7762fffc01b7c53fdad5be926527ab2fbafa88c00315f57d5379&=&format=webp&quality=lossless",
-      "lore": "The We are not horses skin references Seong Gi-hun wearing an elegant suit during the Squid Game Season 2 finale after delivering his speech about the players not being horses."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716074986569818/930dcf78b79d82e3d04be94a2a52c364.png?ex=6a3aee10&is=6a399c90&hm=cd4f71a345251d2575eeba7d6a1ab89a0cb9b3f853ae60fad030ed0f4c5746b9&=&format=webp&quality=lossless",
+      "lore": "Seong Gi-hun wearing an elegant suit during the Squid Game Season 2 finale after delivering his speech about the players not being horses."
     }
   ],
 

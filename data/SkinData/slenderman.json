@@ -1,0 +1,90 @@
+  {
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Piercing Shards",
+      "damage": 9,
+      "cooldown": "12s",
+      "attributes": [
+        "break",
+        "lr"
+      ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Head Pull",
+      "damage": 8,
+      "cooldown": "10.5s",
+      "attributes": [
+        "ignore",
+        "noti",
+        "pull"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Vine Counter",
+      "damage": 32,
+      "cooldown": "14s",
+      "attributes": [
+        "coun",
+        "lin",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Clock Hallucination",
+      "damage": 0,
+      "cooldown": "15s",
+      "attributes": [
+        "block",
+        "noti",
+        "lin",
+        "area",
+        "range"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Times Up Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal",
+        "charge"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Vision Noise",
+      "damage": 0,
+      "cooldown": "91s",
+      "attributes": [
+        "block",
+        "blind",
+        "range",
+        "area"
+      ]
+    }
+  ],
+
+  "techs": []
+}

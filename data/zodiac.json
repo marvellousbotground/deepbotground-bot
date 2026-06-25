@@ -14,7 +14,7 @@
 
   "universe": "Real Life",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507824225094729849/138ed2476bf947d3e5f5e80d8d09c3d7.png?ex=6a134e3d&is=6a11fcbd&hm=01971c1fed96173d324980e59fed67acc4472b083e6ff5e7abdf7519dd09a351&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519236436564512788/959f90683e02ba0bb491381a568788df.png?ex=6a3cd2b0&is=6a3b8130&hm=9cfebe448ce22842fcf763e1946e533515749a28ff33a3c5bf8b7926439060e6&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -44,6 +44,7 @@
       "cooldown": "15s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -91,6 +92,7 @@
       "damage": 0,
       "cooldown": "41s",
       "attributes": [
+        "boost"
       ]
     }
   ],
@@ -98,25 +100,25 @@
   "skins": [
     {
       "name": "Riddler",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682500518445206/28638468ab76296b65079cec23a4a55b.png?ex=6a166d92&is=6a151c12&hm=0219fe39557d8fc9a415a78b28e7c2afd455d82b45d8882f2d7f0dde093ae62d&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519236630932623440/2940b668b46f252c344942386c781721.png?ex=6a3cd2de&is=6a3b815e&hm=e809711e1624a9004749a31944fa7e26899b53558f79f410f54fe0aaea64dbb2&=&format=webp&quality=lossless",
       "lore": "Edward Nashton operates as the Riddler in The Batman (2022), exposing Gotham's corruption through cryptic riddles, livestreams, and brutal murders."
     },
 
     {
       "name": "Red Hood",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682578922700820/570f94d42913b43daa65f11df4b3d60e.png?ex=6a166da4&is=6a151c24&hm=dec04989e66004a0d226df3a5e95cb0df0dc109c663af1442c4e6b455c218afe&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519236437407567983/7be5b08ff36b3056044aef1a618ad795.png?ex=6a3cd2b0&is=6a3b8130&hm=57840318c8750215be540afdb05616e0fa7423dfd09a9fd605f2b4738e41b08a&=&format=webp&quality=lossless",
       "lore": "Jason Todd returns as the Red Hood after surviving his apparent death, becoming a violent antihero who wages war on Gotham's criminals."
     },
 
     {
       "name": "Doakes",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682869323862087/71c58c1e272b17de0019373ff5a11d7f.png?ex=6a166dea&is=6a151c6a&hm=106c66097b314d75a74b904c756e2d4cde9b425c5e5543dc589252d4ca8a4b94&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519236437915074640/71c58c1e272b17de0019373ff5a11d7f.png?ex=6a3cd2b0&is=6a3b8130&hm=e231ffe71783e22b61598b0bc2690d01043bbdffddf5d4589ba6d1cdff9e70fd&=&format=webp&quality=lossless",
       "lore": "James Doakes is the aggressive Miami Metro detective from Dexter who becomes obsessed with exposing Dexter Morgan's true nature."
     },
 
     {
       "name": "Squid Doll",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508682967059271720/d109b062f7342b0ac99441575e417177.png?ex=6a166e01&is=6a151c81&hm=2f4b5cede8514f9de91c3ec986f8553395cb88d723e92ad52f0710b43933dcd2&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519236438569255032/0923f60a077d81943fa3005047357129.png?ex=6a3cd2b1&is=6a3b8131&hm=e93072923c0a92fa590c3097e87f95f1fcdee1448dafe1a2d286ec0e39f1283e&=&format=webp&quality=lossless",
       "lore": "Young-hee, the giant motion-detecting doll from Squid Game, oversees the deadly Red Light, Green Light game."
     }
   ],

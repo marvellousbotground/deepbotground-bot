@@ -1,0 +1,143 @@
+{
+  "name": "GigaChad",
+
+  "aliases": [
+    "chad"
+  ],
+
+  "origin": [
+    "reallife"
+  ],
+
+  "universe": "Real Life",
+
+  "tags": {
+    "type": [
+      "human",
+      "neutral"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247799017799760/0d74a2df5a521d7d8825538d75948005.png?ex=6a3cdd45&is=6a3b8bc5&hm=d5fd2751b76d039b87bab06550daae16fe26d6693b01fdfa71fcfd883882d5a1&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Rapid Punches",
+      "damage": 8,
+      "cooldown": "5s",
+      "attributes": [
+        "ignore",
+        "mele"      
+    ]
+    },
+
+    {
+      "slot": "2",
+      "name": "lunge",
+      "damage": 5,
+      "cooldown": "8s",
+      "attributes": [
+        "break",
+        "push",
+        "lr"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Pose Counter",
+      "damage": 8,
+      "cooldown": "9s",
+      "attributes": [
+        "ignore",
+        "coun",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Joggin",
+      "damage": 5,
+      "cooldown": "13.5s",
+      "attributes": [
+        "break",
+        "move",
+        "lin",
+        "push"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Can You FIx The Broken?",
+      "damage": 55,
+      "cooldown": "47s",
+      "attributes": [
+        "break",
+        "push",
+        "lr",
+        "area",
+        "cine"
+      ]
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Pepsi",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247799433166878/fd5effde50c7f9548de96ec2ef1977da.png?ex=6a3cdd45&is=6a3b8bc5&hm=99705354bb96cef56f09649fd1cc4e9c9ed2b7a3a502c4ac438ef279447d46e7&=&format=webp&quality=lossless",
+    "lore": "Pepsiman, the mascot created for Pepsi commercials and video games, known for delivering Pepsi while sprinting through increasingly chaotic obstacles."
+  },
+  {
+    "name": "Saitama",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247799856795678/320354ddfd0f5a29447da99f38f21159.png?ex=6a3cdd45&is=6a3b8bc5&hm=3fbed9491b55d063b517c84db284ada45967824ed6cd5305b24f9bf7639e85e8&=&format=webp&quality=lossless",
+    "lore": "Saitama from One-Punch Man, a hero capable of defeating nearly any opponent with a single punch after years of intense training.",
+    "dataFile": "saitama"
+  },
+  {
+    "name": "All Might",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247800284479498/8f3ab5d72d2140e3b5cfb57a4e1a99fe.png?ex=6a3cdd45&is=6a3b8bc5&hm=becf5ecaa1962aa2ca9da65485187770c70e2cc7e0de7710425fda3dbcf1c820&=&format=webp&quality=lossless",
+    "lore": "All Might from My Hero Academia, the Symbol of Peace who dedicates his strength to protecting others and inspiring future heroes.",
+    "dataFile": "all"
+  },
+  {
+    "name": "Terrence",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247800670617630/0d4b2459883574ead186d2994f185d4e.png?ex=6a3cdd45&is=6a3b8bc5&hm=526e355962f8e98b0cb2baa2425ea91efbcc0ef714f8f8d8e1c3191e0c7027f9&=&format=webp&quality=lossless",
+    "lore": "Terrence from The Angry Birds Movie, the silent but incredibly powerful bird whose strength often speaks louder than words.",
+    "dataFile": "terrence"
+  },
+  {
+    "name": "Squid",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247801161089114/3cdf3806003b6e0f99632e4e4d7336bf.png?ex=6a3cdd46&is=6a3b8bc6&hm=a02f8104a187dbd23ec79e32692545bf9b8603e03d96108510ed52a1e6bce505&=&format=webp&quality=lossless",
+    "lore": "Handsome Squidward, the legendary version of Squidward Tentacles whose unexpectedly perfect appearance became one of Bikini Bottom's most famous moments."
+  },
+  {
+    "name": "Red Hulk",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247801756942386/2df892e9659635b2af9a5d6f9781c023.png?ex=6a3cdd46&is=6a3b8bc6&hm=10929ed5247563129c47cc970e1c8cfc5afa467cb5ecccf24e9e3ad102690378&=&format=webp&quality=lossless",
+    "lore": "Red Hulk from Captain America: Brave New World, where President Thaddeus Ross transforms into a powerful red-skinned monster driven by rage."
+  },
+  {
+    "name": "MX",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247802243485697/4e54940ed33d405b014482de9e261269.png?ex=6a3cdd46&is=6a3b8bc6&hm=0ef32695f083ae239aab04801f47aae87b56fa6d2875d23ee25e8bd4922d4c1f&=&format=webp&quality=lossless",
+    "lore": "Mario MX from Mario '85, a sinister reinterpretation of the Mushroom Kingdom hero associated with the dark events surrounding the abandoned game."
+  },
+  {
+    "name": "The Thing",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519247802625032282/cb3d523f9bf7c4c40d612f152a4d928a.png?ex=6a3cdd46&is=6a3b8bc6&hm=3249e9da522ed3d9e6eacaff715f5813d360eb94ffaf47bb8ff806f289a77a70&=&format=webp&quality=lossless",
+    "lore": "Ben Grimm, also known as The Thing, from The Fantastic Four: First Steps, a founding member of the team whose rocky form grants him immense strength and durability."
+  }
+],
+
+"lore": "Gigachad is an internet icon known for his legendary confidence, discipline, and unmatched presence. Originally inspired by a real-life model, he became a symbol of self-improvement, determination, and peak masculinity across countless online communities."
+}

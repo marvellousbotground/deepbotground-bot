@@ -17,7 +17,7 @@
 
   "universe": "Invincible",
 
-  "image": "https://cdn.discordapp.com/attachments/1506572642860273714/1506579641668993094/12e4402ff5a9d46bd5289f5beb271e73.png?ex=6a0ec721&is=6a0d75a1&hm=df4bc80919818226229bc3efc24a94bb0717eed9b27920140a6146fa9a1a0bfe&",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918567075254272/f7e91a7879ad00a6176ff8d9332d928e.png?ex=6a3baaa6&is=6a3a5926&hm=8a96403650d78cf196bd0b3144df2f4eca576e746b7dade176afb86796f07488&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -97,6 +97,7 @@
       "attributes": [
         "break",
         "move",
+        "lin",
         "push"
       ]
     }
@@ -105,50 +106,50 @@
   "skins": [
     {
       "name": "Napkin",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507874983504773302/a8ddd43a57a00f0a1c3b85cc06506d6a.png?ex=6a137d83&is=6a122c03&hm=23d1a875a7020d574cd5ebedd78b172248d371d3441f2ddf6dd63950440ce8ea&=&format=webp&quality=lossless",
-      "lore": "The Napkin skin represents Hoodvincible, one of the most recognizable evil Invincible variants from the Invincible War. He is remembered for his hooded appearance and ruthless personality."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918567394017321/fba3ae28243ca0eea983dc37bb0dfe71.png?ex=6a3baaa6&is=6a3a5926&hm=fa24a69dcb8b2c763d78ed5e3eb00a00a789cb680b7d6173d652404c976f851f&=&format=webp&quality=lossless",
+      "lore": "Hoodvincible, one of the most recognizable evil Invincible variants from the Invincible War. He is remembered for his hooded appearance and ruthless personality."
     },
 
     {
       "name": "Lensless",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507875122604933150/0d47c9d4ed058a906beabba9c0ce7ac5.png?ex=6a137da4&is=6a122c24&hm=649fc65c9837ae13b497fa0d3cbde469e88c7ee56bb816dd55da45d5f18a2dba&=&format=webp&quality=lossless",
-      "lore": "The Lensless skin represents Nogogglecible, an alternate Invincible variant recognizable for fighting without the goggles normally attached to the Invincible mask."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918567699939358/04ecb020ea7bd93bdc463e959b1f4f6f.png?ex=6a3baaa6&is=6a3a5926&hm=fa4f8a083801c24e432f333a7a463fb1239b52febd813a751e0f020c0e37b869&=&format=webp&quality=lossless",
+      "lore": "Nogogglecible, an alternate Invincible variant recognizable for fighting without the goggles normally attached to the Invincible mask."
     },
 
     {
       "name": "Viltrumite",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507875576466116771/08d4d990ec82ee9ed493112acf9945a4.png?ex=6a137e10&is=6a122c90&hm=5397b82ba2ff839d8086177f31b3f48db45d914f2ca7c3d7fb4b5f35299e7b8d&=&format=webp&quality=lossless",
-      "lore": "The Viltrumite skin represents Viltumincible, an alternate Mark Grayson fully loyal to the Viltrum Empire who embraced conquest and destruction instead of becoming Earth's hero."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918568077692989/08d4d990ec82ee9ed493112acf9945a4.png?ex=6a3baaa6&is=6a3a5926&hm=0deba8adcc169b2c93f4a3f1a489c45ab62a564975525e75cb0d4cba850ac8d0&=&format=webp&quality=lossless",
+      "lore": "Viltumincible, an alternate Mark Grayson fully loyal to the Viltrum Empire who embraced conquest and destruction instead of becoming Earth's hero."
     },
 
     {
       "name": "Prisoner",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507875773623701564/a609efd2ac87366fc0bf2f5a584ad1b5.png?ex=6a137e3f&is=6a122cbf&hm=bc3d75e1ab61ca9e0cc985084e85d4f6524e3f92c3a97c151f0cafd046ca1740&=&format=webp&quality=lossless",
-      "lore": "The Prisoner skin represents Prisonincible, an Invincible variant shown restrained and imprisoned following the destruction caused during the Invincible War."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918568509702164/d4bf1d23580c1306042fb43d4eae106f.png?ex=6a3baaa6&is=6a3a5926&hm=0357a284b133d81f1bff07d7f083741dd6706916dfc3c80dd03d818a7603b6cb&=&format=webp&quality=lossless",
+      "lore": "Prisonincible, an Invincible variant shown restrained and imprisoned following the destruction caused during the Invincible War."
     },
 
     {
       "name": "Sinister",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507875920193785936/dc5c4afa1178abfb7cd98aa39b5cf7d9.png?ex=6a137e62&is=6a122ce2&hm=9a19c23dbdd13b19e87b35818b8442a8e4de78dc508d9adb0d342ccbc415373e&=&format=webp&quality=lossless",
-      "lore": "The Sinister skin represents Sinister Mark, one of the most dangerous and violent Invincible variants. Unlike many others, he survived the Invincible War and later became a recurring threat in the comics."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918568928870420/4e37a9d77ecd40d505b2eb9cd7d34049.png?ex=6a3baaa6&is=6a3a5926&hm=844876cea4c62c5ac2fb2149b6dd52db29966292d98672a7f4d984bf0772b1af&=&format=webp&quality=lossless",
+      "lore": "Sinister Mark, one of the most dangerous and violent Invincible variants. Unlike many others, he survived the Invincible War and later became a recurring threat in the comics."
     },
 
     {
       "name": "Fully Masked",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507876146975346779/d5d9bab9062b78c4cf8126b1190d0c26.png?ex=6a137e98&is=6a122d18&hm=8b92122becd831b7c0a2d698033d0a808a323f356dc2d82c8ca7210618dec7ea&=&format=webp&quality=lossless",
-      "lore": "The Fully Masked skin represents Maskvincible, an alternate Invincible variant known for fully covering his face and for his emotional attachment to his mother compared to the other brutal variants."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918569289715722/8504a7a44b8a6c9523079b1e392ffe2b.png?ex=6a3baaa7&is=6a3a5927&hm=8f9dcc4b70608e7607aa1f6e8be3837f79a077b4fa6104ea79257076e94709c1&=&format=webp&quality=lossless",
+      "lore": "Maskvincible, an alternate Invincible variant known for fully covering his face and for his emotional attachment to his mother compared to the other brutal variants."
     },
 
     {
       "name": "Omni-Mark",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507876428405018754/3873164d52b3854aaefa39528a34ac9a.png?ex=6a137edb&is=6a122d5b&hm=1265954a2ebaf10ad855cbde97667ba8da8762d866565ce1aa186f28501406de&=&format=webp&quality=lossless",
-      "lore": "The Omni-Mark skin represents an alternate Mark Grayson who followed Omni-Man completely, wearing a suit inspired by his father's design and embracing the Viltrumite mission of planetary conquest."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918570007068746/a975efbc8cb6672f48636d010dbfef8f.png?ex=6a3baaa7&is=6a3a5927&hm=2dddfb559ad4fcff933817189c144a9556669aed0b75d6ccfc184cd54780dd6c&=&format=webp&quality=lossless",
+      "lore": "Omni-Mark, an alternate Mark Grayson who followed Omni-Man completely, wearing a suit inspired by his father's design and embracing the Viltrumite mission of planetary conquest."
     },
 
     {
       "name": "Bug Eyed",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507876555161075803/83219d5bd6c9073c9fadb1060e9da71f.png?ex=6a137ef9&is=6a122d79&hm=5eb1427d5c98ec70ec5712dae6a9607489756912a8d060a205e5ddfe00c4f014&=&format=webp&quality=lossless",
-      "lore": "The Bug Eyed skin represents Bug Eyed Mark, also called Goggles Mark, an alternate Invincible variant recognized for his oversized goggles and insect-like appearance."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518918570501734491/ef3f038a21ae75433bed55374d81ece6.png?ex=6a3baaa7&is=6a3a5927&hm=232e53c2e293ab3311d2c85b7982a383b1dd34cdde20b09aad5596a2b8b0d09e&=&format=webp&quality=lossless",
+      "lore": "Also called Goggles Mark, an alternate Invincible variant recognized for his oversized goggles and insect-like appearance."
     }
   ],
 

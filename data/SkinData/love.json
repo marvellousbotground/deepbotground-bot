@@ -17,6 +17,7 @@
     "attributes": [
       "block",
       "push",
+      "lin",
       "move",
       "mele"
     ]
@@ -54,6 +55,7 @@
     "cooldown": "35s",
     "attributes": [
       "ignore",
+      "lin",
       "area"
     ]
   },

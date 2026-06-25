@@ -22,7 +22,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507821207679139910/wednesday-addams-pfp-19.png?ex=6a134b6d&is=6a11f9ed&hm=6c48d99268ea67e6c91e4e08ad2ca18518ab4828725000fa300c36edee64eec1&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909489020010708/e9e1029c4364a8bfd87a1ca39f21e662.png?ex=6a3ba232&is=6a3a50b2&hm=6e977ad657a6b0adf90b3c79d9314240601a4e74bd9e8086c530f049027b3bf7&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -98,6 +98,7 @@
       "cooldown": "28.5s",
       "attributes": [
         "ignore",
+        "lin",
         "range",
         "area"
 
@@ -108,49 +109,49 @@
   "skins": [
     {
       "name": "Goody",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658650976354397/image.png?ex=6a16575b&is=6a1505db&hm=52ea7a92abc3161af3768f23f68a3cd9bc8cbb48dd6a49b3b1c9db7d548b810e&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909489456353331/d6f59f10f9bc1827ea9d455e0faed925.png?ex=6a3ba232&is=6a3a50b2&hm=325b9e2e6ce5b3c40b672d861d4c3ea1a5074ec329e86b14c86334a1a6b015e4&=&format=webp&quality=lossless",
       "lore": "Goody Addams, Wednesday's ancestor from over 400 years ago, fought against Joseph Crackstone and became one of the most important figures in the Addams bloodline."
     },
 
     {
       "name": "Roommate",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658602867429476/image.png?ex=6a165750&is=6a1505d0&hm=03cba80c05aee3f3f58b894b77f0fa2e70a727a31e909b3af48825de094736ac&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909489867264020/2bc1026a3d58f2c6ee0581f194016c07.png?ex=6a3ba232&is=6a3a50b2&hm=bfe93ff8b7660e2feaedfe0f1a8ed582b3fa1cdb8c7c6764b1939f8a34eefc3d&=&format=webp&quality=lossless",
       "lore": "Wednesday talks with Enid inside their dorm room about her struggles as a werewolf, including Enid admitting she still hasn't fully transformed."
     },
 
     {
       "name": "Dress",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658589605298237/image.png?ex=6a16574d&is=6a1505cd&hm=7047e405d871ffe65808b601f415476c5c66350177db5dfa2f743e6e115cffe1&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909490286690354/84340a83698563600bf87cd14d8cb185.png?ex=6a3ba232&is=6a3a50b2&hm=880b268920d411826f44e4d26eda6ec01ad7f7ac62494a7e051812de6f22d1d1&=&format=webp&quality=lossless",
       "lore": "Wednesday wears her iconic black dress during the Rave'N dance at Nevermore Academy."
     },
 
     {
       "name": "Black Cats",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658558902731085/image.png?ex=6a165745&is=6a1505c5&hm=f824f2ad058a92d19b59c4e626a3aaff81afe38579d1dc645b6d9008c2f3e90a&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909490634948700/8e30383e3a88f6581b9ad6c9825f9c8c.png?ex=6a3ba232&is=6a3a50b2&hm=9b2cc94b122cb22771d01695b758dc44def3ee89e37f8a59480ffdd131e33033&=&format=webp&quality=lossless",
       "lore": "Wednesday joins the Black Cats team during the Poe Cup competition at Nevermore Academy."
     },
 
     {
       "name": "Pilgrim",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658534051745883/image.png?ex=6a165740&is=6a1505c0&hm=219f93cb17d46ef8afccb953d77f0415203a406d997c52ebeba6bd02bf08b408&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909491175882864/ca08675c4579f0cf5169ecf5585b1f34.png?ex=6a3ba232&is=6a3a50b2&hm=8d0cd909c18f01c28d38a728e9241b265e3ad2236d896e7f1143ec9cde1b3bd9&=&format=webp&quality=lossless",
       "lore": "Wednesday is forced to participate in Pilgrim World activities while uncovering the hidden history behind Jericho and Joseph Crackstone."
     },
 
     {
       "name": "School",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658488341954611/image.png?ex=6a165735&is=6a1505b5&hm=558ac323f5ba1e47299aa0e281625cbb63afc362bb87cb03f003e1f5bbb2879e&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909491649974293/df5e83a051271cec1a5c887b8cc6b795.png?ex=6a3ba232&is=6a3a50b2&hm=2ae05d38ef16437aa567569ae482e16dddba428c6f621fe6d5c43bf856be6698&=&format=webp&quality=lossless",
       "lore": "Wednesday wears the standard Nevermore Academy school uniform."
     },
 
     {
       "name": "Blindfolded",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658454045134858/image.png?ex=6a16572c&is=6a1505ac&hm=bec14f2952cd155c2080982fbd2f9d8b660059c1ebb4c83548f41f934565e9be&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909491968475266/b8ce8899d74ff6b25959494e16e8d65e.png?ex=6a3ba232&is=6a3a50b2&hm=76f95ae8ecb53bd62ae373f640911f2d192ffd483997f96b6286f2d8fd0045cb&=&format=webp&quality=lossless",
       "lore": "Wednesday fights while blindfolded during the events of the newest season alongside her mother."
     },
 
     {
       "name": "Bodyswap",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508658438236799036/image.png?ex=6a165729&is=6a1505a9&hm=5450eff234a4005f33e12f8bfb2e4e8ac753f59600ab5122d81656209f538158&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518909492278984795/686caba2b53fdf64a0b4efd5423804b0.png?ex=6a3ba232&is=6a3a50b2&hm=5319b987b68342e775a33b757b7e6fe7ff5075f60747e07bf35c156a0179ffb4&=&format=webp&quality=lossless",
       "lore": "Wednesday and Enid mysteriously swap bodies, forcing both of them to experience life through each other's perspective."
     }
   ],

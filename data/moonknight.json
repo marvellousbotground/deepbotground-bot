@@ -16,7 +16,7 @@
 
   "universe": "Marvel",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507224677125325073/moon-knight-trailer-buttonbestof-1644855733291.png?ex=6a111fdd&is=6a0fce5d&hm=39ae5f26b44f78a02378cacd39000e7466af3f0f8e9a8c395bf75999518ad31f&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923527007371324/c7e1634da66961474f07cda4d2a96f48.png?ex=6a3baf45&is=6a3a5dc5&hm=ef885b4ab9e247289305999a7a8d5b5d3b29e569cac28f85d091b792d154670a&=&format=webp&quality=lossless",
 
   "versions": [
     {
@@ -24,7 +24,7 @@
 
       "name": "Marc Spector",
 
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507218469148430367/ad05d764c6e5f849f23ee5b2bded7925.png?ex=6a111a15&is=6a0fc895&hm=853ec335400a6f903122b0d3ab0da43235c44cbb88cc3db60edfca26e8c38064&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923527313428611/34260a4d9882852d180c2d4d2a8ae9c9.png?ex=6a3baf45&is=6a3a5dc5&hm=08bf9885d9b5f22792bc03d613c28a76f55f48b43b8b298867af3426fa890760&=&format=webp&quality=lossless",
 
       "stats": {
         "hp": 200,
@@ -96,12 +96,28 @@
         }
       ],
 
-      "skins": [
-        "Jake",
-        "Marc",
-        "Freezing",
-        "Undercover"
-      ],
+"skins": [
+  {
+    "name": "Jake",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528466993182/4da7eae7394f8643609f8fc88c38150d.png?ex=6a3baf45&is=6a3a5dc5&hm=a11a0a13244132bc464c61620ef0986b2e419048a665df3290046409aa5f80b5&=&format=webp&quality=lossless",
+    "lore": "Jake Lockley is the most ruthless of Moon Knight's identities, operating from the shadows and taking control when decisive and violent action is required."
+  },
+  {
+    "name": "Marc",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528743682139/98b3f989030b9c74922c121d030e44f2.png?ex=6a3baf45&is=6a3a5dc5&hm=cfb51444de9e6b2ab5d958c082d6682b5d6c15bee462f27025282413e8b8645b&=&format=webp&quality=lossless",
+    "lore": "Marc Spector, a former mercenary and the original host of Khonshu, struggles to balance his past, his responsibilities, and the other identities sharing his body."
+  },
+  {
+    "name": "Freezing",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923529029025792/675b3227bb0655e17fbf189225e8c9bc.png?ex=6a3baf45&is=6a3a5dc5&hm=5680636af6e08b3025fb540ce3245103eee9a6761671c5c9bde4a9a04cadb542&=&format=webp&quality=lossless",
+    "lore": "After losing Khonshu's powers, Steven and Layla reach Ammit's tomb. As their feelings for each other surface, Steven wrestles with the fact that he is not Marc, creating tension between the identities."
+  },
+  {
+    "name": "Undercover",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923529641398292/f48b0855d6db10641135ad4c5dc118bd.png?ex=6a3baf45&is=6a3a5dc5&hm=882a6ab9201180b2e33b967b113a7de4ba3c9d0faf285492b1adb09b106ce9e6&=&format=webp&quality=lossless",
+    "lore": "Steven Grant finds himself carrying a mysterious golden scarab while being pursued by Arthur Harrow and his followers. As strange blackouts occur, another identity repeatedly takes control to protect him."
+  }
+],
 
       "techs": [
         {
@@ -124,7 +140,7 @@
 
       "name": "Moon Knight",
 
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507220397869764819/ef299437e1124881c23f379e7cf67c6b.png?ex=6a111be1&is=6a0fca61&hm=ba3eb60a0d92fd6c886a12f3aefc0e73344f171ab33d046d07f1a24337973020&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528198553661/716660f3414996f1e13dad320d08d8b8.png?ex=6a3baf45&is=6a3a5dc5&hm=189ba8e41df3f3923692185684797317ae2bb9520290de2f8c83976d0104ca55&=&format=webp&quality=lossless",
 
       "stats": {
         "hp": 200,
@@ -198,13 +214,28 @@
         }
       ],
 
-      "skins": [
-        "Jake",
-        "Marc",
-        "Freezing",
-        "Undercover"
-      ],
-
+"skins": [
+  {
+    "name": "Jake",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528466993182/4da7eae7394f8643609f8fc88c38150d.png?ex=6a3baf45&is=6a3a5dc5&hm=a11a0a13244132bc464c61620ef0986b2e419048a665df3290046409aa5f80b5&=&format=webp&quality=lossless",
+    "lore": "Jake Lockley is the most ruthless of Moon Knight's identities, operating from the shadows and taking control when decisive and violent action is required."
+  },
+  {
+    "name": "Marc",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528743682139/98b3f989030b9c74922c121d030e44f2.png?ex=6a3baf45&is=6a3a5dc5&hm=cfb51444de9e6b2ab5d958c082d6682b5d6c15bee462f27025282413e8b8645b&=&format=webp&quality=lossless",
+    "lore": "Marc Spector, a former mercenary and the original host of Khonshu, struggles to balance his past, his responsibilities, and the other identities sharing his body."
+  },
+  {
+    "name": "Freezing",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923529029025792/675b3227bb0655e17fbf189225e8c9bc.png?ex=6a3baf45&is=6a3a5dc5&hm=5680636af6e08b3025fb540ce3245103eee9a6761671c5c9bde4a9a04cadb542&=&format=webp&quality=lossless",
+    "lore": "After losing Khonshu's powers, Steven and Layla reach Ammit's tomb. As their feelings for each other surface, Steven wrestles with the fact that he is not Marc, creating tension between the identities."
+  },
+  {
+    "name": "Undercover",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923529641398292/f48b0855d6db10641135ad4c5dc118bd.png?ex=6a3baf45&is=6a3a5dc5&hm=882a6ab9201180b2e33b967b113a7de4ba3c9d0faf285492b1adb09b106ce9e6&=&format=webp&quality=lossless",
+    "lore": "Steven Grant finds himself carrying a mysterious golden scarab while being pursued by Arthur Harrow and his followers. As strange blackouts occur, another identity repeatedly takes control to protect him."
+  }
+],
       "lore": "Moon Knight is the supernatural vigilante identity empowered by Khonshu. With enhanced strength, healing, and brutal fighting techniques, he serves as the protector of travelers of the night."
     },
 
@@ -213,7 +244,7 @@
 
       "name": "Mr. Knight",
 
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507221620492734675/3b9348db9e3024aabfefadd3bfbf1c0b.png?ex=6a111d05&is=6a0fcb85&hm=816faf1212b1e45a207e0ff77a27476a076d19d7e33313f998d851902288abe7&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923527636385974/4c2bca3d93904981be77588369e279d8.png?ex=6a3baf45&is=6a3a5dc5&hm=6fc605e3cc8db10ba7269ed49941e68b9875d57b02266a1447eda9dee18060b7&=&format=webp&quality=lossless",
 
       "stats": {
         "hp": 200,
@@ -277,18 +308,37 @@
           "cooldown": "70s",
           "attributes": [
             "break",
+            "lin",
+            "push",
+            "pull",
             "area",
             "cine"
           ]
         }
       ],
 
-      "skins": [
-        "Jake",
-        "Marc",
-        "Freezing",
-        "Undercover"
-      ],
+"skins": [
+  {
+    "name": "Jake",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528466993182/4da7eae7394f8643609f8fc88c38150d.png?ex=6a3baf45&is=6a3a5dc5&hm=a11a0a13244132bc464c61620ef0986b2e419048a665df3290046409aa5f80b5&=&format=webp&quality=lossless",
+    "lore": "Jake Lockley is the most ruthless of Moon Knight's identities, operating from the shadows and taking control when decisive and violent action is required."
+  },
+  {
+    "name": "Marc",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923528743682139/98b3f989030b9c74922c121d030e44f2.png?ex=6a3baf45&is=6a3a5dc5&hm=cfb51444de9e6b2ab5d958c082d6682b5d6c15bee462f27025282413e8b8645b&=&format=webp&quality=lossless",
+    "lore": "Marc Spector, a former mercenary and the original host of Khonshu, struggles to balance his past, his responsibilities, and the other identities sharing his body."
+  },
+  {
+    "name": "Freezing",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923529029025792/675b3227bb0655e17fbf189225e8c9bc.png?ex=6a3baf45&is=6a3a5dc5&hm=5680636af6e08b3025fb540ce3245103eee9a6761671c5c9bde4a9a04cadb542&=&format=webp&quality=lossless",
+    "lore": "After losing Khonshu's powers, Steven and Layla reach Ammit's tomb. As their feelings for each other surface, Steven wrestles with the fact that he is not Marc, creating tension between the identities."
+  },
+  {
+    "name": "Undercover",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518923529641398292/f48b0855d6db10641135ad4c5dc118bd.png?ex=6a3baf45&is=6a3a5dc5&hm=882a6ab9201180b2e33b967b113a7de4ba3c9d0faf285492b1adb09b106ce9e6&=&format=webp&quality=lossless",
+    "lore": "Steven Grant finds himself carrying a mysterious golden scarab while being pursued by Arthur Harrow and his followers. As strange blackouts occur, another identity repeatedly takes control to protect him."
+  }
+],
 
       "lore": "Mr. Knight is a more controlled and investigative identity of Moon Knight. Wearing a formal white suit and mask, he combines detective work with precise and efficient combat."
     }

@@ -1,0 +1,150 @@
+{
+  "name": "Wanda Maximoff",
+
+  "aliases": [
+    "Maximoff",
+    "scarlet witch"
+  ],
+
+  "origin": [
+    "movie",
+    "comic"
+  ],
+
+  "universe": "Marvel",
+
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278465709244489/3a598b8529d9b6b8959d8f429026240d.png?ex=6a3cf9d5&is=6a3ba855&hm=5fc98b480f688c393f02b2ef2760ed6c90fa56204091204c5858a9e45fb12328&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Hex Bolts",
+      "damage": 36,
+      "cooldown": "9.5s",
+      "attributes": [
+        "ignore",
+        "lrp",
+        "lin"  
+    ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Torture",
+      "damage": 8,
+      "cooldown": "12s",
+      "attributes": [
+        "ignore",
+        "area",
+        "grab",
+        "range",
+        "noti"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Throw Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "attributes": [
+        "break",
+        "coun",
+        "area",
+        "push",
+        "range"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Power Absorb",
+      "damage": 11,
+      "cooldown": "18.5s",
+      "attributes": [
+        "break",
+        "lin",
+        "range",
+        "area",
+        "heal"
+      ]
+    },
+
+  {
+    "slot": "5",
+    "name": "Finisher",
+    "damage": 0,
+    "cooldown": "0.7s",
+    "attributes": [
+      "ignore",
+      "finish",
+      "cine",
+      "heal"
+     ]
+    },
+
+    {
+    "slot": "E",
+    "name": "Leap",
+    "damage": 23,
+    "cooldown": "9s",
+    "attributes": [
+      "break",
+      "move",
+      "ex",
+      "push",
+      "area",
+      "range"
+     ]
+    }
+  ],
+
+"skins": [
+{
+  "name": "Corrupted",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278466212696094/0e646bbc0a66d3e937e3897a31ab555c.png?ex=6a3cf9d5&is=6a3ba855&hm=b90178ee1fec27d0041cd06c9cf4f94850aa49d37091a2c4a9cb5a1fd3d71383&=&format=webp&quality=lossless",
+  "lore": "Corrupted by the Darkhold beyond recognition, Wanda's crown merges with her flesh as chaos magic consumes her body and mind. The result is a monstrous vision of the Scarlet Witch driven entirely by dark power (this version of wanda only appear in the MOM concept art book)."
+},
+  {
+    "name": "Halloween",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278466619412484/7cf517c572bb52a938ea8f38050a94bb.png?ex=6a3cf9d5&is=6a3ba855&hm=fb50e1c9e6c5fb346262e1882019683d5f438c6463aa893b3c925a4db5838486&=&format=webp&quality=lossless",
+    "lore": "During the Halloween celebration in Westview, Wanda wears a costume resembling the Scarlet Witch's classic comic appearance while enjoying a rare moment of normal family life."
+  },
+  {
+    "name": "838",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278467168997537/56038adbbddac9e89dd8bddfccdc985b.png?ex=6a3cf9d5&is=6a3ba855&hm=6f89d1706830f06e639ed54605a29756dd3bf21f7b47c67f21a38d4db08af87a&=&format=webp&quality=lossless",
+    "lore": "After crossing into Earth-838, Wanda confronts the Illuminati and demonstrates the terrifying extent of her abilities while pursuing her goal of reuniting with her children."
+  },
+  {
+    "name": "Zombie",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278467563126867/11c14e5fcdf047b9af3a43b58b500178.png?ex=6a3cf9d5&is=6a3ba855&hm=46bca87e6bed0c193808360c51ba7460bf24de9736c02cb0767aacd45365c9ae&=&format=webp&quality=lossless",
+    "lore": "Even after becoming infected, Wanda remains one of the most dangerous beings in existence. Her immense powers survive the outbreak, making her a terrifying threat to anyone who crosses her path."
+  },
+  {
+    "name": "Avengers",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278467982692423/9fdd6b919108fdfe639033ee14753323.png?ex=6a3cf9d5&is=6a3ba855&hm=70db1a49d5370f7def23c9e917b09e88dbc4a0ab1b3b423bc5c20b1a2ecc14d7&=&format=webp&quality=lossless",
+    "lore": "Shortly after gaining her powers, Wanda joins the conflict against Ultron alongside the Avengers, beginning her journey from a troubled Sokovian survivor to a powerful hero."
+  },
+  {
+    "name": "60s",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278468536471582/8f819a1e0d5e002adba36fad1a4dfb24.png?ex=6a3cf9d5&is=6a3ba855&hm=c322bfef1b1ea1dd7d89bb6b872f100e2e689f121fc4f6738fb16a0606003944&=&format=webp&quality=lossless",
+    "lore": "Living within Wanda's sitcom reality, Wanda and Vision embrace the style of a 1960s television family while hiding the true nature of Westview from the outside world."
+  },
+  {
+    "name": "Infinity War",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519278468938993794/fb4ae855238061286d9fda3de7b14284.png?ex=6a3cf9d5&is=6a3ba855&hm=e0ebdab7800adcd15040d8de84de138bef45c93dd5799b7b95231ded1f111a70&=&format=webp&quality=lossless",
+    "lore": "As Thanos searches for the Infinity Stones, Wanda fights alongside the Avengers while struggling with the sacrifice required to stop him and protect Vision."
+  }
+],
+
+"lore": "Wanda Maximoff is one of the most powerful beings in the Marvel Universe. Originally gaining abilities through Hydra experiments, she later unlocks her true nature as the Scarlet Witch, wielding chaos magic capable of altering reality itself. Driven by love, grief, and a desire to protect those she cares about, Wanda's immense power often places her at the center of events that can reshape entire worlds."
+}

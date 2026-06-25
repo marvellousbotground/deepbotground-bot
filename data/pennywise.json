@@ -15,7 +15,7 @@
 
   "universe": "IT",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507505837986287666/d675ecaca2799b8657848fb16a913464.png?ex=6a1225b7&is=6a10d437&hm=7ca31d626fa75c79b1c24676f3d8efc48a4ac5e4831adee645da3a06389abf9b&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519073591713599598/image.png?ex=6a3c3b07&is=6a3ae987&hm=47dd48491026d7e1ccc44df41839a3dd64121cb79a42ca6e5516680499404657&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -34,6 +34,7 @@
       "cooldown": "9s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -74,6 +75,7 @@
         "ignore",
         "coun",
         "mele",
+        "lin",
         "rng",
         "cine",
         "charge"
@@ -89,6 +91,7 @@
         "ignore",
         "coun",
         "range",
+        "lin",
         "rng",
         "blind",
         "cine",
@@ -131,6 +134,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "push"
       ]
@@ -144,6 +149,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "push"
       ]
@@ -157,6 +164,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "grab",
         "cine"
@@ -172,6 +181,8 @@
         "break",
         "trans",
         "move",
+        "lin",
+        "use",
         "cine",
         "area"
       ]
@@ -181,35 +192,35 @@
   "skins": [
     {
       "name": "Neibolt",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508287646181494895/Web_Photo_Editor_36.jpg?ex=6a2c1015&is=6a2abe95&hm=77fa151f094c8d79d1def159f755abe1238a07a2626a82eafe21ba1542b1a473&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519073592179163257/image.png?ex=6a3c3b07&is=6a3ae987&hm=b80ade01a83d681d96621316d646de7ecf715f796097a35a54b9b5791faa7c93&=&format=webp&quality=lossless",
       "lore": "Inside the abandoned Neibolt house in Derry, the Losers Club confront Pennywise in one of their final battles. During the fight, Beverly attacks him with a metal rod after the group invades the creature's lair hidden beneath the old house that survived decades of tragedy and violence."
     },
 
     {
       "name": "Derry",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508287351229644891/1e1208c0f45d6b8d55d131710d686322.png?ex=6a2c0fcf&is=6a2abe4f&hm=271bd06163363d169b6694a61df70b554389070dc005241476b81acbd91d251f&=&format=webp&quality=lossless",
-      "lore": "This skin represents Pennywise's appearance in Welcome to Derry, the prequel series exploring the earlier massacres, disappearances, and supernatural events connected to the entity's influence over the town.",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519073592472506568/image.png?ex=6a3c3b07&is=6a3ae987&hm=dda32a5dc082fea38c0ff2908fceaa9310c88b34bfa04202d0d79bc65c656113&=&format=webp&quality=lossless",
+      "lore": "Pennywise's appearance in Welcome to Derry, the prequel series exploring the earlier massacres, disappearances, and supernatural events connected to the entity's influence over the town.",
       "dataFile": "derry.json"
     },
 
     {
       "name": "Resting",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508287008802603088/6cb96f0cb2bd0774838b0c971d0086aa.png?ex=6a2c0f7d&is=6a2abdfd&hm=b51a2da6ff75194e34769f74fdcaa42722204adb89cb81e4109f95c1ea46ddaf&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519073592762040520/image.png?ex=6a3c3b07&is=6a3ae987&hm=c08cb5092c644203dcb5392e4cd98f3b6dde1608557bc2bff2ea641cf8a045cc&=&format=webp&quality=lossless",
       "lore": "At the end of Welcome to Derry, Pennywise is shown in a dormant resting state covered in blood from the head down after years of feeding and violence beneath the town before eventually awakening once again.",
       "dataFile": "resting.json"
     },
 
     {
       "name": "1933",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508286912039882762/bdaf9493ebae1ed40116155bf27302df.png?ex=6a2c0f66&is=6a2abde6&hm=2d70788c43f377c3ac66ad58a8b8d49831f42c9784f67cb74ee02e6496509399&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519073593047121942/image.png?ex=6a3c3b07&is=6a3ae987&hm=a271a6881a75c52ee4867fff4052f73e3d6a06b5e87cba6aebc72d28f1527557&=&format=webp&quality=lossless",
       "lore": "Set during the black-and-white events of the 1930s, this skin references the moment Bob Gray's daughter follows another child into a basement after hearing stories about a clown. When she encounters Pennywise, she calmly refers to him as 'Papa,' revealing a disturbing connection between the entity and the Gray family.",
       "dataFile": "1933.json"
     },
 
     {
       "name": "Old School",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508288674817638490/8ced838d235ecc65a78f6ac6a5617a52.png?ex=6a2c110a&is=6a2abf8a&hm=a1c9d2d985574d4ce0355bf5ac529c2ee32278e5d4ce32ca0c34ef76ebc6ae07&=&format=webp&quality=lossless",
-      "lore": "This skin represents Pennywise from the 1990 IT miniseries, the classic portrayal that introduced the character to a generation of horror fans long before the modern film adaptations.",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519073593344921620/image.png?ex=6a3c3b07&is=6a3ae987&hm=29689d60f5ed04a08e6ca69b09e5bb81a41d2952bda69ede8e4eda99e1bd47e4&=&format=webp&quality=lossless",
+      "lore": "Pennywise from the 1990 IT miniseries, the classic portrayal that introduced the character to a generation of horror fans long before the modern film adaptations.",
       "dataFile": "oldschool.json"
     }
   ],

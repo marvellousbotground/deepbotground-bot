@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506575349721600000/280560.png?ex=6a0ec322&is=6a0d71a2&hm=366fc1c5277120adafe681bc5980b482fe814e27d0784ebaa193a7328b83197e&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716949515862096/fd95c6691dde3badcb885ec90bfb434d.png?ex=6a3aeee1&is=6a399d61&hm=a1d94111df7e15685a6c512ac5fa18a0bacf03d77463b60fefe8201aad74cf66&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -102,6 +102,7 @@
       "cooldown": "32s",
       "attributes": [
         "block",
+        "lin",
         "move",
         "push"
       ]
@@ -111,26 +112,26 @@
   "skins": [
     {
       "name": "Blue Suit",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507870743470411806/59106c1f61fc366a0b131121d56df61f.png?ex=6a137990&is=6a122810&hm=f8709f4728f1ba8e76ee19b0c446fd9f13f0fb7c41c677ee19f9476bb570b24b&=&format=webp&quality=lossless",
-      "lore": "The Blue Suit skin represents Mark Grayson's darker Invincible suit, worn during a more intense and serious stage of his hero journey."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716950333882472/3ad9cdb60e41d180f8f821f73fe6dc18.png?ex=6a3aeee1&is=6a399d61&hm=7c3d6d00baee3a84d2261ee844f268a582e9b5a8ac4ff9ca413b0561e1b92c33&=&format=webp&quality=lossless",
+      "lore": "Mark Grayson's darker Invincible suit, worn during a more intense and serious stage of his hero journey."
     },
 
     {
       "name": "Oliver",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507870869878476922/c01808d8806a5a2335e8da731cde751f.png?ex=6a1379ae&is=6a12282e&hm=4f77e834c92e3df2201c4b36e31f97f28703fadd0ebc44827232ad145b20d957&=&format=webp&quality=lossless",
-      "lore": "The Oliver skin references Mark's younger half-brother, Oliver Grayson, who also inherits Viltrumite abilities and becomes connected to the Invincible legacy."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716950862102648/c38a0dc33347a8b11eed392e33bab8bc.png?ex=6a3aeee1&is=6a399d61&hm=d5b58acb4238d2aa8ae00bf2f9c72db47403a58f166d1da77811185ccf0d1eb9&=&format=webp&quality=lossless",
+      "lore": "Mark's younger half-brother, Oliver Grayson, who also inherits Viltrumite abilities and becomes connected to the Invincible legacy."
     },
 
     {
       "name": "Recovering",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507871048089993327/f9123abfa82ce1da065e63f1d4be7e61.png?ex=6a1379d8&is=6a122858&hm=57fc838d0da6aedabe671a06d8b2833594498795ae1c1f26969fbc4888b3063a&=&format=webp&quality=lossless",
-      "lore": "The Recovering skin represents Mark Grayson after his second brutal battle against Conquest. Left nearly dead and heavily injured, Mark spent months in a coma recovering from the physical and emotional damage caused by one of the most violent fights of his life."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716951428337785/29e17d0a2735332ebb235516632ec1c9.png?ex=6a3aeee1&is=6a399d61&hm=93a666990a81db5d65a57f3d0c39c35b010024534ddbc49d0e8bf69f3a0da4ac&=&format=webp&quality=lossless",
+      "lore": "Mark Grayson after his second brutal battle against Conquest. Left nearly dead and heavily injured, Mark spent months in a coma recovering from the physical and emotional damage caused by one of the most violent fights of his life."
     },
 
     {
       "name": "Immortal",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507871169456640010/16c5f45ed5a2cdc31831aaa0038a4f6f.png?ex=6a1379f5&is=6a122875&hm=dbce2241776b4c736e81b8867bc53fa499ad352292f6abf1571eeef9326ad678&=&format=webp&quality=lossless",
-      "lore": "The Immortal skin references the powerful hero Immortal, one of Earth's strongest defenders and a recurring figure in Invincible's world."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518716952237834280/49e994e1a2729c1ab5cb8524eb1e6ac8.png?ex=6a3aeee1&is=6a399d61&hm=538b941a300859e26a1b11cc8ed3b2301580a06b920ce2691a4ef17fd57c96f9&=&format=webp&quality=lossless",
+      "lore": "The powerful hero Immortal, one of Earth's strongest defenders and a recurring figure in Invincible's world."
     }
   ],
 

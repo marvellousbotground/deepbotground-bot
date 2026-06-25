@@ -13,7 +13,7 @@
 
   "universe": "Scream",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507561577220538529/wp12713871.png?ex=6a1259a1&is=6a110821&hm=d7b775ca44501440829c23c6d3080f7bfbe9566fba7885af63a82afcc19f2c36&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519224584489013275/c86d68297531864a39fe2539b1e34af3.png?ex=6a3cc7a6&is=6a3b7626&hm=136b1c3982fb563340cee0b07606c59bc705941aafd54390dd83381ec1ad3edd&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -43,6 +43,7 @@
       "cooldown": "11s",
       "attributes": [
         "block",
+        "lin",
         "mele",
         "push"
       ]
@@ -96,12 +97,28 @@
     }
   ],
 
-  "skins": [
-    "Subway",
-    "Pirate",
-    "V",
-    "The Ladder"
-  ],
+"skins": [
+  {
+    "name": "Subway",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519224584895856650/c500c7b0a57b99aab5062260d6d6960e.png?ex=6a3cc7a6&is=6a3b7626&hm=04d7df52ee01768834daeb70dfd2ca53be9ac8eaef20268a3df6fe6d22ab74a9&=&format=webp&quality=lossless",
+    "lore": "After leaving the police station, Tara and Sam reunite with reporter Gale Weathers as Ghostface continues hunting them through New York City."
+  },
+  {
+    "name": "Pirate",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519224585374138409/b68dab973b26e9ea1d0ed6a29eb7296b.png?ex=6a3cc7a6&is=6a3b7626&hm=3b297f39466cda3cc1bd3f2deb693c3398a7feb047b5338b8bb197fe2b595e9c&=&format=webp&quality=lossless",
+    "lore": "During a Halloween party, Tara attends in a pirate costume shortly before Ghostface begins another deadly night of terror."
+  },
+  {
+    "name": "V",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519224585948762203/f8d3855126c55d68e42c55f23e4f560f.png?ex=6a3cc7a7&is=6a3b7627&hm=0c448a1a52cfda9d57d15957a62fbef3e786608e2f5ec5646188366312b9d9cb&=&format=webp&quality=lossless",
+    "lore": "Tara wears this outfit during the opening events of Scream (2022), where she becomes Ghostface's first target and survives a brutal attack."
+  },
+  {
+    "name": "The Ladder",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519224586749870183/6435a7b08ed34e4380a668ae4d6648e7.png?ex=6a3cc7a7&is=6a3b7627&hm=2023139abde8ab0afe2cd7eae3488298894fc0b52749d12b9be1abb01361728d&=&format=webp&quality=lossless",
+    "lore": "Anika Kayoko, who attempts to escape Ghostface by crossing a ladder between apartment buildings during one of the film's most tense sequences."
+  }
+],
 
   "lore": "Tara Carpenter is one of the main survivors of the modern Scream films. After becoming a target of Ghostface, she proved herself resourceful and resilient, fighting back against multiple killers while enduring the trauma surrounding the Woodsboro murders."
 }

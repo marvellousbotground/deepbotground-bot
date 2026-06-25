@@ -16,6 +16,7 @@
       "cooldown": "8s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -51,6 +52,7 @@
       "attributes": [
         "break",
         "lr",
+        "lin",
         "push"
       ]
     },
@@ -64,6 +66,7 @@
         "ignore",
         "range",
         "area",
+        "lin",
         "noti"
       ]
     }

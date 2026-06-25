@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 11,
+    "lowHpAnimation": true,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Slam Down",
+      "damage": 15,
+      "cooldown": "7s",
+      "attributes": [
+        "ignore",
+        "mele"
+      ]
+    },
+
+    {
+       "slot": "2",
+      "name": "Telekinetic Pull",
+      "damage": 8,
+      "cooldown": "10.5s",
+      "attributes": [
+        "ignore",
+        "noti",
+        "pull"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Mind-Slam Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Psionic Shockwave",
+      "damage": 20,
+      "cooldown": "11s",
+      "attributes": [
+        "break",
+        "ex",
+        "area",
+        "push"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Times Up Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal",
+        "charge"
+      ]
+    },
+
+        {
+      "slot": "E",
+      "name": "It is Time",
+      "damage": 0,
+      "cooldown": "10000s",
+      "attributes": [
+        "trans",
+        "heal"
+      ]
+    },
+
+    {
+      "slot": "1",
+      "name": "Vine Pierce",
+      "damage": 15,
+      "cooldown": "9.5s",
+      "attributes": [
+        "break",
+        "grab",
+        "range"
+      ]
+    },
+
+    {
+       "slot": "2",
+      "name": "Vine Pull",
+      "damage": 12,
+      "cooldown": "10.5s",
+      "attributes": [
+        "ignore",
+        "noti",
+        "pull"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Crucify Counter",
+      "damage": 24,
+      "cooldown": "12s",
+      "attributes": [
+        "coun",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Piercing Shards",
+      "damage": 21,
+      "cooldown": "12s",
+      "attributes": [
+        "break",
+        "lr"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "The Mind Flayer",
+      "damage": 135,
+      "cooldown": "8.5s",
+      "attributes": [
+        "break",
+        "cine",
+        "lin",
+        "use",
+        "trans",
+        "cine",
+        "move"
+      ]
+    }
+  ],
+
+  "techs": []
+}

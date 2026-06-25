@@ -15,7 +15,7 @@
 
   "universe": "Marvel",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345440100290683/642e52202e34b17a2fc2829c23190941.png?ex=6a1533a8&is=6a13e228&hm=a3124c7a5a7829876015e63931706953fe8809833f9aa1670b80c9d6efa180e0&=&format=webp&quality=lossless&width=350&height=350",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079219391631460/08538d8025e779b89e37c39f384e10c1.png?ex=6a3c4045&is=6a3aeec5&hm=ea33ba8c0ae5289f531f610f293dd1f8affd800df9385ac64c79b9758c308784&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -57,6 +57,7 @@
       "attributes": [
         "ignore",
         "coun",
+        "lin",
         "area",
         "mele",
         "range"
@@ -71,6 +72,7 @@
       "attributes": [
         "block",
         "move",
+        "lin",
         "mele",
         "push"
       ]
@@ -107,6 +109,7 @@
       "cooldown": "14s",
       "attributes": [
         "break",
+        "lin",
         "move",
         "mele"
       ]
@@ -116,49 +119,49 @@
   "skins": [
     {
       "name": "Webweaver",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345539786444850/74372b861d46280b74aad5c12dd68dc0.png?ex=6a1533c0&is=6a13e240&hm=36261b014fe8e7714c3f726e30b5d47835206f38b46fc8c26783f5ad40f86cab&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079219832029395/74372b861d46280b74aad5c12dd68dc0.png?ex=6a3c4045&is=6a3aeec5&hm=ec4902fd1a58374a89d8d61b69f1c2105e7b36a7be7e8ae9c15fd2f0007ae2c4&=&format=webp&quality=lossless",
       "lore": "Webweaver from The Boys, a parody Spider-Man-inspired superhero introduced in the series."
     },
 
     {
       "name": "Ps5",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508345628860747806/a7fbc5b154e0489d7147f6b2dec9af86.png?ex=6a1533d5&is=6a13e255&hm=37ca96f11d6ffba16a4362822357b0c0f5f83a1052f8887ab7f99d26eac56e5d&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079220431556680/b50da5988380e712727851a3a48a33b5.png?ex=6a3c4045&is=6a3aeec5&hm=9c7673f6f85336cdace88e90817f483de436de3bff2f611b26caf1d66e438f89&=&format=webp&quality=lossless",
       "lore": "Spider-Man's appearance and advanced suit from Marvel's Spider-Man 2 on PlayStation 5."
     },
 
     {
       "name": "The Spider",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508346824690372718/Web_Photo_Editor_44.jpg?ex=6a1534f2&is=6a13e372&hm=a54acda1442f01e2ab7745acc578f6153263d170498907927a1542d0995ff679&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079221090324611/Web_Photo_Editor_44.jpg?ex=6a3c4045&is=6a3aeec5&hm=618df08b316040ebd08d17eba4c31780a54c5271ba50f6fd6892de9775e00960&=&format=webp",
       "lore": "Fan-made horror short film The Spider, which reimagines Spider-Man as a disturbing horror creature."
     },
 
     {
       "name": "MCU",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508346932962263140/0b1fce816e8a70adf1dd8697c88619a1.png?ex=6a15350c&is=6a13e38c&hm=286e150ff0468f3ec998dc5575a9772cff0d7e8ecbd574052851b54a9300da3a&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079221526266058/2f729b5ad672b2137787454be3529805.png?ex=6a3c4045&is=6a3aeec5&hm=90ec4a625c6baa01365d47ddd7e18b6c07b498fcd14f792a6d19b6147c58680c&=&format=webp&quality=lossless",
       "lore": "Peter Parker from the Marvel Cinematic Universe portrayed by Tom Holland."
     },
 
     {
       "name": "Homemade",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347013748756593/75ea35e6cdd4e231baace8d47c28d54e.png?ex=6a15351f&is=6a13e39f&hm=735e8dd7c98546a0fda1cbd5aeb71efc9269a830e20051765f3a64ace4606e8f&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079222029844654/75ea35e6cdd4e231baace8d47c28d54e.png?ex=6a3c4045&is=6a3aeec5&hm=00e0b51d24c5c7f1a05a16d3d34911a9d7c12bb42e0b40b108c2d72bae018a5e&=&format=webp&quality=lossless",
       "lore": "Andrew Garfield's homemade Spider-Man suit created before receiving his more advanced costume."
     },
 
     {
       "name": "Raimi",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347285543587940/bce5b2641495a1688f9ef6d0e9c07ecc.png?ex=6a153560&is=6a13e3e0&hm=a5e3ef76a0c3ceb11f974a09b345d4692bb3e02841de151d4a1cfd02d174d728&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079222797271174/12e5385f4b12acc77a17a16db7b69bbc.png?ex=6a3c4045&is=6a3aeec5&hm=2fb401568fdca023c2a104c346d8bd7c782c05a86f57a1597d9af34ba6f0dd7d&=&format=webp&quality=lossless",
       "lore": "Spider-Man from Sam Raimi's trilogy portrayed by Tobey Maguire."
     },
 
     {
       "name": "Spectacular",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347339969138839/af82bd951ce6e3ada77d5af879eafa57.png?ex=6a15356d&is=6a13e3ed&hm=c32a22940f2aa43aa754894d98637da6f1b095b3add46bde070775edfb6d0b74&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079223669686272/af82bd951ce6e3ada77d5af879eafa57.png?ex=6a3c4046&is=6a3aeec6&hm=7119b99459bdbdb711d777f70b1b41c53877dbc42ae03f0f56765e01e6d8dbe1&=&format=webp&quality=lossless",
       "lore": "Spider-Man from animated series The Spectacular Spider-Man."
     },
 
     {
       "name": "Tasm2",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508347496944898168/143832123ee63b815059c0b96d2deda7.png?ex=6a153593&is=6a13e413&hm=bf7edf4900be8fafb12c8f037b056deb7818188e3c48c6494a36af927e3a2f99&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519079224336711763/9714e6917919885981bd04bf1fd70c3a.png?ex=6a3c4046&is=6a3aeec6&hm=2f184d0545ce2bc1bbffb7b96de8c4df57de0342d39c16835c4f85873643a5a1&=&format=webp&quality=lossless",
       "lore": "Spider-Man's appearance in The Amazing Spider-Man 2."
     }
   ],

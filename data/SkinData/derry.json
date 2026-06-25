@@ -40,6 +40,7 @@
       "attributes": [
         "ignore",
         "coun",
+        "lin",
         "move",
         "cine",
         "charge",
@@ -98,6 +99,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "push"
       ]
@@ -111,6 +114,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "push"
       ]
@@ -125,6 +130,8 @@
         "ignore",
         "move",
         "mele",
+        "lin",
+        "use",
         "grab",
         "cine"
       ]
@@ -139,6 +146,8 @@
         "break",
         "trans",
         "move",
+        "lin",
+        "use",
         "cine",
         "area"
       ]

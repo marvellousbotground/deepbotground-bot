@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://cdn.discordapp.com/attachments/1506572642860273714/1506777432374509608/588f3901f5b564ce881bc533b27439dc.png?ex=6a0f7f56&is=6a0e2dd6&hm=a32107c87a8ed80599fad032b1f029b22370412632947ac3f4ae91f820ad0a47&",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518532180819709982/2e610115b2f3fe65534f8adadde61323.png?ex=6a3a42cc&is=6a38f14c&hm=6fbccc93983928098f43a3563e9338b3c6b5acdc29c165ed1d773f048af735c3&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 150,
@@ -39,6 +39,7 @@
       "cooldown": "8s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -74,6 +75,7 @@
       "attributes": [
         "break",
         "lr",
+        "lin",
         "push"
       ]
     },
@@ -87,6 +89,7 @@
         "ignore",
         "range",
         "area",
+        "lin",
         "noti"
       ]
     },
@@ -106,26 +109,26 @@
   "skins": [
     {
       "name": "Sinister",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508000471053238292/0b5c75f75ceab8d75834d4d63d19d27e.png?ex=6a13f261&is=6a12a0e1&hm=9a8fd7ca9a8a57bc685cb83de3a3017a48d892465a863e9c39e3f8c9755e0270&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518532181193129994/3ef4c045ab4c67bca946ad8669cdf3cc.png?ex=6a3a42cc&is=6a38f14c&hm=9d0bb98e7fe1016ee3bb1d95e19bb68f134f5a7a9011d7fb6593fd284081575c&=&format=webp&quality=lossless",
       "lore": "The Sinister skin represents Sinister Strange, the corrupted Doctor Strange from Doctor Strange in the Multiverse of Madness who became consumed by dark magic and forbidden spells."
     },
 
     {
       "name": "Defender",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508002148095627324/f495da6ae6221401d082aa7facf091ba.png?ex=6a13f3f1&is=6a12a271&hm=86a1c9a698cb7dd9802eafd8b063a06ebdd2c79fd1b8aa69273bca654d86de67&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518532181629206549/2a0c2024097bd6e1e22c97963dfe3e37.png?ex=6a3a42cd&is=6a38f14d&hm=de563bb61f66d8e975e5eccf2a791a3735b884a3091eab12d1578d7fc26f84f6&=&format=webp&quality=lossless",
       "lore": "The Defender skin represents Defender Strange from the beginning of Doctor Strange in the Multiverse of Madness, where he protects America Chavez while fleeing through the multiverse."
     },
 
     {
       "name": "Wong",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508002283009343518/ba05a784ab5ed57cbba701d36d664081.png?ex=6a13f411&is=6a12a291&hm=aafffaa24fbc5156638ac3abea441fdd1671de5807f10df9c56e21f11f5a2e9d&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518532182036058112/0aff0b2dcd3b79e104b4e6a03d6ce5ef.png?ex=6a3a42cd&is=6a38f14d&hm=fbac9e62c7479f6ce9545a292b5f8b3dd07c5ece0aa7570ba40a7c8ab5b37af6&=&format=webp&quality=lossless",
       "lore": "The Wong skin references Wong from Marvel, Doctor Strange's closest ally and the Sorcerer Supreme who protects Earth using powerful mystic arts and dimensional magic.",
       "dataFile": "wong.json"
     },
 
     {
       "name": "Zombie",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508002221009141770/7a0614303ef4d6ef47c8d205517bd067.png?ex=6a13f402&is=6a12a282&hm=03abe9bc9e597d31c05b03f2076bbf4e52f2f2c2875b5c1d39dc393980a6366d&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518532182367272960/c1ca75a3209165a1a15af4189a503076.png?ex=6a3a42cd&is=6a38f14d&hm=f1b45dac4b8ff20a7cb77d7930933da76d5b6dbb08eb8c38a22f0ec3639597d6&=&format=webp&quality=lossless",
       "lore": "The Zombie skin represents the corpse of Defender Strange after the original Doctor Strange possesses and controls his dead body using forbidden dreamwalking magic in Doctor Strange in the Multiverse of Madness."
     }
   ],

@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507555947365797928/b241339b370c09a795461ee1a4838e3f3e9aa98d.png?ex=6a125462&is=6a1102e2&hm=04c18b5e5993120acd9d0a0c8fe2e823204f8e1892021675598b8d51f13a6e65&=&format=webp&quality=lossless&width=350&height=350",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709674835181598/538afcf479728b93473c89e62dc136a5.png?ex=6a3ae81a&is=6a39969a&hm=2b679647a798db09269f6272adf77b733d912cce5d94fba8c0fc8c51b4e20390&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -51,7 +51,9 @@
       "cooldown": "14s",
       "attributes": [
         "block",
-        "mele"
+        "mele",
+        "lin",
+        "bruta"
       ]
     },
 
@@ -75,6 +77,7 @@
       "attributes": [
         "break",
         "move",
+        "lin",
         "push",
         "mele"
       ]
@@ -113,6 +116,7 @@
       "attributes": [
         "break",
         "range",
+        "lin",
         "area"
       ]
     },
@@ -130,16 +134,50 @@
     }
   ],
 
-  "skins": [
-    "Messed Up",
-    "Tunnel Bandit",
-    "Ahoy",
-    "Ugly Sweater",
-    "Upside Down",
-    "Demodogs",
-    "The Rightside Up",
-    "Lake"
-  ],
+"skins": [
+  {
+    "name": "Messes Up",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709675321856250/e06b5fe67e0282e024c669cbaddcc954.png?ex=6a3ae81a&is=6a39969a&hm=d0786fcec74ec1f0a0ec14cd0c28567e6416da4c2c12603ffa31182deb161bc2&=&format=webp&quality=lossless",
+    "lore": "At a small gathering in his house, Steve spends time with Nancy while trying to balance normal teenage life as strange events begin unfolding across Hawkins."
+  },
+  {
+    "name": "Tunnel Bandit",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709675812585522/93a4d7369207fc8fe3877b22829e05c9.png?ex=6a3ae81a&is=6a39969a&hm=0b094d6595de7362f557910fd00b4c589752c81db06584870794b086c1559607&=&format=webp&quality=lossless",
+    "lore": "Steve joins the group inside the Upside Down tunnels, helping use fire as a distraction against the Demodogs while protecting the younger kids."
+  },
+  {
+    "name": "Ahoy",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709676173299894/dad08e17a716ff0ea39846f8ed5dd5ea.png?ex=6a3ae81b&is=6a39969b&hm=ecefde4b9c7e963615eabc12d2f6328a5da2ad0f5bfbac012cca80e51e2cdec5&=&format=webp&quality=lossless",
+    "lore": "Working at Scoops Ahoy alongside Robin Buckley, Steve uncovers a secret Russian operation hidden beneath Starcourt Mall.",
+    "dataFile": "ahoy"
+  },
+  {
+    "name": "Ugly Sweater",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709676496130069/858ac78a563c4e0d07b35003750402fe.png?ex=6a3ae81b&is=6a39969b&hm=885e888fa526d062a7fe8c330710f3484c6b43777b4306cd0eb0438a752a18ce&=&format=webp&quality=lossless",
+    "lore": "Steve wears a festive holiday sweater during the Christmas season, bringing a lighter moment to his life after the events that changed Hawkins."
+  },
+  {
+    "name": "Upside Down",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709676970348635/1cd76dc68126b3d73b2b3dc45748bb40.png?ex=6a3ae81b&is=6a39969b&hm=ba8e73271d5a4dbdb7e1a8428f0af0434f61541c2e80d2b057d8747deb8d4ad5&=&format=webp&quality=lossless",
+    "lore": "Steve enters the Upside Down through the portal at Lover's Lake, leading the search for Vecna while facing the dangers hidden within the dark dimension."
+  },
+  {
+    "name": "Demodogs",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709677393838234/cd0c018c32abe235856ef58e854b59c9.png?ex=6a3ae81b&is=6a39969b&hm=2492965b122709d4ebf3418f38b12a90cf4b8cd2d5c7301af21f44de7444551e&=&format=webp&quality=lossless",
+    "lore": "Armed with his iconic nail bat, Steve fights alongside Nancy and Jonathan against a Demogorgon in one of Hawkins' earliest battles against the Upside Down."
+  },
+  {
+    "name": "The Rightside Up",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709677779849256/de315c6e46a48a98152191b559a95a0a.png?ex=6a3ae81b&is=6a39969b&hm=a802045244e56e1f9329a7dde3083271c1d955ebe72ac4f685675597905251a4&=&format=webp&quality=lossless",
+    "lore": "Preparing for the final confrontation with Vecna, Steve joins the group's mission into the Upside Down, armed with improvised weapons and determined to protect his friends.",
+    "dataFile": "rightside"
+  },
+  {
+    "name": "Lake",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518709678148944108/f7ddd02ad59eabc037afd024de4e8088.png?ex=6a3ae81b&is=6a39969b&hm=66392a5cd4e50f183e0523de12f245907c7cf58dd13fa9c373ba0c247fe3dc6e&=&format=webp&quality=lossless",
+    "lore": "While investigating Lover's Lake, Steve discovers a portal to the Upside Down and is pulled through, where he is attacked by a swarm of Demobats before his friends come to his aid."
+  }
+],
 
   "lore": "Steve Harrington is a major character from Stranger Things. Initially introduced as a popular high school student, he eventually became one of the group's bravest protectors, known for fighting creatures from the Upside Down with his iconic nail bat and caring deeply for his friends."
 }

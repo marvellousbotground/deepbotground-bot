@@ -13,7 +13,7 @@
 
   "universe": "Minecraft",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507552064664768662/minecraft-steve-render-v0-z1ase7tkycje1.png?ex=6a1250c5&is=6a10ff45&hm=54728f3db3bf94fd390bc2831c3447658fde765457515df56b61651a4ffaebb4&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214276970020914/2a7533eb9aa433905768ca91ddd2577c.png?ex=6a3cbe0d&is=6a3b6c8d&hm=81782ed7301f6f2a6dc8a37052c74879c71a3d2c83e1a7c5db7c1aab54e8bfc6&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -54,6 +54,7 @@
       "cooldown": "12s",
       "attributes": [
         "ignore",
+        "lin",
         "lrp"
       ]
     },
@@ -66,6 +67,7 @@
       "attributes": [
         "block", 
         "push",
+        "lin",
         "mele"
       ]
     },
@@ -77,6 +79,7 @@
       "cooldown": "12s",
       "attributes": [
         "break",
+        "lin",
         "mele"
       ]
     },
@@ -102,6 +105,7 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
         "push"
       ]
     },
@@ -112,6 +116,7 @@
       "damage": 0,
       "cooldown": "66s",
       "attributes": [
+        "lin",
         "inv"
       ]
     }
@@ -120,37 +125,37 @@
   "skins": [
     {
       "name": "Pumpkin",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367258445942804/638846499711675517.png?ex=6a1547fa&is=6a13f67a&hm=449d0ca5effaafa85b617774af42cc06cef595bd33a3e81794147250df745991&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214277398106193/Untitled_Project_25.jpg?ex=6a3cbe0d&is=6a3b6c8d&hm=117c67e4bc594600e598fdf0f5ff556ef67e83647b7150a4f9d828cea7aedd7d&=&format=webp",
       "lore": "Steve wears a carved pumpkin on his head, a classic Minecraft feature often used by players to avoid angering Enderman."
     },
 
     {
       "name": "Zombie",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367269745660015/35e6fe561bfbe0c0367e0e4edbc14f62.png?ex=6a1547fd&is=6a13f67d&hm=b75dbd17ddee46d0306b7f493eaa96ffae0d0bc35fa717acbe2a602f1e2e46b2&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214278123716628/598eb3823a3c9aa25d6310ead9a545eb.png?ex=6a3cbe0d&is=6a3b6c8d&hm=407a59cac0604ee9eeb74ce50425b81ae6d5be346cb8958a0963c2e808158a47&=&format=webp&quality=lossless",
       "lore": "The hostile Zombie mob from Minecraft, known for attacking players during the night and burning in sunlight."
     },
 
     {
       "name": "Herobrine",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367350242742372/b06ce5e54e7717b4ef2069a9b041ecd2.png?ex=6a154810&is=6a13f690&hm=a95aae1165a5c1c7658a0f371df3cb9694bb234d39e6856cc1a0910005218145&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214278463328256/ffeddaab9b25140b32708a9f840fc3c7.png?ex=6a3cbe0d&is=6a3b6c8d&hm=69bfbc04e2acab4feaa59649bf328eb336fee8238dedd9ee47c198004dd9bb8a&=&format=webp&quality=lossless",
       "lore": "A legendary Minecraft creepypasta entity said to haunt worlds with glowing white eyes, mysterious structures, and unexplained sightings."
     },
 
     {
       "name": "Alex",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367424083460096/ba1713efd59b1918e2cebe2a570ed479.png?ex=6a154822&is=6a13f6a2&hm=9b7e87f51adb6c7a9203371b1ac9578abd67782d76da334beb4f3f3e67896456&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214278874497075/95bec57e61ee9ffc6377d4b212c85a3c.png?ex=6a3cbe0d&is=6a3b6c8d&hm=3475475d2098c81c02108c94d36e2f8211e698f9fcfaf29aefd6a58d51729f20&=&format=webp&quality=lossless",
       "lore": "Alex is the default female Minecraft protagonist introduced alongside Steve as one of the game's main playable skins."
     },
 
     {
       "name": "Dont Mine At Night",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367836370960404/Web_Photo_Editor_47.jpg?ex=6a154884&is=6a13f704&hm=09e04b5312be9003fcb72aa24a9769a45f98c11a7fc42025306e13244a6709b8&=&format=webp",
-      "lore": "Inspired by the famous Minecraft parody song 'Don't Mine at Night,' recreating the music video's nostalgic early Minecraft aesthetic."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214279184744600/Web_Photo_Editor_47.jpg?ex=6a3cbe0d&is=6a3b6c8d&hm=11bcdb487d292fc5c0621a11c553bb128722d2b00fdef018dd619643d8f009a3&=&format=webp",
+      "lore": "Famous Minecraft parody song 'Don't Mine at Night,' recreating the music video's nostalgic early Minecraft aesthetic."
     },
 
     {
       "name": "Jack",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508367932156018688/e2eb1da8666f5ac937b6ac40d69c3f57.png?ex=6a15489b&is=6a13f71b&hm=f3bef12238c42342c4dcaa33630a0e7c1d396753a5479a10faae3990d34595bf&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519214279566561361/e2eb1da8666f5ac937b6ac40d69c3f57.png?ex=6a3cbe0d&is=6a3b6c8d&hm=b381a52d4c6bbbb29647d23e41c1df4629bdbe5d48c67fadda04798aa4b748ff&=&format=webp&quality=lossless",
       "lore": "Jack Black's version of Steve from the Minecraft movie adaptation."
     }
   ],

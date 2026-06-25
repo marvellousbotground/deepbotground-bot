@@ -14,7 +14,7 @@
 
   "universe": "Invincible",
 
-  "image": "https://media.discordapp.net/attachments/1146226232745271317/1506589643330682980/SIiNKEBu.png?ex=6a0ed072&is=6a0d7ef2&hm=31947146165175a16eb959575f7845589658ee68f04c6917e0861f8db6df2e9a&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519226859978493982/8f2b1647c81f26b286fc8676484e0578.png?ex=6a3cc9c5&is=6a3b7845&hm=c926ce60a5565c3b517bfc40f5f6e46726b69891b4c8c20bd0461d0d59e20ed9&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -34,6 +34,7 @@
       "attributes": [
         "block",
         "push",
+        "lin",
         "grab",
         "mele"
       ]
@@ -47,7 +48,8 @@
       "attributes": [
         "ignore",
         "move",
-        "mele"
+        "mele",
+        "bruta"
       ]
     },
 
@@ -72,6 +74,8 @@
       "attributes": [
         "ignore",
         "push",
+        "lin",
+        "pull",
         "area",
         "range"
       ]
@@ -98,6 +102,7 @@
       "attributes": [
         "block",
         "move",
+        "lin",
         "mele",
         "push"
       ]
@@ -107,35 +112,35 @@
   "skins": [
     {
       "name": "Conquest",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507898017829748797/e61dbf2974c205615ba413f5ee8c4907.png?ex=6a1392f6&is=6a124176&hm=dc94ed5c858fb0f8798edfc6a109182e6fb85a7d10a654cec6e16a0b2d4d5d00&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519226860360437801/e61dbf2974c205615ba413f5ee8c4907.png?ex=6a3cc9c5&is=6a3b7845&hm=b9c697f5cd748cbaf3654f7c5c59add7ba3f838b8ee050a6af8593a557dddd73&=&format=webp&quality=lossless",
       "lore": "Conquest is an elderly Viltrumite warrior feared across the galaxy for his brutality, cruelty, and obsession with battle. During the Invincible War and later conflicts, he became one of Mark Grayson's deadliest enemies.",
       "dataFile": "conquest.json"
     },
 
     {
       "name": "Escape",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507898326006235237/conquest.jpg?ex=6a139340&is=6a1241c0&hm=c3d378aa24ef8546c15f4d72547ac3c791c9bd66ed98216979ec292bcf348bb3&=&format=webp",
-      "lore": "The Escape skin represents Conquest after escaping Earth following his brutal defeat against Invincible and Atom Eve. Severely injured and stripped down after the battle, he fled the planet barely alive.",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519226860721012877/Untitled_Project_26.jpg?ex=6a3cc9c5&is=6a3b7845&hm=ea00d165c08b5dc3e640e0796fd0922609eaf815fbe2cfca2cabf919734ecf41&=&format=webp",
+      "lore": "TConquest after escaping Earth following his brutal defeat against Invincible and Atom Eve. Severely injured and stripped down after the battle, he fled the planet barely alive.",
       "dataFile": "conquest.json"
     },
 
     {
       "name": "Lucan",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507898476531421375/8053fcd9882dc090a50c5dbfb42e7198.png?ex=6a139364&is=6a1241e4&hm=e1907e6bc8fd4133bc7c476fd7b4dabf7a7a49c6c082efbeb211cf8856c9f6fe&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519226861123801179/8053fcd9882dc090a50c5dbfb42e7198.png?ex=6a3cc9c5&is=6a3b7845&hm=fc5933276f32a1abc8c9e4534728b86b4d92eb58ec0a23863959759413f16d6d&=&format=webp&quality=lossless",
       "lore": "Lucan is a powerful Viltrumite warrior who participated in the attack on Thraxa alongside other Viltrumites sent to confront Omni-Man and Invincible.",
       "dataFile": "conquest.json"
     },
 
     {
       "name": "Anissa",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507898755985444904/2e59ec5ec0324298e5c6ffb4aa705b58.png?ex=6a1393a6&is=6a124226&hm=f4ac0f0f2ebbfc3148c31f41a4dbbfce53fca341449832fad5f6ee29b947d84a&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519226861463408660/cf3664b2a0716a8fa1a8ec532acdfe6b.png?ex=6a3cc9c5&is=6a3b7845&hm=8553e3c04b9c3ef7d7386859c8630244239826190903866e4cc0f26a1b9b76a2&=&format=webp&quality=lossless",
       "lore": "Anissa is one of the strongest Viltrumite warriors in the Invincible series, known for her arrogance, loyalty to the Empire, and overwhelming strength.",
       "dataFile": "conquest.json"
     },
 
     {
       "name": "Thula",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507898936168419378/16e852a7d318739d2417bd2d77d433ec.png?ex=6a1393d1&is=6a124251&hm=9722b8b2bf583b088e21edb444829632287da652d3ad18873915730d56340663&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519226862096879766/740b7e5005c1a4271213e15ba5dab8f2.png?ex=6a3cc9c5&is=6a3b7845&hm=bbe47cf87fbfe7398008d62363e7d53e06ed19a4b782ef04a1d80b95fbc00b00&=&format=webp&quality=lossless",
       "lore": "Thula is a ruthless Viltrumite warrior recognized for her long braid-like hair weapon and deadly combat abilities during the Viltrumite conflicts.",
       "dataFile": "conquest.json"
     }

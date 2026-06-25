@@ -14,7 +14,7 @@
 
   "universe": "American Psycho",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507496835596685463/bc2713a369730a7e1088e3d5d7618488.png?ex=6a121d55&is=6a10cbd5&hm=dfe13e53382fcc26e447d3b924f15bf0503056a7ce3ba7339281a1b1729f4d09&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519018471583781034/973319de51f009fd2a9750ab916bf5f6.png?ex=6a3c07b1&is=6a3ab631&hm=d0578153a44f969ed346cb8e76dfb585c9409792a6fc6d7c06667cd3487695d6&=&format=webp&quality=losslesss",
 
   "stats": {
     "hp": 200,
@@ -69,6 +69,7 @@
       "attributes": [
         "break",
         "move",
+        "lin",
         "mele"
       ]
     },
@@ -92,6 +93,7 @@
       "damage": 0,
       "cooldown": "200s",
       "attributes": [
+        "boost"
       ]
     }
   ],
@@ -99,32 +101,32 @@
   "skins": [
     {
       "name": "Raincoat",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508272702669062195/ad289704bcaf871aaf16ec226945e771.png?ex=6a14efea&is=6a139e6a&hm=2c3575f63b2f827faa7b2acb047d69b0084f5ce8322e55e36a1c2545efc44a7e&=&format=webp&quality=lossless",
-      "lore": "The Raincoat skin references Patrick Bateman during the famous scene where he murders Paul Allen with an axe while wearing a transparent raincoat."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519018472279904496/ad289704bcaf871aaf16ec226945e771.png?ex=6a3c07b1&is=6a3ab631&hm=a5f3c0196ec91230a4ae24e325adabf749ee97bec211c126231f122c7fb1fb0b&=&format=webp&quality=lossless",
+      "lore": "Patrick Bateman during the famous scene where he murders Paul Allen with an axe while wearing a transparent raincoat."
     },
 
     {
       "name": "Sunglasses",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508272900728295555/1e12fe2b4eecf600d540fdde448320fb.png?ex=6a14f019&is=6a139e99&hm=3692a691cfa051ff3c1ceb3f92a393e1c189727cefcd9e05ce62c1025147a18a&=&format=webp&quality=lossless&width=350&height=350",
-      "lore": "The Sunglasses skin references Patrick Bateman during the scene where he invites his secretary Jean to dinner and allows her to choose the restaurant herself."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519018472653324498/c375ac6227901566751d94002e87d987.png?ex=6a3c07b1&is=6a3ab631&hm=30e4946809fb96e7846a6adb67554d6b629251512d3adfb6d5442cc54bc9ec89&=&format=webp&quality=lossless",
+      "lore": "Patrick Bateman during the scene where he invites his secretary Jean to dinner and allows her to choose the restaurant herself."
     },
 
     {
       "name": "Brown Overcoat",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508273210930630778/d826ebcc2ed4c581023f2e9341e11e54.png?ex=6a14f063&is=6a139ee3&hm=8bef6fab3954922ad0dc594f14f5c4d8bce2e890718e16239d9c486f0dde304c&=&format=webp&quality=lossless",
-      "lore": "The Brown Overcoat skin references Patrick Bateman during the hallucination scene where he imagines an ATM telling him to feed it a stray cat before accidentally killing an old woman instead."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519018474385441110/18bc131890ced9f37be11cc23d424c98.png?ex=6a3c07b2&is=6a3ab632&hm=99d391809c2ffd498b2be7116f6adacd4e2d1eb769ea20d750a5b24b39b55567&=&format=webp&quality=lossless",
+      "lore": "Patrick Bateman during the hallucination scene where he imagines an ATM telling him to feed it a stray cat before accidentally killing an old woman instead."
     },
 
     {
       "name": "Morning Routine",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508273130060386354/0eb6174fb5973763ef96fc2b414d999f.png?ex=6a14f050&is=6a139ed0&hm=02ea6888d8c989c2dd99bcb461017cf5ba44e28de324b243c961cf38a48277d5&=&format=webp&quality=lossless&width=372&height=350",
-      "lore": "The Morning Routine skin references the opening sequence of American Psycho where Patrick Bateman describes and performs his obsessive daily self-care routine."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519018475081695332/74c3835c4d74099e0fd1096b59cc409b.png?ex=6a3c07b2&is=6a3ab632&hm=cb1a6439ffa234d9571071f416e1e61c7cd9a57f28340124694e82639b723d38&=&format=webp&quality=lossless",
+      "lore": "References the opening sequence of American Psycho where Patrick Bateman describes and performs his obsessive daily self-care routine."
     },
 
     {
       "name": "Book",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508275326856462487/ba79c4c08970ddbcbc0d7949bd536e47.png?ex=6a14f25c&is=6a13a0dc&hm=ed4a9f37bafac479d21343146f15627eb148572032cfc7ad1214134987c189f9&=&format=webp&quality=lossless",
-      "lore": "The Book skin references Patrick Bateman's appearance from the cover art of the American Psycho novel."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519018475635347697/Untitled_Project_18.jpg?ex=6a3c07b2&is=6a3ab632&hm=150611ae826c251f5f08e1e749e0e1c782643ea42d0b3f81f09e9a7f77aa7fdb&=&format=webp",
+      "lore": "Patrick Bateman's appearance from the cover art of the American Psycho novel."
     }
   ],
 

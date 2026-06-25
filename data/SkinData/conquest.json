@@ -29,7 +29,8 @@
       "attributes": [
         "ignore",
         "move",
-        "mele"
+        "mele",
+        "bruta"
       ]
     },
 
@@ -80,6 +81,7 @@
       "attributes": [
         "block",
         "move",
+        "lin",
         "push",
         "mele"
       ]

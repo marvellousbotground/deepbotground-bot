@@ -14,7 +14,7 @@
 
   "universe": "The Boys",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507548700967174306/d28bf3cd3f58528df241c36d922e623f.png?ex=6a124da3&is=6a10fc23&hm=2fb605e1dc7ae8f2cee1fba25c304a8d25d33f2572b300820bf5cc495f28b88f&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519208647748616222/8a71e67934b532951845dceab77b0881.png?ex=6a3cb8cf&is=6a3b674f&hm=971329b06842cbea56c519ee7feedbafa4bde06039397688cd4b2e567867844e&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -106,13 +106,33 @@
     }
   ],
 
-  "skins": [
-    "New Suit",
-    "Starlighters",
-    "Undercover",
-    "Fire",
-    "Joi"
-  ],
+"skins": [
+  {
+    "name": "New Suit",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519208648063057981/00861693ccbeec7b297d3788fc6ddea6.png?ex=6a3cb8cf&is=6a3b674f&hm=e1358b978c4213b19c9ce11d20c269b19f68393cef41f2a837cbfa23fd39d62c&=&format=webp&quality=lossless",
+    "lore": "After joining The Seven, Starlight is pressured by Vought into wearing a redesigned costume that clashes with her values, but she is ultimately forced to use it to maintain her public image."
+  },
+  {
+    "name": "Starlighters",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519208648407121962/Untitled_Project_23.jpg?ex=6a3cb8cf&is=6a3b674f&hm=825d5ddd8328b368e8732d45eac44cd7184365daf91456a5ba18b94cb19534dc&=&format=webp",
+    "lore": "While investigating Victoria Neuman and the dangerous experiments involving Compound V, Starlight works alongside The Boys as they search for a weapon capable of killing even the most powerful Supes."
+  },
+  {
+    "name": "Undercover",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519212600422830090/Untitled_Project_24.jpg?ex=6a3cbc7d&is=6a3b6afd&hm=260005d948b8eff05db9ff76951a04a6dba2532674a0230af1438f68ab916e3b&=&format=webp",
+    "lore": "Disguised as Firecracker, Starlight infiltrates a high-security Vought event and exposes hidden information about Flight 37, triggering panic among the crowd and enraging Homelander."
+  },
+  {
+    "name": "Fire",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519208648813973554/878573d83c01633f7fb0c66b7dc8f995.png?ex=6a3cb8cf&is=6a3b674f&hm=0cee5eb5e68512f9a2fb328ef049903525068ad6953ddfe82490b0d0d289f24d&=&format=webp&quality=lossless",
+    "lore": "Starfire from the Titans live-action series, Tamaranean hero as she adapts to life on Earth."
+  },
+  {
+    "name": "Joi",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519208649179004958/df19067d20356feac87110bad0ec50f8.png?ex=6a3cb8cf&is=6a3b674f&hm=ee51cfffa33f27d28663ea5f8155e7a93ca92772a1cb5172595c3aba1bdbe95f&=&format=webp&quality=lossless",
+    "lore": "Joi from Blade Runner 2049, holographic companion known for her comforting presence and her iconic conversation with K."
+  }
+],
 
   "lore": "Starlight, also known as Annie January, is a superhero from The Boys universe. Possessing the ability to absorb and manipulate electrical energy into powerful light attacks, she struggles to remain morally good while facing the corruption and brutality surrounding Vought and The Seven."
 }

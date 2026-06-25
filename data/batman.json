@@ -22,7 +22,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507564795811856404/502db8bfvk891.png?ex=6a125ca0&is=6a110b20&hm=6b342a7cfda25545463d01c60a4b0526e4ce95c16fea2979aca2e71fc121e66f&=&format=webp&quality=lossless&width=1320&height=1320",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482475226239078/d335d327698cd0c98495ec7d559e2d2d.png?ex=6a3a1482&is=6a38c302&hm=5dda4db40f3c26896ca55e91bbbe49fddbae8a9e0b0b0abde6fc6f5aa52a3b4f&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -129,50 +129,50 @@
   "skins": [
     {
       "name": "Fear",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508386278054432889/Web_Photo_Editor_49.jpg?ex=6a1559b1&is=6a140831&hm=a9e182a6fd89296a1958de5875d5e82c36e930b0cc97433b267ae8fd5c7886ca&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482475590881383/e799fab4813a6e6857ae949257ddd7f5.png?ex=6a3a1482&is=6a38c302&hm=836c3199fd62d16dffb8561ca5ec471391b58b84508ce8d859f64d57ce98ef93&=&format=webp&quality=lossless",
       "lore": "Batman emerges from the darkness surrounded by intense red lighting, inspired by the promotional imagery and fear-driven atmosphere of The Batman (2022)."
     },
 
     {
       "name": "Drifter",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508386408014811140/a4b06a4193823ed4711afd25f2511e94.png?ex=6a1559d0&is=6a140850&hm=f42cb687eab021ff4937baf7a5f3ad7e40392c3bba90512f663f8b742aafbbcf&=&format=webp&quality=lossless&width=327&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482476102713538/f4159b428991a25db46afaac88f1f9c0.png?ex=6a3a1482&is=6a38c302&hm=cd84d942fbe9f37567f471f001c543398a418bc2723868abef35cddf59f9c24b&=&format=webp&quality=lossless",
       "lore": "Bruce Wayne travels through Gotham disguised as a biker drifter at the beginning of The Batman, using a rough homemade look to investigate the city without attracting attention."
     },
 
     {
       "name": "Wayne",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508387179389390968/b9199f6adeb13a8ce8557f2d8f6af828.png?ex=6a155a88&is=6a140908&hm=9de5e0f0d26f9c80236d3d10bfc977c219c42face969dfca0e44a902ccf4d956&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482476467753050/b9199f6adeb13a8ce8557f2d8f6af828.png?ex=6a3a1482&is=6a38c302&hm=ee86ddbd38727e59a8ec55febe74796723ba4880152b81f1b78f8fd6de4a710f&=&format=webp&quality=lossless",
       "lore": "Bruce Wayne attends Mayor Mitchell's funeral moments before District Attorney Gil Colson crashes into the church with a bomb strapped around his neck."
     },
 
     {
       "name": "Day Off",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508387231859998760/74682c565eb8bb7d4b044796b30c7d0e.png?ex=6a155a94&is=6a140914&hm=99df4231341406e8b2d36a1e616a0be751330f86eba3f56ef4ddf26567f58513&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482476769611837/c75286ab81e8c22b84cbe282f7a9cdf6.png?ex=6a3a1482&is=6a38c302&hm=4bc36135cfba7b72c3088fb0b554103ec4b03efc7d1026f644f80b7ade5808fa&=&format=webp&quality=lossless",
       "lore": "Batman wears this outfit while privately investigating the Riddler case and analyzing clues outside of his armored vigilante identity."
     },
 
     {
       "name": "Hidden",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508387295617749083/dc1608d8b020fcb932196f0a14c13ae7.png?ex=6a155aa3&is=6a140923&hm=59533827dafe6e85c1afff035533dbe59b5646253c89b26f0513de36a83d6aff&=&format=webp&quality=lossless&width=365&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482477218398208/ef8e8449843d32dec3d2b5f44a714710.png?ex=6a3a1482&is=6a38c302&hm=a80f0ed9c3776bd2e7ee2e2a3d35bb60c2eee6bf2648668162c3ff4162cdb73a&=&format=webp&quality=lossless",
       "lore": "Bruce watches the Riddler expose the hidden truth about the Wayne family and Gotham's corruption, forcing him to confront the dark secrets tied to his parents."
     },
 
     {
       "name": "Drophead",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508386013892968448/806e1a15c65c207c747425e0ed4933e2.png?ex=6a155972&is=6a1407f2&hm=b4c89c05eb468b4e9a7256efdba61603f099629231925d82755cdc2528e3a4ce&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482477549883572/806e1a15c65c207c747425e0ed4933e2.png?ex=6a3a1482&is=6a38c302&hm=9b1c0b554efbe7a7801e29d9dfbe60dee26c784884c21a401cfa60bf6e39e57e&=&format=webp&quality=lossless",
       "lore": "A street criminal style inspired by the masked gang members and thieves operating throughout Gotham City in The Batman."
     },
 
     {
       "name": "Bale",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508387505693655222/60bc6433cb583206abefe698b198fcf5.png?ex=6a155ad5&is=6a140955&hm=b1a532941f92500d8c8aeb11a3cd8d34841b58520758cedfbb5a0637382b6a9d&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482477872713920/f95423747b6a7f2a704329c973fd5489.png?ex=6a3a1482&is=6a38c302&hm=78f9b79256b9bb8a59cff1f2908e24b6ce59bbcc8d059a802f952b55914d50ac&=&format=webp&quality=lossless",
       "lore": "Batman as portrayed by Christian Bale in The Dark Knight trilogy directed by Christopher Nolan."
     },
 
     {
       "name": "Game",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508387652582248459/e67228dea76db276d3cdfdd5f512ec56.png?ex=6a155af8&is=6a140978&hm=3f50edfd4e1c5d5b33c566cb7706abdc25c53c14c6356291a73398bbf9903565&=&format=webp&quality=lossless&width=350&height=350",
-      "lore": "Batman inspired by the Arkham video game series, featuring the darker armored design and combat style from the games."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518482478174834778/3435b32028cb47a10e996a7a8f80681f.png?ex=6a3a1482&is=6a38c302&hm=fb05796d77f95ab8e2fdf084dca31ba18ab224dcaf2e03185b7aaefd3ea6b076&=&format=webp&quality=lossless",
+      "lore": "Batman Arkham video game series, featuring the darker armored design and combat style from the games."
     }
   ],
 

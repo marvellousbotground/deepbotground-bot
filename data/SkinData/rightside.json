@@ -1,0 +1,114 @@
+  {
+    "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 8,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Homerun",
+      "damage": 10,
+      "cooldown": "9s",
+      "attributes": [
+        "break",
+        "mele",
+        "push"
+      ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Spear Pierce",
+      "damage": 24,
+      "cooldown": "10.5s",
+      "attributes": [
+        "block",
+        "mele",
+        "lin"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "King Steve Counter",
+      "damage": 15,
+      "cooldown": "17s",
+      "attributes": [
+        "block",
+        "coun",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Stealthy Ninja",
+      "damage": 15,
+      "cooldown": "12s",
+      "attributes": [
+        "break",
+        "move",
+        "lin",
+        "push",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Melt With You Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Firework Throw",
+      "damage": 15,
+      "cooldown": "31s",
+      "attributes": [
+        "break",
+        "lr",
+        "area"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Acid Throw",
+      "damage": 15,
+      "cooldown": "31s",
+      "attributes": [
+        "break",
+        "range",
+        "lin",
+        "area"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Molotov Throw",
+      "damage": 8,
+      "cooldown": "31s",
+      "attributes": [
+        "ignore",
+        "range",
+        "area"
+      ]
+    }
+  ],
+
+  "techs": []
+}

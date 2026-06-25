@@ -1,0 +1,76 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Low Tier Barrage",
+      "damage": 8,
+      "cooldown": "5s",
+      "attributes": [
+        "ignore",
+        "mele"      
+    ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Tackle",
+      "damage": 10,
+      "cooldown": "13.5s",
+      "attributes": [
+        "block",
+        "lin",
+        "mele",
+        "push",
+        "move"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Slam Counter",
+      "damage": 8,
+      "cooldown": "12s",
+      "attributes": [
+        "coun",
+        "mele",
+        "cine"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Shake",
+      "damage": 20,
+      "cooldown": "30s",
+      "attributes": [
+        "break",
+        "lin",
+        "range",
+        "area"
+      ]
+    },
+
+  {
+    "slot": "5",
+    "name": "Rage",
+    "damage": 5,
+    "cooldown": "70.5s",
+    "attributes": [
+      "break",
+      "range",
+      "area",
+      "ex"
+     ]
+    }
+  ],
+  "techs": []
+}

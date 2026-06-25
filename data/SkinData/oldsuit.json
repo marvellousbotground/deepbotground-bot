@@ -16,6 +16,7 @@
       "cooldown": "11.5s",
       "attributes": [
         "block",
+        "lin",
         "mele",
         "move"
       ]
@@ -46,6 +47,7 @@
     },
 
     {
+      "slot": "4",
       "name": "Shotgun",
       "damage": 8,
       "cooldown": "14.5s",

@@ -34,6 +34,7 @@
       "attributes": [
         "block",
         "push",
+        "lin",
         "move",
         "mele"
       ]
@@ -59,6 +60,7 @@
         "ignore",
         "coun",
         "cine",
+        "lin",
         "area"
       ]
     },

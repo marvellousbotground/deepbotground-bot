@@ -1,0 +1,403 @@
+{
+  "name": "Thanos",
+  "aliases": [
+    "mad titan",
+    "infinity thanos",
+    "thanos"
+  ],
+  "origin": [
+    "comic",
+    "movie",
+    "tvseries"
+  ],
+  "universe": "Marvel",
+  "tags": {
+    "type": [
+      "villain",
+      "alien"
+    ]
+  },
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408600760455268/image.png?ex=6a3d7307&is=6a3c2187&hm=47e7ed199c128ba11c381e06810efaecb14e9ea8c2abdf473d9aff782abde43b&=&format=webp&quality=lossless",
+  "versions": [
+    {
+      "id": "power",
+      "name": "Thanos - Power Stone",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408601159045170/image.png?ex=6a3d7307&is=6a3c2187&hm=434729d896a9a55384677915308774cb16dbec0e85ef82295ce48c7817b5a06a&=&format=webp&quality=lossless",
+      "stats": {
+        "hp": 300,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": false,
+        "canHeal": false
+      },
+      "attacks": [
+        {
+          "slot": "1",
+          "name": "Power Punch",
+          "damage": 18,
+          "cooldown": "8s",
+          "attributes": [
+            "ignore",
+            "mele",
+            "push"
+          ]
+        },
+        {
+          "slot": "2",
+          "name": "Power Beam",
+          "damage": 34,
+          "cooldown": "10s",
+          "attributes": [
+            "ignore",
+            "in",
+            "range",
+            "area"
+          ]
+        },
+        {
+          "slot": "3",
+          "name": "Meteor Shower",
+          "damage": 30,
+          "cooldown": "29s",
+          "attributes": [
+            "break",
+            "area",
+            "cine",
+            "lrp"
+          ]
+        },
+        {
+          "slot": "4",
+          "name": "Power Detonation",
+          "damage": 25,
+          "cooldown": "13s",
+          "attributes": [
+            "break",
+            "range",
+            "area",
+            "push"
+          ]
+        },
+        {
+          "slot": "5",
+          "name": "Snap",
+          "damage": 100,
+          "cooldown": "123s",
+          "attributes": []
+        }
+      ],
+      "skins": [
+        {
+          "name": "Infinity War",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408601847037952/image.png?ex=6a3d7307&is=6a3c2187&hm=624fbc49d8df89eb38165dffae7aa427cff372ca203758e689e083ecc697fe3b&=&format=webp&quality=lossless",
+          "lore": "Thanos begins his hunt for the Infinity Stones, using the Power Stone to overwhelm his enemies with raw destructive force."
+        },
+        {
+          "name": "Comics",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408603612709014/5468db43a2e056d53a9525d98d02b1af.png?ex=6a3d7308&is=6a3c2188&hm=4eab4ef122bfec444932e209ac139eb251187177b8af9de8d82945bb6002bd58&=&format=webp&quality=lossless",
+          "lore": "The classic comic version of Thanos, a cosmic conqueror obsessed with power, death, and proving himself above all others."
+        },
+        {
+          "name": "Farmer",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413081405394994/Untitled_Project_39.jpg?ex=6a3d7733&is=6a3c25b3&hm=bde52de23604ad26f907a4369f2843999e75d49392f9b5cdad139494619b8d6e&=&format=webp",
+          "lore": "After completing his mission, Thanos retreats to a quiet farm, believing the universe has finally been balanced."
+        },
+        {
+          "name": "Infinity Ultron",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413082437451796/Untitled_Project_40.jpg?ex=6a3d7734&is=6a3c25b4&hm=0d48843b602654167c73bd4563e78fa844dd35c7898c96befabb978d3770cebc&=&format=webp",
+          "lore": "Ultron obtains the Infinity Stones and becomes a multiversal threat capable of destroying entire realities."
+        },
+        {
+          "name": "Beatbox",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413084958228480/Untitled_Project_47.jpg?ex=6a3d7734&is=6a3c25b4&hm=8997f3e981724c253fb0eb1a11894b4c875e02dbf263d0d20d11434b8dabc1a7&=&format=webp",
+          "lore": "A meme version of Thanos connected to the viral Verbalase beatbox animations."
+        },
+        {
+          "name": "Evil Morty",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519432645543727114/a4d499cb9e1aadf1a590504d994a45c9.png?ex=6a3d896c&is=6a3c37ec&hm=452794c4590e7db412e6fb90c7c54050a10e11616f40eddbd49c24a3534e7354&=&format=webp&quality=lossless",
+          "lore": "Evil Morty is a cold and calculating version of Morty who escapes the Central Finite Curve and rejects the endless control of Ricks."
+        }
+      ],
+      "lore": "With the Power Stone, Thanos becomes a brutal force of destruction, using overwhelming strength to crush anyone standing between him and his goal."
+    },
+    {
+      "id": "space",
+      "name": "Thanos - Space Stone",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408601159045170/image.png?ex=6a3d7307&is=6a3c2187&hm=434729d896a9a55384677915308774cb16dbec0e85ef82295ce48c7817b5a06a&=&format=webp&quality=lossless",
+      "stats": {
+        "hp": 300,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": false,
+        "canHeal": false
+      },
+      "attacks": [
+        {
+          "slot": "1",
+          "name": "Space Shield",
+          "damage": 0,
+          "cooldown": "5s",
+          "attributes": [
+          ]
+        },
+        {
+          "slot": "2",
+          "name": "Black Hole",
+          "damage": 15,
+          "cooldown": "13s",
+          "attributes": [
+            "break",
+            "lrp",
+            "area",
+            "push"
+          ]
+        },
+        {
+          "slot": "3",
+          "name": "Reality Combo",
+          "damage": 15,
+          "cooldown": "7s",
+          "attributes": [
+            "break",
+            "lr",
+            "push"
+          ]
+        },
+        {
+          "slot": "4",
+          "name": "Space Portal",
+          "damage": 0,
+          "cooldown": "9s",
+          "attributes": [
+            "ignore",
+            "tp"
+          ]
+        },
+        {
+          "slot": "5",
+          "name": "Snap",
+          "damage": 100,
+          "cooldown": "123s",
+          "attributes": []
+        }
+      ],
+      "skins": [
+        {
+          "name": "Infinity War",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408602203426916/image.png?ex=6a3d7308&is=6a3c2188&hm=ece97c4cbcd91463d25c6c510bba8fbd21682ff63f2513ad1dff2a05af053eec&=&format=webp&quality=lossless",
+          "lore": "Thanos uses the Space Stone to bend distance around him, crossing worlds instantly while continuing his search for the remaining stones."
+        },
+        {
+          "name": "Comics",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408603612709014/5468db43a2e056d53a9525d98d02b1af.png?ex=6a3d7308&is=6a3c2188&hm=4eab4ef122bfec444932e209ac139eb251187177b8af9de8d82945bb6002bd58&=&format=webp&quality=lossless",
+          "lore": "The classic comic version of Thanos, a cosmic conqueror obsessed with power, death, and proving himself above all others."
+        },
+        {
+          "name": "Farmer",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413081405394994/Untitled_Project_39.jpg?ex=6a3d7733&is=6a3c25b3&hm=bde52de23604ad26f907a4369f2843999e75d49392f9b5cdad139494619b8d6e&=&format=webp",
+          "lore": "After completing his mission, Thanos retreats to a quiet farm, believing the universe has finally been balanced."
+        },
+        {
+          "name": "Infinity Ultron",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413082932117708/Untitled_Project_44.jpg?ex=6a3d7734&is=6a3c25b4&hm=0956ee108e7d9def91ea1864f1564d3fe13f9064a5b23bd9f6cd11b52797b62d&=&format=webp",
+          "lore": "Ultron obtains the Infinity Stones and becomes a multiversal threat capable of destroying entire realities."
+        },
+        {
+          "name": "Beatbox",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413084664631376/Untitled_Project_46.jpg?ex=6a3d7734&is=6a3c25b4&hm=93737df9c21eb095c09fb3e73983224c9af499c1a494b5d7942ba74ddbe8e641&=&format=webp",
+          "lore": "A meme version of Thanos connected to the viral Verbalase beatbox animations."
+        },
+        {
+          "name": "Evil Morty",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519432644700540928/926cf428574676e1ede070d6b84830d8.png?ex=6a3d896c&is=6a3c37ec&hm=c7ce2f870a84c203dbf8d6800bcadc9db23c25bec78ef27f7099af6c37d69e95&=&format=webp&quality=lossless",
+          "lore": "Evil Morty is a cold and calculating version of Morty who escapes the Central Finite Curve and rejects the endless control of Ricks."
+        }
+      ],
+      "lore": "With the Space Stone, Thanos controls distance and movement, warping across the battlefield and dragging enemies into his reach."
+    },
+    {
+      "id": "reality",
+      "name": "Thanos - Reality Stone",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408601159045170/image.png?ex=6a3d7307&is=6a3c2187&hm=434729d896a9a55384677915308774cb16dbec0e85ef82295ce48c7817b5a06a&=&format=webp&quality=lossless",
+      "stats": {
+        "hp": 300,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": false,
+        "canHeal": false
+      },
+      "attacks": [
+        {
+          "slot": "1",
+          "name": "Invisibility",
+          "damage": 0,
+          "cooldown": "10s",
+          "attributes": [
+            "inv",
+            "boost"
+          ]
+        },
+        {
+          "slot": "2",
+          "name": "Reality Shock",
+          "damage": 15,
+          "cooldown": "9s",
+          "attributes": [
+            "break",
+            "area",
+            "range"
+          ]
+        },
+        {
+          "slot": "3",
+          "name": "Reality Counter",
+          "damage": 15,
+          "cooldown": "16s",
+          "attributes": [
+            "coun",
+            "mele"
+          ]
+        },
+        {
+          "slot": "4",
+          "name": "Sword Spin",
+          "damage": 0,
+          "cooldown": "6s",
+          "attributes": [
+          ]
+        },
+        {
+          "slot": "5",
+          "name": "Snap",
+          "damage": 100,
+          "cooldown": "123s",
+          "attributes": []
+        }
+      ],
+      "skins": [
+        {
+          "name": "Infinity War",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408602543161457/Untitled_Project_36.jpg?ex=6a3d7308&is=6a3c2188&hm=5e0eb6c3b49963838ff37fe891bfe34cd55616038a17669ff8a4013279199e5b&=&format=webp",
+          "lore": "Thanos uses the Reality Stone to twist the world around him, turning illusions and impossible changes into weapons."
+        },
+        {
+          "name": "Comics",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408603612709014/5468db43a2e056d53a9525d98d02b1af.png?ex=6a3d7308&is=6a3c2188&hm=4eab4ef122bfec444932e209ac139eb251187177b8af9de8d82945bb6002bd58&=&format=webp&quality=lossless",
+          "lore": "The classic comic version of Thanos, a cosmic conqueror obsessed with power, death, and proving himself above all others."
+        },
+        {
+          "name": "Farmer",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413081405394994/Untitled_Project_39.jpg?ex=6a3d7733&is=6a3c25b3&hm=bde52de23604ad26f907a4369f2843999e75d49392f9b5cdad139494619b8d6e&=&format=webp",
+          "lore": "After completing his mission, Thanos retreats to a quiet farm, believing the universe has finally been balanced."
+        },
+        {
+          "name": "Infinity Ultron",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413083423117653/Untitled_Project_43.jpg?ex=6a3d7734&is=6a3c25b4&hm=a3651f428b8d1f911acfefc06b633f34aa8549b22e4ebf324fa397a8451a74d7&=&format=webp",
+          "lore": "Ultron obtains the Infinity Stones and becomes a multiversal threat capable of destroying entire realities."
+        },
+        {
+          "name": "Beatbox",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519432642561310763/Untitled_Project_49.jpg?ex=6a3d896b&is=6a3c37eb&hm=8b1e330f65893404b692e84f4b81922b4c11d5584dd3bd90f3bfc6d61df23d57&=&format=webp",
+          "lore": "A meme version of Thanos connected to the viral Verbalase beatbox animations."
+        },
+        {
+          "name": "Evil Morty",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519432647384895528/Untitled_Project_50.jpg?ex=6a3d896c&is=6a3c37ec&hm=9df5e3ad722aee8aa93634077a85236e8b0a412278ba113f6d78d01dcc40031c&=&format=webp",
+          "lore": "Evil Morty is a cold and calculating version of Morty who escapes the Central Finite Curve and rejects the endless control of Ricks."
+        }
+      ],
+      "lore": "With the Reality Stone, Thanos turns the battlefield into a weapon, reshaping matter and confusing enemies with impossible distortions."
+    },
+    {
+      "id": "time",
+      "name": "Thanos - Time Stone",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408601159045170/image.png?ex=6a3d7307&is=6a3c2187&hm=434729d896a9a55384677915308774cb16dbec0e85ef82295ce48c7817b5a06a&=&format=webp&quality=lossless",
+      "stats": {
+        "hp": 300,
+        "speed": "Normal",
+        "damage": 5,
+        "skills": 5,
+        "lowHpAnimation": true,
+        "canHeal": false
+      },
+      "attacks": [
+        {
+          "slot": "1",
+          "name": "Time Stop",
+          "damage": 5,
+          "cooldown": "9s",
+          "attributes": [
+            "break",
+            "range",
+            "lin",
+            "area"
+          ]
+        },
+        {
+          "slot": "2",
+          "name": "Soul Snatch",
+          "damage": 8,
+          "cooldown": "7s",
+          "attributes": [
+            "break",
+            "range",
+            "lin",
+            "area",
+            "pull"
+          ]
+        },
+        {
+          "slot": "4",
+          "name": "Sword Spin",
+          "damage": 0,
+          "cooldown": "6s",
+          "attributes": [
+          ]
+        },
+        {
+          "slot": "5",
+          "name": "Snap",
+          "damage": 100,
+          "cooldown": "123s",
+          "attributes": []
+        }
+      ],
+      "skins": [
+        {
+          "name": "Infinity War",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408602908196966/Untitled_Project_37.jpg?ex=6a3d7308&is=6a3c2188&hm=9257ee83e5eebf75c97273cd965abf3d91e3d53de19db3b0c3cce669bbda6fba&=&format=webp",
+          "lore": "Thanos uses the Time Stone to control the flow of battle, reversing mistakes and forcing his enemies into unavoidable outcomes."
+        },
+        {
+          "name": "Comics",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519408603612709014/5468db43a2e056d53a9525d98d02b1af.png?ex=6a3d7308&is=6a3c2188&hm=4eab4ef122bfec444932e209ac139eb251187177b8af9de8d82945bb6002bd58&=&format=webp&quality=lossless",
+          "lore": "The classic comic version of Thanos, a cosmic conqueror obsessed with power, death, and proving himself above all others."
+        },
+        {
+          "name": "Farmer",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413081405394994/Untitled_Project_39.jpg?ex=6a3d7733&is=6a3c25b3&hm=bde52de23604ad26f907a4369f2843999e75d49392f9b5cdad139494619b8d6e&=&format=webp",
+          "lore": "After completing his mission, Thanos retreats to a quiet farm, believing the universe has finally been balanced."
+        },
+        {
+          "name": "Infinity Ultron",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413083901263893/Untitled_Project_42.jpg?ex=6a3d7734&is=6a3c25b4&hm=7a9d9f9362601878112892c952d6ee9bfe236004316725c987e2d0d62daee68a&=&format=webp",
+          "lore": "Ultron obtains the Infinity Stones and becomes a multiversal threat capable of destroying entire realities."
+        },
+        {
+          "name": "Beatbox",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519413085327065098/Untitled_Project_48.jpg?ex=6a3d7734&is=6a3c25b4&hm=c03e01edd788e22f13d1e989de7688743b1ab75126df02185178922be9ca4e3d&=&format=webp",
+          "lore": "A meme version of Thanos connected to the viral Verbalase beatbox animations."
+        },
+        {
+          "name": "Evil Morty",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519432648563359805/image.png?ex=6a3d896d&is=6a3c37ed&hm=91b17e13ddfc570690e135f0a7734826bd184f131a3eb641b33bc4c32fead425&=&format=webp&quality=lossless&width=1261&height=1216",
+          "lore": "Evil Morty is a cold and calculating version of Morty who escapes the Central Finite Curve and rejects the endless control of Ricks."
+        }
+      ],
+      "lore": "With the Time Stone, Thanos manipulates moments themselves, slowing the battle, reversing damage, and forcing reality toward his chosen ending."
+    }
+  ]
+}

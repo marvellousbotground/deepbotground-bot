@@ -16,6 +16,7 @@
       "cooldown": "9s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -82,6 +83,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "push"
       ]
@@ -95,6 +98,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "push"
       ]
@@ -108,6 +113,8 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
+        "use",
         "mele",
         "grab",
         "cine"
@@ -122,6 +129,8 @@
       "attributes": [
         "break",
         "trans",
+        "lin",
+        "use",
         "move",
         "cine",
         "area"

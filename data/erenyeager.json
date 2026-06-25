@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1508003659378724934/340239f2537bf2cc21bb5b155b664daf.png?ex=6a13f559&is=6a12a3d9&hm=96d99eb43687cba62b79096f4b578cac3b248c6f41d1235f1a79902418ec3174&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518674918496014356/3168f8707bd143d68e3a382f5f70b173.png?ex=6a3ac7bc&is=6a39763c&hm=6a85aa23da9c22bb57d4925a6e0a5f2b97cda7a7278ef2e5c62133fc5b225597&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -53,6 +53,7 @@
       "attributes": [
         "break",
         "mele",
+        "lin",
         "bruta"
       ]
     },
@@ -102,7 +103,9 @@
         "break",
         "trans",
         "area",
+        "lin",
         "range",
+        "use",
         "rng"
       ]
     },
@@ -116,8 +119,10 @@
         "break",
         "area",
         "trans",
+        "lin",
         "rng",
         "heal",
+        "use",
         "blind",
         "cine"
       ]
@@ -127,32 +132,32 @@
   "skins": [
     {
       "name": "Yeagerist",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508004888506929223/18d187d867756f7f18d695257cf2ee3f.png?ex=6a13f67e&is=6a12a4fe&hm=d27bf868f73b94838af04271ee37e94b578d68a5e43fed96aa48ad6c8e2a1c48&=&format=webp&quality=lossless",
-      "lore": "The Yeagerist skin represents adult Eren Yeager with his hair tied back during his final transformation into the leader and symbol of the Yeagerist movement."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518674918810845254/ea970bddaf5f06478a07043f714b6f85.png?ex=6a3ac7bc&is=6a39763c&hm=7f45ffc8c6b460316b8899cc3a11982a67e090d913d0e7b586243f0242e40e48&=&format=webp&quality=lossless",
+      "lore": "Adult Eren Yeager with his hair tied back during his final transformation into the leader and symbol of the Yeagerist movement."
     },
 
     {
       "name": "The Paths",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508005132875337770/ccbb46d32f3cdafe81d0af37346890e3.png?ex=6a13f6b9&is=6a12a539&hm=945f87c43d8d287de68f250982cbb27a73fbf7e364383222ee33258ce820a132&=&format=webp&quality=lossless",
-      "lore": "The Paths skin represents Eren inside the dimension known as The Paths, where he appears with loose hair while connected to the power of the Founding Titan and Ymir."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518674919100121321/6a75ecd8ee3a146075aae5b3710b0223.png?ex=6a3ac7bc&is=6a39763c&hm=9fc9650b8e2e8d400b3f3e1ca0f048c05ed8bf788f40652dd809410b2199def1&=&format=webp&quality=lossless",
+      "lore": "Eren inside the dimension known as The Paths, where he appears with loose hair while connected to the power of the Founding Titan and Ymir."
     },
 
     {
       "name": "Marley",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508006536549503098/a8286ac3d3acc510a6fab1636a53fca6.png?ex=6a13f807&is=6a12a687&hm=98fb0afee7cf0f9eea8a5383bce3a712fa9725c17526557984f1ddd63975c568&=&format=webp&quality=lossless",
-      "lore": "The Marley skin represents Eren during the Survey Corps' secret visit to Marley, where he wore formal civilian clothing to blend in while searching for a peaceful solution. After witnessing the world's hatred toward Paradis, Eren lost faith in diplomacy and later separated from the group to begin his own plan."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518674919448383662/7c429e13d5734f918007c78c3ddede8e.png?ex=6a3ac7bc&is=6a39763c&hm=876ccd2c1a82de8bec5d50a59519383a85d3447a90d6e2db4e2d56bad0ccb0c1&=&format=webp&quality=lossless",
+      "lore": "Eren during the Survey Corps' secret visit to Marley, where he wore formal civilian clothing to blend in while searching for a peaceful solution. After witnessing the world's hatred toward Paradis, Eren lost faith in diplomacy and later separated from the group to begin his own plan."
     },
 
     {
       "name": "Mountain",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508007061177372703/a590104b0cf14a1fabbc477743041019.png?ex=6a13f884&is=6a12a704&hm=a852f9da22ddbf618cd3b2ae1ff7c049f633a933529808efc20331b454fe02bf&=&format=webp&quality=lossless",
-      "lore": "The Mountain skin represents Eren after escaping imprisonment and meeting Floch and the Yeagerists on a hill at sunset, where Floch gives him the long black jacket that becomes part of his iconic final-season appearance."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518674919783661638/352bcb0da908d8dd81e3ecffde24b93b.png?ex=6a3ac7bc&is=6a39763c&hm=6fd94b0bc64b4b6dfe23cba60a672e3a936c0f392012e45d674effa31a08180d&=&format=webp&quality=lossless",
+      "lore": "Eren after escaping imprisonment and meeting Floch and the Yeagerists on a hill at sunset, where Floch gives him the long black jacket that becomes part of his iconic final-season appearance."
     },
 
     {
       "name": "Cabin",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508007377444671488/aefffdd9d77724bf9ffbb275b0409e4c.png?ex=6a13f8d0&is=6a12a750&hm=6660dada5cc9c27f8678efe067e9d3a69e024edc30078e056b52c604217801cb&=&format=webp&quality=lossless",
-      "lore": "The Cabin skin represents the peaceful alternate reality Eren created for Mikasa through The Paths near the end of the story. In this vision, Eren and Mikasa abandon the war and live together in a mountain cabin during Eren's final years, serving as his emotional farewell to her."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518674920123531294/98389ab35e9229c9f529fb5633d5be81.png?ex=6a3ac7bc&is=6a39763c&hm=baed84790e9f50cb33d1ddf563181a658e57bfc29fc645b0f1a7f6c488faf4b3&=&format=webp&quality=lossless",
+      "lore": "Peaceful alternate reality Eren created for Mikasa through The Paths near the end of the story. In this vision, Eren and Mikasa abandon the war and live together in a mountain cabin during Eren's final years, serving as his emotional farewell to her."
     }
   ],
 

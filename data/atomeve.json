@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://cdn.discordapp.com/attachments/1506572642860273714/1506585005155942430/ecf85feff6e12bac90aab1bd0a7701ff.png?ex=6a0ecc20&is=6a0d7aa0&hm=8594ab13399069154d4c5e3b261e1f536009d896260f59699876fa108245fd8b&",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518471681314918400/e93ade03bf69b9e0a2103bfb1ee64b29.png?ex=6a3a0a74&is=6a38b8f4&hm=99be95fcaf35dea35a3a7e084260b9704d4960365af74b3c1b5aa3d6607b5991&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -102,6 +102,7 @@
       "attributes": [
         "block",
         "move",
+        "lin",
         "push"
       ]
     },
@@ -113,6 +114,7 @@
       "cooldown": "62s",
       "attributes": [
         "ignore",
+        "lin",
         "lr"
       ]
     }
@@ -121,20 +123,20 @@
   "skins": [
     {
       "name": "Resistance",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892453317935205/d98756ad9d05655fa83d299cd811bb4a.png?ex=6a138dc8&is=6a123c48&hm=6f3fbd008f39274ec2664621a0f10985bd9c14f19192ca1bca08cf66928811ff&=&format=webp&quality=lossless",
-      "lore": "The Resistance skin represents an alternate Atom Eve from a ruined universe shown in Invincible. In this reality, Eve lost her hair and was left permanently paralyzed after being brutally attacked by a variant from her own universe."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518471681776287817/d98756ad9d05655fa83d299cd811bb4a.png?ex=6a3a0a74&is=6a38b8f4&hm=e0d37a5c03057d794aa3dca26ebb8ac88f8f87511deed366f199ce5da1718e8c&=&format=webp&quality=lossless",
+      "lore": "alternate Atom Eve from a ruined universe shown in Invincible. In this reality, Eve lost her hair and was left permanently paralyzed after being brutally attacked by a variant from her own universe."
     },
 
     {
       "name": "Y2K",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892607785893908/bb4a3364f78f2155b6de3b38078bd479.png?ex=6a138dec&is=6a123c6c&hm=404a0be80675a3e6e8d5ea1ddff3401a9d7a79362cb2b8004cf62b39bb885b8b&=&format=webp&quality=lossless",
-      "lore": "The Y2K skin features Atom Eve wearing a more casual early-2000s inspired outfit with a white shirt, cropped pink jacket, grey jeans, belt, and a white bag while keeping her recognizable pink aesthetic."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518471682711617636/Untitled_Project_3.jpg?ex=6a3a0a74&is=6a38b8f4&hm=b968656ec7ab1e482711ffd5a437775aaf75c9b8dcb26f06ade80506f4586d20&=&format=webp",
+      "lore": "Eve wearing a more casual early-2000s inspired outfit with a white shirt, cropped pink jacket, grey jeans, belt, and a white bag while keeping her recognizable pink aesthetic."
     },
 
     {
       "name": "Laundry Day",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507892907049357403/eve.jpg?ex=6a138e34&is=6a123cb4&hm=685388ed602176476a48e9051ef0e4f5d188ad3b57ec17cb5190ec528c667bff&=&format=webp",
-      "lore": "The Laundry Day skin is based on a comic appearance where Atom Eve temporarily wears Invincible's suit, creating one of the most memorable alternate looks for the character."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518471682141061211/25ac32b4ad46014caec5d88ff62c0f3d.png?ex=6a3a0a74&is=6a38b8f4&hm=06323f8e8799bc8b1ec5d782a4c9893c2270d6d4de2c884924c484ca08f0ef2f&=&format=webp&quality=lossless",
+      "lore": "comic appearance where Atom Eve temporarily wears Invincible's suit, creating one of the most memorable alternate looks for the character."
     }
   ],
 

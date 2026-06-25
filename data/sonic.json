@@ -14,7 +14,7 @@
 
   "universe": "Sonic",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507524783246409738/e3339df6c174c02d31414df3af27cb9f.png?ex=6a12375c&is=6a10e5dc&hm=98ae46a51e2edafb2633aeb6b896de12a9930b9834535d4fe236700d0bdc1114&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077771748577300/image.png?ex=6a3c3eeb&is=6a3aed6b&hm=8db803577f179108984707251693462cfc15742923a6e7a2d6953115ecc2eb81&=&format=webp&quality=lossless",
 
   "versions": [
     {
@@ -22,7 +22,7 @@
 
       "name": "Sonic",
 
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507524783246409738/e3339df6c174c02d31414df3af27cb9f.png?ex=6a12375c&is=6a10e5dc&hm=98ae46a51e2edafb2633aeb6b896de12a9930b9834535d4fe236700d0bdc1114&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077772352553031/image.png?ex=6a3c3eec&is=6a3aed6c&hm=4b072cb8bc9d69e590607a8dd8466a37903e6b9c7b6fef136c513e1d51b19b8f&=&format=webp&quality=lossless",
 
       "stats": {
         "hp": 185,
@@ -42,6 +42,7 @@
           "attributes": [
             "break",
             "move",
+            "lin",
             "push"
           ]
         },
@@ -54,6 +55,7 @@
           "attributes": [
             "block",
             "move",
+            "lin",
             "push"
           ]
         },
@@ -109,13 +111,13 @@
       "skins": [
         {
           "name": "Sanic",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343663560757478/d2a2d30a94242ce70030ba6042ddd043.png?ex=6a153201&is=6a13e081&hm=6327769e65276b38424d202d0ddba2e04ab61e116e942905b548cb82de7e2b5a&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077772935565352/image.png?ex=6a3c3eec&is=6a3aed6c&hm=18090bb0f4f54f97161b512b5c3c6c1ffe6265fa3e41d545cd1105caa313d0d9&=&format=webp&quality=lossless",
           "lore": "Classic internet meme parody of Sonic known for its badly drawn appearance, extreme speed jokes, and the phrase 'Gotta go fast.'"
         },
 
         {
           "name": "Excalibur",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343614126686259/b1fc1b1a1842e7543babf6a9f080c056.png?ex=6a1531f5&is=6a13e075&hm=82e4b4565e681e427dcc1785f446a6c8d468a4b7509d01e7c94ed90466b6b0e8&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077773811908628/image.png?ex=6a3c3eec&is=6a3aed6c&hm=b88b74c0ee3be206ae2bcee2dbe4f86cefd2aca34d7daa4cda3374d557a7db78&=&format=webp&quality=lossless",
           "lore": "Sonic and the Black Knight, where Sonic wears golden knight armor and wields the legendary sword Excalibur while fighting in a medieval fantasy world inspired by Arthurian legends."
         }
       ],
@@ -128,7 +130,7 @@
 
       "name": "Super Sonic",
 
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507524783246409738/e3339df6c174c02d31414df3af27cb9f.png?ex=6a12375c&is=6a10e5dc&hm=98ae46a51e2edafb2633aeb6b896de12a9930b9834535d4fe236700d0bdc1114&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077774365692045/image.png?ex=6a3c3eec&is=6a3aed6c&hm=3d1b1b070e0d1ab8a0a763237e39c660a77076931d92a5072f7facb49fbd224b&=&format=webp&quality=lossless",
 
       "stats": {
         "hp": 185,
@@ -160,6 +162,7 @@
             "ignore",
             "move",
             "mele",
+            "lin",
             "push"
           ]
         },
@@ -204,13 +207,13 @@
       "skins": [
         {
           "name": "Sanic",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1514900235250565221/latest.png?ex=6a2d0c49&is=6a2bbac9&hm=880b0fa024ecf6d7c2c32c77fa9060aebd5a7eb6821022454e0cbc25ef93bd47&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077774751563857/image.png?ex=6a3c3eec&is=6a3aed6c&hm=402a0dbaa5cfa50de3745fd92ff7915644cd7f21acbeff3744d7d41f3add9875&=&format=webp&quality=lossless",
           "lore": "Classic internet meme parody of Sonic known for its badly drawn appearance, extreme speed jokes, but now is yellow"
         },
 
         {
           "name": "Excalibur",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508343614126686259/b1fc1b1a1842e7543babf6a9f080c056.png?ex=6a1531f5&is=6a13e075&hm=82e4b4565e681e427dcc1785f446a6c8d468a4b7509d01e7c94ed90466b6b0e8&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1519077775640760360/image.png?ex=6a3c3eec&is=6a3aed6c&hm=cc42375c1ecc40dc664be49e5f4466f3aa5b7c5814fca6ce2c6d3a88cbf0d495&=&format=webp&quality=lossless",
           "lore": "Sonic and the Black Knight, where Sonic wears golden knight armor and wields the legendary sword Excalibur while fighting in a medieval fantasy world inspired by Arthurian legends his super sonic version keep the same skin."
         }
       ],

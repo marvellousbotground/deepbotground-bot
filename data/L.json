@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507181209506283600/63436b6d049deef692464a6ef6870035.png?ex=6a10f762&is=6a0fa5e2&hm=e15287e7a5177aea1327a70c890ad987583a32853a35d5270582443920270ca6&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518745604728291429/53f24953a2ec7a858f3c32a59c2c2805.png?ex=6a3b0991&is=6a39b811&hm=b51bdc7db0c3812c233b6fa9e9685821eddc9c5160eb4dd33dcbce159f96194d&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -75,6 +75,8 @@
       "cooldown": "20s",
       "attributes": [
         "ignore",
+        "lin",
+        "pull",
         "coun",
         "mele"
       ]
@@ -113,17 +115,34 @@
       "attributes": [
         "trans",
         "break",
+        "use",
         "move"
       ]
     }
   ],
 
-  "skins": [
-    "Church",
-    "Christmas",
-    "Beyond",
-    "Near"
-  ],
+"skins": [
+  {
+    "name": "Church",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518745605206315180/Untitled_Project_14.jpg?ex=6a3b0991&is=6a39b811&hm=117dab62f4bd9e23d4ca842d12b9993073c7e81cadc83550324a961fc28fabf1&=&format=webp",
+    "lore": "As a child, L arrives at Wammy's House, the orphanage founded to raise gifted children. It is there that he begins the path that will eventually make him the world's greatest detective."
+  },
+  {
+    "name": "Christmas",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518745605630066888/content.png?ex=6a3b0991&is=6a39b811&hm=c86b09c9eb4dd507e974788994bd51ed5a1089409ca4a30712cd1cc61559af0c&=&format=webp&quality=lossless&width=1216&height=1216  ",
+    "lore": "L wears a Rudolph the Red-Nosed Reindeer costume during a Christmas celebration, maintaining his usual expression despite the festive outfit."
+  },
+  {
+    "name": "Beyond",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518745605994844331/41a5e7483b1d59746922691e598da746.png?ex=6a3b0991&is=6a39b811&hm=134637dca313afb44e98d3a39f83e15527734adc048526f1c51072d0eeeff3cc&=&format=webp&quality=lossless",
+    "lore": "Beyond Birthday was one of Wammy's House's most gifted children and a candidate to succeed L. His obsession with surpassing L ultimately led him down a dangerous path."
+  },
+  {
+    "name": "Near",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518745606418595901/6ee27226c19ecf7d1228bc4f4223589c.png?ex=6a3b0991&is=6a39b811&hm=a901f6b85edeef0523d1f5883649141b613f4a3c09257259336a06094b2c78ee&=&format=webp&quality=lossless",
+    "lore": "Near is one of L's successors from Wammy's House. Known for his calm personality and exceptional intelligence, he continues the investigation after L's death."
+  }
+],
 
   "lore": "L, also known as L Lawliet, is the worlds greatest detective from Death Note. Eccentric, highly intelligent, and unpredictable, he dedicates himself to capturing Kira through psychological warfare, deduction, and relentless investigation."
 }

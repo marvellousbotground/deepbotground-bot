@@ -1,0 +1,78 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Rapid Punches",
+      "damage": 8,
+      "cooldown": "5s",
+      "attributes": [
+        "ignore",
+        "mele"      
+    ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Lunge",
+      "damage": 5,
+      "cooldown": "8s",
+      "attributes": [
+        "break",
+        "push",
+        "lr"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Ground Slam",
+      "damage": 8,
+      "cooldown": "18.5s",
+      "attributes": [
+        "break",
+        "range",
+        "push",
+        "move",
+        "area"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Joggin",
+      "damage": 5,
+      "cooldown": "13.5s",
+      "attributes": [
+        "break",
+        "move",
+        "lin",
+        "push"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Can You FIx The Broken?",
+      "damage": 55,
+      "cooldown": "47s",
+      "attributes": [
+        "break",
+        "push",
+        "lr",
+        "area",
+        "cine"
+      ]
+    }
+  ],
+
+  "techs": []
+}

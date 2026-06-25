@@ -1,0 +1,145 @@
+{
+  "name": "GigaChad",
+
+  "aliases": [
+    "chad"
+  ],
+
+  "origin": [
+    "reallife"
+  ],
+
+  "universe": "Real Life",
+
+  "tags": {
+    "type": [
+      "human",
+      "neutral"
+    ]
+  },
+
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265319095373944/94d006d2f870a402d3cb17b65769f092.png?ex=6a3ced96&is=6a3b9c16&hm=2552de3ecfa763689281fac799d658b0991b99d1ce1f9d2aa244f21bdb6120ef&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 6,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Bark Barrage",
+      "damage": 20,
+      "cooldown": "6.5s",
+      "attributes": [
+        "block",
+        "mele"      
+    ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Soccer Tackle",
+      "damage": 10,
+      "cooldown": "13.5s",
+      "attributes": [
+        "block",
+        "lin",
+        "mele",
+        "push",
+        "move"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Pika Counter",
+      "damage": 10,
+      "cooldown": "12s",
+      "attributes": [
+        "ignore",
+        "coun",
+        "area",
+        "lin",
+        "range"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Shake Dance",
+      "damage": 20,
+      "cooldown": "30s",
+      "attributes": [
+        "break",
+        "lin",
+        "range",
+        "area"
+      ]
+    },
+
+  {
+    "slot": "5",
+    "name": "Rage Finisher",
+    "damage": 0,
+    "cooldown": "0.4s",
+    "attributes": [
+      "ignore",
+      "finish",
+      "cine",
+      "heal"
+     ]
+    },
+
+    {
+    "slot": "E",
+    "name": "Ben",
+    "damage": 0,
+    "cooldown": "16s",
+    "attributes": [
+      "rng",
+      "heal"
+     ]
+    }
+  ],
+
+"skins": [
+  {
+    "name": "Ben",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265319808532543/d53a6ed3f058aa6aca81fc083bb19715.png?ex=6a3ced96&is=6a3b9c16&hm=ec4aaf390b43d5f0d046c7fb848e1f45141fa712fd7847ea2d4b66469e3cdfec&=&format=webp&quality=lossless",
+    "lore": "The talking dog from Talking Tom & Friends, one of the characters frequently featured in IShowSpeed's streams and videos."
+  },
+  {
+    "name": "Low Tier",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265320228098160/Untitled_Project_29.jpg?ex=6a3ced96&is=6a3b9c16&hm=9421b72051912517ee579135ffb337194c05d19cc500e5fcc45c95700400e31c&=&format=webp",
+    "lore": "Low Tier God, the controversial fighting game streamer known for his competitive mindset, online rivalries, and viral internet moments.",
+    "dataFile": "lowtier"
+  },
+  {
+    "name": "Prime",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265320848724088/Untitled_Project_30.jpg?ex=6a3ced97&is=6a3b9c17&hm=04bc3a1bfcaf9ec7e04553b8020d2098b3242ba9660ef0cf01b8264e617d79d3&=&format=webp",
+    "lore": "Promotional appearance where IShowSpeed dressed as a giant PRIME bottle during a WWE event, combining internet culture with sports entertainment."
+  },
+  {
+    "name": "RBLX",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265321188589669/OIP.png?ex=6a3ced97&is=6a3b9c17&hm=88a6929c2150fc822a280158ebea6f244824a70d2072ac6f4baf9ecc05c07590&=&format=webp&quality=lossless",
+    "lore": "IShowSpeed's Roblox avatar, recreating the appearance he uses while exploring Roblox experiences with his audience."
+  },
+  {
+    "name": "Brazil",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265321796767836/Untitled_Project_31.jpg?ex=6a3ced97&is=6a3b9c17&hm=1e9c9bd71f9748e1af4934ea3906dfbd3d80306d507fe5d4b2e9efb826d89a4b&=&format=webp",
+    "lore": "IShowSpeed's visit to Brazil during his international tour, where he met fans, explored local culture, and streamed his experiences throughout the country."
+  },
+  {
+    "name": "Monk",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519265322417262676/Untitled_Project_32.jpg?ex=6a3ced97&is=6a3b9c17&hm=8e5ba87ffebc445358d555560e0530307068651bfcd8a904151704f8034a5a9d&=&format=webp",
+    "lore": "IShowSpeed's journey to China, where he trained with Shaolin monks, learning Kung Fu techniques, discipline, balance, and the philosophy behind traditional martial arts."
+  }
+],
+
+"lore": "IShowSpeed is one of the internet's most recognizable livestreamers, known for his unpredictable personality, explosive reactions, and passion for entertainment. Through his streams, travels, and challenges around the world, he has built a massive global audience and become a cultural phenomenon online."
+}

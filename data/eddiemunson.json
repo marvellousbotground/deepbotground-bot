@@ -19,7 +19,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506781917846966393/5c787a5b760d1a29c17b40ab6e885379.png?ex=6a0f8383&is=6a0e3203&hm=87e4cb749ccfb4c1dd6cd76c3f2058fb42d4b178497e0f12b99ea04d3a58a217&=&format=webp&quality=lossless&width=350&height=350",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518537005716475954/9979f7f0fa1cf81222815fa2005accf5.png?ex=6a3a474b&is=6a38f5cb&hm=9495d53c20d1218b272e1d929605103642749eff278be7ce5dc58ed5dba7d070&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -38,6 +38,7 @@
       "cooldown": "10s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -74,6 +75,7 @@
       "attributes": [
         "move",
         "mele",
+        "lin",
         "push"
       ]
     },
@@ -98,18 +100,35 @@
       "cooldown": "35.5s",
       "attributes": [
         "break",
+        "lin",
         "range",
         "area"
       ]
     }
   ],
 
-  "skins": [
-    "Shool",
-    "Bonding",
-    "Suspect",
-    "Dustin"
-  ],
+"skins": [
+  {
+    "name": "School",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518537006223724686/1a046ede92dbface56da2febecba53dc.png?ex=6a3a474b&is=6a38f5cb&hm=2c44210bc4b253f436af581c09bc9cde19226b78a985a489239afaa75a180b1b&=&format=webp&quality=lossless",
+    "lore": "Eddie Munson wears his Hellfire Club shirt and metalhead jacket during his introduction at Hawkins High, showing his role as the theatrical leader of the school’s Dungeons & Dragons club."
+  },
+  {
+    "name": "Bonding",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518537006685360218/3c699968a1d3830af7baa89cbebc2731.png?ex=6a3a474b&is=6a38f5cb&hm=40dc4a92cafce8e7f28c5322a032a49930ee3027291f404152326ac1438b20cf&=&format=webp&quality=lossless",
+    "lore": "Eddie meets Chrissy Cunningham in the woods, showing a calmer and kinder side of himself while she searches for help with the strange visions haunting her."
+  },
+  {
+    "name": "Suspect",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518537007066775713/a954c400dda7d23072345066145944f2.png?ex=6a3a474b&is=6a38f5cb&hm=205b1e884cb16c8c5dadbfdac48f696952fed0b46b88220311a9431127a2105e&=&format=webp&quality=lossless",
+    "lore": "Eddie uses a mask to hide his face while trying to avoid being recognized, reflecting the danger surrounding him as people begin to see him as a suspect."
+  },
+  {
+    "name": "Dustin",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518537007406518372/b627fad1645a5c451bb040a831dc9939.png?ex=6a3a474b&is=6a38f5cb&hm=3c85cc59acc46ac9becc744708af2ec0f23d5540465a0192ac567b03f629dcce&=&format=webp&quality=lossless",
+    "lore": "Dustin wears an improvised camouflage outfit while moving through the Upside Down, trying to stay hidden during the group’s dangerous mission against Vecna."
+  }
+],
 
   "lore": "Eddie Munson is a character from Stranger Things known for leading the Hellfire Club and his love for heavy metal music. Despite his rebellious appearance, he is loyal, courageous, and willing to risk everything to protect his friends from the dangers of the Upside Down."
 }

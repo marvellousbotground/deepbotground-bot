@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507940261001429072/Web_Photo_Editor_2.jpg?ex=6a13ba4e&is=6a1268ce&hm=72271944e8fe592027e91d68019fa0ba600a2e6063142900c19a94ca7b82da90&=&format=webp",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518467246559854642/Web_Photo_Editor_2.jpg?ex=6a3a0653&is=6a38b4d3&hm=49799a012494c39d361a137cda0fb3740a24bc53540c61d815fdfdd435154cda&=&format=webp",
 
   "stats": {
     "hp": 185,
@@ -50,6 +50,7 @@
       "cooldown": "18s",
       "attributes": [
         "block",
+        "lin",
         "move",
         "push"
       ]
@@ -109,20 +110,20 @@
   "skins": [
     {
       "name": "Crisis",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507941929051095202/Web_Photo_Editor_3.jpg?ex=6a13bbdc&is=6a126a5c&hm=b76dcac2e04938c2d77b656c36d664979ab15ca2cbd0efc2a8cdc4dc67fc1b58&=&format=webp",
-      "lore": "The Crisis skin is based on the Amazo android from the Arrowverse crossover events. This version of Amazo was created using advanced technology and was later connected to the return of a black-suited Superman during the multiverse crisis."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518467246224179211/Web_Photo_Editor_3.jpg?ex=6a3a0653&is=6a38b4d3&hm=0a823a5adc63aaf1b7dec84abc7f0dd38ef021f4af8fc184ab4fc17c671a2beb&=&format=webp",
+      "lore": "Amazo android from the Arrowverse crossover events. This version of Amazo was created using advanced technology and was later connected to the return of a black-suited Superman during the multiverse crisis."
     },
 
     {
       "name": "DCAU",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507942309952491641/Web_Photo_Editor_4.jpg?ex=6a13bc36&is=6a126ab6&hm=0977094cdd59fc8f52c59bfa0432ee800035d9286dd1dc06a8226620e6b54b25&=&format=webp",
-      "lore": "The DCAU skin is based on Amazo's appearance from the DC Animated Universe, where he evolved into one of the Justice League's most powerful enemies after copying countless superhero abilities."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518467245892833330/Web_Photo_Editor_4.jpg?ex=6a3a0653&is=6a38b4d3&hm=62c7bd8961fa97a7b0f159b84dced91be31364fdfb09f437d42b4890c523bf4c&=&format=webp",
+      "lore": "appearance from the DC Animated Universe, where he evolved into one of the Justice League's most powerful enemies after copying countless superhero abilities."
     },
 
     {
       "name": "DCAU Returned",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507942071976329338/32ee24090541746396bfe1bd75dc757e.png?ex=6a13bbfe&is=6a126a7e&hm=82ee7ac916b755eb9271977e43b7f171b4cbd88293325ac26ed33603530d7599&=&format=webp&quality=lossless",
-      "lore": "The DCAU Returned skin references Amazo's later appearance in the DC Animated Universe, featuring his iconic golden form after returning with even greater cosmic-level power."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518467247247462431/32ee24090541746396bfe1bd75dc757e.png?ex=6a3a0653&is=6a38b4d3&hm=23d1646744002648d2bc5669ce18d78df0552dd44c38858fd8d2b725f72298ca&=&format=webp&quality=lossless",
+      "lore": "Amazo's later appearance in the DC Animated Universe, featuring his iconic golden form after returning with even greater cosmic-level power."
     }
   ],
 

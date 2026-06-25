@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://cdn.discordapp.com/attachments/1506572642860273714/1506772250336956597/b2eb7502dbddc4f72765e24284a3f7e7.png?ex=6a0f7a82&is=6a0e2902&hm=8af9dae5f484045058fd653cc73603f3e5f4dd70f294ed08b7fbbc66d5f98fb3&",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529988117397671/d9d3ec6a84a867da81937be892935993.png?ex=6a3a40c2&is=6a38ef42&hm=c8503aceec0e2bbeba42d2bbad992f166a20bace049fc926ecbc7059aa3f5c94&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -40,7 +40,8 @@
       "cooldown": "11s",
       "attributes": [
         "block",
-        "mele"
+        "mele",
+        "bruta"
       ]
     },
 
@@ -51,6 +52,7 @@
       "cooldown": "21s",
       "attributes": [
         "break",
+        "lin",
         "mele",
         "move"
       ]
@@ -120,43 +122,43 @@
   "skins": [
     {
       "name": "Mouse Ears",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999815714476113/89b45e1ec228450a2244b2a378f02fbb.png?ex=6a15ec05&is=6a149a85&hm=245fda7918560ec8d42e817e9f825d97d6abb4b7d7c16416b0d5fc2b711d220a&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529988536569876/f0e8ee9d1117b8d0b7fc6815dbc3965f.png?ex=6a3a40c2&is=6a38ef42&hm=d2e0dfc186bede29e4addbde1c7393aa0770912267e94d11b8011f9dde84ed46&=&format=webp&quality=lossless",
       "lore": "Dexter Morgan wears the Mickey Mouse hat gifted to him by Rita's children shortly after Rita's death, showing one of the rare moments where he tries to reconnect with his fractured family life. DEXTER (T5 EP1)"
     },
 
     {
       "name": "Spatter Analyst",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816003747940/604adbe9b3b6c4426a088ddc5e7d46b1.png?ex=6a15ec05&is=6a149a85&hm=df1a2b6559eae758d7a9df7bc799f46082a19000f10025a783ce3e237924f823&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529992047198228/69a949f651ae27ed1fc63b0950122059.png?ex=6a3a40c3&is=6a38ef43&hm=6d95a081a672bda102bd053bf660b583508681fa718bb4517d1dfb60ba3863e9&=&format=webp&quality=lossless",
       "lore": "Dexter appears in the professional outfit he regularly uses while working as Miami Metro's blood spatter analyst throughout the original series."
     },
 
     {
       "name": "Dark Defender",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816301547570/Web_Photo_Editor_12.jpg?ex=6a15ec05&is=6a149a85&hm=d47d8ff61d62c2b29670f7c9e07525cc7640261c97e8bdc7dadbd56212b6dbb6&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529989031624714/Untitled_Project_9.jpg?ex=6a3a40c2&is=6a38ef42&hm=c2bd6138c0eefc62c20f7b1d95838ff329fbb8d578a14b399b31174c533d3aa4&=&format=webp",
       "lore": "The Dark Defender is a fictional comic book vigilante inspired by the Bay Harbor Butcher case after Dexter's murders become public knowledge. DEXTER (T2 EP5)"
     },
 
     {
       "name": "New Blood",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816624640061/Web_Photo_Editor_13.jpg?ex=6a15ec05&is=6a149a85&hm=cafb81059f3d6ce3c92a5056740e9901e8fd3eb582100faf570172e18a877990&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529989530615818/46a614e6d33a265f198487551ad90a70.png?ex=6a3a40c2&is=6a38ef42&hm=cb0278ba1413f4053d9b35d0c820ebebf3decdaa51cd8d2bed07416773e7701e&=&format=webp&quality=lossless",
       "lore": "After years in hiding, Dexter Morgan returns to killing while living under the identity of Jim Lindsay in Dexter: New Blood."
     },
 
     {
       "name": "Original Sin",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999816993476669/3b64bc0314de186be7479470354308ae.png?ex=6a15ec05&is=6a149a85&hm=c8df7c0008cd67849e5d1c723b0006da89502cf93b3811147aac99da8b9ff92f&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529990520602624/4322a8f944604220f925c709c4aa7f62.png?ex=6a3a40c2&is=6a38ef42&hm=e650794037db60304949fcdd26d17a4e4a0f70f75fa06f955898bd8d6e00b23c&=&format=webp&quality=lossless",
       "lore": "A younger Dexter Morgan during his early years learning forensic work and beginning his first murders under Harry's code. Dexter: Original Sin"
     },
 
     {
       "name": "Comic",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999817316434012/Web_Photo_Editor_14.jpg?ex=6a15ec05&is=6a149a85&hm=e1b371af871fdc4641c9688ec3f19f55edc4fa1a85be70091ee9de7bd6fd259b&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529991091159170/Untitled_Project_10.jpg?ex=6a3a40c2&is=6a38ef42&hm=2aa0d5c7fc34124360ea47aa32565e9bb75df48ba24ca9f5b44e59ac9088bc5e&=&format=webp",
       "lore": "Dexter Morgan's appearance from the Marvel comic adaptation of the Dexter universe."
     },
 
     {
       "name": "Red",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507999817627078736/Web_Photo_Editor_15.jpg?ex=6a15ec05&is=6a149a85&hm=a78f1649d3591685024f09ddc14d9320f73a341be7544b259704897b5e252d80&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518529991569313823/Web_Photo_Editor_15.jpg?ex=6a3a40c2&is=6a38ef42&hm=901181ee6c91e96e4a24dcbd598294d62604a46aa9753d17267d1ea2cbc68c6b&=&format=webp",
       "lore": "While in New York, Dexter adopts the identity of the vigilante Red after discovering that the name 'Dark Passenger' had already been taken."
     }
   ],

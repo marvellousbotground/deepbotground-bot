@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1507210199973498930/13jmieqvywyc1.png?ex=6a111262&is=6a0fc0e2&hm=c11ad18f6ae8eeaa32f2124b905a27f41e674f9a63c50821c2c1af4c8806743c&",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915600187916308/cf4c61c7820c2f90a9d12ca7ab3bc3bc.png?ex=6a3ba7e3&is=6a3a5663&hm=b371d9802a196e059ce3a58d12ebec71e47a8d172da1591210fcf62923e40c07&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -40,18 +40,19 @@
       "attributes": [
         "block",
         "mele",
-        "move",
-        "push"
+        "lin",
+        "move"
       ]
     },
 
     {
       "slot": "2",
-      "name": "Billie kick",
-      "damage": 8,
+      "name": "Pop Combo",
+      "damage": 16,
       "cooldown": "13s",
       "attributes": [
         "break",
+        "charge",
         "mele"
       ]
     },
@@ -70,13 +71,13 @@
 
     {
       "slot": "4",
-      "name": "Moonwalk",
-      "damage": 15,
-      "cooldown": "14s",
+      "name": "Moonwalk Mystique",
+      "damage": 25,
+      "cooldown": "16s",
       "attributes": [
-        "block",
+        "ignore",
         "move",
-        "grab",
+        "lin",
         "mele"
       ]
     },
@@ -96,42 +97,62 @@
 
     {
       "slot": "E",
-      "name": "Earth Healing",
-      "damage": 7,
-      "cooldown": "68s",
+      "name": "Beat It Ultimate",
+      "damage": 15,
+      "cooldown": "41s",
       "attributes": [
         "break",
         "area",
-        "heal"
+        "use",
+        "cine",
+        "grab",
+        "lin"
       ]
     }
   ],
 
-  "skins": [
-    {
-      "name": "Thriller",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231481586356377/091371673cd73deff809e8f4bfbc4429.png?ex=6a14c986&is=6a137806&hm=b1fd2a4ac7e012adb5b1446c77745b3d48b9588798a056ff06b2680e627085af&=&format=webp&quality=lossless",
-      "lore": "The Thriller skin references Michael Jackson's iconic zombie appearance from the legendary Thriller music video."
-    },
-
-    {
-      "name": "Bad",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231577572999219/9fa0ebda680627d6f64918bbb289034f.png?ex=6a14c99d&is=6a13781d&hm=ada916a143361e571ea4c5a558a7d0ca411b99cb5f6ac95772d0fc8afd7b3fdf&=&format=webp&quality=lossless",
-      "lore": "The Bad skin references Michael Jackson's appearance from the Bad album era, inspired by the cover and music video aesthetic."
-    },
-
-    {
-      "name": "Muzan",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231735660384387/186bcae5ddaccd623a84220ec0eef043.png?ex=6a14c9c3&is=6a137843&hm=c9dec3ab01e19be70daaa6941ac459b4d645a4674a7db93a6091c722d6ab6370&=&format=webp&quality=lossless",
-      "lore": "The Muzan skin references Muzan Kibutsuji from Demon Slayer, a character heavily inspired by Michael Jackson's appearance and style."
-    },
-
-    {
-      "name": "Captain EO",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508231980532367522/Web_Photo_Editor_26.jpg?ex=6a14c9fd&is=6a13787d&hm=77fd89390d24bc07ec0941ef9f57557b932633c066b90f776a29eea260a23d67&=&format=webp",
-      "lore": "The Captain EO skin references Michael Jackson's role in Captain EO, the science fiction musical film created for Disney theme parks."
-    }
-  ],
+"skins": [
+  {
+    "name": "Off The Wall",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915600565407824/614691a5c6bba536698249705121b382.png?ex=6a3ba7e3&is=6a3a5663&hm=f2e4da55b7dea1447ab980c548fc263ffca46906978df35f0088d281b56538a7&=&format=webp&quality=lossless",
+    "lore": "Inspired by the iconic cover of Off the Wall, Michael Jackson wears the tuxedo that accompanied the album that established him as a global solo superstar."
+  },
+  {
+    "name": "Motown 25",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915600884301965/fd06295aa29667b6a153cc531f2afba8.png?ex=6a3ba7e3&is=6a3a5663&hm=58c479a33c9ce7dfee39ade47801b265a5abe626dd89ea5f270b8fbf1e327897&=&format=webp&quality=lossless",
+    "lore": "Michael performs at Motown 25: Yesterday, Today, Forever, delivering the legendary performance that introduced the moonwalk to a worldwide audience."
+  },
+  {
+    "name": "Beat It",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915601215655966/e9e997a456d4b9f70b3ee20e5726296e.png?ex=6a3ba7e3&is=6a3a5663&hm=deb5285472a618a92af056852be6755a48b93c07282ad38baf59c9a2af415110&=&format=webp&quality=lossless",
+    "lore": "Jaafar Jackson's portrayal of Michael during the Beat It sequence, this outfit combines the red jacket with the piano shirt, merging elements that were separate in the original music video."
+  },
+  {
+    "name": "8 Grammys",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915601555521686/7f168338f8bbcbb99e71496bb906ba40.png?ex=6a3ba7e3&is=6a3a5663&hm=af05b6c2185aa5baf14c6c02a03d629d080b94adc2f140b0f6608953f53658f7&=&format=webp&quality=lossless",
+    "lore": "Michael celebrates one of the most successful nights in music history after winning eight Grammy Awards, a record-setting achievement that reflected the impact of Thriller."
+  },
+  {
+    "name": "Bad",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915601886744707/161f64a7466cd914ed0b8f64f925f0db.png?ex=6a3ba7e3&is=6a3a5663&hm=6fa5aedf8a756f75022d93723c7b929c2cf5d604153c0a5381be4c0701d083aa&=&format=webp&quality=lossless",
+    "lore": "Michael adopts the black leather outfit and confident style that defined one of the most recognizable eras of his career."
+  },
+  {
+    "name": "Walk of Fame",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915602268295219/Untitled_Project_16.jpg?ex=6a3ba7e3&is=6a3a5663&hm=0b7310c8fcc6b68d609a7da6c3e782df9068e97f26ab63a1d1c654c718bcb86b&=&format=webp",
+    "lore": "Michael attends the ceremony honoring his star on the Hollywood Walk of Fame, celebrating his lasting influence on music and popular culture."
+  },
+  {
+    "name": "Arcade",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915602562023454/5622e47a8e3daf4c021b9007a5baf49a.png?ex=6a3ba7e3&is=6a3a5663&hm=f3c618fd2f7da81ec2f4d4c6fe7b40c2905f21421ae4664b383527a6241bd466&=&format=webp&quality=lossless",
+    "lore": "While visiting Sega arcades, Michael wears a Sega jacket and spends time playing games, including titles from the Sonic franchise he greatly enjoyed."
+  },
+  {
+    "name": "Thriller",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518915602897571911/046aa2acd58a2f866d615bfce2b0a708.png?ex=6a3ba7e3&is=6a3a5663&hm=60f5ee0c6c41ea47966ab58ae08fdbe7ca1e2914a176f335bfad251e6dd72966&=&format=webp&quality=lossless",
+    "lore": "Michael wears the famous red jacket from the groundbreaking music video that became one of the most influential works in entertainment history."
+  }
+],
 
   "lore": "Michael Jackson was an iconic singer, dancer, and performer known worldwide as the King of Pop. Through legendary albums, groundbreaking music videos, and revolutionary dance moves such as the moonwalk, he became one of the most influential entertainers in music history."
 }

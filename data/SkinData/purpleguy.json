@@ -28,6 +28,7 @@
       "attributes": [
         "block",
         "move",
+        "lin",
         "mele"
       ]
     },

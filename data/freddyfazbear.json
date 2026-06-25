@@ -19,7 +19,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506875447080783993/370.png?ex=6a0fda9e&is=6a0e891e&hm=c743ef5878b47cfd03b3e91889e6c39f9c10aa782c3b32e3f249da23af3daaa5&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518677949036105858/32e67b4cd5ffd2caf3a9daaec6c6259c.png?ex=6a3aca8e&is=6a39790e&hm=7977e0efa8527660c8bd69707469c0c575f40ae7d07b180a017c52c5081ea379&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -93,15 +93,15 @@
   "skins": [
     {
       "name": "Foxy",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508008661467791390/e1d42c003b3b7e5831775f9eaaf8ca22.png?ex=6a13fa02&is=6a12a882&hm=7de278b3f49c932a47427d41abe1316ae1179efeb87720551fe8fa630613927f&=&format=webp&quality=lossless",
-      "lore": "The Foxy skin references Foxy the Pirate Fox from Five Nights at Freddy's, one of the original animatronics known for sprinting out of Pirate Cove and aggressively attacking the night guard.",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518677949434298378/2bb86c47a33c2777e36a1f84d20d304e.png?ex=6a3aca8e&is=6a39790e&hm=24a902fcfbd2cee60c2a1b8811485a904bf6ecd57a40f1cfb6e626cb2783ad05&=&format=webp&quality=lossless",
+      "lore": "Foxy the Pirate Fox from Five Nights at Freddy's, one of the original animatronics known for sprinting out of Pirate Cove and aggressively attacking the night guard.",
       "dataFile": "foxy.json"
     },
 
     {
       "name": "Chica",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508010383577972860/fe5db37581ebdaa4bca13ea633b2bf0d.png?ex=6a13fb9c&is=6a12aa1c&hm=2fdf41a0bbf045bb80a2c451c5c2c7713e31fccb223288d9007fcc668152aab6&=&format=webp&quality=lossless",
-      "lore": "The Chica skin references Toy Chica from Five Nights at Freddy's, the redesigned toy animatronic introduced in Five Nights at Freddy's 2."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518677949778235422/3b1be03569f60c7a9c2ccdea80f31bff.png?ex=6a3aca8e&is=6a39790e&hm=a7a2a046304bdcb2d894485d26747d3465ff6973149ba5d2fa02847251979680&=&format=webp&quality=lossless",
+      "lore": "Toy Chica from Five Nights at Freddy's, the redesigned toy animatronic introduced in Five Nights at Freddy's 2."
     }
   ],
 

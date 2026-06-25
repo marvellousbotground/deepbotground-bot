@@ -18,7 +18,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506867111669010513/1475272545-1475088497-index-eleven-stranger-things.png?ex=6a0fd2db&is=6a0e815b&hm=5a153aa08fbd6ac954e5a446cd6b3b54498353d157f71ad2700e37333266f6b9&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560125080703097/132c644017892077fdb3f27a47cf64a9.png?ex=6a3a5cd3&is=6a390b53&hm=232f8dfad7af220b464357a521f76ba93a984e94622178e8a87715bde8ce3c7a&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -99,21 +99,52 @@
       "attributes": [
         "break",
         "area",
+        "lin",
         "heal",
         "range"
       ]
     }
   ],
 
-  "skins": [
-    "Blonde",
-    "Bithing",
-    "The Mall",
-    "A New End",
-    "BlueBandana",
-    "The Rightside Up",
-    "Fantastic"
-  ],
+ "skins": [
+  {
+    "name": "Blonde",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560125449932830/a8dc985ebca7d25a14e411200155eb39.png?ex=6a3a5cd3&is=6a390b53&hm=5ea92c3cf62c6c07f565b63820ba91c2d2c017179390a8dcdbb0466f32417f77&=&format=webp&quality=lossless",
+    "lore": "Disguised with a blonde wig and borrowed clothes, Eleven tries to blend in with ordinary students while hiding from the Hawkins Lab agents searching for her."
+  },
+  {
+    "name": "Bitchin",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560125873553458/35ffeb624aa2b82d3b668ba921e70732.png?ex=6a3a5cd3&is=6a390b53&hm=04b979515109af68526d954e24544d95bde3a5f78bbb843766e65dd88484a164&=&format=webp&quality=lossless",
+    "lore": "While staying with Kali and her group in Chicago, Eleven adopts a darker look and begins exploring a more aggressive use of her powers before returning to Hawkins."
+  },
+  {
+    "name": "The Mall",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560126225748090/2cbf0976f9e089aaf8bf5697ba71d0e8.png?ex=6a3a5cd3&is=6a390b53&hm=22b51444e2fab890fcc91cfd9fada699bd339a148d6083e4632944b882fda1db&=&format=webp&quality=lossless",
+    "lore": "At Starcourt Mall, Eleven faces the Mind Flayer while suffering from a serious injury that weakens her powers during the final battle of the summer."
+  },
+  {
+    "name": "A New End",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560126594977883/a45b46c22b8ad68921e5ffba8299a7b1.png?ex=6a3a5cd3&is=6a390b53&hm=36ae423329e12f09adaf5194c9c97db6dc8f1017bd866c27de2d8756b336a78d&=&format=webp&quality=lossless",
+    "lore": "Eleven enters Max's mind to confront Vecna directly, risking everything to save her friend during the climactic battle of Season 4."
+  },
+  {
+    "name": "Blue Bandana",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560127299358741/31e4988e156e4c6c5c24ef0543546ae5.png?ex=6a3a5cd3&is=6a390b53&hm=9ab969904574e0ee1a9636fc2083fa1096d6ef77c39cb6940231279ee177a902&=&format=webp&quality=lossless",
+    "lore": "While evading government forces, Eleven wears a practical outfit with a blue bandana, reflecting her life on the run as danger closes in around her.",
+    "dataFile": "bluebandana"
+  },
+  {
+    "name": "The Rightside Up",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560127781965965/0b6ed5adc75a8a5278d9fb5b09fb357c.png?ex=6a3a5cd3&is=6a390b53&hm=ff48452323d06c5c1b33587a38623e6e77f08fc442a8ad5dc5ef8e80be662e44&=&format=webp&quality=lossless",
+    "lore": "Equipped with a sensory tank suit, Eleven enters the mental plane once again to locate and rescue Will from Vecna's final trap.",
+    "dataFile": "bluebandana"
+  },
+  {
+    "name": "Fantastic",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518560128394330312/fed9617b8d36bbbfd6c42a397152205f.png?ex=6a3a5cd4&is=6a390b54&hm=5e9d9c2d1a5549f3ab1210bd85263f7b561e957520b995b1fb0efe0908f3b8bd&=&format=webp&quality=lossless",
+    "lore": "Sue Storm from The Fantastic Four: First Steps, Eleven it's no more Eleven instead, now she's Marvel's invisible woman."
+  }
+],
 
   "lore": "Eleven is a powerful psychic from Stranger Things with telekinetic and telepathic abilities developed through secret experiments. Using her mind, she can manipulate objects, overpower enemies, and connect to the Upside Down, making her one of the strongest characters in the series."
 }

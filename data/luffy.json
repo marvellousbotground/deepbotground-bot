@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507186457926697081/8d3786f8fbd3e166c8c58e6c020ed06b.png?ex=6a10fc45&is=6a0faac5&hm=0210280f082884a00039413ae5896f65baf5643ab9747d1fc7c0636374c02021&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518810932162072647/4fbd30201ba5e2233a37e962358413c8.png?ex=6a3b4668&is=6a39f4e8&hm=dda8f86c7b3b6231cb7dbeddce0ea2226b127be764ddba5bcfdc829c29f6380d&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -53,6 +53,7 @@
       "attributes": [
         "block",
         "mele",
+        "lin",
         "grab"
       ]
     },
@@ -106,13 +107,33 @@
     }
   ],
 
-  "skins": [
-    "Hawaii",
-    "White and Red",
-    "Cooking",
-    "Little Garden",
-    "Waistband"
-  ],
+"skins": [
+  {
+    "name": "Hawaii",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518810932501807206/693ae3f1e9083b3af751db0bf80c7e26.png?ex=6a3b4668&is=6a39f4e8&hm=ca117f4a51ed30bf86c23d372540f59945a28906aba37f479c2b843b7e9809f3&=&format=webp&quality=lossless",
+    "lore": "While searching for a ship and a crew, Luffy arrives at Syrup Village, where he meets Usopp and helps defend the island from Captain Kuro's plans."
+  },
+  {
+    "name": "White And Red",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518810932808122418/360b386406fba1e43db97f1195653321.png?ex=6a3b4668&is=6a39f4e8&hm=58187a6c60fd0d347a3726f9f9f338caf6d5c631d9dd54ed341b10743ca17cba&=&format=webp&quality=lossless",
+    "lore": "After obtaining the map to the Grand Line, Luffy wears a white and red outfit before being captured by Buggy the Clown and drawn into his traveling circus."
+  },
+  {
+    "name": "Cookin",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518810933130957031/47c8e7ec9e267a525c19712de103905d.png?ex=6a3b4668&is=6a39f4e8&hm=c7a103ce2f73a39bd82b91ff99e264909b40e295b848321f31f0d7ed8d9e7e14&=&format=webp&quality=lossless",
+    "lore": "At the floating restaurant Baratie, Luffy encounters powerful pirates, witnesses Mihawk's duel with Zoro, and recruits Sanji to join the Straw Hat crew."
+  },
+  {
+    "name": "Little Garden",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518810933386805338/8c740f744f5473d99cb686a648109f54.png?ex=6a3b4668&is=6a39f4e8&hm=ddd528c35134853efa9a1bde1de172baf955ab620f2a121705ef33d112e03f08&=&format=webp&quality=lossless",
+    "lore": "The Straw Hats arrive at Little Garden, a prehistoric island filled with dinosaurs and giant warriors, where they become caught in the conflict between Dorry and Brogy."
+  },
+  {
+    "name": "Waistman",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518810933751840778/86b9f172ffe96369a2c8f381d6f33f7e.png?ex=6a3b4668&is=6a39f4e8&hm=65bd5891500f88751c5efcb9543d1fbc1279cf3d49aafbebb86a8fbc39cbedaf&=&format=webp&quality=lossless",
+    "lore": "Inspired by Patrick Star from SpongeBob SquarePants, this appearance references 'The Elastic Waistband!' and Patrick's unforgettable superhero-like look."
+  }
+],
 
   "lore": "Monkey D. Luffy is the captain of the Straw Hat Pirates and the main protagonist of One Piece. After eating the Gum-Gum Fruit, his body gained rubber-like properties, allowing him to develop creative and powerful fighting techniques while pursuing his dream of becoming the King of the Pirates."
 }

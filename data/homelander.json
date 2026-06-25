@@ -19,7 +19,7 @@
     ]
   },
 
-  "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1507071442859069512/1bde967828e48dcb15e1fc278b37cc5a.png?ex=6a109128&is=6a0f3fa8&hm=046889b775b019a29dcf0ec07bbc07406a54963a664865d15e0e9ee7e9543192&",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518713351331381248/03d952bce7d2d1959a6740a22e13060d.png?ex=6a3aeb87&is=6a399a07&hm=cac2d0e1e5cc8e25b1d6ab4af22b7564a0d4953c567b67c6103703ac98739f13&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -73,6 +73,7 @@
       "attributes": [
         "ignore",
         "move",
+        "lin",
         "mele",
         "push"
       ]
@@ -97,6 +98,7 @@
       "damage": 0,
       "cooldown": "84s",
       "attributes": [
+        "cine",
         "heal"
       ]
     }
@@ -105,20 +107,26 @@
   "skins": [
     {
       "name": "Disguise",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190220317884567/0942586fa7ad5f514be01651de94dab5.png?ex=6a14a319&is=6a135199&hm=60c8ffa834448b7995582d86f78aff05f7ae25aa726a3ff5343944b52a414942&=&format=webp&quality=lossless",
-      "lore": "The Disguise skin represents Homelander wearing civilian clothing while secretly visiting Sister Sage to ask for advice before recruiting her into The Seven."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518713351604146248/0942586fa7ad5f514be01651de94dab5.png?ex=6a3aeb87&is=6a399a07&hm=756a8db744dacac4053c28bce18b9df53400499f31fc2a4c61e191b4877ce8d2&=&format=webp&quality=lossless",
+      "lore": "Homelander wearing civilian clothing while secretly visiting Sister Sage to ask for advice before recruiting her into The Seven."
     },
 
     {
       "name": "Turkish",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190439780651058/Web_Photo_Editor_20.jpg?ex=6a14a34d&is=6a1351cd&hm=2f58b5be542e30e3831db1c93ddff26795a4059d88c7afc45f1c71cd683caa59&=&format=webp",
-      "lore": "The Turkish skin references a meme version of Homelander wearing a Turkish-inspired outfit that became popular online."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518713351968919583/Web_Photo_Editor_20.jpg?ex=6a3aeb87&is=6a399a07&hm=a25b6d0676ad7bc5f7c60aaf48f7a71e1153ef520f3e09d02556a44f9f60edcb&=&format=webp",
+      "lore": "A mmeme version of Homelander wearing a Turkish-inspired outfit that became popular online."
     },
 
     {
       "name": "Brightburn",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508190676855296192/ed96f75538819380496adbf43842a825.png?ex=6a14a386&is=6a135206&hm=7236b0f28e47963c8d4195940a7c6597e2392a8a5fa7233c61bc3bf87055b21e&=&format=webp&quality=lossless&width=350&height=350",
-      "lore": "The Brightburn skin references the main character from the movie Brightburn, a dark and violent reinterpretation of the Superman concept."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518713352258322706/ed96f75538819380496adbf43842a825.png?ex=6a3aeb87&is=6a399a07&hm=ad45e1a8546058f68b71f2e89ec42e8e15c0794159ee6220dddaa5ae57f54338&=&format=webp&quality=lossless",
+      "lore": "The main character from the movie Brightburn, a dark and violent reinterpretation of the Superman concept."
+    },
+
+    {
+      "name": "Clone",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518713352514310396/56d1ee28d24ab3439c323a8b190fa517.png?ex=6a3aeb87&is=6a399a07&hm=095e155a1c0fc37a9e8ece679ffce83fb73e46324f67dcad5f8881bb07a36caf&=&format=webp&quality=lossless",
+      "lore": "Homelander Clone was a secret duplicate created by Vought and disguised as Black Noir. Designed as a safeguard against Homelander, he secretly carried out horrific acts while the original remained unaware of his existence."
     }
   ],
 

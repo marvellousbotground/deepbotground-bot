@@ -19,7 +19,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506613700696739940/afe3b31689268ce52293d4907ed40ca1.png?ex=6a0ee6d9&is=6a0d9559&hm=eb20cf5c435e7d17b6f90f97d81c581f5d83d20a17e954ddced9ba42dd2864a5&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518470110099275817/16280ef829ace75958a53e5831a3249d.png?ex=6a3a08fe&is=6a38b77e&hm=66817ff375ad6ee4292cf3f8dbc8fc3f7bc26ff7cf674d8fdb51d71fc078b4e4&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -111,7 +111,7 @@
       "cooldown": "15.5s",
       "attributes": [
         "break",
-        "grab",
+        "pull",
         "range",
         "area"
       ]
@@ -121,32 +121,32 @@
   "skins": [
     {
       "name": "Robed",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943634962616330/87c526946371722da5f06ba08348258a.png?ex=6a13bd72&is=6a126bf2&hm=c63f2458af134ddf3e53bba892a275075cc73f9cea58db9dd2a8f58e5cb12be9&=&format=webp&quality=lossless",
-      "lore": "The Robed skin represents Anakin Skywalker wearing a dark hooded robe during his fall to the dark side, likely around the events after betraying the Jedi Order and confronting Mace Windu."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518470110476505118/87c526946371722da5f06ba08348258a.png?ex=6a3a08fe&is=6a38b77e&hm=91a71667bb0135401d7535865c47559430098c171a1d047d361f2cb8e56969f7&=&format=webp&quality=lossless",
+      "lore": "Anakin Skywalker wearing a dark hooded robe during his fall to the dark side, likely around the events after betraying the Jedi Order and confronting Mace Windu."
     },
 
     {
       "name": "Episode II",
       "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943830954180678/d08f4a28b2050c1ddf712d2c8a4acaa3.png?ex=6a13bda1&is=6a126c21&hm=7bbf8cda32b078c494a5a6cf3aa9ed85848fe4ff7101854e579d0bf5dba5f703&=&format=webp&quality=lossless",
-      "lore": "The Episode II skin is based on Anakin Skywalker as a Padawan during Attack of the Clones, where he wielded a green lightsaber and trained under Obi-Wan Kenobi."
+      "lore": "Anakin Skywalker (Padawan) during Attack of the Clones, where he wielded a green lightsaber and trained under Obi-Wan Kenobi."
     },
 
     {
       "name": "Bananakin",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507943931646840932/da42cf55f656437dd65644fc2af95fc1.png?ex=6a13bdb9&is=6a126c39&hm=e0c2c8e10af08bc8b81c2e017e81d6b97b3f34414b4a8a74f71c15a52487e100&=&format=webp&quality=lossless",
-      "lore": "The Bananakin skin is a joke variant featuring Anakin Skywalker wearing a banana costume while still keeping his Jedi abilities."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518470110959112312/e3da13e4ed2303ab6bc0c90c8f191a89.png?ex=6a3a08fe&is=6a38b77e&hm=2f1135d44a91a223477b4ea7e01e980e15b9ff3b5e6463b003ab7375358083c6&=&format=webp&quality=lossless",
+      "lore": "joke variant featuring Anakin Skywalker wearing a banana costume while still keeping his Jedi abilities."
     },
 
     {
       "name": "Bird",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507944885779566732/c03b909d55070eed509bdacc458c9266.png?ex=6a13be9d&is=6a126d1d&hm=53e3e30c7f6a4a59b17ef1da654b16da63c7db3271680e31e39823976b11ed96&=&format=webp&quality=lossless",
-      "lore": "Its Red the main character from the Angry Birds franchise. Known for his bad temper and leadership."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518470111739121664/b2459f3aecfa12d8fffaafcdcec7ecfe.png?ex=6a3a08fe&is=6a38b77e&hm=304e266425cf2fc65a9657c72da942e0f97bf1356d19b6447d8076ebea7e8e0a&=&format=webp&quality=lossless",
+      "lore": "SUper Red the main character from the Angry Birds Space. Known for his bad temper and leadership."
     },
 
     {
       "name": "Kenobi",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507944216498798612/e7af50444469dc90681b3e3d29b393fd.png?ex=6a13bdfd&is=6a126c7d&hm=b6ff18c9a1cbe10dc87f9aaf43170b71147473fbf09fb73dc36710a9a45a5058&=&format=webp&quality=lossless",
-      "lore": "The Kenobi skin represents Obi-Wan Kenobi from Revenge of the Sith, Anakin's former Jedi Master and the opponent who defeated him on Mustafar."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518470112221593792/e7af50444469dc90681b3e3d29b393fd.png?ex=6a3a08fe&is=6a38b77e&hm=c2f7400d3edf1bed1a1171242fbac9be284fef2b2e711693c286daf343d3b0ff&=&format=webp&quality=lossless",
+      "lore": "Obi-Wan Kenobi from Revenge of the Sith, Anakin's former Jedi Master and the opponent who defeated him on Mustafar."
     }
   ],
 

@@ -18,7 +18,7 @@
 
   "universe": "FNAF",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507540250656899184/06fa0934d75ccbe688632b2602a3abe0.png?ex=6a1245c4&is=6a10f444&hm=2b0745288e69e54d65a89898997878ff909687bff143c009d47ccc0e6578a55b&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925449936502975/4ba101b9bebde52a3c8f53421906cd81.png?ex=6a3bb10f&is=6a3a5f8f&hm=14cda5c92cb84b092a85e1c39aee13ba885af7f25b8427a6f3b7b8cee2a36493&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -74,6 +74,7 @@
       "attributes": [
         "block",
         "area",
+        "lin",
         "range"
       ]
     },
@@ -106,38 +107,38 @@
   "skins": [
     {
       "name": "Yellow Rabbit",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508358754729463868/adf85943f069d2773c24ffffeb3b35af.png?ex=6a15400f&is=6a13ee8f&hm=5001b60a06dffe9ecfe4dd6bbb8f078f0deb7c51163c2084a93a95d0d79b7098&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925450624241844/51956dee1501d79c09ccd6e596f316de.png?ex=6a3bb10f&is=6a3a5f8f&hm=a4d26309e6be3454323f1ad62b6e91b146f855894138b7c6101c79423eb959db&=&format=webp&quality=lossless",
       "lore": "William Afton wears the cleaner and less damaged Spring Bonnie suit seen during flashbacks throughout the Five Nights at Freddy's movie timeline."
     },
 
     {
       "name": "Unmasked",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508358797083672637/64678c0d37bad02bbe3f8aea7f830392.png?ex=6a154019&is=6a13ee99&hm=113504ab544f5a230c08a5653f56d3167a099e38e7ef68afbf80c51dcbac3b60&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925450930290858/64678c0d37bad02bbe3f8aea7f830392.png?ex=6a3bb10f&is=6a3a5f8f&hm=a77d37b2fcc6ec39444c6e70a3c07d6a3b89622fbb892c9b4ae0e22cbe9cf729&=&format=webp&quality=lossless",
       "lore": "After the final battle of the Five Nights at Freddy's movie, the damaged Spring Bonnie suit reveals William Afton beneath the mask while he suffers inside the springlock costume."
     },
 
     {
       "name": "The Media",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508359974701760684/Web_Photo_Editor_45.jpg?ex=6a154131&is=6a13efb1&hm=dad7d4b53ab32f155a843a83767874197867a3dca8bb9d48c8a6c5cb83f20a3c&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925451282616490/Untitled_Project_17.jpg?ex=6a3bb10f&is=6a3a5f8f&hm=68a52a376f064c3d7b992f1b415b0c7389503a3d3a113d7bf950b7670f3a55ea&=&format=webp",
       "lore": "Originally used as Movietrap's old design in Marvellous Playground before becoming its own character, this version later returned as a Movietrap skin featuring the viral voice line: 'It's perfect, first I rizz your brother, now I rizz you.'"
     },
 
     {
       "name": "Arcade",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508360241358573578/1719d2289b2f58ba81e63b3ee4482f0a.png?ex=6a154171&is=6a13eff1&hm=843cd4281c9f110b2294e061cd87d5ad09b54d7146e9e92f5c42b35c59869411&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925451626545203/d6fe7b683bd436baff469d29a45bc892.png?ex=6a3bb10f&is=6a3a5f8f&hm=635abc638b80d6669296b1484639b32c6751ca2f6a6363bc9fa9bf9599f8360a&=&format=webp&quality=lossless",
       "lore": "A pixelated version inspired by Spring Bonnie's appearance in the retro 8-bit minigames from Five Nights at Freddy's 3."
     },
 
     {
       "name": "The Rabbit",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508360333914407024/3f8b2ffc9e38b963db54b0c923fe6f0e.png?ex=6a154187&is=6a13f007&hm=b14923984ebd38973a6d2a07d55996852febd1056657dc7d4b0fc67fc67898c2&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925452008231113/018e8726f470a0e61207b696466a3da7.png?ex=6a3bb110&is=6a3a5f90&hm=0f585d6293e60f8afff6037d0e5636b839829fd0022ae384fa9e6df85d3f0e62&=&format=webp&quality=lossless",
       "lore": "Bonnie from the Five Nights at Freddy's movie appears wearing the large blue animatronic rabbit suit seen throughout Freddy Fazbear's Pizza.",
       "dataFile": "rabbit.json"
     },
 
     {
       "name": "Raglan",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508360403439194244/8096b2ede4235fc1fdf374c469790340.png?ex=6a154198&is=6a13f018&hm=23ef0e66230d47179d31159f09aa39d0e91cc148393674a0b8fbdfd78aababdc&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518925452411015258/f163633bdff3cf99a202b87762a986f5.png?ex=6a3bb110&is=6a3a5f90&hm=10e2f1eca3074d1b81ac960b0fefc5918503554e2f9fd744728035d3a0be5612&=&format=webp&quality=lossless",
       "lore": "Before revealing himself as William Afton, he hides under the fake identity of Steve Raglan while manipulating Mike throughout the Five Nights at Freddy's movie."
     }
   ],

@@ -19,7 +19,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507172297885224970/df1f103bd8a0c7e8fdcda7c38e856fd5.png?ex=6a10ef15&is=6a0f9d95&hm=ef637b445448929950aa7cea356bce222dba24426cb82e9b39c9389baef23321&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518739078865096805/350d028251133904536792ff4d5b76a0.png?ex=6a3b037d&is=6a39b1fd&hm=8c197c0d5fa39ee67f86a1c23254e85620a59cf766276fda4ce8b203a1e6943b&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -100,18 +100,39 @@
       "damage": 0,
       "cooldown": "33s",
       "attributes": [
-        "heal"
+        "heal",
+        "cine"
       ]
     }
   ],
 
-  "skins": [
-    "Final",
-    "V Sweater",
-    "Snowy Day",
-    "Mikami",
-    "Misa"
-  ],
+"skins": [
+  {
+    "name": "Final",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518739175288078417/c32bdae11263276064c50f01df87a06a.png?ex=6a3b0394&is=6a39b214&hm=8213d018ee297f545bce6fb336f16a2c9f6c7a22f195906bb2f44ee1dddfe5ac&=&format=webp&quality=lossless&width=350&height=350",
+    "lore": "Near the end of the Kira investigation, Light Yagami adopts a more formal appearance while continuing his efforts to maintain control and protect his identity as Kira."
+  },
+  {
+    "name": "V Sweater",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518739079292784780/b7d88de0c289e41ea8b539546b68653d.png?ex=6a3b037d&is=6a39b1fd&hm=c356357306700694ef68634b3fcac03ad389ad69196afc3ca6004fd94bd76517&=&format=webp&quality=lossless",
+    "lore": "Light wears a simple black V-neck sweater during several moments of the investigation, reflecting the calm and composed image he presents to those around him."
+  },
+  {
+    "name": "Snowy Day",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518739079733317722/d864b138d06719110ade3951e3082c49.png?ex=6a3b037d&is=6a39b1fd&hm=ae74b78a6000e2b0efd6e9567cb4f6a16b4bf86549e740407e7050fb4ab0d480&=&format=webp&quality=lossless",
+    "lore": "Light encounters Naomi Misora during a snowy day in Tokyo and carefully manipulates the conversation, leading to one of the most pivotal moments in the Kira case."
+  },
+  {
+    "name": "Mikami",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518739080119062649/7ce3414afdcfd036bf492f7f0cde7524.png?ex=6a3b037d&is=6a39b1fd&hm=a75513474da2ff4979fb3c9a7dcd4230ae2c00dc7cd87344cde93cf38c8bf035&=&format=webp&quality=lossless",
+    "lore": "Teru Mikami becomes Kira's most devoted follower, carrying out Light's judgment with unwavering loyalty and a strict belief in absolute justice."
+  },
+  {
+    "name": "Misa",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518739080605597816/0768b8b98041169e7bbe1818c6401548.png?ex=6a3b037d&is=6a39b1fd&hm=97db2cf7e8b51ef83b6799ef0d87fd2e074b26247ca447d75083f9984dc9f77d&=&format=webp&quality=lossless",
+    "lore": "Misa Amane, the Second Kira, supports Light with her Shinigami Eyes and deep devotion, becoming one of his closest allies throughout the investigation."
+  }
+],
 
   "lore": "Light Yagami is the main protagonist of Death Note. After discovering a supernatural notebook capable of killing anyone whose name is written inside it, he adopts the identity of Kira and begins a ruthless mission to create what he believes to be a perfect new world."
 }

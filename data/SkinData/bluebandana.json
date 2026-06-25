@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": false,
+    "canHeal": true
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Psychic Fracture",
+      "damage": 15,
+      "cooldown": "10.5s",
+      "attributes": [
+        "block",
+        "range",
+        "bruta"
+      ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Telekinetic Launch",
+      "damage": 6,
+      "cooldown": "13s",
+      "attributes": [
+        "ignore",
+        "lrp"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Mind-Slam Counter",
+      "damage": 15,
+      "cooldown": "14s",
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Upside Leap",
+      "damage": 12,
+      "cooldown": "13s",
+      "attributes": [
+        "break",
+        "ex",
+        "move",
+        "area",
+        "push"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Disintegration Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Enter the Void",
+      "damage": 0,
+      "cooldown": "38s",
+      "attributes": [
+        "break",
+        "area",
+        "lin",
+        "heal",
+        "range"
+      ]
+    }
+  ],
+
+  "techs": []
+}

@@ -15,7 +15,7 @@
 
   "universe": "FNAF",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507542718132519042/755.png?ex=6a124810&is=6a10f690&hm=5ed238f597c5990212dcc6839bdcdb3b640f15d99d8703bac72c66655aaa3e1a&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519081085986803865/ec4e7c596fceb92de2d40cc97799aac4.png?ex=6a3c4202&is=6a3af082&hm=a6fbb509e8bfdba67e6da5a329a2daf7b5fdde017f1a27d5c32a2b5cc7d19da6&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -47,6 +47,7 @@
       "cooldown": "15s",
       "attributes": [
         "block",
+        "lin",
         "mele"
       ]
     },
@@ -133,25 +134,25 @@
   "skins": [
     {
       "name": "Scraptrap",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363906438135848/f2a04e41bb75a26cd1885fcdf586da9d.png?ex=6a1544db&is=6a13f35b&hm=f23980eb0094c827f17c7e5158721f0120ea4f0455ae35eb08f8e07d3c416a49&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519081086259429467/f2a04e41bb75a26cd1885fcdf586da9d.png?ex=6a3c4202&is=6a3af082&hm=6201753946fceb8b9a197426facb7a2abb50a4e9b1a0a046b6aa83df23525f9f&=&format=webp&quality=lossless",
       "lore": "After surviving the fire, William Afton returns in a far more damaged and decayed form as Scraptrap during the events of Freddy Fazbear's Pizzeria Simulator."
     },
 
     {
       "name": "Plushtrap",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363984758374451/4e8d9554d3e0b8d3357f8b2e3f9fbc8c.png?ex=6a1544ee&is=6a13f36e&hm=e6a060ba17c046720629febe3dd28d0a0818e2ab232a32e1ccfcf5ef06b8c371&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519081086620274758/4e8d9554d3e0b8d3357f8b2e3f9fbc8c.png?ex=6a3c4202&is=6a3af082&hm=b1a813d9cc1b149b9bd70d2c81a70d6fd785d1c994a4176fd44b84402dacc1bf&=&format=webp&quality=lossless",
       "lore": "A small nightmare version of Spring Bonnie that appears in Five Nights at Freddy's 4, stalking dark hallways during the terrifying bedroom minigame sequences."
     },
 
     {
       "name": "Clowntrap",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508364178849792060/Web_Photo_Editor_46.jpg?ex=6a15451c&is=6a13f39c&hm=7e94dce65b6904d2af1aa65379cba2700328797ea01a03d55d839286264a57d4&=&format=webp&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519081086926196826/Web_Photo_Editor_46.jpg?ex=6a3c4202&is=6a3af082&hm=568025391fafdbf0862934dd82ef5abe2e76141d4bbf5dc609d6ff04b99219f3&=&format=webp",
       "lore": "A colorful circus-themed Springtrap variant released for Five Nights at Freddy's AR: Special Delivery before the game's servers were shut down."
     },
 
     {
       "name": "Purple Guy",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508363781489561771/8698b9240fcc2c4b0bf49b49093e3774.png?ex=6a1544bd&is=6a13f33d&hm=424648b91efb7f0d903cd0fa8df0457d6efc127b1aa4c122fd4ffe3ad8c4385f&=&format=webp&quality=lossless&width=272&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519081087249285252/935147b75e394774e326af9a295f1ad2.png?ex=6a3c4202&is=6a3af082&hm=d50f586760a49f534d7f55304c5f0a1d8d11aded7090dcb5dc485ce7fc4c41c3&=&format=webp&quality=lossless",
       "lore": "William Afton appears in his classic purple 8-bit minigame form from Five Nights at Freddy's 2, representing the mysterious serial killer hidden behind the tragedies of Freddy Fazbear's Pizza.",
       "dataFile": "purpleguy.json"
     }

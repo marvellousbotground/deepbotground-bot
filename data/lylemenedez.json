@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507205727889129713/a302a47118e6ce9c1f19b0bd7e247f8f.png?ex=6a110e38&is=6a0fbcb8&hm=e621c456056a9c4e6739466080183bbc0f7caf811488160b2b56753d97e9cdd8&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903431169966150/4adcddbe44f1da5c47df837bdfa77744.png?ex=6a3b9c8d&is=6a3a4b0d&hm=510e400d9889ac21a05df24075479e3d66e12105215e6d5f63bc85d1a36e4980&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -53,6 +53,7 @@
       "attributes": [
         "break",
         "push",
+        "lin",
         "move"
       ]
     },
@@ -65,6 +66,7 @@
       "attributes": [
        "ignore",
         "area",
+        "lin",
         "coun",
         "mele"
       ]
@@ -77,6 +79,7 @@
       "cooldown": "17s",
       "attributes": [
         "block",
+        "lin",
         "range",
         "bruta"
       ]
@@ -106,16 +109,50 @@
     }
   ],
 
-  "skins": [
-    "Shooting Range",
-    "Halloween",
-    "Prison",
-    "Erik",
-    "Felix",
-    "Ice Ice",
-    "Mafia",
-    "Red Tie"
-  ],
+"skins": [
+  {
+    "name": "Shooting Range",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903431601852467/96706f150bc9490b93424afc29fc9277.png?ex=6a3b9c8d&is=6a3a4b0d&hm=911adc6d0446fd420025faee97ad304d76813646e7fd4773820f4d9a38494e56&=&format=webp&quality=lossless",
+    "lore": "While telling their story to the defense attorneys, Lyle recalls the trip where he and Erik purchased shotguns and visited a shooting range to practice before the murders."
+  },
+  {
+    "name": "Halloween",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903432109494373/f0f1b71031695c7e788aa715a79b6b4e.png?ex=6a3b9c8e&is=6a3a4b0e&hm=c4e2d09bdcfef91bb71d0abffb44692fb902d07e83482042043024c5f28e01ec&=&format=webp&quality=lossless",
+    "lore": "After visiting Erik's psychologist, Lyle reminds his brother how much he loves Halloween. Later, he is seen handing out candy while dressed for the occasion."
+  },
+  {
+    "name": "Prison",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903432881115206/f57c764c26292c33b82e383c5f02f94c.png?ex=6a3b9c8e&is=6a3a4b0e&hm=92576deae933225c9b65b2bc5d81d410c5ca319dec18c1e1eca206e8d10aca70&=&format=webp&quality=lossless",
+    "lore": "Lyle wears the standard blue prison uniform after being sentenced, adapting to life behind bars while his case continues to attract public attention."
+  },
+  {
+    "name": "Erik",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903433350873118/7da3ce3ca147e5437b7eccb6c99d558d.png?ex=6a3b9c8e&is=6a3a4b0e&hm=ce1bb0c257b100d8cdc9fa8ca0d2153a9ac4c9999fc0397e3f46d8efe477e3f6&=&format=webp&quality=lossless",
+    "lore": "Inspired by Erik Menendez Lyle's younger brother",
+    "dataFile": "erik"
+  },
+  {
+    "name": "Felix",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903434512695427/0283dafdbc158bdede61726a5267b264.png?ex=6a3b9c8e&is=6a3a4b0e&hm=d961b4d9ae3c4e80c3eb5f47f8dc5df2c2f402d436ab3e3eb7eccec6ece3af7c&=&format=webp&quality=lossless",
+    "lore": "Inspired by Felix Catton from Saltburn, this appearance recreates the style of the wealthy and charismatic Oxford student."
+  },
+  {
+    "name": "Ice Ice",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903433707393054/8767090f243ce00e7a5fae09283127ac.png?ex=6a3b9c8e&is=6a3a4b0e&hm=f59c3ccd45332ce8a78883202e17629528e6ada0fcb84c0d24941c878bdd2077&=&format=webp&quality=lossless",
+    "lore": "While staying at the Hotel Bel-Air after the murders, Lyle relaxes in a bathrobe, sunglasses, and little else, enjoying luxury as suspicion begins to grow around the brothers."
+  },
+  {
+    "name": "Mafia",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903434097725530/ad3fbe06815804803d1a07a4e7e5ab00.png?ex=6a3b9c8e&is=6a3a4b0e&hm=6a2b6114040593e5b25ba52fad5a11d02cf625f32dc509723ba20453359f7d25&=&format=webp&quality=lossless",
+    "lore": "At his parents' funeral, Lyle wears a black suit, black tie, and sunglasses. The intense media attention leads reporters to speculate about possible mafia involvement in the murders."
+  },
+  {
+    "name": "Red Tie",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518903434898575400/Untitled_Project_15.jpg?ex=6a3b9c8e&is=6a3a4b0e&hm=7953ec62a2111a19c55a2e1a1cf6f3d735a4b8dacc348361ddc865d187d5d01a&=&format=webp",
+    "lore": "At the same funeral, Erik wears a dark suit with a distinctive red tie as journalists question the brothers and public suspicion continues to rise.",
+    "dataFile": "erik"
+  }
+],
 
   "lore": "Lyle Menendez is one of the Menendez brothers involved in the infamous real-life murder case of their parents in 1989. The case became one of the most publicized criminal trials in the United States, later inspiring documentaries, television adaptations, and widespread media attention."
 }

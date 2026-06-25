@@ -15,7 +15,7 @@
 
   "universe": "Halloween",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507493625356095681/michael-myers-pfp-19.png?ex=6a121a58&is=6a10c8d8&hm=f0ea7c79f11899d8daad7c34c334f1ce4c548e51122584b640d3b121fa2b96cf&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907161902579732/362bec7a53787bc55f337843a35a67b7.png?ex=6a3ba007&is=6a3a4e87&hm=884d6648c05cfc539f941ca7dc90aced6a1210ec059dc0aaae6b52c2a0f09098&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -45,6 +45,7 @@
       "cooldown": "12s",
       "attributes": [
         "block",
+        "lin",
         "grab",
         "mele"
       ]
@@ -58,6 +59,7 @@
       "attributes": [
         "break",
         "cine",
+        "lin",
         "coun",
         "mele"
       ]
@@ -102,38 +104,38 @@
   "skins": [
     {
       "name": "H4",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508251367460962524/Web_Photo_Editor_29.jpg?ex=6a14dc0b&is=6a138a8b&hm=18ae561df758b85604445263f5d12de65b7b1c39933decbc3087e2cda41b5669&=&format=webp",
-      "lore": "The H4 skin references Michael Myers from Halloween 4, known for the film's iconic low-quality and unusual mask design."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907162380861440/Web_Photo_Editor_29.jpg?ex=6a3ba007&is=6a3a4e87&hm=6d07a61d1558f96eaadf1fc7a11af169023961272689eca1b0cfe2a5ffed8792&=&format=webp",
+      "lore": "Michael Myers from Halloween 4, known for the film's iconic low-quality and unusual mask design."
     },
 
     {
       "name": "2018",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508251765714452530/Web_Photo_Editor_30.jpg?ex=6a14dc6a&is=6a138aea&hm=df604a5b5e6f2495ef6936208c29371cda88d74d579619bf242431d8d3392ec7&=&format=webp",
-      "lore": "The 2018 skin references Michael Myers' appearance from the modern Halloween timeline beginning with the 2018 film."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907162951422023/Web_Photo_Editor_30.jpg?ex=6a3ba007&is=6a3a4e87&hm=f2fd529fdef0608d15fafd61d0a6a705cc870a422b0e6885ee1d4e90a1aed6cd&=&format=webp",
+      "lore": "Michael Myers' appearance from the modern Halloween timeline beginning with the 2018 film."
     },
 
     {
       "name": "DBD",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508252062654402650/Web_Photo_Editor_31.jpg?ex=6a14dcb1&is=6a138b31&hm=5e484b9f8fd2dee44780500403af3386aeea395978c447683a99577103699e43&=&format=webp",
-      "lore": "The DBD skin references Michael Myers' design from Dead by Daylight, where he appears as The Shape."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907163571916820/Web_Photo_Editor_31.jpg?ex=6a3ba007&is=6a3a4e87&hm=965752f19ce066ff863aebb6296c7b9c08b55939ac699dc6bb9f51821ed41e22&=&format=webp",
+      "lore": "Michael Myers' design from Dead by Daylight, where he appears as The Shape."
     },
 
     {
       "name": "Baldi",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508252339943768064/23dc9d844bed166a1de33233499f81df.png?ex=6a14dcf3&is=6a138b73&hm=6f8fe025a14064b3ebf02b356346c143767155e985b21f05ae618e8386221f90&=&format=webp&quality=lossless",
-      "lore": "The Baldi skin references Baldi from the horror game Baldi's Basics."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907164138406019/97a8560eb1c332fdc200401a58e9f9c8.png?ex=6a3ba007&is=6a3a4e87&hm=fed25e6b22fbe5edd0e4d8c3ddcffdeac106fa3d94e4dac65e84b20e36425191&=&format=webp&quality=lossless",
+      "lore": "Baldi from the horror game Baldi's Basics."
     },
 
     {
       "name": "Hospital",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508252737303740507/Web_Photo_Editor_32.jpg?ex=6a14dd52&is=6a138bd2&hm=e2232702621455d5253420709da85116ff83584a78e0b85398d369f3039ca177&=&format=webp",
-      "lore": "The Hospital skin references Michael Myers in Halloween 4 after escaping with bandages covering his face before murdering a mechanic to continue his rampage."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907164570288259/Web_Photo_Editor_32.jpg?ex=6a3ba007&is=6a3a4e87&hm=a544f42c12ce4d7123a893b7f722e9856462ba3675457adaeddb0df73b8aa125&=&format=webp",
+      "lore": "Michael Myers in Halloween 4 after escaping with bandages covering his face before murdering a mechanic to continue his rampage."
     },
 
     {
       "name": "Friday",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508252914345574480/345e958f1a0d03c66c5ba001bb157681.png?ex=6a14dd7c&is=6a138bfc&hm=99a195a3e8b41eb56ff31e55c2e9d56ee130541f52f9dbdb5935aada752b1287&=&format=webp&quality=lossless&width=347&height=350",
-      "lore": "The Friday skin references Jason Voorhees from the Friday the 13th franchise."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518907165044113530/345e958f1a0d03c66c5ba001bb157681.png?ex=6a3ba008&is=6a3a4e88&hm=dece45cae5d4010b642a8b44fac64b6c0b251e013d9be5041689e431dfe0fe40&=&format=webp&quality=lossless",
+      "lore": "Jason Voorhees from the Friday the 13th franchise."
     }
   ],
 

@@ -15,7 +15,7 @@
 
   "universe": "DC",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507826228030341323/e2d317ee1931d21e68f40b5acb4b81f9.png?ex=6a13501a&is=6a11fe9a&hm=2460a6f635a002c28404488798e3072d2d15bb484183a027531185749f532bfb&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519237297466249277/a73ccbd6bc9f8484f88effb3f01b0cb0.png?ex=6a3cd37d&is=6a3b81fd&hm=9a7dfa1f418e978e4db04e01aaae6c9692a2937d753b2449a4ec6318ba92a963&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 185,
@@ -34,6 +34,7 @@
       "cooldown": "11s",
       "attributes": [
         "break",
+        "lin",
         "mele"
       ]
     },
@@ -46,6 +47,7 @@
       "attributes": [
         "block",
         "push",
+        "lin",
         "mele",
         "move"
       ]
@@ -108,6 +110,7 @@
       "damage": 0,
       "cooldown": "123s",
       "attributes": [
+        "cine",
         "heal"
       ]
     }
@@ -116,25 +119,25 @@
   "skins": [
     {
       "name": "Unmasked",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508684580280860793/5debe7d176a4d34f899fad3c7fb2cd7c.png?ex=6a166f81&is=6a151e01&hm=66953b21d6e9dc598e401937582e3f842bbde3cb437c0e60357fa901156f7252&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519237297952919642/fbe3c9c23a79522c801b9a2fcaab7032.png?ex=6a3cd37d&is=6a3b81fd&hm=e20a7350164741ac5c724f38916cb29189ac9c254ca1467aa9bc71f200066519&=&format=webp&quality=lossless",
       "lore": "Hunter Zolomon reveals his scarred face after removing the Zoom mask during Season 2 of The Flash, exposing his true identity to Team Flash."
     },
 
     {
       "name": "Black Flash",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508684826293702786/Web_Photo_Editor_57.jpg?ex=6a166fbc&is=6a151e3c&hm=daab97629bf166fe0947474600849541e12d158333416695a1a53a2b947b6677&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519237298401579059/Web_Photo_Editor_57.jpg?ex=6a3cd37e&is=6a3b81fe&hm=2606cf6830a10fe5bbab4f01c5dacbfe6d4101677cd52b5086eac01cbd926dfd&=&format=webp",
       "lore": "After being consumed by the Speed Force, Zoom transforms into Black Flash, a terrifying speedster entity that hunts other speedsters across The Flash and Legends of Tomorrow."
     },
 
     {
       "name": "EXE",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508685017201639424/29f0aa8cb5a2656879e6c88ec710dde3.png?ex=6a166fea&is=6a151e6a&hm=7655649d1d092596763cfec43b76ee4e2536968c090c7e6a53f209b913a9dfab&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519237298938577017/29f0aa8cb5a2656879e6c88ec710dde3.png?ex=6a3cd37e&is=6a3b81fe&hm=e6fb47a01604931b9799d41556f22d52e1693e18892cd408a6037ab08171a1b8&=&format=webp&quality=lossless",
       "lore": "A corrupted demonic speedster inspired by Sonic.EXE, the horror version of Sonic known for supernatural powers and disturbing appearances."
     },
 
     {
       "name": "Fake Garrick",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508685463169532015/Web_Photo_Editor_58.jpg?ex=6a167054&is=6a151ed4&hm=5d02a852d228c9a468b7e7cdbbe2c83bdca023a97f9e0ec1c33cad79f563559a&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519237299680837653/Web_Photo_Editor_58.jpg?ex=6a3cd37e&is=6a3b81fe&hm=df805d0c7b28bfe4a0e24b5785553448f7ecd9a23ae2a2e6e585fe3dffb39b0b&=&format=webp",
       "lore": "Hunter Zolomon pretends to be Jay Garrick during Season 2 of The Flash, earning Team Flash's trust before revealing himself as Zoom and murdering the fake version of Garrick."
     }
   ],

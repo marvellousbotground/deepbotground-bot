@@ -14,7 +14,7 @@
 
   "universe": "SCP Foundation",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507519332811280444/ugc_1852689753783702476_4116F09374DF83BD5DEC64880FC5B3E7A3A6E5D5_.png?ex=6a123249&is=6a10e0c9&hm=8b86da2481747d26c74d10adfa80a56ba9348dbeae91a42cc912b1f919ed3ad3&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519076189853974701/image.png?ex=6a3c3d72&is=6a3aebf2&hm=a0fae09115d7767ec0c643ad913695d513fcba66871efd3b9a655396634d807c&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -100,7 +100,7 @@
   "skins": [
     {
       "name": "Cop",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508331453036101642/14f46364f46697c767562cf2d7c1bb7d.png?ex=6a1526a1&is=6a13d521&hm=e9356327821e710a7905807f33a50f445691cfc3ccfb1e49ad70a69a15e94728&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519076190202105887/image.png?ex=6a3c3d72&is=6a3aebf2&hm=49a4baf12445ffbb03a856179c4297aa1b297d5ee9aef086f5df0f7c5f494169&=&format=webp&quality=lossless",
       "lore": "The Cop skin references the classic Roblox police officer style seen in games like Jailbreak and Prison Life."
     }
   ],

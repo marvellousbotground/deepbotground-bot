@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507159950164492318/images.png?ex=6a10e395&is=6a0f9215&hm=a5ccc5e0c840cacf6f84c8a18bf332bf7a8646c03cf032c069b93cfcbed86e8a&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518721474523955240/bb81896a32ae65c927609efe198dde49.png?ex=6a3af318&is=6a39a198&hm=d956c32085b58d57467fcf2493b7da64408aad61aa687211ecdbe0a579ca5f49&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -40,6 +40,7 @@
       "cooldown": "9s",
       "attributes": [
         "ignore",
+        "lin",
         "mele"
       ]
     },
@@ -103,6 +104,7 @@
       "cooldown": "107s",
       "attributes": [
         "heal",
+        "use",
         "cine",
         "trans"
       ]
@@ -116,6 +118,7 @@
       "attributes": [
         "ignore",
         "mele",
+        "lin",
         "area",
         "push"
       ]
@@ -125,26 +128,26 @@
   "skins": [
     {
       "name": "Jack",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202703451590686/d04f3d74170004b7b3f739af5994fdfd.png?ex=6a14aeb9&is=6a135d39&hm=3bcd6a72d8cc8ac21c241fc089aad70597b697b16105e0ff4f3c476e10c48e90&=&format=webp&quality=lossless",
-      "lore": "The Jack skin references Eyeless Jack, the supernatural creepypasta killer known for his black eyes, blue mask, and gruesome attacks on victims."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518721475165552811/d04f3d74170004b7b3f739af5994fdfd.png?ex=6a3af318&is=6a39a198&hm=73fab8f921dbe6ab4297658cb618200921ec95b6a3339397e980ecda26a94bb4&=&format=webp&quality=lossless",
+      "lore": "Eyeless Jack, the supernatural creepypasta killer known for his black eyes, blue mask, and gruesome attacks on victims."
     },
 
     {
       "name": "This man",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202778445484113/42439406ea3b185e2af7cbab66ac4260.png?ex=6a14aecb&is=6a135d4b&hm=f9e2d57ff4881261b7d722848218bfbe7914bfca282eb39810ea953972c2eaa4&=&format=webp&quality=lossless",
-      "lore": "The This man skin references the internet urban legend 'Have you ever dreamed this man?', based on the mysterious face supposedly seen by thousands of people in their dreams."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518721475924721775/42439406ea3b185e2af7cbab66ac4260.png?ex=6a3af318&is=6a39a198&hm=11b6a65a20c968e742907e06e5902733af932cd1beb38fdb14344597d26f5fc6&=&format=webp&quality=lossless",
+      "lore": "Internet urban legend 'Have you ever dreamed this man?', based on the mysterious face supposedly seen by thousands of people in their dreams."
     },
 
     {
       "name": "Jane",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508202922251653120/99878dc9540937db01bdf5967874c3d2.png?ex=6a14aeed&is=6a135d6d&hm=6d4455f046bb18c8c3f32a84998464055c8b2341ba309cbfb77d4f343aa43b35&=&format=webp&quality=lossless",
-      "lore": "The Jane skin references Jane the Killer, the creepypasta character created as a rival and counterpart to Jeff the Killer."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518721476474310687/4aded90169787e3609cac07b39cb3439.png?ex=6a3af318&is=6a39a198&hm=abbc6b451a6ba055eed84423abd3827d734f9ea74629e285c66d800a21810b23&=&format=webp&quality=lossless",
+      "lore": "Jane the Killer, the creepypasta character created as a rival and counterpart to Jeff the Killer."
     },
 
     {
       "name": "Sleep",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508203147456151734/4969100e9329675adb6f71820335706f.png?ex=6a14af23&is=6a135da3&hm=ed4df5963054bd3b3d2f6f765ff5b4aa4075536303d6664a21440755b56b931e&=&format=webp&quality=lossless",
-      "lore": "The Sleep skin references the Russian Sleep Experiment creepypasta, the story about test subjects driven insane after being forced to stay awake for extreme periods of time."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518721477103587518/RussianSleepExperimentGuy.png?ex=6a3af318&is=6a39a198&hm=58e73f90add2e1f952a45ae4444b6a32942c0b229dea6a548abf6703757ea1f2&=&format=webp&quality=lossless",
+      "lore": "Russian Sleep Experiment creepypasta, the story about test subjects driven insane after being forced to stay awake for extreme periods of time."
     }
   ],
 

@@ -15,7 +15,7 @@
 
   "universe": "Marvel",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1515472824314368153/Untitled_Project.jpg?ex=6a2f218d&is=6a2dd00d&hm=0048790c1633b668b504ae1f4b2b51913dade6f7724cbb36d932c41c3ece3ace&=&format=webp",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518719818503815248/Untitled_Project.jpg?ex=6a3af18d&is=6a39a00d&hm=01ddff7ac225b60d15c8fa8428cf3fc480c4c766794b99ad0413e749b7da56cb&=&format=webp",
 
   "stats": {
     "hp": 200,
@@ -110,6 +110,7 @@
         "block",
         "move",
         "push",
+        "lin",
         "mele"
       ]
     }
@@ -118,22 +119,22 @@
  "skins": [
   {
     "name": "Superior",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1515477878777581709/b2771945c224bc346e02278a9b81737d.png?ex=6a2f2642&is=6a2dd4c2&hm=6ba3d4fdb0bc109db9b11cf1547c79db5832a7e97fc9e83e5db601a37d939758&=&format=webp&quality=lossless&width=350&height=350",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518719818935832727/b2771945c224bc346e02278a9b81737d.png?ex=6a3af18d&is=6a39a00d&hm=2e422170e26690311827c8f690357b9733f85ebf6051b66c1c5fa6d265654087&=&format=webp&quality=lossless",
     "lore": "After the Axis event, Tony Stark embraced a darker and more selfish personality, using advanced technology and his enhanced Endo-Sym armor to pursue his own interests while becoming one of the most dangerous versions of Iron Man."
   },
 
   {
     "name": "Tech",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1515477698632351897/432b957629d6bdfdd1be97d3165481a6.png?ex=6a2f2617&is=6a2dd497&hm=977d2c65689cca5559ce52a761948a561c83182c74fc4879ae2b89323c88f33a&=&format=webp&quality=lossless",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518719819258531900/8f1c2e448eb395a38addc755a254d5b8.png?ex=6a3af18d&is=6a39a00d&hm=12d168e738e10b68a55f7beb581ff83f8ecda6be33a8a18691b6ab340d6d2612&=&format=webp&quality=lossless",
     "lore": "Female Tech Jacket seen in the animated series, wielding the powerful Geldarian armor capable of flight, energy projection, advanced weaponry, and extreme durability."
   },
 
   {
     "name": "Ilussion",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1515477542025298081/0e3dcd5c20a9f280633530ee7ee5fd5a.png?ex=6a2f25f2&is=6a2dd472&hm=de493ffa38cbca3ca2dfb3c1700f3b4fb6ad32774777908c7a2cccb4d86a83ab&=&format=webp&quality=lossless",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518719819598397570/0e3dcd5c20a9f280633530ee7ee5fd5a.png?ex=6a3af18d&is=6a39a00d&hm=540685943268a08ead9df4525e6c8721fd3b34036c42181f735ba21d98eb8e0e&=&format=webp&quality=lossless",
     "lore": "Illusion created by Mysterio in Spider-Man: Far From Home. During Peter Parker's nightmare sequence, a decayed Iron Man rises from his grave and accuses Peter of failing Tony Stark, representing Peter's guilt and Mysterio's psychological manipulation."
   }
 ],
 
-  "lore": "Zoom, also known as Hunter Zolomon, is one of the deadliest speedster villains in DC Comics and The Flash series. Consumed by tragedy and obsession, he uses terrifying speed powers, time manipulation, and psychological torment to break heroes and prove that suffering creates true heroes."
+  "lore": "Using his nanotech armor, Tony Stark joins the fight against Thanos as the Mad Titan searches for the Infinity Stones across the galaxy."
 }

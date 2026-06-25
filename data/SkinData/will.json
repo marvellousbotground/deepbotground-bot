@@ -1,0 +1,76 @@
+{
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 5,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Leg Breaker",
+      "damage": 15,
+      "cooldown": "10.5s",
+      "attributes": [
+        "block",
+        "range",
+        "bruta"
+      ]
+    },
+
+    {
+      "slot": "2",
+      "name": "Hold in Place",
+      "damage": 5,
+      "cooldown": "16s",
+      "attributes": [
+        "block",
+        "range",
+        "area"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Mind-Slam Counter",
+      "damage": 15,
+      "cooldown": "12s",
+      "attributes": [
+        "coun",
+        "cine",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Psionic Shockwave",
+      "damage": 20,
+      "cooldown": "17s",
+      "attributes": [
+        "break",
+        "ex",
+        "area",
+        "push"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Times Up Finisher",
+      "damage": 0,
+      "cooldown": "1s",
+      "attributes": [
+        "ignore",
+        "finish",
+        "cine",
+        "heal"
+      ]
+    }
+  ],
+
+  "techs": []
+}

@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506597149230759966/ugc_1929248595926766966_AA328516CA6A1D86996C31EB6209509363085DB5_.png?ex=6a0ed76f&is=6a0d85ef&hm=d023acd8a961d3abccd797438899341a79be88f338a455f21fa1af7bbb17efca&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475740646211584/e3d4a29cf8274481797335ab9538cf27.png?ex=6a3a0e3c&is=6a38bcbc&hm=86437c69d53bd9721713971ee8aa1a46ac30d68faebed2690f9739af210d4aae&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 185,
@@ -53,6 +53,7 @@
       "cooldown": "14s",
       "attributes": [
         "block",
+        "lin",
         "move",
         "push",
         "brutal"
@@ -104,6 +105,7 @@
       "cooldown": "125s",
       "attributes": [
         "block",
+        "lin",
         "push",
         "area"
       ]
@@ -123,50 +125,50 @@
   "skins": [
     {
       "name": "Africa",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507936913837916180/hmky1dtw1gdb1.png?ex=6a13b730&is=6a1265b0&hm=47fe29d9d9e84a7455e3e23f25c9995470774a0a936e32691e1387c3b58571e2&=&format=webp&quality=lossless",
-      "lore": "The Africa skin references A-Train's redesigned suit made to reconnect with his African roots and improve his public image after criticism from the media and fans."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475741052928011/Untitled_Project_4.jpg?ex=6a3a0e3c&is=6a38bcbc&hm=8de481201b2d7a6ff87fdde98500a77db8440993c7fd3ce9c2fd07f52cf7876d&=&format=webp",
+      "lore": "A-Train's redesigned suit made to reconnect with his African roots and improve his public image after criticism from the media and fans."
     },
 
     {
       "name": "Marathon",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937082180636852/91b5a75be393f543df88466c53f7284e.png?ex=6a13b758&is=6a1265d8&hm=d7b6e9cf27b8b5d20a033194f8c77020060737e6f89d22aefa0bf2c3d4fdbe7a&=&format=webp&quality=lossless",
-      "lore": "The Marathon skin is based on Mister Marathon, a speedster superhero parody from The Boys universe known for his exaggerated classic superhero style."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475939023945759/91b5a75be393f543df88466c53f7284e.png?ex=6a3a0e6b&is=6a38bceb&hm=22a3e181ef8b103839fbfd5a6b76c05522ac508989cfb1e695af0dbcd2846a1e&=&format=webp&quality=lossless",
+      "lore": "Mister Marathon, a speedster superhero parody from The Boys universe known for his exaggerated classic superhero style."
     },
 
     {
       "name": "Quicksilver",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937319930433636/f9f36452a7e1398800e539550f5393ef.png?ex=6a13b791&is=6a126611&hm=de22ae7984e12001b5211132d320b40f154865e0c840b001e4d731bd85441aa8&=&format=webp&quality=lossless",
-      "lore": "The Quicksilver skin references Marvel's famous speedster Quicksilver, known for his super speed and connection to the X-Men universe."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475741522563142/245225feda93543c0cf6844e9a97a308.png?ex=6a3a0e3c&is=6a38bcbc&hm=72e61238ceeece8c315912f4e1f318213547a5a96eb91b94d53c5979de8e0c96&=&format=webp&quality=lossless",
+      "lore": "Marvel's famous speedster Quicksilver, known for his super speed and connection to the X-Men universe."
     },
 
     {
       "name": "Sportacus",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937462578581565/3ba797f4ae129216c535fbd30af2815a.png?ex=6a13b7b3&is=6a126633&hm=6a84ee477b8fd321eb3309fcf23e06589d93ca56edf7c3aa30aba608f94132cb&=&format=webp&quality=lossless",
-      "lore": "The Sportacus skin references the energetic hero from LazyTown, recognized for his athletic abilities, acrobatics, and healthy lifestyle."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475741946445937/a9eb621ed16b8744b51959af28876b74.png?ex=6a3a0e3c&is=6a38bcbc&hm=21f8af03166c897ca00002236775151333521b4d84999fb1b117fceb78babacc&=&format=webp&quality=lossless",
+      "lore": "the energetic hero from LazyTown, recognized for his athletic abilities, acrobatics, and healthy lifestyle."
     },
 
     {
       "name": "Quickster",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507937573534830613/438f5ea6a7b5bf3eaadf5ca23d512dbe.png?ex=6a13b7cd&is=6a12664d&hm=163095cbb1c1e39f0b9b02020540eaea229841876391de053ccee82101537c13&=&format=webp&quality=lossless",
-      "lore": "The Quickster skin references SpongeBob SquarePants acting as a superhero speedster during the Mermaid Man and Barnacle Boy episodes."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475742416076930/6ca54f882c3cd5169cac9b4fa28cbe8a.png?ex=6a3a0e3c&is=6a38bcbc&hm=26b555c5d3354139ad0d4dc2ef57a975a8c2f831c6b7689ee357f23eedd83489&=&format=webp&quality=lossless",
+      "lore": "SpongeBob SquarePants acting as a superhero speedster during the Mermaid Man and Barnacle Boy episodes."
     },
 
     {
       "name": "Shockwave",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507938117112434739/Web_Photo_Editor.jpg?ex=6a13b84f&is=6a1266cf&hm=68dd2e69589fff9f82147f881ecef9fa62f294be64d3d0dcfbd0dcd48cfd81f3&=&format=webp",
-      "lore": "The Shockwave skin represents the speedster from The Boys who competed against A-Train in a public race during the early seasons of the series."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475742995021864/Web_Photo_Editor.jpg?ex=6a3a0e3d&is=6a38bcbd&hm=cee49981f7a0100c960b2afadd105b98e73c6de16fe7b7ce96b8d0d7e52decb1&=&format=webp",
+      "lore": "speedster from The Boys who competed against A-Train in a public race during the early seasons of the series."
     },
 
     {
       "name": "RedRush",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507938344925921361/Web_Photo_Editor_1.jpg?ex=6a13b885&is=6a126705&hm=20f143e375c71072ba85a060e1da83cc1037054bde0555fe4e0f73e48ac3fbbf&=&format=webp",
-      "lore": "The RedRush skin references Red Rush from Invincible, the super speed hero and member of the Guardians of the Globe."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475743540023336/Web_Photo_Editor_1.jpg?ex=6a3a0e3d&is=6a38bcbd&hm=f309f3e18e02963dbe0e866ee376cf0f3f52a692374106595c370a71e5761e9b&=&format=webp",
+      "lore": "the super speed hero and member of the Guardians of the Globe."
     },
 
     {
       "name": "Reggie",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507939749711577088/3893c671f702578ed2c9ac09b4191aa3.png?ex=6a13b9d4&is=6a126854&hm=c1f3bba0f2d24f9c214919bf72b351fe7248469bef15728e1e8b3fef6e9eb3b7&=&format=webp&quality=lossless",
-      "lore": "The Reggie skin shows A-Train in civilian clothing as Reggie Franklin, away from his superhero identity and public persona."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518475743913447455/Untitled_Project_5.jpg?ex=6a3a0e3d&is=6a38bcbd&hm=fb7c2abb9fdd218b073a8005afb1ef5c5689583d967a25906c7aad8333a70459&=&format=webp",
+      "lore": "A-Train in civilian clothing as Reggie Franklin, away from his superhero identity and public persona."
     }
   ],
 

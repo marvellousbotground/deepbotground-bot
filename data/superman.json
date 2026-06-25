@@ -16,7 +16,7 @@
 
   "universe": "DC",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507559976221020280/12fa54a982fd6f7c6e7463d925df35ac.png?ex=6a125823&is=6a1106a3&hm=39f40d1e85997f8dfc7f9285f265c90e07731e5116db3069f91572c5492ccf3a&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519216839002034276/0db3101d42e6aad41cdb5177e707fc4a.png?ex=6a3cc070&is=6a3b6ef0&hm=e579424eac641556367155f550aa937e1cbb3d86795ea8bb1e1cb7ca05350b64&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -59,6 +59,7 @@
       "attributes": [
         "coun",
         "range",
+        "lin",
         "area",
         "push"
       ]
@@ -72,6 +73,7 @@
       "attributes": [
         "block",
         "grab",
+        "lin",
         "move"
       ]
     },
@@ -103,26 +105,26 @@
   "skins": [
     {
       "name": "Ultraman",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380681720303798/Web_Photo_Editor_48.jpg?ex=6a15547a&is=6a1402fa&hm=e02b3c156b391bb797c14cd8ba077a1e6e10aee42ddf9b7cb7538fe1f4194c35&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519216839480311868/Web_Photo_Editor_48.jpg?ex=6a3cc070&is=6a3b6ef0&hm=39a95259692de30ba0445ac4cd8aed2976825ef35e41dfacd225d5c906035ea6&=&format=webp",
       "lore": "An evil Superman clone appearing in Superman (2025), Ultraman serves as a brutal and destructive reflection of Superman with overwhelming power and a far more violent nature."
     },
 
     {
       "name": "Supergirl",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380698132873216/c339c80ab08d59dbbfa0c77d444d0d45.png?ex=6a15547e&is=6a1402fe&hm=318998e892d590d13e7f9e60336ebd009896a31c374bd637326b3340c0990fdb&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519216839861866546/2cef93dd783312a87169d9bf64a736c1.png?ex=6a3cc070&is=6a3b6ef0&hm=573ad5904977e2529c63fdcd380a4641aec486cccc449f1dd1e6805f08f19acb&=&format=webp&quality=lossless",
       "lore": "Kara Zor-El appears in the DCU timeline introduced through Superman (2025), bringing another surviving Kryptonian into Clark Kent's world."
     },
 
     {
       "name": "Hammer of Boravia",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508380910091894854/bd2974f9d08e28b48b7f292fc6c74e72.png?ex=6a1554b1&is=6a140331&hm=a61f3b6e9e934fd9e6b2e3dd82bb533c223b1a2cfeac300a49f702ea1255bc93&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519216840323109005/bd2974f9d08e28b48b7f292fc6c74e72.png?ex=6a3cc070&is=6a3b6ef0&hm=35dc9b5b4f3a7bff226abb1c452ae189535ef3e90730872e025da249b62871e6&=&format=webp&quality=lossless",
       "lore": "A heavily armored enemy seen in Superman (2025), wielding advanced technology and immense physical strength during the film's large-scale conflicts."
     },
 
     {
       "name": "Starman",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508381090241314816/1f333586378b748f2b0876dce6fe7edd.png?ex=6a1554dc&is=6a14035c&hm=bfca1c48ef8758bbd8471b722c3295bbf8c9021d92b23970a80678dee6590d25&=&format=webp&quality=lossless&width=340&height=350",
-      "lore": "Inspired by the famous Starman meme and comic cover artwork, recreating the emotional floating pose associated with the character."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519216840826683562/149fa9ca0244b5f228ad1d625ada7ad0.png?ex=6a3cc070&is=6a3b6ef0&hm=5aa65a4fc2ee72cbe1507fd8a995e239de2ad327e78c749927ca912ec840d1e4&=&format=webp&quality=lossless",
+      "lore": "Famous Starman meme and comic cover artwork, recreating the emotional floating pose associated with the character."
     }
   ],
 

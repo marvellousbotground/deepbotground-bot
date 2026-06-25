@@ -14,7 +14,7 @@
 
   "universe": "DC",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507815724654002257/f2dba629dd9fbcf8da5e3f30ae12d955.png?ex=6a134652&is=6a11f4d2&hm=38e3dc237fa8518d55713daec94bcacbd58e701cc801b778ab7e0e3d0f9bb5e0&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519234028744478740/5e15bb4bc2043699d72d5b62f11b3ca0.png?ex=6a3cd072&is=6a3b7ef2&hm=c23bb05ad0e4d1713a21461dd23c76ccd290db96aa1e8d9e512d87c28746c02e&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -69,6 +69,7 @@
       "attributes": [
         "break",
         "lrp",
+        "lin",
         "push",
         "rng"
       ]
@@ -105,19 +106,19 @@
   "skins": [
     {
       "name": "Arrow",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508646555014660177/Web_Photo_Editor_55.jpg?ex=6a164c18&is=6a14fa98&hm=70d505fb97497b2f98664bd7875b0370497a5c2422ce8f3ee22707b2c500299a&=&format=webp",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519234029302448218/Web_Photo_Editor_55.jpg?ex=6a3cd072&is=6a3b7ef2&hm=dd908cecdd13023a3dff082e0e57c40b19d1352fb5be0b9ac9045d78fde62bc5&=&format=webp",
       "lore": "A violent vigilante inspired by the CW Arrow universe, using a hooded appearance and lethal methods unrelated to Adrian Chase."
     },
 
     {
       "name": "Deadpool",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508646717006938122/45700974b1332ba3b4aefa84f702d034.png?ex=6a164c3e&is=6a14fabe&hm=8779c788e06b0a6a144214e16940e922546b9de7d0f2a88f545f36066692586c&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519234029717557329/4d16fa265230b87a5b63cc6fde5fe00c.png?ex=6a3cd072&is=6a3b7ef2&hm=899a0b5bb75dac909c1baa69af96fa4337e571a29de0d75c547a6e4ccf90a059&=&format=webp&quality=lossless",
       "lore": "Wade Wilson becomes Deadpool after a brutal experiment leaves him horribly scarred while granting him accelerated healing and chaotic combat skills."
     },
 
     {
       "name": "Black Noir",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508646778784714933/578adb9847625d57f71a232cc47c018d.png?ex=6a164c4d&is=6a14facd&hm=4247c8ed738cc60fb3957a5b686b21ca7fcfcdbaf4863421dfc98134bc7cf1&=&format=webp&quality=lossless&width=339&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519234030049038366/630e2f561ba5f321fb626dad1118013d.png?ex=6a3cd072&is=6a3b7ef2&hm=23e0aafb530a3da92031f36b8498f5276d19f4a9cce7068497044d62b659521e&=&format=webp&quality=lossless",
       "lore": "The silent assassin from The Boys, Black Noir operates as one of Vought's deadliest and most mysterious superheroes."
     }
   ],

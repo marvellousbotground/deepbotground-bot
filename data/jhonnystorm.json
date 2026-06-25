@@ -22,7 +22,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1512896620138725629/Web_Photo_Editor_62.jpg?ex=6a25c246&is=6a2470c6&hm=8a0289f5cb660339332f428687a06f8ec7af49d23cedd1578aae4686b56115cd&=&format=webp",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725788801831062/Web_Photo_Editor_62.jpg?ex=6a3af71c&is=6a39a59c&hm=1d74fa2914c4e3f8c410dd87a4c5788368ffc9c2495fdb6e45e530bededf767b&=&format=webp",
 
   "versions": [
     {
@@ -30,7 +30,7 @@
 
       "name": "Johnny Storm",
 
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1512895463924170952/2ac4a4fefe72ac0401a08d06b1710298.png?ex=6a25c132&is=6a246fb2&hm=3f3983966f729bb4a8e94aa91aefef3e24dd4f237ce99dcecaa29952069ebdb1&=&format=webp&quality=lossless&width=350&height=350",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725789107879966/2ac4a4fefe72ac0401a08d06b1710298.png?ex=6a3af71c&is=6a39a59c&hm=829d658f5dcff274b7bef36a490cb01b7457fa61d64713e2958a94457eda0a7c&=&format=webp&quality=lossless",
 
       "stats": {
         "hp": 200,
@@ -62,6 +62,7 @@
           "attributes": [
             "block",
             "move",
+            "lin",
             "push",
             "mele"
           ]
@@ -87,6 +88,7 @@
           "cooldown": "19s",
           "attributes": [
             "ignore",
+            "lin",
             "range"
           ]
         },
@@ -118,19 +120,19 @@
       "skins": [
         {
           "name": "Casual",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508192904991084646/839bd7b25a2f0edff728e255bc77a176.png?ex=6a14a599&is=6a135419&hm=dfa11483050293b4ebc1500f768516bb9d6fdcde3cfaabde61bd917cf88d3ab8&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725789435297842/839bd7b25a2f0edff728e255bc77a176.png?ex=6a3af71c&is=6a39a59c&hm=3923b6f1a98839c37fc918932026ad9c4e1f62880b6e4cf85cd64b8117b07c1d&=&format=webp&quality=lossless",
           "lore": "Johnny Storm wearing casual clothes while staying inside the Fantastic Four tower in The Fantastic Four: First Steps."
         },
 
         {
           "name": "Multiverse",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508192916265500793/731147657983e9e164c1e99aed570f08.png?ex=6a14a59c&is=6a13541c&hm=e3597f37f441674f12785c3a91b3eb4fe89a36f98b06500bccf0d6b46ffe2e5e&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725789787488438/d5ee7316d05d1b04e519bf7d044a3180.png?ex=6a3af71c&is=6a39a59c&hm=6a8f96fc8462b441442a8c044d2e6bd28185b1ce3f2913ad7e72d7aaf1b192e3&=&format=webp&quality=lossless",
           "lore": "Johnny Storm's appearance in Deadpool & Wolverine during the multiverse crossover events."
         },
 
         {
           "name": "Classic",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1508193060687712428/fcc2e311940754fb6552f6aa8a4ad2cb.png?ex=6a14a5be&is=6a13543e&hm=88e78dd808bde8316d3e0a2ff18ddc6ef6a176f05dc7e858f326eb95a8948dde&=&format=webp&quality=lossless",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725790278094988/88bfb476d74975830635f2c76ba93002.png?ex=6a3af71c&is=6a39a59c&hm=cddc3cebb44a346ad47148cba9104c14598d62adbc15796dd8a3379a6e13a67e&=&format=webp&quality=lossless",
           "lore": "Johnny Storm from the 2005 Fantastic Four movie adaptation."
         }
       ],
@@ -143,7 +145,7 @@
 
       "name": "Johnny Storm - Flame On!",
 
-      "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1512883778702282873/Web_Photo_Editor_59.jpg?ex=6a25b650&is=6a2464d0&hm=975b31b6dbb1ef209a540423d3e23f77694720e6c81307fa336c4bb0947b868e&",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725790617964625/Web_Photo_Editor_59.jpg?ex=6a3af71d&is=6a39a59d&hm=cbc6c436de9427b1be353fd0e375a7afda2fed632b3f9fa01b8f619ed15e6afc&=&format=webp",
 
       "stats": {
         "hp": 200,
@@ -177,6 +179,7 @@
             "block",
             "move",
             "push",
+            "lin",
             "mele"
           ]
         },
@@ -202,6 +205,7 @@
           "attributes": [
             "ignore",
             "ranged",
+            "lin",
             "area"
           ]
         },
@@ -223,19 +227,19 @@
       "skins": [
         {
           "name": "Casual",
-          "image": "https://cdn.discordapp.com/attachments/1507041233501950142/1512883778702282873/Web_Photo_Editor_59.jpg?ex=6a25b650&is=6a2464d0&hm=975b31b6dbb1ef209a540423d3e23f77694720e6c81307fa336c4bb0947b868e&",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725790617964625/Web_Photo_Editor_59.jpg?ex=6a3af71d&is=6a39a59d&hm=cbc6c436de9427b1be353fd0e375a7afda2fed632b3f9fa01b8f619ed15e6afc&=&format=webp",
           "lore": "Johnny Storm wearing casual clothes in The Fantastic Four: First Steps, flame on version still the same."
         },
 
         {
           "name": "Multiverse",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1512885426845913238/Web_Photo_Editor_60.jpg?ex=6a25b7d9&is=6a246659&hm=fa4f36456affe11862a6bbcc5397962c2c2f5ed37cac4e25057bcaa95b3ce94e&=&format=webp",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725790936596490/Web_Photo_Editor_60.jpg?ex=6a3af71d&is=6a39a59d&hm=d86d7409e39e0a2da1b95ef224548504f4881afaaa154fde3727a099f0fa6bae&=&format=webp",
           "lore": "Johnny, after surprising Deadpool, reveals his identity to the audience by shouting Flames on."
         },
 
         {
           "name": "Classic",
-          "image": "https://media.discordapp.net/attachments/1507041233501950142/1512886870676209674/Web_Photo_Editor_61.jpg?ex=6a25b932&is=6a2467b2&hm=3c0b01833932c646daf8425a912aa88ade7be8739fef057d59e815c9cda8c0a4&=&format=webp",
+          "image": "https://media.discordapp.net/attachments/1518466128396025948/1518725791217881259/Web_Photo_Editor_61.jpg?ex=6a3af71d&is=6a39a59d&hm=07f69a07e3c1ef944b16f35b8cb3a52cba768a10348be89594cadd30552f0636&=&format=webp",
           "lore": "Johnny's flames from the 2005 adaptation are more saturated and orange."
         }
       ],

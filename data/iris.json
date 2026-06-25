@@ -19,7 +19,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507080941154209842/9f8808d69ce0a838fc72b403d5edac94.png?ex=6a109a00&is=6a0f4880&hm=ee263286d686eb771016b612e54d0e0c076501ec447de9a3a561c7968017de66&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518718671441100800/82df0e8ad174fa7da5b7c0e8b66699e0.png?ex=6a3af07b&is=6a399efb&hm=5ee89c69030faa68ea9fc4eb4fef33d80c98fd8b015fb19cf02d533278999419&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -50,6 +50,7 @@
       "attributes": [
         "ignore",
         "push",
+        "lin",
         "mele"
       ]
     },
@@ -97,6 +98,7 @@
       "damage": 0,
       "cooldown": "100s",
       "attributes": [
+        "boost"
       ]
     }
   ],
@@ -104,20 +106,20 @@
   "skins": [
     {
       "name": "Robot",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508195731310379009/Web_Photo_Editor_21.jpg?ex=6a14a83b&is=6a1356bb&hm=7b19705bb04b9d22578f6bb444eb58beea70ef11a6d2f24d8b3150c61b65e3e8&=&format=webp",
-      "lore": "The Robot skin references the ending of Companion where Iris escapes with the stolen money, changes clothes, and removes the synthetic skin from her damaged hand, fully embracing her identity as a robot."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518718671764328619/Web_Photo_Editor_21.jpg?ex=6a3af07b&is=6a399efb&hm=c0112ff8f7046b8c4a175433cdda0e5f77fb42a8914b39b0555455b214b7c246&=&format=webp",
+      "lore": "In the ending of Companion where Iris escapes with the stolen money, changes clothes, and removes the synthetic skin from her damaged hand, fully embracing her identity as a robot."
     },
 
     {
       "name": "Sue",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508195892761727118/8a70f8e27bb73f735f568a391ee29646.png?ex=6a14a861&is=6a1356e1&hm=1d8fc66b11fe61f4c8de2dfb048a23ecaa24807ebca1edbc02e1c7bfd558a9ee&=&format=webp&quality=lossless",
-      "lore": "The Sue skin references Sue, the younger second body created from Elisabeth in The Substance, representing her attempt to regain youth and perfection through the experimental substance."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518718672120713376/bec49fd80260134b36cdf01f670ecc91.png?ex=6a3af07b&is=6a399efb&hm=26eddf26de1ba08f2bea2ed2e4041dafa04a38e87da434357e3bbe92dd42b63c&=&format=webp&quality=lossless",
+      "lore": "The younger second body created from Elisabeth in The Substance, representing her attempt to regain youth and perfection through the experimental substance."
     },
 
     {
       "name": "Debra",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508196754208854056/fc5ac7fa47f51469dd18a78e3ed471c6.png?ex=6a14a92f&is=6a1357af&hm=4bc5f8bd7ddd197d684cbdda3ab090bb8bd17191d7b5e2841fcfebebf252bec7&=&format=webp&quality=lossless",
-      "lore": "The Debra skin references Debra Morgan from Dexter, the detective sister of Dexter Morgan known for her emotional personality and determination within Miami Metro."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518718672456122478/09ee33558f2dbb45bc26591c9f66725f.png?ex=6a3af07b&is=6a399efb&hm=7bfbeece4a0a93c9853903df916860ce5f597c86f4c52952c584f3de4fb0aba0&=&format=webp&quality=lossless",
+      "lore": "Debra Morgan from Dexter, the detective sister of Dexter Morgan known for her emotional personality and determination within Miami Metro."
     }
   ],
 

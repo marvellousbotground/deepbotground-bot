@@ -18,7 +18,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1506572642860273714/1506766731388129411/655907201919099005_1512661736.png?ex=6a0f755f&is=6a0e23df&hm=a210ea4b2ff4fe014b645fd0bbdb8167c66f38e552984d4e840027e80ee13210&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518522942596710471/79501d6f7a3045b990339b51523b1abc.png?ex=6a3a3a32&is=6a38e8b2&hm=0bb35a18b9e7bbc99c2b7f94b118a994af8ffad8a2eccba34b882d3bf9f3cdc5&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -71,6 +71,7 @@
       "cooldown": "16s",
       "attributes": [
         "ignore",
+        "lin",
         "range",
         "area"
       ]
@@ -94,31 +95,31 @@
     {
       "name": "The rake",
       "image": "https://media.discordapp.net/attachments/1507041233501950142/1507984095119020222/52c57e2809d27ff99059f2fefa1107d0.png?ex=6a13e321&is=6a1291a1&hm=89c510e49ddc5b0a2c35dcdfa96a1a43536a21522e683d18d2db6552318b18ad&=&format=webp&quality=lossless",
-      "lore": "The The Rake skin references the creature from the famous internet creepypasta known for its pale appearance, animalistic behavior, and terrifying nighttime attacks."
+      "lore": "The creature from the famous internet creepypasta known for its pale appearance, animalistic behavior, and terrifying nighttime attacks."
     },
 
     {
       "name": "ReAnimen",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507984481846427708/Web_Photo_Editor_11.jpg?ex=6a13e37d&is=6a1291fd&hm=0dd0227d413e8cd512a7c585552ce50370db9b9bbad996c1d0eab563d16805b4&=&format=webp",
-      "lore": "The ReAnimen skin references the cyborg undead soldiers created by D.A. Sinclair in Invincible using dead bodies enhanced with mechanical upgrades."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518523203876683776/24b1b67b82596b76721b7e2a958429a5.png?ex=6a3a3a70&is=6a38e8f0&hm=b2f7ad13f884210398c80d06f36734daa478a396ee82bcf166f4b2a10872eb29&=&format=webp&quality=lossless",
+      "lore": "Cyborg undead soldiers created by D.A. Sinclair in Invincible using dead bodies enhanced with mechanical upgrades."
     },
 
     {
       "name": "Alien",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507984572376158379/16633416d01f90f82e0d01e520ddc28e.png?ex=6a13e393&is=6a129213&hm=d1d0fde93cb7d1289e5ace264ff78a8eae4af96e54396856f442abc95e4ebb95&=&format=webp&quality=lossless",
-      "lore": "The Alien skin references the Xenomorph from the Alien film franchise, one of the most iconic extraterrestrial monsters in science fiction horror."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518522944089751642/b39d9a78e72030fdc0ef12049ae22e92.png?ex=6a3a3a32&is=6a38e8b2&hm=da643703bd490321d6b06cf62f9345a1af68e2274907df6c5faf431e986cf77b&=&format=webp&quality=lossless",
+      "lore": "Xenomorph from the Alien film franchise, one of the most iconic extraterrestrial monsters in science fiction horror."
     },
 
     {
       "name": "Wolverimne",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507984686750765177/d8ff0099dbdcc66c4d3fe02e129903e5.png?ex=6a13e3ae&is=6a12922e&hm=f719b6df92e385d3876f93b84c24d7549bc17e015530f35e5be54f9240b52b7b&=&format=webp&quality=lossless&width=350&height=350",
-      "lore": "The Wolverimne skin references Wolverine from Marvel Comics, the mutant hero known for his claws, regeneration, and feral fighting style."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518522944584683580/87bb02db45cd0bc523a6aaf31735b3da.png?ex=6a3a3a32&is=6a38e8b2&hm=c683b9f00b8e695f02e7ed8032cbed011f04b9eeb5ebb58cf013aa2add5bd905&=&format=webp&quality=lossless",
+      "lore": "Wolverine from Marvel Comics, the mutant hero known for his claws, regeneration, and feral fighting style."
     },
 
     {
       "name": "hyde",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1507984791402713168/46e4390824c40f21c6f0401a46b8c4fe.png?ex=6a13e3c7&is=6a129247&hm=0c88170feae56dbbb9e33240532e96ff1f9dd74c2b025e386f7a515275497a7d&=&format=webp&quality=lossless",
-      "lore": "The hyde skin references Tyler Galpin from Wednesday after awakening his inherited Hyde transformation. Manipulated by Laurel Gates, Tyler became her controlled monster and committed multiple murders as part of her revenge plan against the outcasts of Nevermore."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518522945109233745/415f05fe1dab1f712a1e076e5b76f770.png?ex=6a3a3a32&is=6a38e8b2&hm=7151bdf0eaa4ef9d2eba6fe8f088646e9e5324e67d3c7e107b57ce443e0ea613&=&format=webp&quality=lossless",
+      "lore": "Tyler Galpin from Wednesday after awakening his inherited Hyde transformation. Manipulated by Laurel Gates, Tyler became her controlled monster and committed multiple murders as part of her revenge plan against the outcasts of Nevermore."
     }
   ],
 

@@ -14,7 +14,7 @@
 
   "universe": "Stranger Things",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507811792670429215/latest.png?ex=6a1342a9&is=6a11f129&hm=4208e899b153b525c808842a19e6773571a939b8d5d10aea14af7f47ccfb8a5b&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519231140626432181/083651fa235c9510ad71d5eb25f76957.png?ex=6a3ccdc1&is=6a3b7c41&hm=93cf926618c9227fb61741b6ebdf674aca5069605de064515d696a4be3ac0f87&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -45,7 +45,7 @@
       "attributes": [
         "ignore",
         "noti",
-        "push"
+        "pull"
       ]
     },
 
@@ -68,6 +68,7 @@
       "attributes": [
         "block",
         "noti",
+        "lin",
         "area",
         "range"
       ]
@@ -118,6 +119,8 @@
       "attributes": [
         "break",
         "cine",
+        "lin",
+        "use",
         "trans",
         "cine",
         "move"
@@ -125,12 +128,32 @@
     }
   ],
 
-  "skins": [
-    "001",
-    "Mr. Whatsit",
-    "The sorcerer",
-    "The forest"
-  ],
+"skins": [
+  {
+    "name": "001",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519231140999729235/ba92d5df7452beba60c6a94dbe4eedfb.png?ex=6a3ccdc1&is=6a3b7c41&hm=22e85addc75e569eba0bf74c6ea91bc1164f5cfdfc89cb3925fe2e1de9465108&=&format=webp&quality=lossless",
+    "lore": "Posing as a friendly orderly at Hawkins Lab, One manipulates Eleven into removing the device that suppresses his powers. After massacring the facility's staff and children, he is defeated by Eleven and banished to another dimension, where he eventually becomes Vecna.",
+    "dataFile": "001"
+  },
+  {
+    "name": "Mr. Whatsit",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519231141385863168/1df5458b3bdf06e655f82cfde58c8ed6.png?ex=6a3ccdc2&is=6a3b7c42&hm=681cc9cdf8c223dffe21c2816f28a72f2fa310729599d7d4eaa5e3ab719dcc92&=&format=webp&quality=lossless",
+    "lore": "Disguised as a mysterious protector known as Mr. Whatsit, Vecna gains Holly Wheeler's trust by promising to keep her safe, while secretly luring her deeper into his plans.",
+    "dataFile": "001"
+  },
+  {
+    "name": "The Sorcerer",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519231141826134107/bc4894735cd49790fdaa16d70bc3498a.png?ex=6a3ccdc2&is=6a3b7c42&hm=82b82feb7dd3c7f8edba102660836ba5bc91fa1908509bc4a33b4bee129aa1a0&=&format=webp&quality=lossless",
+    "lore": "After his time in the Upside Down, Will remains connected to Vecna and the hive mind. As he learns to understand this bond, he discovers ways to use that connection against the darkness threatening Hawkins.",
+    "dataFile": "will"
+  },
+  {
+    "name": "The Forest",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1519231142140710932/09d0792856a77a48080c8794cfd87625.png?ex=6a3ccdc2&is=6a3b7c42&hm=76310f6f2f4abc0520cf3e0cb789d230523f32e2e11423bb1715fa77807939e0&=&format=webp&quality=lossless",
+    "lore": "Slenderman, a mysterious figure said to lurk within forests and isolated places, silently watching from the shadows.",
+    "dataFile": "slenderman"
+  }
+],
 
   "lore": "Vecna is the main antagonist of Stranger Things Season 4 and the true mastermind behind many events connected to the Upside Down. Originally Henry Creel, also known as One, he possesses immense psychic abilities that allow him to manipulate minds, invade memories, and brutally kill his victims from another dimension."
 }

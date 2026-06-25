@@ -14,7 +14,7 @@
 
   "universe": "Breaking Bad",
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507818679121739948/7838-walter-smoking.png?ex=6a134913&is=6a11f793&hm=728492cef22e09874043272076ed808fce59609074cf0da78583f5e47712a7f6&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235378492604476/b9fc1ba146da586e82cada1118d15e2b.png?ex=6a3cd1b4&is=6a3b8034&hm=91de3f9aa997cd2d082c2bd170d5e3a8204ae1291ed10b1fb5c8cfefea2b3a59&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -84,6 +84,7 @@
         "break",
         "move",
         "ex",
+        "lin",
         "area",
         "move"
       ]
@@ -93,38 +94,38 @@
   "skins": [
     {
       "name": "Pilot",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648024958828755/9f143e3910f8425fbe6f516f21cc61a9.png?ex=6a164d76&is=6a14fbf6&hm=ac224cb283a3031c45ab9fa53f5d896ebda48bbba432b77e9b7fdfc9f398f37f&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235378790404176/f6bdcd5d85e45934c3c1f01a0776fe34.png?ex=6a3cd1b4&is=6a3b8034&hm=8127bd1fb319c9e6cea96d20e0e5c3ca9924f1228600d014a583ad5157ee38bf&=&format=webp&quality=lossless",
       "lore": "Walter White appears during the early days of cooking meth in the desert, still with hair and awkwardly missing his pants after his first chaotic criminal experiences."
     },
 
     {
       "name": "Heisenberg",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648297425014875/5884d911926792b69a53926e4f9d9e48.png?ex=6a164db7&is=6a14fc37&hm=8be530d3a94dbf8b9fcef297aa91cfeaa053ff3f8343e47a5dabb5bdc9e5a9eb&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235379268681849/Untitled_Project_28.jpg?ex=6a3cd1b4&is=6a3b8034&hm=189cbc260254ab82ad1398accf5afadd60cf2a304a9d782a63d81095e0bb1bfc&=&format=webp",
       "lore": "Walter White fully embraces the Heisenberg identity, becoming the feared drug kingpin of Albuquerque."
     },
 
     {
       "name": "Hazardous",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648371513069592/ee875f686c36e14eee4598e32868dd18.png?ex=6a164dc9&is=6a14fc49&hm=ea82be8c02ec0385c3b2404c0a0fd58cc3ed751584a60e1c9ff2044c171fe28f&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235379599900723/6a9b7022878f9960ee74a3461c9582b7.png?ex=6a3cd1b4&is=6a3b8034&hm=202b0abb965622233c0c7569574cc8d975f5859471f599808b2c99f2145de288&=&format=webp&quality=lossless",
       "lore": "Walter wears the iconic yellow hazmat suit used while cooking meth alongside Jesse Pinkman in hidden laboratories and houses."
     },
 
     {
       "name": "Joker",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508648612236886156/9b550099441c1b6aa2cb19289b68168b.png?ex=6a164e02&is=6a14fc82&hm=711ed5d46532cbda88cd9bd983ecc3750f8ef40b9763321fd5304f44b0d4d214&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235379969134672/453d53fd5534b98a0bf743628ad626cd.png?ex=6a3cd1b4&is=6a3b8034&hm=32081a2162b59c22d154e8ef3e62444ff0047df04b35da0f051f317a0a3fd676&=&format=webp&quality=lossless",
       "lore": "Arthur Fleck descends into madness and transforms into the Joker, becoming Gotham City's infamous clown criminal."
     },
 
     {
       "name": "Masuka",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508649058703642724/07bb193a611d783b13de8a149f47d527.png?ex=6a164e6c&is=6a14fcec&hm=36ca3554ffb9f22fdfd097f601e84b628027c51df1ed4526c4487d49f54daeeb&=&format=webp&quality=lossless",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235380316999731/8c57710e514eee689b9073b34ddb9187.png?ex=6a3cd1b4&is=6a3b8034&hm=8f444d9c59a0291a43869ee568cb40358eaad46cd1208728793b8b897af8f18c&=&format=webp&quality=lossless",
       "lore": "Vince Masuka, the eccentric forensic analyst from Dexter known for his inappropriate humor and work at Miami Metro."
     },
 
     {
       "name": "Bones",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508652113020850236/Web_Photo_Editor_56.jpg?ex=6a165145&is=6a14ffc5&hm=02fb9de9e6ef7c384d45b0beddc0e8f81c20dee6a28adf95a0e662a0eb9ac5c2&=&format=webp",
-      "lore": "A skeletal version of Heisenberg wearing Walter White's signature criminal outfit (just his hat)."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1519235380824641729/Web_Photo_Editor_56.jpg?ex=6a3cd1b4&is=6a3b8034&hm=8279ac0c255bcd4568faff797712e04a27b040e06036f04c0f80947d5f86ebf0&=&format=webp",
+      "lore": "Meme Heisenbones, a skeletal version of Heisenberg wearing Walter White's signature criminal outfit (just his hat lol)."
     }
   ],
 

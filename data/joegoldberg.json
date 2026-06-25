@@ -27,7 +27,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507166677396226059/QxKCzdBH_400x400.png?ex=6a10e9d9&is=6a0f9859&hm=564b575270dd28796553d721f3df94d92633cac1a044be367afaa81db41849dd&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723931622736102/image.png?ex=6a3af561&is=6a39a3e1&hm=05705f44accba5a8da0c16b0fcdde3b0f2567cb81a867a889b507b65fdc3df6a&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -47,6 +47,7 @@
     "attributes": [
       "block",
       "push",
+      "lin",
       "move",
       "mele"
     ]
@@ -84,6 +85,7 @@
     "cooldown": "35s",
     "attributes": [
       "ignore",
+      "lin",
       "area"
     ]
   },
@@ -107,7 +109,8 @@
     "damage": 0,
     "cooldown": "51s",
     "attributes": [
-      "inv"
+      "inv",
+      "lin"
     ]
   }
 ],
@@ -115,51 +118,51 @@
   "skins": [
     {
       "name": "Henderson",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508205341194588331/Web_Photo_Editor_22.jpg?ex=6a14b12e&is=6a135fae&hm=6cdf28a43aecd267e52e4a6d3f76f498bdee77c8ff03aaa4a095a21cf60cf0fa&=&format=webp",
-      "lore": "The Henderson skin references Joe Goldberg wearing a mask with Henderson's face while confronting him and trying to force a confession."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723931991838963/image.png?ex=6a3af561&is=6a39a3e1&hm=a89475067c6158042d05cc3e6ad4c1a43f1ea67b0cfd7508ee50857006e631d6&=&format=webp&quality=lossless",
+      "lore": "Joe Goldberg wearing a mask with Henderson's face while confronting him and trying to force a confession."
     },
 
     {
       "name": "Billionaire",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508207693792284702/2734eeb432c85739999d155d1ed42985.png?ex=6a14b35f&is=6a1361df&hm=ff1ee0ffe2b5d9cebd95c3c197d68a544b1d39efdf4a6b9787b24bc4b4b9fb30&=&format=webp&quality=lossless",
-      "lore": "The Billionaire skin represents Joe Goldberg during Season 5 while living a luxurious billionaire lifestyle alongside Kate Lockwood."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723932335898725/image.png?ex=6a3af561&is=6a39a3e1&hm=0b75ae3c78e650b4ec042d2773a56be792f8b6f8eb5f79b6e31016fa9a8ff5c3&=&format=webp&quality=lossless",
+      "lore": "Joe Goldberg during Season 5 while living a luxurious billionaire lifestyle alongside Kate Lockwood."
     },
 
     {
       "name": "Eat the rich",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508208188078686278/Web_Photo_Editor_24.jpg?ex=6a14b3d5&is=6a136255&hm=e7828b1766efd4ef72a1c34851c7be56e159faaba4a0602e22dd50efcc2228f9&=&format=webp",
-      "lore": "The Eat the rich skin references Joe Goldberg during Season 4 when he becomes trapped inside a basement that is later set on fire by his Rhys Montrose alter ego."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723932696477756/image.png?ex=6a3af562&is=6a39a3e2&hm=84655bb2ba1b1c21ff9afc74d970c8e8d9ce95f5ce3ca728e3234b0bdc7c0c7f&=&format=webp&quality=lossless",
+      "lore": "Joe Goldberg during Season 4 when he becomes trapped inside a basement that is later set on fire by his Rhys Montrose alter ego."
     },
 
     {
       "name": "Love",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508208267917263029/2967f23492730d489fbc545098d5b1e5.png?ex=6a14b3e8&is=6a136268&hm=1e1065ad923a1ea7d5397060e9a03dac411c099207433be86fd98ffa62bb8731&=&format=webp&quality=lossless",
-      "lore": "The Love skin references Love Quinn from YOU, Joe Goldberg's wife and one of the most dangerous killers in the series.",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723933250130033/image.png?ex=6a3af562&is=6a39a3e2&hm=70e7ecdd860757ef359f1ed12b893222379af46d2007c671dfb79c24bccad33e&=&format=webp&quality=lossless",
+      "lore": "Love Quinn from YOU, Joe Goldberg's wife and one of the most dangerous killers in the series.",
       "dataFile": "love.json"
     },
 
     {
       "name": "Paris",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508211468506501163/Web_Photo_Editor_25.jpg?ex=6a14b6e3&is=6a136563&hm=df25f0cecb908689c09ff56233def563c99b9057986ea988ee2bc7adabbe611e&=&format=webp",
-      "lore": "The Paris skin represents Joe Goldberg at the end of Season 3 after traveling to Paris in search of Marienne."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723933585801367/image.png?ex=6a3af562&is=6a39a3e2&hm=60e0a5c0b0af140450bc14206c02c57c4faaef068022acd0d9616fa63a92f35c&=&format=webp&quality=lossless",
+      "lore": "Joe Goldberg at the end of Season 3 after traveling to Paris in search of Marienne."
     },
 
     {
       "name": "Intruding",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508211549615947866/9bc3a53f6a649eab2789f43d1a1a59f4.png?ex=6a14b6f6&is=6a136576&hm=ed45e486954ba26a409e2fa660363c4def8f59beea9cf33d703c78ebc3ff2500&=&format=webp&quality=lossless",
-      "lore": "The Intruding skin references Joe Goldberg infiltrating the mansion of the Lockwood twins while attempting to kidnap Reagan."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723933883465920/image.png?ex=6a3af562&is=6a39a3e2&hm=15bf6a55f7c7d82b9f3f579ff8eb8d8a995aaf4298ca902f100276a5e6f8d15b&=&format=webp&quality=lossless",
+      "lore": "Joe Goldberg infiltrating the mansion of the Lockwood twins while attempting to kidnap Reagan."
     },
 
     {
       "name": "Intensity",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508211681694711818/745841876ee00c58fc4d4904b2ae6828.png?ex=6a14b716&is=6a136596&hm=a81b49651c9904192394ca37052ceaf738048a3d6679d3c8466b6efd3c158dd6&=&format=webp&quality=lossless",
-      "lore": "The Intensity skin references the near finale of Season 5 when Louise threatens Joe Goldberg with a gun to force a confession, leading Joe to begin violently chasing her."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723934185328660/image.png?ex=6a3af562&is=6a39a3e2&hm=c786cfc9216934b193e8550a5859bbc3b204372e06add81dcbec11b51a28de6c&=&format=webp&quality=lossless",
+      "lore": "In the near finale of Season 5 when Louise threatens Joe Goldberg with a gun to force a confession, leading Joe to begin violently chasing her."
     },
 
     {
       "name": "Consequences",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508211755514335302/9d51483ed79147c8c9e5fe472eb4900e.png?ex=6a14b727&is=6a1365a7&hm=3b79e8422ef1719dfcbc185f3410463d1187fa558290b9424c513fce27d6caff&=&format=webp&quality=lossless",
-      "lore": "The Consequences skin represents Joe Goldberg after finally being imprisoned at the end of the story and forced to face the consequences of his crimes."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518723934562812155/image.png?ex=6a3af562&is=6a39a3e2&hm=cd7106e4c3517b3ffa96345ae80f27b8962abbce08dcafc2ee41c4c30bb84acf&=&format=webp&quality=lossless",
+      "lore": "Joe Goldberg after finally being imprisoned at the end of the story and forced to face the consequences of his crimes."
     }
   ],
 

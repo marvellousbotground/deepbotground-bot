@@ -20,7 +20,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1508174458525843466/Web_Photo_Editor_18.jpg?ex=6a14946b&is=6a1342eb&hm=ed4f993a005ff871b6ba25819789c021b633e8adbbbaf3d430aaf3e41be77cfa&=&format=webp",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518678829487624325/c80bedc9c6f2cac4595fce31485078f0.png?ex=6a3acb60&is=6a3979e0&hm=d0965557f229452d48d4bea79fcf5a3fc4594acc96ac63fbb34bb14fb4b329d3&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -39,6 +39,7 @@
       "cooldown": "11.5s",
       "attributes": [
         "block",
+        "lin",
         "mele",
         "move"
       ]
@@ -122,27 +123,27 @@
   "skins": [
     {
       "name": "Stab",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508164557829574797/Web_Photo_Editor_17.jpg?ex=6a148b32&is=6a1339b2&hm=d0f7b9e9ba8e10b7b884cea124961c2c4a7d44af832350ac16998b89cbcb3f89&=&format=webp",
-      "lore": "The Stab skin references the fictional Stab movies from the Scream universe, the in-universe horror franchise based on Gale Weathers' book about the original Woodsboro murders."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518678830150062101/Web_Photo_Editor_17.jpg?ex=6a3acb60&is=6a3979e0&hm=72b9c889bca4656bfcb2e3f7eada479a14d8f13cd21977c403a1cdc80b0d498f&=&format=webp",
+      "lore": "Fictional Stab movies from the Scream universe, the in-universe horror franchise based on Gale Weathers' book about the original Woodsboro murders."
     },
 
     {
       "name": "Musical",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508164206137049148/image.png?ex=6a148adf&is=6a13395f&hm=ee60caa308330978cf92c1092bf67f20b7bc4a604d14e0c267045a08536d5327&=&format=webp&quality=lossless",
-      "lore": "The Musical skin references Sidney Prescott's hallucinations during the theater rehearsal scene in Scream 2, where she imagines Ghostface among the actors during the Greek tragedy performance."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518678830900973588/image.png?ex=6a3acb60&is=6a3979e0&hm=bd2ebe91c1d14116de107711d9b47acbf7c3608f38152676c5dcbcd599bb13fb&=&format=webp&quality=lossless&width=1216&height=1216",
+      "lore": "Sidney Prescott's hallucinations during the theater rehearsal scene in Scream 2, where she imagines Ghostface among the actors during the Greek tragedy performance."
     },
 
     {
       "name": "Old Suit",
-      "image": "https://media.discordapp.net/attachments/1507956237088718849/1508177467368542450/4c0371654e8014a193bb682dbaf568ec.png?ex=6a149738&is=6a1345b8&hm=6f6ba0f3d27224cbba04dc1666336b4d0dd57dc6e6078f2a0dc51366bacaed12&=&format=webp&quality=lossless",
-      "lore": "The Old Suit skin references the killers from Scream 6, who use the original Ghostface masks and older costumes from previous murderers to confuse and terrorize the protagonists.",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518678831454617670/2a12057fe4f4fa3eded29c1485218fd9.png?ex=6a3acb61&is=6a3979e1&hm=59873c7b67f5cb2f20edb9cd148afeb2d84dcc8c873dc4c8d4b01ea56a1b21f9&=&format=webp&quality=lossless",
+      "lore": "killers from Scream 6, who use the original Ghostface masks and older costumes from previous murderers to confuse and terrorize the protagonists.",
       "dataFile": "oldsuit.json"
     },
 
     {
       "name": "Scary Movie",
-      "image": "https://media.discordapp.net/attachments/1507041233501950142/1508174867860553788/Web_Photo_Editor_19.jpg?ex=6a1494cd&is=6a13434d&hm=407ca358fc1bb9adce81cf3e4256b379c1016c9b2f24e3f3bdfa0f284992af9d&=&format=webp",
-      "lore": "The Scary Movie skin references the Ghostface parody from the Scary Movie films, especially the iconic 'WAZAAAAA' scene."
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518678831903543296/dd8a42b1a9b687cb7731644cf71bafcf.png?ex=6a3acb61&is=6a3979e1&hm=847ba10f5e69bc04409ba1c51c6a5f1482326613c9631adcc42299766a052bef&=&format=webp&quality=lossless",
+      "lore": "Ghostface parody from the Scary Movie films, especially the iconic 'WAZAAAAA' scene."
     }
   ],
 

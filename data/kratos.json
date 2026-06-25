@@ -21,7 +21,7 @@
     ]
   },
 
-  "image": "https://media.discordapp.net/attachments/1507041233501950142/1507178632395755640/kratos-pfp-v0-0crbjy5t0fj51.png?ex=6a10f4fb&is=6a0fa37b&hm=c8b88f17300285218d20a3b91b1a1f9528448ef7711d32f6525bebdeda4dead6&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518729030990303292/d9d44f16329a4e72b4b8e45d41d83262.png?ex=6a3afa21&is=6a39a8a1&hm=cb12173abafbefc3a51d31a395b29d3f0242daa792caa39ef1e451c1713b8682&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -77,6 +77,7 @@
     "attributes": [
       "break",
       "move",
+      "lin",
       "push",
       "mele"
     ]
@@ -101,7 +102,9 @@
     "damage": 10,
     "cooldown": "45s",
     "attributes": [
-      "trans"
+      "trans",
+      "boost",
+      "push"
     ]
   }
 ],
@@ -109,19 +112,19 @@
 "skins": [
   {
     "name": "Messi",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508228941561725084/dg04pri-cf9273a6-1251-44cf-b13b-c748426721d4.png?ex=6a14c729&is=6a1375a9&hm=1328922efad88ee6a0191a42114683cdecde6a9d7762326c3ac2f0717f76029a&=&format=webp&quality=lossless",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518729031435026434/Untitled_Project_13.jpg?ex=6a3afa21&is=6a39a8a1&hm=a83d67c5d276d2388f096ef2c2bc8e39630831877b5760539131e8fd2d1f7881&=&format=webp",
     "lore": "The Messi skin references the viral low-quality meme edit of Kratos combined with Lionel Messi."
   },
 
   {
     "name": "Black Bear",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508228584475721908/d3bb0203d275947e5ae0ba30c89c30fa.png?ex=6a14c6d4&is=6a137554&hm=7d2757dd7525e6d1fdb084f0e6b93462f09cd2bf396f38276958e6211bbdb58b&=&format=webp&quality=lossless",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518729031909118022/d3bb0203d275947e5ae0ba30c89c30fa.png?ex=6a3afa21&is=6a39a8a1&hm=065cf5d0b3408d52f9d2635f5c83b7e611390a309f70643dca40140dacf1bb36&=&format=webp&quality=lossless",
     "lore": "The Black Bear skin references the Black Bear armor set worn by Kratos in God of War Ragnarök."
   },
 
   {
     "name": "Kong",
-    "image": "https://media.discordapp.net/attachments/1507041233501950142/1508229056200577084/a963cfb3afd192dad8bc085e992d58f6.png?ex=6a14c744&is=6a1375c4&hm=00d189cea2431ae59dae0eec2f2bd8262aa2f412c695c20b980e84a884fa5c31&=&format=webp&quality=lossless&width=386&height=350",
+    "image": "https://media.discordapp.net/attachments/1518466128396025948/1518729032332607499/f7f08296282f6ab7592c3996a3a8a754.png?ex=6a3afa21&is=6a39a8a1&hm=2d1040454d80fbb8f1fd368a373d3815200dc8bd80d7ab22e7fa5d631628e88e&=&format=webp&quality=lossless",
     "lore": "The Kong skin references King Kong, the giant legendary ape from the Kong and MonsterVerse franchise."
   }
 ],
