@@ -9,8 +9,6 @@ const fs = require('fs');
 const path = require('path');
 
 const ATTRIBUTE_EMOJIS = {
-
-
     boost: "<:Boost:1518480719431733456>",
     lin: "<:Lingering:1517666297104699522>",
     pull: "<:Pull:1517666295133376562>",
@@ -20,6 +18,7 @@ const ATTRIBUTE_EMOJIS = {
     coun: "<:Counter:1510717999458418718>",
     inv: "<:Vanish:1510717997713719478>",
     brut: "<:Brutality:1511496907007066262>",
+    bruta: "<:Brutality:1511496907007066262>",
     area: "<:Area:1510717995914231949>",
     trans: "<:Transformation:1510717993959559209>",
     cine: "<:Cinema:1510717991908540466>",
@@ -30,7 +29,6 @@ const ATTRIBUTE_EMOJIS = {
     ex: "<:Explode:1510717981510860930>",
     grab: "<:Grab:1510717979115917454>",
     mele: "<:Mele:1510717976226300126>",
-    bruta: "<:Brutality:1511496907007066262>",
 
     range: "<:Range:1511468297445572618>",
     lr: "<:RangePlus:1511468293700059417>",
@@ -70,9 +68,18 @@ function getAttributeEmojis(attack) {
         : 'None';
 }
 
+function getVisibleSlot(slot) {
+    const value = String(slot || '').trim().toUpperCase();
+
+    if (value === "EB") return "E";
+    if (value.endsWith("B")) return value.replace("B", "");
+
+    return value;
+}
+
 function getAttackIcon(attack, index) {
     if (attack.slot !== undefined && attack.slot !== null) {
-        const slot = String(attack.slot).trim().toUpperCase();
+        const slot = getVisibleSlot(attack.slot);
 
         const slotIcons = {
             "1": "1️⃣",
@@ -99,13 +106,19 @@ function getAttackIcon(attack, index) {
 
 function getAllCharacters() {
     const dataPath = path.join(__dirname, '..', 'data');
-    const files = fs.readdirSync(dataPath).filter(file => file.toLowerCase().endsWith('.json'));
+
+    const files = fs
+        .readdirSync(dataPath)
+        .filter(file => file.toLowerCase().endsWith('.json'));
+
     const characters = [];
 
     for (const file of files) {
         try {
             const fullPath = path.join(dataPath, file);
+
             delete require.cache[require.resolve(fullPath)];
+
             const data = require(fullPath);
 
             characters.push({
@@ -125,7 +138,13 @@ function loadSkinData(dataFile) {
     if (!dataFile) return {};
 
     try {
-        const skinDataPath = path.join(__dirname, '..', 'data', 'skinData', dataFile);
+        const skinDataPath = path.join(
+            __dirname,
+            '..',
+            'data',
+            'skinData',
+            dataFile
+        );
 
         delete require.cache[require.resolve(skinDataPath)];
 
@@ -175,6 +194,14 @@ function hasAdvancedSkins(characterData) {
     );
 }
 
+function getSkinByName(characterData, skinName) {
+    if (!skinName || !characterData?.skins) return null;
+
+    return characterData.skins.find(
+        skin => skin.name === skinName
+    ) || null;
+}
+
 function createVersionSelect(character) {
     return new ActionRowBuilder().addComponents(
         new StringSelectMenuBuilder()
@@ -195,11 +222,26 @@ function createActionSelect() {
             .setCustomId('char_select_action')
             .setPlaceholder('Select what you want to see')
             .addOptions(
-                { label: 'Stats', value: 'stats' },
-                { label: 'Attacks', value: 'attacks' },
-                { label: 'Lore', value: 'lore' },
-                { label: 'Skins', value: 'skins' },
-                { label: 'Techs', value: 'techs' }
+                {
+                    label: 'Stats',
+                    value: 'stats'
+                },
+                {
+                    label: 'Attacks',
+                    value: 'attacks'
+                },
+                {
+                    label: 'Lore',
+                    value: 'lore'
+                },
+                {
+                    label: 'Skins',
+                    value: 'skins'
+                },
+                {
+                    label: 'Techs',
+                    value: 'techs'
+                }
             )
     );
 }
@@ -241,7 +283,9 @@ function createCharacterStartEmbed(characterData, selectedSkin = null) {
         .setTitle(title)
         .setColor(0x00ff99)
         .setDescription('Select what you want to see.')
-        .setFooter({ text: 'MarvellousBOTground' });
+        .setFooter({
+            text: 'MarvellousBOTground'
+        });
 
     const image = selectedSkin?.image || characterData.image;
 
@@ -263,7 +307,9 @@ function createSkinsInfoEmbed(characterData, selectedSkin = null) {
     const embed = new EmbedBuilder()
         .setTitle(`${characterData.name} - Skins Information`)
         .setColor(0x2ecc71)
-        .setFooter({ text: 'MarvellousBOTground' });
+        .setFooter({
+            text: 'MarvellousBOTground'
+        });
 
     if (!characterData.skins || characterData.skins.length === 0) {
         embed.setDescription('This character does not have any skins yet.');
@@ -271,7 +317,10 @@ function createSkinsInfoEmbed(characterData, selectedSkin = null) {
     }
 
     if (!hasAdvancedSkins(characterData)) {
-        embed.setDescription(characterData.skins.map(s => `• ${s}`).join('\n'));
+        embed.setDescription(
+            characterData.skins.map(s => `• ${s}`).join('\n')
+        );
+
         return embed;
     }
 
@@ -283,6 +332,7 @@ function createSkinsInfoEmbed(characterData, selectedSkin = null) {
 
     characterData.skins.forEach(skin => {
         if (selectedSkin && skin.name === selectedSkin.name) return;
+
         skinList.push(`• ${skin.name}`);
     });
 
@@ -322,7 +372,9 @@ function createCharacterEmbed(characterData, action, selectedSkin = null) {
     const embed = new EmbedBuilder()
         .setTitle(`${displayName} - ${action.toUpperCase()}`)
         .setColor(colors[action])
-        .setFooter({ text: 'MarvellousBOTground' });
+        .setFooter({
+            text: 'MarvellousBOTground'
+        });
 
     const image = selectedSkin?.image || characterData.image;
 
@@ -332,7 +384,9 @@ function createCharacterEmbed(characterData, action, selectedSkin = null) {
 
     if (action === 'attacks') {
         if (!gameplayData.attacks || gameplayData.attacks.length === 0) {
-            embed.setDescription('This character does not have any attacks registered yet.');
+            embed.setDescription(
+                'This character does not have any attacks registered yet.'
+            );
         } else {
             embed.setDescription(
                 gameplayData.attacks.map((a, index) =>
@@ -346,23 +400,31 @@ function createCharacterEmbed(characterData, action, selectedSkin = null) {
     }
 
     if (action === 'stats') {
+        const stats = gameplayData.stats || {};
+
         embed.setDescription(
-            `**HP:** ${gameplayData.stats?.hp || gameplayData.stats?.["base hp"]}\n` +
-            `**Speed:** ${gameplayData.stats?.speed}\n` +
-            `**Damage:** ${gameplayData.stats?.damage}\n` +
-            `**Skills:** ${gameplayData.stats?.skills}\n` +
-            `**Low HP Animation:** ${gameplayData.stats?.lowHpAnimation ? '🟢' : '🔴'}\n` +
-            `**Can Heal:** ${gameplayData.stats?.canHeal ? '🟢' : '🔴'}`
+            `**HP:** ${stats.hp || stats["base hp"] || 'Unknown'}\n` +
+            `**Speed:** ${stats.speed || 'Unknown'}\n` +
+            `**Damage:** ${stats.damage ?? 'Unknown'}\n` +
+            `**Skills:** ${stats.skills ?? 'Unknown'}\n` +
+            `**Low HP Animation:** ${stats.lowHpAnimation ? '🟢' : '🔴'}\n` +
+            `**Can Heal:** ${stats.canHeal ? '🟢' : '🔴'}`
         );
     }
 
     if (action === 'lore') {
-        embed.setDescription(selectedSkin?.lore || characterData.lore || 'No lore available.');
+        embed.setDescription(
+            selectedSkin?.lore ||
+            characterData.lore ||
+            'No lore available.'
+        );
     }
 
     if (action === 'techs') {
         if (!gameplayData.techs || gameplayData.techs.length === 0) {
-            embed.setDescription('This character does not have any uploaded techs yet.');
+            embed.setDescription(
+                'This character does not have any uploaded techs yet.'
+            );
         } else {
             embed.setDescription(
                 gameplayData.techs.map(t =>
@@ -381,8 +443,16 @@ function createComponents(characterData, currentAction, selectedSkin, extraRows 
         createActionSelect()
     ];
 
-    if (currentAction === 'skins' && hasAdvancedSkins(characterData)) {
-        components.push(createSkinSelect(characterData, selectedSkin));
+    if (
+        currentAction === 'skins' &&
+        hasAdvancedSkins(characterData)
+    ) {
+        components.push(
+            createSkinSelect(
+                characterData,
+                selectedSkin
+            )
+        );
     }
 
     return components;
@@ -402,7 +472,10 @@ module.exports = {
 
     async autocomplete(interaction) {
         try {
-            const focusedValue = normalize(interaction.options.getFocused());
+            const focusedValue = normalize(
+                interaction.options.getFocused()
+            );
+
             const characters = getAllCharacters();
 
             const scored = characters
@@ -410,15 +483,27 @@ module.exports = {
                     const name = normalize(character.data.name);
                     const key = normalize(character.key);
                     const aliases = character.data.aliases || [];
-                    const allNames = [name, key, ...aliases.map(alias => normalize(alias))];
+
+                    const allNames = [
+                        name,
+                        key,
+                        ...aliases.map(alias => normalize(alias))
+                    ];
 
                     let score = 999;
 
-                    if (allNames.some(n => n === focusedValue)) score = 0;
-                    else if (allNames.some(n => n.startsWith(focusedValue))) score = 1;
-                    else if (allNames.some(n => n.includes(focusedValue))) score = 2;
+                    if (allNames.some(n => n === focusedValue)) {
+                        score = 0;
+                    } else if (allNames.some(n => n.startsWith(focusedValue))) {
+                        score = 1;
+                    } else if (allNames.some(n => n.includes(focusedValue))) {
+                        score = 2;
+                    }
 
-                    return { character, score };
+                    return {
+                        character,
+                        score
+                    };
                 })
                 .filter(item => item.score !== 999)
                 .sort((a, b) => a.score - b.score)
@@ -457,7 +542,9 @@ module.exports = {
                 .setTitle(character.name)
                 .setColor(0x00ff99)
                 .setDescription(`Select ${character.name} version`)
-                .setFooter({ text: 'MarvellousBOTground' });
+                .setFooter({
+                    text: 'MarvellousBOTground'
+                });
 
             if (character.image && character.image.startsWith('http')) {
                 embed.setImage(character.image);
@@ -465,7 +552,9 @@ module.exports = {
 
             const message = await interaction.reply({
                 embeds: [embed],
-                components: [createVersionSelect(character)],
+                components: [
+                    createVersionSelect(character)
+                ],
                 fetchReply: true
             });
 
@@ -482,23 +571,55 @@ module.exports = {
                 }
 
                 if (i.customId === 'char_select_version') {
-                    currentVersion = character.versions.find(v => v.id === i.values[0]);
-                    currentSkin = null;
+                    const previousSkinName = currentSkin?.name;
+
+                    currentVersion = character.versions.find(
+                        v => v.id === i.values[0]
+                    );
+
+                    if (!currentVersion) {
+                        return i.reply({
+                            content: 'Version not found.',
+                            ephemeral: true
+                        });
+                    }
+
+                    if (previousSkinName) {
+                        currentSkin = getSkinByName(
+                            currentVersion,
+                            previousSkinName
+                        );
+                    } else {
+                        currentSkin = null;
+                    }
 
                     if (currentAction) {
                         return i.update({
-                            embeds: [createCharacterEmbed(currentVersion, currentAction, currentSkin)],
+                            embeds: [
+                                createCharacterEmbed(
+                                    currentVersion,
+                                    currentAction,
+                                    currentSkin
+                                )
+                            ],
                             components: createComponents(
                                 currentVersion,
                                 currentAction,
                                 currentSkin,
-                                [createVersionSelect(character)]
+                                [
+                                    createVersionSelect(character)
+                                ]
                             )
                         });
                     }
 
                     return i.update({
-                        embeds: [createCharacterStartEmbed(currentVersion)],
+                        embeds: [
+                            createCharacterStartEmbed(
+                                currentVersion,
+                                currentSkin
+                            )
+                        ],
                         components: [
                             createVersionSelect(character),
                             createActionSelect()
@@ -517,12 +638,23 @@ module.exports = {
                     if (i.values[0] === 'default') {
                         currentSkin = null;
                     } else {
-                        currentSkin = currentVersion.skins[Number(i.values[0])];
+                        currentSkin =
+                            currentVersion.skins[
+                                Number(i.values[0])
+                            ];
                     }
 
                     return i.update({
-                        embeds: [createCharacterStartEmbed(currentVersion, currentSkin)],
-                        components: [createActionSelect()]
+                        embeds: [
+                            createCharacterStartEmbed(
+                                currentVersion,
+                                currentSkin
+                            )
+                        ],
+                        components: [
+                            createVersionSelect(character),
+                            createActionSelect()
+                        ]
                     });
                 }
 
@@ -537,12 +669,20 @@ module.exports = {
                     currentAction = i.values[0];
 
                     return i.update({
-                        embeds: [createCharacterEmbed(currentVersion, currentAction, currentSkin)],
+                        embeds: [
+                            createCharacterEmbed(
+                                currentVersion,
+                                currentAction,
+                                currentSkin
+                            )
+                        ],
                         components: createComponents(
                             currentVersion,
                             currentAction,
                             currentSkin,
-                            [createVersionSelect(character)]
+                            [
+                                createVersionSelect(character)
+                            ]
                         )
                     });
                 }
@@ -550,7 +690,9 @@ module.exports = {
 
             collector.on('end', async () => {
                 try {
-                    await interaction.editReply({ components: [] });
+                    await interaction.editReply({
+                        components: []
+                    });
                 } catch (error) {}
             });
 
@@ -558,8 +700,12 @@ module.exports = {
         }
 
         const message = await interaction.reply({
-            embeds: [createCharacterStartEmbed(character)],
-            components: [createActionSelect()],
+            embeds: [
+                createCharacterStartEmbed(character)
+            ],
+            components: [
+                createActionSelect()
+            ],
             fetchReply: true
         });
 
@@ -579,12 +725,22 @@ module.exports = {
                 if (i.values[0] === 'default') {
                     currentSkin = null;
                 } else {
-                    currentSkin = character.skins[Number(i.values[0])];
+                    currentSkin =
+                        character.skins[
+                            Number(i.values[0])
+                        ];
                 }
 
                 return i.update({
-                    embeds: [createCharacterStartEmbed(character, currentSkin)],
-                    components: [createActionSelect()]
+                    embeds: [
+                        createCharacterStartEmbed(
+                            character,
+                            currentSkin
+                        )
+                    ],
+                    components: [
+                        createActionSelect()
+                    ]
                 });
             }
 
@@ -592,15 +748,27 @@ module.exports = {
                 currentAction = i.values[0];
 
                 return i.update({
-                    embeds: [createCharacterEmbed(character, currentAction, currentSkin)],
-                    components: createComponents(character, currentAction, currentSkin)
+                    embeds: [
+                        createCharacterEmbed(
+                            character,
+                            currentAction,
+                            currentSkin
+                        )
+                    ],
+                    components: createComponents(
+                        character,
+                        currentAction,
+                        currentSkin
+                    )
                 });
             }
         });
 
         collector.on('end', async () => {
             try {
-                await interaction.editReply({ components: [] });
+                await interaction.editReply({
+                    components: []
+                });
             } catch (error) {}
         });
     }
