@@ -217,5 +217,75 @@ profiles[discordId].roblox = {
         );
     }
 });
+const customCharactersPath = path.join(
+    __dirname,
+    "database",
+    "customcharacters.json"
+);
 
+const customLikesPath = path.join(
+    __dirname,
+    "database",
+    "customlikes.json"
+);
+
+function loadJSON(filePath) {
+    if (!fs.existsSync(filePath)) {
+        return {};
+    }
+
+    return JSON.parse(
+        fs.readFileSync(filePath, "utf8")
+    );
+}
+
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    next();
+});
+
+app.get("/api/featured", (req, res) => {
+    const customs = loadJSON(customCharactersPath);
+    const likes = loadJSON(customLikesPath);
+
+    const featured = Object.entries(customs)
+        .filter(([id, custom]) =>
+            custom.featured === true &&
+            custom.websitePublished === true
+        )
+        .map(([id, custom]) => ({
+            id,
+            name: custom.name,
+            image: custom.image,
+            universe: custom.universe,
+            likes: likes[id]?.likes || 0
+        }));
+
+    res.json(featured);
+});
+
+app.get("/api/featured/:id", (req, res) => {
+    const id = req.params.id.toUpperCase();
+
+    const customs = loadJSON(customCharactersPath);
+    const likes = loadJSON(customLikesPath);
+
+    const custom = customs[id];
+
+    if (
+        !custom ||
+        custom.featured !== true ||
+        custom.websitePublished !== true
+    ) {
+        return res.status(404).json({
+            error: "Featured character not found."
+        });
+    }
+
+    res.json({
+        id,
+        ...custom,
+        likes: likes[id]?.likes || 0
+    });
+});
 module.exports = app;

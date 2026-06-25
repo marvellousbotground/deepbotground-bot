@@ -1,4 +1,8 @@
 const {
+    EmbedBuilder
+} = require("discord.js");
+
+const {
     loadCustomCharacters,
     saveCustomCharacters,
     loadCustomLikes,
@@ -11,13 +15,23 @@ const {
 } = require("./customBans");
 
 const OWNER_ID = "612102125580713985";
+const FEATURED_CHANNEL_ID = "1517777686309769246";
+const ONE_WEEK = 7 * 24 * 60 * 60;
+
+function now() {
+    return Math.floor(Date.now() / 1000);
+}
 
 function parseDuration(value) {
-    if (!value) return null;
+    if (!value) return "INVALID";
 
     const lower = value.toLowerCase();
 
-    if (lower === "perma" || lower === "perm" || lower === "permanent") {
+    if (
+        lower === "perma" ||
+        lower === "perm" ||
+        lower === "permanent"
+    ) {
         return null;
     }
 
@@ -34,7 +48,27 @@ function parseDuration(value) {
         d: 24 * 60 * 60
     };
 
-    return Math.floor(Date.now() / 1000) + amount * seconds[unit];
+    return now() + amount * seconds[unit];
+}
+
+function cleanExpiredBans() {
+    const bans = loadCustomBans();
+    let changed = false;
+
+    for (const userId of Object.keys(bans)) {
+        const ban = bans[userId];
+
+        if (ban.expiresAt && ban.expiresAt <= now()) {
+            delete bans[userId];
+            changed = true;
+        }
+    }
+
+    if (changed) {
+        saveCustomBans(bans);
+    }
+
+    return bans;
 }
 
 function deleteCustomsByUser(userId) {
@@ -57,9 +91,85 @@ function deleteCustomsByUser(userId) {
     return deleted;
 }
 
+function formatBan(userId, ban) {
+    return (
+        `**User:** \`${userId}\`\n` +
+        `**Reason:** ${ban.reason || "No reason provided."}\n` +
+        `**Banned by:** <@${ban.bannedBy || ban.moderator || "Unknown"}>\n` +
+        `**Created:** <t:${ban.createdAt}:R>\n` +
+        `**Expires:** ${ban.expiresAt ? `<t:${ban.expiresAt}:R>` : "Permanent"}`
+    );
+}
+
+async function sendFeaturedDM(client, custom, id) {
+    try {
+        const owner = await client.users.fetch(custom.creator);
+
+        await owner.send({
+            embeds: [
+                new EmbedBuilder()
+                    .setColor(0xf1c40f)
+                    .setTitle("⭐ Your custom character was featured!")
+                    .setDescription(
+                        `Congratulations! Your custom character **${custom.name}** has been selected as a **Featured Character** by MarvellousBOTground.\n\n` +
+                        `**ID:** \`${id}\`\n\n` +
+                        `Your character is now locked from normal edits.\n\n` +
+                        `You have **1 week** to use:\n\n` +
+                        `\`/editfeatured description\`\n\n` +
+                        `Use it to add attack descriptions and reference videos so your character can be published on the MarvellousBOTground website.\n\n` +
+                        `After **1 week**, this permission will expire automatically.`
+                    )
+                    .setThumbnail(custom.image || null)
+                    .setFooter({
+                        text: "MarvellousBOTground"
+                    })
+            ]
+        });
+    } catch (error) {
+        console.log("Could not DM custom owner:", error.message);
+    }
+}
+
+async function sendFeaturedChannelEmbed(client, custom, id) {
+    try {
+        const channel = await client.channels.fetch(FEATURED_CHANNEL_ID);
+
+        if (!channel) return;
+
+        const lore =
+            custom.lore && custom.lore.trim().length > 0
+                ? custom.lore.slice(0, 900)
+                : "No lore available yet.";
+
+        const embed = new EmbedBuilder()
+            .setColor(0xf1c40f)
+            .setTitle("⭐ NEW FEATURED")
+            .setDescription(
+                `**${custom.name}**\n\n` +
+                `**ID:** \`${id}\`\n` +
+                `**Creator:** <@${custom.creator}>\n` +
+                `**Universe:** ${custom.universe || "Unknown"}\n\n` +
+                `**Lore:**\n${lore}`
+            )
+            .setFooter({
+                text: "MarvellousBOTground"
+            });
+
+        if (custom.image && custom.image.startsWith("http")) {
+            embed.setImage(custom.image);
+        }
+
+        await channel.send({
+            embeds: [embed]
+        });
+    } catch (error) {
+        console.log("Could not send featured channel embed:", error.message);
+    }
+}
+
 async function handleCustomAdmin(message) {
+    if (message.author.bot) return false;
     if (!message.content.startsWith("MS!custom")) return false;
-    if (message.author.bot) return true;
 
     if (message.author.id !== OWNER_ID) {
         await message.reply("❌ You cannot use this command.");
@@ -71,10 +181,13 @@ async function handleCustomAdmin(message) {
 
     if (!subcommand) {
         await message.reply(
-            "Usage:\n" +
-            "`MS!custom ban <discordId> <30d|perma> <reason>`\n" +
+            "**Custom Admin Commands**\n\n" +
+            "`MS!custom ban <discordId> <30d|12h|60m|perma> <reason>`\n" +
             "`MS!custom unban <discordId>`\n" +
-            "`MS!custom bans`"
+            "`MS!custom bans`\n\n" +
+            "`MS!custom feature <customId>`\n" +
+            "`MS!custom unfeature <customId>`\n" +
+            "`MS!custom web <customId>`"
         );
         return true;
     }
@@ -85,7 +198,9 @@ async function handleCustomAdmin(message) {
         const reason = args.slice(4).join(" ") || "No reason provided.";
 
         if (!userId || !durationRaw) {
-            await message.reply("❌ Usage: `MS!custom ban <discordId> <30d|perma> <reason>`");
+            await message.reply(
+                "❌ Usage: `MS!custom ban <discordId> <30d|12h|60m|perma> <reason>`"
+            );
             return true;
         }
 
@@ -97,16 +212,18 @@ async function handleCustomAdmin(message) {
         const expiresAt = parseDuration(durationRaw);
 
         if (expiresAt === "INVALID") {
-            await message.reply("❌ Invalid duration. Use `30d`, `12h`, `60m`, or `perma`.");
+            await message.reply(
+                "❌ Invalid duration. Use `30d`, `12h`, `60m`, or `perma`."
+            );
             return true;
         }
 
-        const bans = loadCustomBans();
+        const bans = cleanExpiredBans();
 
         bans[userId] = {
             reason,
             bannedBy: message.author.id,
-            createdAt: Math.floor(Date.now() / 1000),
+            createdAt: now(),
             expiresAt
         };
 
@@ -115,7 +232,7 @@ async function handleCustomAdmin(message) {
         const deleted = deleteCustomsByUser(userId);
 
         await message.reply(
-            `✅ User banned from creating customs.\n\n` +
+            `✅ User banned from creating custom characters.\n\n` +
             `**User ID:** \`${userId}\`\n` +
             `**Duration:** ${expiresAt ? `<t:${expiresAt}:R>` : "Permanent"}\n` +
             `**Reason:** ${reason}\n` +
@@ -133,7 +250,7 @@ async function handleCustomAdmin(message) {
             return true;
         }
 
-        const bans = loadCustomBans();
+        const bans = cleanExpiredBans();
 
         if (!bans[userId]) {
             await message.reply("❌ This user is not banned.");
@@ -148,21 +265,195 @@ async function handleCustomAdmin(message) {
     }
 
     if (subcommand === "bans") {
-        const bans = loadCustomBans();
+        const bans = cleanExpiredBans();
         const entries = Object.entries(bans);
 
         if (entries.length === 0) {
-            await message.reply("No custom bans.");
+            await message.reply("✅ No custom bans.");
             return true;
         }
 
-        await message.reply(
-            entries.map(([userId, ban]) =>
-                `**${userId}**\n` +
-                `Reason: ${ban.reason}\n` +
-                `Expires: ${ban.expiresAt ? `<t:${ban.expiresAt}:R>` : "Permanent"}`
-            ).join("\n\n").slice(0, 1900)
-        );
+        const text = entries
+            .map(([userId, ban], index) =>
+                `**#${index + 1}**\n${formatBan(userId, ban)}`
+            )
+            .join("\n\n");
+
+        await message.reply(text.slice(0, 1900));
+        return true;
+    }
+
+    if (subcommand === "feature") {
+        const id = args[2]?.toUpperCase();
+
+        if (!id) {
+            await message.reply("❌ Usage: `MS!custom feature <customId>`");
+            return true;
+        }
+
+        const customs = loadCustomCharacters();
+        const likes = loadCustomLikes();
+
+        const custom = customs[id];
+
+        if (!custom) {
+            await message.reply("❌ Custom character not found.");
+            return true;
+        }
+
+        if (!likes[id]) {
+            likes[id] = {
+                likes: 0,
+                users: [],
+                featured: false
+            };
+        }
+
+        custom.featured = true;
+        custom.websiteAccess = true;
+        custom.websiteAccessExpires = now() + ONE_WEEK;
+
+        likes[id].featured = true;
+
+        saveCustomCharacters(customs);
+        saveCustomLikes(likes);
+
+        await sendFeaturedDM(message.client, custom, id);
+        await sendFeaturedChannelEmbed(message.client, custom, id);
+
+        const embed = new EmbedBuilder()
+            .setColor(0xf1c40f)
+            .setTitle("⭐ Custom Featured")
+            .setDescription(
+                `**${custom.name}** is now featured.\n\n` +
+                `**ID:** \`${id}\`\n` +
+                `**Creator:** <@${custom.creator}>\n` +
+                `**Likes:** ${likes[id].likes || 0}\n\n` +
+                `Website access enabled for **1 week**.\n` +
+                `The creator was told to use \`/editfeatured description\`.`
+            )
+            .setFooter({
+                text: "MarvellousBOTground"
+            });
+
+        if (custom.image && custom.image.startsWith("http")) {
+            embed.setThumbnail(custom.image);
+        }
+
+        await message.reply({
+            embeds: [embed]
+        });
+
+        return true;
+    }
+
+    if (subcommand === "unfeature") {
+        const id = args[2]?.toUpperCase();
+
+        if (!id) {
+            await message.reply("❌ Usage: `MS!custom unfeature <customId>`");
+            return true;
+        }
+
+        const customs = loadCustomCharacters();
+        const likes = loadCustomLikes();
+
+        const custom = customs[id];
+
+        if (!custom) {
+            await message.reply("❌ Custom character not found.");
+            return true;
+        }
+
+        if (!likes[id]) {
+            likes[id] = {
+                likes: 0,
+                users: [],
+                featured: false
+            };
+        }
+
+        custom.featured = false;
+        custom.websiteAccess = false;
+        custom.websiteAccessExpires = null;
+        custom.websitePublished = false;
+
+        likes[id].featured = false;
+
+        saveCustomCharacters(customs);
+        saveCustomLikes(likes);
+
+        const embed = new EmbedBuilder()
+            .setColor(0xff5555)
+            .setTitle("❌ Custom Unfeatured")
+            .setDescription(
+                `**${custom.name}** is no longer featured.\n\n` +
+                `**ID:** \`${id}\`\n` +
+                `**Creator:** <@${custom.creator}>\n\n` +
+                `Website access was disabled.`
+            )
+            .setFooter({
+                text: "MarvellousBOTground"
+            });
+
+        if (custom.image && custom.image.startsWith("http")) {
+            embed.setThumbnail(custom.image);
+        }
+
+        await message.reply({
+            embeds: [embed]
+        });
+
+        return true;
+    }
+
+    if (subcommand === "web") {
+        const id = args[2]?.toUpperCase();
+
+        if (!id) {
+            await message.reply("❌ Usage: `MS!custom web <customId>`");
+            return true;
+        }
+
+        const customs = loadCustomCharacters();
+        const custom = customs[id];
+
+        if (!custom) {
+            await message.reply("❌ Custom character not found.");
+            return true;
+        }
+
+        if (!custom.featured) {
+            await message.reply("❌ This custom character is not featured.");
+            return true;
+        }
+
+        custom.websiteAccess = false;
+        custom.websiteAccessExpires = null;
+        custom.websitePublished = true;
+
+        saveCustomCharacters(customs);
+
+        const embed = new EmbedBuilder()
+            .setColor(0x00ff99)
+            .setTitle("✅ Custom Published To Website")
+            .setDescription(
+                `**${custom.name}** was marked as uploaded to the website.\n\n` +
+                `**ID:** \`${id}\`\n` +
+                `**Creator:** <@${custom.creator}>\n\n` +
+                `Website editing access was removed.`
+            )
+            .setFooter({
+                text: "MarvellousBOTground"
+            });
+
+        if (custom.image && custom.image.startsWith("http")) {
+            embed.setThumbnail(custom.image);
+        }
+
+        await message.reply({
+            embeds: [embed]
+        });
 
         return true;
     }
