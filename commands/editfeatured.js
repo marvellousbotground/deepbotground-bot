@@ -79,7 +79,8 @@ async function uploadFeaturedReference(interaction, custom, id, slot, attack, de
             `**Creator:** <@${custom.creator}>\n` +
             `**Slot:** ${slot}\n` +
             `**Attack:** ${attack.name}\n\n` +
-            `**Description:**\n${description}`
+            `**Description:**\n${description}\n\n` +
+            `**Video:** ${attachment.url}`
         )
         .setFooter({
             text: "MarvellousBOTground"
@@ -89,19 +90,30 @@ async function uploadFeaturedReference(interaction, custom, id, slot, attack, de
         embed.setThumbnail(custom.image);
     }
 
-    const sent = await channel.send({
-        embeds: [embed],
-        files: [
-            {
-                attachment: attachment.url,
-                name: attachment.name || `${id}_${slot}_reference.mp4`
-            }
-        ]
-    });
+    try {
+        const sent = await channel.send({
+            embeds: [embed],
+            files: [
+                {
+                    attachment: attachment.url,
+                    name: attachment.name || `${id}_${slot}_reference.mp4`
+                }
+            ]
+        });
 
-    const uploadedVideo = sent.attachments.first();
+        const uploadedVideo = sent.attachments.first();
 
-    return uploadedVideo?.url || attachment.url;
+        return uploadedVideo?.url || attachment.url;
+
+    } catch (error) {
+        console.log("Video reupload failed, sending URL only:", error.message);
+
+        await channel.send({
+            embeds: [embed]
+        });
+
+        return attachment.url;
+    }
 }
 
 module.exports = {
