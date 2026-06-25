@@ -22,6 +22,10 @@ const VALID_SLOTS = [
     "5B"
 ];
 
+const REVIEW_CHANNEL_ID =
+    process.env.FEATURED_REVIEW_CHANNEL ||
+    process.env.CUSTOM_CHARACTER_IMAGES_CHANNEL;
+
 function now() {
     return Math.floor(Date.now() / 1000);
 }
@@ -55,9 +59,54 @@ function getAttackBySlot(custom, slot) {
     ) || null;
 }
 
+async function uploadFeaturedReference(interaction, custom, id, slot, attack, description, attachment) {
+    if (!REVIEW_CHANNEL_ID) {
+        throw new Error("FEATURED_REVIEW_CHANNEL or CUSTOM_CHARACTER_IMAGES_CHANNEL is not set.");
+    }
+
+    const channel = await interaction.client.channels.fetch(REVIEW_CHANNEL_ID);
+
+    if (!channel) {
+        throw new Error("Review channel not found.");
+    }
+
+    const embed = new EmbedBuilder()
+        .setColor(0xf1c40f)
+        .setTitle("⭐ Featured Reference Submitted")
+        .setDescription(
+            `**Character:** ${custom.name}\n` +
+            `**ID:** \`${id}\`\n` +
+            `**Creator:** <@${custom.creator}>\n` +
+            `**Slot:** ${slot}\n` +
+            `**Attack:** ${attack.name}\n\n` +
+            `**Description:**\n${description}`
+        )
+        .setFooter({
+            text: "MarvellousBOTground"
+        });
+
+    if (custom.image && custom.image.startsWith("http")) {
+        embed.setThumbnail(custom.image);
+    }
+
+    const sent = await channel.send({
+        embeds: [embed],
+        files: [
+            {
+                attachment: attachment.url,
+                name: attachment.name || `${id}_${slot}_reference.mp4`
+            }
+        ]
+    });
+
+    const uploadedVideo = sent.attachments.first();
+
+    return uploadedVideo?.url || attachment.url;
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("editchar")
+        .setName("editfeatured")
         .setDescription("Edit website information for featured custom characters.")
 
         .addSubcommand(subcommand =>
@@ -192,6 +241,30 @@ module.exports = {
             });
         }
 
+        await interaction.deferReply({
+            ephemeral: true
+        });
+
+        let permanentVideoUrl;
+
+        try {
+            permanentVideoUrl = await uploadFeaturedReference(
+                interaction,
+                custom,
+                id,
+                slot,
+                attack,
+                description,
+                attachment
+            );
+        } catch (error) {
+            console.log("Featured reference upload error:", error.message);
+
+            return interaction.editReply({
+                content: "❌ Failed to send the reference video to the review channel."
+            });
+        }
+
         if (!custom.website) {
             custom.website = {};
         }
@@ -199,7 +272,7 @@ module.exports = {
         custom.website[slot] = {
             attackName: attack.name,
             description,
-            video: attachment.url,
+            video: permanentVideoUrl,
             videoName: attachment.name || "video",
             updatedAt: now()
         };
@@ -208,8 +281,9 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor(0x00ff99)
-            .setTitle("✅ Website Description Updated")
+            .setTitle("✅ Featured Reference Submitted")
             .setDescription(
+                `Your reference was sent for review.\n\n` +
                 `**Character:** ${custom.name}\n` +
                 `**ID:** \`${id}\`\n` +
                 `**Slot:** ${slot}\n` +
@@ -224,9 +298,8 @@ module.exports = {
             embed.setThumbnail(custom.image);
         }
 
-        return interaction.reply({
-            embeds: [embed],
-            ephemeral: true
+        return interaction.editReply({
+            embeds: [embed]
         });
     }
 };
