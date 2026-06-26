@@ -53,9 +53,9 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setColor(0x5865F2)
-            .setTitle("🛡️ Welcome to Marvellous Smackdown")
+            .setTitle("🛡️ Welcome to Marvellous BOTground")
             .setDescription(
-                "Welcome to the official **Marvellous Smackdown** community server!\n\n" +
+                "Welcome to the official **Marvellous BOTground** server!\n\n" +
 
                 "Here you can:\n\n" +
                 "📰 Stay updated with game and bot news.\n" +
