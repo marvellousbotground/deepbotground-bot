@@ -94,10 +94,12 @@ const ATTRIBUTE_NAMES = Object.fromEntries(
 const attributeAliases = {
     ranged: "range",
     range: "range",
+
     longrange: "lr",
     longrangeplus: "lr",
     rangeplus: "lr",
     lr: "lr",
+
     longrangeplusplus: "lrp",
     rangeplusplus: "lrp",
     lrp: "lrp",
@@ -123,8 +125,10 @@ const attributeAliases = {
 
     shieldbreak: "break",
     break: "break",
+
     shieldignore: "ignore",
     ignore: "ignore",
+
     shieldblock: "block",
     block: "block",
 
@@ -140,29 +144,38 @@ const attributeAliases = {
     use: "use",
 
     charge: "charge",
+
     lingering: "lin",
     lin: "lin",
+
     boost: "boost",
     pull: "pull",
+
     blindness: "blind",
     blind: "blind",
+
     noticeable: "noti",
     noti: "noti",
+
     vanish: "inv",
     invisible: "inv",
     invisibility: "inv",
     inv: "inv",
+
     brutality: "bruta",
     brutal: "bruta",
     brut: "bruta",
     bruta: "bruta",
+
     cinema: "cine",
     cinematic: "cine",
     cine: "cine",
+
     rng: "rng",
     heal: "heal",
     grab: "grab",
     area: "area",
+    aoe: "area",
     push: "push"
 };
 
@@ -510,7 +523,7 @@ function createActionSelect() {
     );
 }
 
-function getComponentsForCurrentState(selectedCharacter, currentVersion) {
+function getComponentsForCurrentState(selectedCharacter) {
     if (selectedCharacter?.versions?.length > 0) {
         return [
             createVersionSelect(selectedCharacter),
@@ -531,7 +544,7 @@ module.exports = {
                 .setName("attribute1")
                 .setDescription("Optional attribute")
                 .setRequired(false)
-                .addChoices(...attributeChoices)
+                .setAutocomplete(true)
         )
 
         .addStringOption(option =>
@@ -539,7 +552,7 @@ module.exports = {
                 .setName("attribute2")
                 .setDescription("Optional attribute")
                 .setRequired(false)
-                .addChoices(...attributeChoices)
+                .setAutocomplete(true)
         )
 
         .addStringOption(option =>
@@ -547,7 +560,7 @@ module.exports = {
                 .setName("attribute3")
                 .setDescription("Optional attribute")
                 .setRequired(false)
-                .addChoices(...attributeChoices)
+                .setAutocomplete(true)
         )
 
         .addStringOption(option =>
@@ -555,7 +568,7 @@ module.exports = {
                 .setName("attribute4")
                 .setDescription("Optional attribute")
                 .setRequired(false)
-                .addChoices(...attributeChoices)
+                .setAutocomplete(true)
         )
 
         .addStringOption(option =>
@@ -567,18 +580,46 @@ module.exports = {
         ),
 
     async autocomplete(interaction) {
-        const focusedValue = interaction.options.getFocused().toLowerCase();
+        const focusedOption = interaction.options.getFocused(true);
+        const focusedValue = String(focusedOption.value || "").toLowerCase();
 
-        const filtered = universes
-            .filter(universe => universe.toLowerCase().includes(focusedValue))
-            .slice(0, 25);
+        if (
+            focusedOption.name === "attribute1" ||
+            focusedOption.name === "attribute2" ||
+            focusedOption.name === "attribute3" ||
+            focusedOption.name === "attribute4"
+        ) {
+            const filtered = attributeChoices
+                .filter(attribute =>
+                    attribute.name.toLowerCase().includes(focusedValue) ||
+                    attribute.value.toLowerCase().includes(focusedValue)
+                )
+                .slice(0, 25);
 
-        await interaction.respond(
-            filtered.map(universe => ({
-                name: universe,
-                value: universe
-            }))
-        );
+            return interaction.respond(
+                filtered.map(attribute => ({
+                    name: attribute.name,
+                    value: attribute.value
+                }))
+            );
+        }
+
+        if (focusedOption.name === "universe") {
+            const filtered = universes
+                .filter(universe =>
+                    universe.toLowerCase().includes(focusedValue)
+                )
+                .slice(0, 25);
+
+            return interaction.respond(
+                filtered.map(universe => ({
+                    name: universe,
+                    value: universe
+                }))
+            );
+        }
+
+        return interaction.respond([]);
     },
 
     async execute(interaction) {
@@ -687,13 +728,13 @@ module.exports = {
                     if (currentAction) {
                         return i.update({
                             embeds: [createCharacterEmbed(currentVersion, currentAction)],
-                            components: getComponentsForCurrentState(selectedCharacter, currentVersion)
+                            components: getComponentsForCurrentState(selectedCharacter)
                         });
                     }
 
                     return i.update({
                         embeds: [createStartEmbed(currentVersion)],
-                        components: getComponentsForCurrentState(selectedCharacter, currentVersion)
+                        components: getComponentsForCurrentState(selectedCharacter)
                     });
                 }
 
@@ -711,7 +752,7 @@ module.exports = {
 
                     return i.update({
                         embeds: [createCharacterEmbed(targetCharacter, currentAction)],
-                        components: getComponentsForCurrentState(selectedCharacter, currentVersion)
+                        components: getComponentsForCurrentState(selectedCharacter)
                     });
                 }
             });
@@ -799,13 +840,13 @@ module.exports = {
                 if (currentAction) {
                     return i.update({
                         embeds: [createCharacterEmbed(currentVersion, currentAction)],
-                        components: getComponentsForCurrentState(selectedCharacter, currentVersion)
+                        components: getComponentsForCurrentState(selectedCharacter)
                     });
                 }
 
                 return i.update({
                     embeds: [createStartEmbed(currentVersion)],
-                    components: getComponentsForCurrentState(selectedCharacter, currentVersion)
+                    components: getComponentsForCurrentState(selectedCharacter)
                 });
             }
 
@@ -830,7 +871,7 @@ module.exports = {
 
                 return i.update({
                     embeds: [createCharacterEmbed(targetCharacter, currentAction)],
-                    components: getComponentsForCurrentState(selectedCharacter, currentVersion)
+                    components: getComponentsForCurrentState(selectedCharacter)
                 });
             }
         });
