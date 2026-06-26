@@ -1,0 +1,158 @@
+[
+  {
+    "id": "1-0-0-release-update",
+    "version": "1.0.0",
+    "title": "RELEASE UPDATE",
+    "date": "June 26, 2026",
+    "added": [
+      "Added Featured Characters system",
+      "Added Custom Characters system",
+      "Added Thanos",
+      "Added ST skins",
+      "Added Lingering, Pull, Charges use and Boost attributes",
+      "Added Discord server",
+      "Added Wanda",
+      "Added I Show Speed",
+      "Added Giga Chad",
+      "Added Lyle and Erik skins",
+      "Added Featured Characters website page",
+      "Added Starlight skins",
+      "Added New attributes to all characters",
+      "Added all gamepass skins"
+    ],
+    "improved": [
+      "Improved Marvellous BOTground homepage design",
+      "Improved Marvellous BOTground Update page design",
+      "Improved Marvellous BOTground Terms page design",
+      "Improved Marvellous BOTground Privacy page design",
+      "Improved mobile support for BOTground page",
+      "Improved custom character image storage system",
+      "Improved website navigation structure",
+      "Improved update log system to support dynamic updates",
+      "Improved custom character moderation tools",
+      "Improved all character images",
+      "Improved all character skin images",
+      "Improved all character attributes"
+    ],
+    "fixed": [
+      "Fixed small bugs",
+      "Fixed all character skin lore",
+      "Fixed Versions - Skins bug"
+    ]
+  },
+  {
+    "id": "beta-1-0-4",
+    "version": "BETA 1.0.4",
+    "title": "Attribute Update",
+    "date": "June 14, 2026",
+    "added": [
+      "Added Johnny and Sonic character version support.",
+      "Added alternate version data files.",
+      "Added skin-exclusive character variants to Johnny and Sonic.",
+      "Added skin autocomplete with character names.",
+      "Added support for duplicate skin names across different characters.",
+      "Added version character support to edit profile.",
+      "Added profile image support for version skins.",
+      "Added 23 searchable attack attributes.",
+      "Added user-friendly attribute names for search."
+    ],
+    "improved": [
+      "Improved /search filtering system.",
+      "Improved edit profile skin selection.",
+      "Improved skin image detection.",
+      "Improved profile image synchronization.",
+      "Improved support for alternate character forms.",
+      "Improved autocomplete results."
+    ],
+    "fixed": [
+      "Fixed duplicate skins selecting the wrong character.",
+      "Fixed profile images using incorrect skins.",
+      "Fixed search requiring ability tags.",
+      "Fixed obsolete ability tag filtering.",
+      "Fixed version skins not being recognized correctly."
+    ]
+  },
+  {
+    "id": "beta-1-0-3",
+    "version": "BETA 1.0.3",
+    "title": "PvP Update",
+    "date": "May 30, 2026",
+    "added": [
+      "Added PvP stats command.",
+      "Added PvP command with 5 mode options and 5 size options.",
+      "Added casual leaderboard.",
+      "Added ranked leaderboard.",
+      "Added ranked RP system.",
+      "Added rank emojis.",
+      "Added Top 3 leaderboard medals.",
+      "Added ranked position to PvP stats.",
+      "Added next rank progress to PvP stats.",
+      "Added custom profile color support in PvP stats.",
+      "Added custom profile image support in PvP stats."
+    ],
+    "improved": [
+      "Improved ranked display formatting.",
+      "Improved leaderboard visuals.",
+      "Improved PvP profile card design."
+    ],
+    "fixed": [
+      "Fixed incorrect rank calculations.",
+      "Fixed Bronze II showing as Bronze I.",
+      "Fixed PvP stats not using edit profile colors and images."
+    ]
+  },
+  {
+    "id": "beta-1-0-2",
+    "version": "BETA 1.0.2",
+    "title": "Verification Update",
+    "date": "May 29, 2026",
+    "added": [
+      "Added Roblox OAuth Verification System.",
+      "Added Roblox Account Linking.",
+      "Added Re-Verify button.",
+      "Added Unlink Roblox button.",
+      "Added Marvellous BOTground website.",
+      "Added Privacy Policy page.",
+      "Added Terms of Service page.",
+      "Added Edit Profile system.",
+      "Added Profile system.",
+      "Added Ranked system."
+    ],
+    "improved": [
+      "Improved verification flow.",
+      "Improved OAuth security.",
+      "Improved user profile integration.",
+      "Improved website design and navigation."
+    ],
+    "fixed": [
+      "Fixed small bugs."
+    ]
+  },
+  {
+    "id": "beta-1-0-1",
+    "version": "BETA 1.0.1",
+    "title": "Online Systems Update",
+    "date": "May 27, 2026",
+    "added": [
+      "Bot online 24/7.",
+      "Added skins beta system."
+    ],
+    "improved": [],
+    "fixed": []
+  },
+  {
+    "id": "beta-1-0-0",
+    "version": "BETA 1.0.0",
+    "title": "Beta Update",
+    "date": "May 23, 2026",
+    "added": [
+      "Official beta release.",
+      "Added Search command.",
+      "Added Char command.",
+      "Added Update command.",
+      "Added all free characters."
+    ],
+    "improved": [],
+    "fixed": []
+  }
+]

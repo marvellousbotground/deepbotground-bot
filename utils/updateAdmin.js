@@ -241,13 +241,14 @@ async function handleUpdateAdmin(message) {
     const subcommand = args[1]?.toLowerCase();
 
     if (!subcommand) {
-        await message.reply(
-            "**Update Admin Commands**\n\n" +
-            "`MS!update new`\n" +
-            "`MS!update list`\n" +
-            "`MS!update delete <updateId>`\n" +
-            "`MS!update cancel`"
-        );
+await message.reply(
+    "**Update Admin Commands**\n\n" +
+    "`MS!update new`\n" +
+    "`MS!update list`\n" +
+    "`MS!update import`\n" +
+    "`MS!update delete <updateId>`\n" +
+    "`MS!update cancel`"
+);
 
         return true;
     }
@@ -306,6 +307,82 @@ async function handleUpdateAdmin(message) {
 
         return true;
     }
+
+if (subcommand === "import") {
+    const fs = require("fs");
+    const path = require("path");
+
+    const oldUpdatesPath = path.join(
+        __dirname,
+        "..",
+        "oldupdates.json"
+    );
+
+    if (!fs.existsSync(oldUpdatesPath)) {
+        await message.reply("❌ `oldupdates.json` was not found.");
+        return true;
+    }
+
+    let oldUpdates;
+
+    try {
+        oldUpdates = JSON.parse(
+            fs.readFileSync(oldUpdatesPath, "utf8")
+        );
+    } catch (error) {
+        await message.reply("❌ `oldupdates.json` is not valid JSON.");
+        return true;
+    }
+
+    if (!Array.isArray(oldUpdates)) {
+        await message.reply("❌ `oldupdates.json` must be an array.");
+        return true;
+    }
+
+    const updates = loadUpdates();
+    const existingIds = new Set(
+        updates.map(update => update.id)
+    );
+
+    let imported = 0;
+    let skipped = 0;
+
+    for (const update of oldUpdates) {
+        if (!update.id || !update.version || !update.title || !update.date) {
+            skipped++;
+            continue;
+        }
+
+        if (existingIds.has(update.id)) {
+            skipped++;
+            continue;
+        }
+
+        updates.push({
+            id: update.id,
+            version: update.version,
+            title: update.title,
+            date: update.date,
+            added: Array.isArray(update.added) ? update.added : [],
+            improved: Array.isArray(update.improved) ? update.improved : [],
+            fixed: Array.isArray(update.fixed) ? update.fixed : []
+        });
+
+        existingIds.add(update.id);
+        imported++;
+    }
+
+    saveUpdates(updates);
+
+    await message.reply(
+        `✅ Old updates imported.\n\n` +
+        `**Imported:** ${imported}\n` +
+        `**Skipped:** ${skipped}\n\n` +
+        `You can now delete \`oldupdates.json\`.`
+    );
+
+    return true;
+}
 
     if (subcommand === "delete") {
         const id = args[2];
