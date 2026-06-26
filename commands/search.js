@@ -5,110 +5,226 @@ const {
     ButtonBuilder,
     ButtonStyle,
     StringSelectMenuBuilder
-} = require('discord.js');
+} = require("discord.js");
 
-const fs = require('fs');
+const fs = require("fs");
+const path = require("path");
+
+const DATA_PATH = path.join(__dirname, "..", "data");
+
+const ATTRIBUTE_EMOJIS = {
+    boost: "<:Boost:1518480719431733456>",
+    lin: "<:Lingering:1517666297104699522>",
+    pull: "<:Pull:1517666295133376562>",
+    use: "<:Charges_use:1517666293052866701>",
+
+    push: "<:Push:1510718003661111556>",
+    noti: "<:Noticeable:1510718001517822142>",
+    coun: "<:Counter:1510717999458418718>",
+    inv: "<:Vanish:1510717997713719478>",
+
+    brut: "<:Brutality:1511496907007066262>",
+    bruta: "<:Brutality:1511496907007066262>",
+
+    area: "<:Area:1510717995914231949>",
+    trans: "<:Transformation:1510717993959559209>",
+    cine: "<:Cinema:1510717991908540466>",
+    rng: "<:Rng:1510717989874307122>",
+    heal: "<:Heal:1510717987794194502>",
+    finish: "<:Finisher:1510717985818673293>",
+    move: "<:Movement:1510717983700422694>",
+    ex: "<:Explode:1510717981510860930>",
+    grab: "<:Grab:1510717979115917454>",
+    mele: "<:Mele:1510717976226300126>",
+
+    range: "<:Range:1511468297445572618>",
+    lr: "<:RangePlus:1511468293700059417>",
+    lrp: "<:RangePlusPlus:1511468289946161192>",
+
+    blind: "<:blindness:1511468288318636083>",
+    charge: "<:charge:1511468284921253908>",
+    tp: "<:Teleport:1511468300830376098>",
+
+    break: "<:Break:1509366823236145162>",
+    ignore: "<:Ignore:1509365768993771570>",
+    block: "<:Block:1509363951874605219>"
+};
 
 const attributeChoices = [
-    { name: 'Noticeable', value: 'noti' },
-    { name: 'Vanish', value: 'inv' },
-    { name: 'Area', value: 'area' },
-    { name: 'Cinema', value: 'cine' },
-    { name: 'Rng', value: 'rng' },
-    { name: 'Blindness', value: 'blind' },
-    { name: 'Push', value: 'push' },
+    { name: "Boost", value: "boost" },
+    { name: "Lingering", value: "lin" },
+    { name: "Pull", value: "pull" },
+    { name: "Charges Use", value: "use" },
 
-    { name: 'Mele', value: 'mele' },
-    { name: 'Range ++', value: 'lrp' },
-    { name: 'Range +', value: 'lr' },
-    { name: 'Range', value: 'range' },
-    { name: 'Explode', value: 'ex' },
-    { name: 'Grab', value: 'grab' },
+    { name: "Noticeable", value: "noti" },
+    { name: "Vanish", value: "inv" },
+    { name: "Area", value: "area" },
+    { name: "Cinema", value: "cine" },
+    { name: "Rng", value: "rng" },
+    { name: "Blindness", value: "blind" },
+    { name: "Push", value: "push" },
 
-    { name: 'Break', value: 'break' },
-    { name: 'Ignore', value: 'ignore' },
-    { name: 'Block', value: 'block' },
+    { name: "Mele", value: "mele" },
+    { name: "Range ++", value: "lrp" },
+    { name: "Range +", value: "lr" },
+    { name: "Range", value: "range" },
+    { name: "Explode", value: "ex" },
+    { name: "Grab", value: "grab" },
 
-    { name: 'Movement', value: 'move' },
-    { name: 'Teleport', value: 'tp' },
+    { name: "Break", value: "break" },
+    { name: "Ignore", value: "ignore" },
+    { name: "Block", value: "block" },
 
-    { name: 'Heal', value: 'heal' },
-    { name: 'Charge', value: 'charge' },
-    { name: 'Transformation', value: 'trans' },
+    { name: "Movement", value: "move" },
+    { name: "Teleport", value: "tp" },
 
-    { name: 'Brutality', value: 'bruta' },
-    { name: 'Finisher', value: 'finish' },
-    { name: 'Counter', value: 'coun' }
+    { name: "Heal", value: "heal" },
+    { name: "Charge", value: "charge" },
+    { name: "Transformation", value: "trans" },
+
+    { name: "Brutality", value: "bruta" },
+    { name: "Finisher", value: "finish" },
+    { name: "Counter", value: "coun" }
 ];
 
-const attributeNames = Object.fromEntries(
-    attributeChoices.map(a => [a.value, a.name])
+const ATTRIBUTE_NAMES = Object.fromEntries(
+    attributeChoices.map(attribute => [attribute.value, attribute.name])
 );
 
 const attributeAliases = {
-    ranged: 'range',
-    explode: 'ex',
-    tele: 'tp',
-    teleport: 'tp',
-    teleportation: 'tp',
-    transformation: 'trans',
-    transform: 'trans',
-    finisher: 'finish',
-    counter: 'coun',
-    shieldbreak: 'break',
-    shieldBreak: 'break'
+    ranged: "range",
+    range: "range",
+    longrange: "lr",
+    longrangeplus: "lr",
+    rangeplus: "lr",
+    lr: "lr",
+    longrangeplusplus: "lrp",
+    rangeplusplus: "lrp",
+    lrp: "lrp",
+
+    explode: "ex",
+    explosive: "ex",
+    ex: "ex",
+
+    teleport: "tp",
+    teleportation: "tp",
+    tele: "tp",
+    tp: "tp",
+
+    transformation: "trans",
+    transform: "trans",
+    trans: "trans",
+
+    finisher: "finish",
+    finish: "finish",
+
+    counter: "coun",
+    coun: "coun",
+
+    shieldbreak: "break",
+    break: "break",
+    shieldignore: "ignore",
+    ignore: "ignore",
+    shieldblock: "block",
+    block: "block",
+
+    melee: "mele",
+    mele: "mele",
+
+    movement: "move",
+    mobility: "move",
+    move: "move",
+
+    chargesuse: "use",
+    chargeuse: "use",
+    use: "use",
+
+    charge: "charge",
+    lingering: "lin",
+    lin: "lin",
+    boost: "boost",
+    pull: "pull",
+    blindness: "blind",
+    blind: "blind",
+    noticeable: "noti",
+    noti: "noti",
+    vanish: "inv",
+    invisible: "inv",
+    invisibility: "inv",
+    inv: "inv",
+    brutality: "bruta",
+    brutal: "bruta",
+    brut: "bruta",
+    bruta: "bruta",
+    cinema: "cine",
+    cinematic: "cine",
+    cine: "cine",
+    rng: "rng",
+    heal: "heal",
+    grab: "grab",
+    area: "area",
+    push: "push"
 };
 
 const universes = [
-    'Invincible',
-    'Marvel',
-    'The Boys',
-    'DC',
-    'Star Wars',
-    'Scream',
-    'Dexter',
-    'My Hero Academia',
-    'Stranger Things',
-    'Attack on Titan',
-    'FNAF',
-    'Squid Game',
-    'Companion',
-    'Creepypastas',
-    'YOU',
-    'Death Note',
-    'God of War',
-    'One Piece',
-    'Real Life',
-    'Halloween',
-    'American Psycho',
-    'Dune',
-    'IT',
-    'Pibby',
-    'Rambo',
-    'SCP Foundation',
-    'Sonic',
-    'Minecraft',
-    'American Horror Story',
-    'Breaking Bad'
+    "Invincible",
+    "Marvel",
+    "The Boys",
+    "DC",
+    "Star Wars",
+    "Scream",
+    "Dexter",
+    "My Hero Academia",
+    "Stranger Things",
+    "Attack on Titan",
+    "FNAF",
+    "Squid Game",
+    "Companion",
+    "Creepypastas",
+    "YOU",
+    "Death Note",
+    "God of War",
+    "One Piece",
+    "Real Life",
+    "Halloween",
+    "American Psycho",
+    "Dune",
+    "IT",
+    "Pibby",
+    "Rambo",
+    "SCP Foundation",
+    "Sonic",
+    "Minecraft",
+    "American Horror Story",
+    "Breaking Bad"
 ];
 
+function normalizeKey(value) {
+    return String(value || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+}
+
 function normalizeAttribute(attribute) {
-    return attributeAliases[attribute] || attribute;
+    const key = normalizeKey(attribute);
+    return attributeAliases[key] || key;
 }
 
 function getAttackAttributes(attack) {
-    return (attack.attributes || []).map(normalizeAttribute);
+    return (attack.attributes || [])
+        .map(normalizeAttribute)
+        .filter(Boolean);
 }
 
 function isSlotFive(attack) {
-    return String(attack.slot) === '5';
+    return String(attack.slot).toLowerCase() === "5";
 }
 
 function attackMatchesAttribute(attack, attribute) {
     const normalizedAttribute = normalizeAttribute(attribute);
     const attackAttributes = getAttackAttributes(attack);
 
-    if (normalizedAttribute === 'heal' && isSlotFive(attack)) {
+    if (normalizedAttribute === "heal" && isSlotFive(attack)) {
         return false;
     }
 
@@ -128,7 +244,7 @@ function characterMatchesAttributes(character, attributes) {
 function characterOrVersionMatches(character, attributes) {
     if (!attributes.length) return true;
 
-    if (character.versions && character.versions.length > 0) {
+    if (Array.isArray(character.versions) && character.versions.length > 0) {
         return character.versions.some(version =>
             characterMatchesAttributes(version, attributes)
         );
@@ -141,17 +257,66 @@ function formatAttributes(attack) {
     const attributes = getAttackAttributes(attack);
 
     if (!attributes.length) {
-        return 'None';
+        return "None";
     }
 
     return attributes
-        .map(attribute => attributeNames[attribute] || attribute)
-        .join(', ');
+        .map(attribute =>
+            ATTRIBUTE_EMOJIS[attribute] ||
+            ATTRIBUTE_NAMES[attribute] ||
+            attribute
+        )
+        .join(" ");
 }
 
 function formatSkin(skin) {
-    if (typeof skin === 'string') return `• ${skin}`;
-    return `• ${skin.name}`;
+    if (typeof skin === "string") {
+        return `• ${skin}`;
+    }
+
+    if (!skin) {
+        return "• Unknown Skin";
+    }
+
+    return `• ${skin.name || "Unknown Skin"}`;
+}
+
+function safeText(value, fallback = "Unknown") {
+    if (value === null || value === undefined || value === "") {
+        return fallback;
+    }
+
+    return String(value);
+}
+
+function loadCharacters() {
+    const files = fs.readdirSync(DATA_PATH, {
+        withFileTypes: true
+    });
+
+    const characters = [];
+
+    for (const file of files) {
+        if (!file.isFile()) continue;
+        if (!file.name.toLowerCase().endsWith(".json")) continue;
+
+        const filePath = path.join(DATA_PATH, file.name);
+
+        try {
+            delete require.cache[require.resolve(filePath)];
+
+            const character = require(filePath);
+
+            if (!character || !character.name) continue;
+
+            characters.push(character);
+
+        } catch (error) {
+            console.log(`Error loading character file ${file.name}:`, error.message);
+        }
+    }
+
+    return characters;
 }
 
 function createCharacterEmbed(character, action) {
@@ -165,55 +330,66 @@ function createCharacterEmbed(character, action) {
 
     const embed = new EmbedBuilder()
         .setTitle(`${character.name} - ${action.toUpperCase()}`)
-        .setColor(colors[action])
-        .setFooter({ text: 'MarvellousBOTground' });
+        .setColor(colors[action] || 0x00ff99)
+        .setFooter({
+            text: "MarvellousBOTground"
+        });
 
     if (character.image) {
         embed.setThumbnail(character.image);
     }
 
-    if (action === 'attacks') {
+    if (action === "attacks") {
+        const attacks = character.attacks || [];
+
+        if (!attacks.length) {
+            embed.setDescription("This character does not have attacks registered.");
+            return embed;
+        }
+
         embed.setDescription(
-            character.attacks.map(a =>
-                `**${a.slot ? `${a.slot}. ` : ''}${a.name}**\n` +
-                `Damage: ${a.damage}\n` +
-                `Cooldown: ${a.cooldown}\n` +
-                `Attributes: ${formatAttributes(a)}`
-            ).join('\n\n')
+            attacks.map(attack =>
+                `**${attack.slot ? `${attack.slot}. ` : ""}${attack.name}**\n` +
+                `Damage: ${safeText(attack.damage, "0")}\n` +
+                `Cooldown: ${safeText(attack.cooldown, "0s")}\n` +
+                `Attributes: ${formatAttributes(attack)}`
+            ).join("\n\n").slice(0, 4096)
         );
     }
 
-    if (action === 'stats') {
+    if (action === "stats") {
+        const stats = character.stats || {};
+
         embed.setDescription(
-            `**HP:** ${character.stats.hp || character.stats['base hp']}\n` +
-            `**Speed:** ${character.stats.speed}\n` +
-            `**Damage:** ${character.stats.damage}\n` +
-            `**Skills:** ${character.stats.skills}\n` +
-            `**Low HP Animation:** ${character.stats.lowHpAnimation ? '🟢' : '🔴'}\n` +
-            `**Can Heal:** ${character.stats.canHeal ? '🟢' : '🔴'}`
+            `**HP:** ${stats.hp || stats["base hp"] || "Unknown"}\n` +
+            `**Speed:** ${stats.speed || "Unknown"}\n` +
+            `**Damage:** ${stats.damage ?? "Unknown"}\n` +
+            `**Skills:** ${stats.skills ?? "Unknown"}\n` +
+            `**Low HP Animation:** ${stats.lowHpAnimation ? "🟢" : "🔴"}\n` +
+            `**Can Heal:** ${stats.canHeal ? "🟢" : "🔴"}`
         );
     }
 
-    if (action === 'lore') {
-        embed.setDescription(character.lore || 'No lore available.');
+    if (action === "lore") {
+        embed.setDescription(character.lore || "No lore available.");
     }
 
-    if (action === 'skins') {
+    if (action === "skins") {
         if (!character.skins || character.skins.length === 0) {
-            embed.setDescription('This character does not have any skins yet.');
+            embed.setDescription("This character does not have any skins yet.");
         } else {
-            embed.setDescription(character.skins.map(formatSkin).join('\n'));
+            embed.setDescription(character.skins.map(formatSkin).join("\n").slice(0, 4096));
         }
     }
 
-    if (action === 'techs') {
+    if (action === "techs") {
         if (!character.techs || character.techs.length === 0) {
-            embed.setDescription('This character does not have any uploaded techs yet.');
+            embed.setDescription("This character does not have any uploaded techs yet.");
         } else {
             embed.setDescription(
-                character.techs.map(t =>
-                    `**${t.name}**\n${t.video}\n\nVideo by: ${t.credits}`
-                ).join('\n\n')
+                character.techs.map(tech =>
+                    `**${tech.name}**\n${tech.video}\n\nVideo by: ${tech.credits}`
+                ).join("\n\n").slice(0, 4096)
             );
         }
     }
@@ -225,8 +401,10 @@ function createStartEmbed(character) {
     const embed = new EmbedBuilder()
         .setTitle(character.name)
         .setColor(0x00ff99)
-        .setDescription('Select what information you want to see.')
-        .setFooter({ text: 'MarvellousBOTground' });
+        .setDescription("Select what information you want to see.")
+        .setFooter({
+            text: "MarvellousBOTground"
+        });
 
     if (character.image) {
         embed.setImage(character.image);
@@ -239,8 +417,10 @@ function createVersionStartEmbed(character) {
     const embed = new EmbedBuilder()
         .setTitle(character.name)
         .setColor(0x00ff99)
-        .setDescription(`Select ${character.name} version`)
-        .setFooter({ text: 'MarvellousBOTground' });
+        .setDescription(`Select ${character.name} version.`)
+        .setFooter({
+            text: "MarvellousBOTground"
+        });
 
     if (character.image) {
         embed.setImage(character.image);
@@ -252,12 +432,12 @@ function createVersionStartEmbed(character) {
 function createVersionSelect(character) {
     return new ActionRowBuilder().addComponents(
         new StringSelectMenuBuilder()
-            .setCustomId('search_select_version')
+            .setCustomId("search_select_version")
             .setPlaceholder(`Select ${character.name} version`)
             .addOptions(
-                character.versions.map(version => ({
-                    label: version.name,
-                    value: version.id
+                character.versions.slice(0, 25).map(version => ({
+                    label: version.name.slice(0, 100),
+                    value: version.id.slice(0, 100)
                 }))
             )
     );
@@ -266,30 +446,32 @@ function createVersionSelect(character) {
 function createSearchEmbed(results, page) {
     const start = page * 9;
     const current = results.slice(start, start + 9);
-    const totalPages = Math.ceil(results.length / 9);
+    const totalPages = Math.max(Math.ceil(results.length / 9), 1);
 
     return new EmbedBuilder()
-        .setTitle('Search Results')
+        .setTitle("Search Results")
         .setColor(0x00ff99)
         .setDescription(
-            current.map((c, i) =>
-                `**${start + i + 1}. ${c.name}**\n> ${c.universe || 'Unknown universe'}`
-            ).join('\n\n')
+            current.map((character, index) =>
+                `**${start + index + 1}. ${character.name}**\n> ${character.universe || "Unknown universe"}`
+            ).join("\n\n")
         )
-        .setFooter({ text: `Page ${page + 1}/${totalPages} • MarvellousBOTground` });
+        .setFooter({
+            text: `Page ${page + 1}/${totalPages} • MarvellousBOTground`
+        });
 }
 
 function createPageButtons(page, totalPages) {
     return new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-            .setCustomId('search_prev')
-            .setLabel('Previous Page')
+            .setCustomId("search_prev")
+            .setLabel("Previous Page")
             .setStyle(ButtonStyle.Primary)
             .setDisabled(page === 0),
 
         new ButtonBuilder()
-            .setCustomId('search_next')
-            .setLabel('Next Page')
+            .setCustomId("search_next")
+            .setLabel("Next Page")
             .setStyle(ButtonStyle.Primary)
             .setDisabled(page >= totalPages - 1)
     );
@@ -301,13 +483,13 @@ function createCharacterSelect(results, page) {
 
     return new ActionRowBuilder().addComponents(
         new StringSelectMenuBuilder()
-            .setCustomId('search_select_character')
-            .setPlaceholder('Select a character')
+            .setCustomId("search_select_character")
+            .setPlaceholder("Select a character")
             .addOptions(
-                current.map((character, i) => ({
-                    label: character.name,
-                    description: character.universe || 'Unknown universe',
-                    value: String(start + i)
+                current.map((character, index) => ({
+                    label: character.name.slice(0, 100),
+                    description: (character.universe || "Unknown universe").slice(0, 100),
+                    value: String(start + index)
                 }))
             )
     );
@@ -316,59 +498,70 @@ function createCharacterSelect(results, page) {
 function createActionSelect() {
     return new ActionRowBuilder().addComponents(
         new StringSelectMenuBuilder()
-            .setCustomId('search_select_action')
-            .setPlaceholder('Select what you want to see')
+            .setCustomId("search_select_action")
+            .setPlaceholder("Select what you want to see")
             .addOptions(
-                { label: 'Stats', value: 'stats' },
-                { label: 'Attacks', value: 'attacks' },
-                { label: 'Lore', value: 'lore' },
-                { label: 'Skins', value: 'skins' },
-                { label: 'Techs', value: 'techs' }
+                { label: "Stats", value: "stats" },
+                { label: "Attacks", value: "attacks" },
+                { label: "Lore", value: "lore" },
+                { label: "Skins", value: "skins" },
+                { label: "Techs", value: "techs" }
             )
     );
 }
 
+function getComponentsForCurrentState(selectedCharacter, currentVersion) {
+    if (selectedCharacter?.versions?.length > 0) {
+        return [
+            createVersionSelect(selectedCharacter),
+            createActionSelect()
+        ];
+    }
+
+    return [createActionSelect()];
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('search')
-        .setDescription('Search characters by universe or attack attributes')
+        .setName("search")
+        .setDescription("Search characters by universe or attack attributes")
 
         .addStringOption(option =>
             option
-                .setName('attribute1')
-                .setDescription('Optional attribute')
+                .setName("attribute1")
+                .setDescription("Optional attribute")
                 .setRequired(false)
                 .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
             option
-                .setName('attribute2')
-                .setDescription('Optional attribute')
+                .setName("attribute2")
+                .setDescription("Optional attribute")
                 .setRequired(false)
                 .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
             option
-                .setName('attribute3')
-                .setDescription('Optional attribute')
+                .setName("attribute3")
+                .setDescription("Optional attribute")
                 .setRequired(false)
                 .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
             option
-                .setName('attribute4')
-                .setDescription('Optional attribute')
+                .setName("attribute4")
+                .setDescription("Optional attribute")
                 .setRequired(false)
                 .addChoices(...attributeChoices)
         )
 
         .addStringOption(option =>
             option
-                .setName('universe')
-                .setDescription('Optional universe')
+                .setName("universe")
+                .setDescription("Optional universe")
                 .setRequired(false)
                 .setAutocomplete(true)
         ),
@@ -389,53 +582,38 @@ module.exports = {
     },
 
     async execute(interaction) {
-        const universe = interaction.options.getString('universe');
+        const universe = interaction.options.getString("universe");
 
         const attributes = [
-            interaction.options.getString('attribute1'),
-            interaction.options.getString('attribute2'),
-            interaction.options.getString('attribute3'),
-            interaction.options.getString('attribute4')
+            interaction.options.getString("attribute1"),
+            interaction.options.getString("attribute2"),
+            interaction.options.getString("attribute3"),
+            interaction.options.getString("attribute4")
         ].filter(Boolean).map(normalizeAttribute);
 
-        const files = fs.readdirSync('./data').filter(file =>
-            file.toLowerCase().endsWith('.json')
-        );
+        const results = loadCharacters().filter(character => {
+            const matchesUniverse = universe
+                ? character.universe === universe
+                : true;
 
-        const results = [];
+            const matchesAttributes = characterOrVersionMatches(
+                character,
+                attributes
+            );
 
-        for (const file of files) {
-            try {
-                delete require.cache[require.resolve(`../data/${file}`)];
-
-                const character = require(`../data/${file}`);
-
-                const matchesUniverse = universe
-                    ? character.universe === universe
-                    : true;
-
-                const matchesAttributes = characterOrVersionMatches(
-                    character,
-                    attributes
-                );
-
-                if (matchesUniverse && matchesAttributes) {
-                    results.push(character);
-                }
-
-            } catch (error) {
-                console.log(`Error loading ${file}:`, error.message);
-            }
-        }
+            return matchesUniverse && matchesAttributes;
+        });
 
         if (results.length === 0) {
             return interaction.reply({
                 embeds: [
                     new EmbedBuilder()
-                        .setTitle('Search Results')
+                        .setTitle("Search Results")
                         .setColor(0xff0000)
-                        .setDescription('No characters found with those filters.')
-                        .setFooter({ text: 'MarvellousBOTground' })
+                        .setDescription("No characters found with those filters.")
+                        .setFooter({
+                            text: "MarvellousBOTground"
+                        })
                 ]
             });
         }
@@ -452,7 +630,7 @@ module.exports = {
             currentVersion = null;
             currentAction = null;
 
-            if (selectedCharacter.versions) {
+            if (selectedCharacter.versions?.length > 0) {
                 return i.update({
                     embeds: [createVersionStartEmbed(selectedCharacter)],
                     components: [createVersionSelect(selectedCharacter)]
@@ -468,11 +646,11 @@ module.exports = {
         if (results.length === 1) {
             selectedCharacter = results[0];
 
-            const startEmbed = selectedCharacter.versions
+            const startEmbed = selectedCharacter.versions?.length > 0
                 ? createVersionStartEmbed(selectedCharacter)
                 : createStartEmbed(selectedCharacter);
 
-            const startComponents = selectedCharacter.versions
+            const startComponents = selectedCharacter.versions?.length > 0
                 ? [createVersionSelect(selectedCharacter)]
                 : [createActionSelect()];
 
@@ -486,63 +664,59 @@ module.exports = {
                 time: 120000
             });
 
-            collector.on('collect', async i => {
+            collector.on("collect", async i => {
                 if (i.user.id !== interaction.user.id) {
                     return i.reply({
-                        content: 'Only the person who used this command can interact with it.',
+                        content: "Only the person who used this command can interact with it.",
                         ephemeral: true
                     });
                 }
 
-                if (i.customId === 'search_select_version') {
+                if (i.customId === "search_select_version") {
                     currentVersion = selectedCharacter.versions.find(
-                        v => v.id === i.values[0]
+                        version => version.id === i.values[0]
                     );
+
+                    if (!currentVersion) {
+                        return i.reply({
+                            content: "Version not found.",
+                            ephemeral: true
+                        });
+                    }
 
                     if (currentAction) {
                         return i.update({
                             embeds: [createCharacterEmbed(currentVersion, currentAction)],
-                            components: [
-                                createVersionSelect(selectedCharacter),
-                                createActionSelect()
-                            ]
+                            components: getComponentsForCurrentState(selectedCharacter, currentVersion)
                         });
                     }
 
                     return i.update({
                         embeds: [createStartEmbed(currentVersion)],
-                        components: [
-                            createVersionSelect(selectedCharacter),
-                            createActionSelect()
-                        ]
+                        components: getComponentsForCurrentState(selectedCharacter, currentVersion)
                     });
                 }
 
-                if (i.customId === 'search_select_action') {
+                if (i.customId === "search_select_action") {
                     currentAction = i.values[0];
 
-                    const targetCharacter = currentVersion || selectedCharacter;
-
-                    if (selectedCharacter.versions && !currentVersion) {
+                    if (selectedCharacter.versions?.length > 0 && !currentVersion) {
                         return i.reply({
-                            content: 'Select a version first.',
+                            content: "Select a version first.",
                             ephemeral: true
                         });
                     }
 
+                    const targetCharacter = currentVersion || selectedCharacter;
+
                     return i.update({
                         embeds: [createCharacterEmbed(targetCharacter, currentAction)],
-                        components: selectedCharacter.versions
-                            ? [
-                                createVersionSelect(selectedCharacter),
-                                createActionSelect()
-                            ]
-                            : [createActionSelect()]
+                        components: getComponentsForCurrentState(selectedCharacter, currentVersion)
                     });
                 }
             });
 
-            collector.on('end', async () => {
+            collector.on("end", async () => {
                 try {
                     await interaction.editReply({
                         components: []
@@ -566,15 +740,15 @@ module.exports = {
             time: 120000
         });
 
-        collector.on('collect', async i => {
+        collector.on("collect", async i => {
             if (i.user.id !== interaction.user.id) {
                 return i.reply({
-                    content: 'Only the person who used this command can interact with it.',
+                    content: "Only the person who used this command can interact with it.",
                     ephemeral: true
                 });
             }
 
-            if (i.customId === 'search_prev') {
+            if (i.customId === "search_prev") {
                 page--;
 
                 return i.update({
@@ -586,7 +760,7 @@ module.exports = {
                 });
             }
 
-            if (i.customId === 'search_next') {
+            if (i.customId === "search_next") {
                 page++;
 
                 return i.update({
@@ -598,55 +772,56 @@ module.exports = {
                 });
             }
 
-            if (i.customId === 'search_select_character') {
+            if (i.customId === "search_select_character") {
                 const index = Number(i.values[0]);
                 return openCharacter(i, results[index]);
             }
 
-            if (i.customId === 'search_select_version') {
-                if (!selectedCharacter || !selectedCharacter.versions) {
+            if (i.customId === "search_select_version") {
+                if (!selectedCharacter?.versions?.length) {
                     return i.reply({
-                        content: 'No version available.',
+                        content: "No version available.",
                         ephemeral: true
                     });
                 }
 
                 currentVersion = selectedCharacter.versions.find(
-                    v => v.id === i.values[0]
+                    version => version.id === i.values[0]
                 );
+
+                if (!currentVersion) {
+                    return i.reply({
+                        content: "Version not found.",
+                        ephemeral: true
+                    });
+                }
 
                 if (currentAction) {
                     return i.update({
                         embeds: [createCharacterEmbed(currentVersion, currentAction)],
-                        components: [
-                            createVersionSelect(selectedCharacter),
-                            createActionSelect()
-                        ]
+                        components: getComponentsForCurrentState(selectedCharacter, currentVersion)
                     });
                 }
 
                 return i.update({
                     embeds: [createStartEmbed(currentVersion)],
-                    components: [
-                        createVersionSelect(selectedCharacter),
-                        createActionSelect()
-                    ]
+                    components: getComponentsForCurrentState(selectedCharacter, currentVersion)
                 });
             }
 
-            if (i.customId === 'search_select_action') {
+            if (i.customId === "search_select_action") {
                 if (!selectedCharacter) {
                     return i.reply({
-                        content: 'No character selected.',
+                        content: "No character selected.",
                         ephemeral: true
                     });
                 }
 
                 currentAction = i.values[0];
 
-                if (selectedCharacter.versions && !currentVersion) {
+                if (selectedCharacter.versions?.length > 0 && !currentVersion) {
                     return i.reply({
-                        content: 'Select a version first.',
+                        content: "Select a version first.",
                         ephemeral: true
                     });
                 }
@@ -655,17 +830,12 @@ module.exports = {
 
                 return i.update({
                     embeds: [createCharacterEmbed(targetCharacter, currentAction)],
-                    components: selectedCharacter.versions
-                        ? [
-                            createVersionSelect(selectedCharacter),
-                            createActionSelect()
-                        ]
-                        : [createActionSelect()]
+                    components: getComponentsForCurrentState(selectedCharacter, currentVersion)
                 });
             }
         });
 
-        collector.on('end', async () => {
+        collector.on("end", async () => {
             try {
                 await interaction.editReply({
                     components: []
