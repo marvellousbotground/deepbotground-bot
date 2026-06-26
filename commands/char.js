@@ -9,7 +9,26 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_PATH = path.join(__dirname, "..", "data");
-const SKIN_DATA_PATH = path.join(DATA_PATH, "skinData");
+function getSkinDataFolderPath() {
+    const possibleFolders = [
+        "skinData",
+        "SkinData",
+        "skindata",
+        "SKINDATA"
+    ];
+
+    for (const folder of possibleFolders) {
+        const folderPath = path.join(DATA_PATH, folder);
+
+        if (fs.existsSync(folderPath)) {
+            return folderPath;
+        }
+    }
+
+    return path.join(DATA_PATH, "SkinData");
+}
+
+const SKIN_DATA_PATH = getSkinDataFolderPath();
 
 const ATTRIBUTE_EMOJIS = {
     boost: "<:Boost:1518480719431733456>",
@@ -269,27 +288,28 @@ function loadSkinData(dataFile) {
     if (!dataFile) return {};
 
     const cleanFile = String(dataFile).trim();
+    const baseName = path.basename(cleanFile);
+    const wantedFile = baseName.toLowerCase().endsWith(".json")
+        ? baseName
+        : `${baseName}.json`;
 
-    const possiblePaths = [];
+    const possiblePaths = [
+        path.join(SKIN_DATA_PATH, cleanFile),
+        path.join(SKIN_DATA_PATH, wantedFile)
+    ];
 
-    possiblePaths.push(
-        path.join(SKIN_DATA_PATH, cleanFile)
-    );
+    if (fs.existsSync(SKIN_DATA_PATH)) {
+        const files = fs.readdirSync(SKIN_DATA_PATH);
 
-    if (!cleanFile.toLowerCase().endsWith(".json")) {
-        possiblePaths.push(
-            path.join(SKIN_DATA_PATH, `${cleanFile}.json`)
+        const foundFile = files.find(file =>
+            file.toLowerCase() === wantedFile.toLowerCase()
         );
-    }
 
-    possiblePaths.push(
-        path.join(SKIN_DATA_PATH, path.basename(cleanFile))
-    );
-
-    if (!path.basename(cleanFile).toLowerCase().endsWith(".json")) {
-        possiblePaths.push(
-            path.join(SKIN_DATA_PATH, `${path.basename(cleanFile)}.json`)
-        );
+        if (foundFile) {
+            possiblePaths.unshift(
+                path.join(SKIN_DATA_PATH, foundFile)
+            );
+        }
     }
 
     for (const skinDataPath of possiblePaths) {
