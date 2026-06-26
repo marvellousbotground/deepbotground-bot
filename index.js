@@ -1,3 +1,7 @@
+const {
+    handleRPAdmin
+} = require("./utils/rpAdmin");
+
 const app = require("./server");
 
 const {
@@ -64,6 +68,10 @@ client.on("messageCreate", async message => {
         const handledUpdateAdmin = await handleUpdateAdmin(message);
 
         if (handledUpdateAdmin) return;
+
+        const handledRPAdmin = await handleRPAdmin(message);
+
+        if (handledRPAdmin) return;
 
     } catch (error) {
         console.error("Message command error:", error);
