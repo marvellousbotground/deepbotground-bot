@@ -1,10 +1,12 @@
 const app = require("./server");
 
-const PORT = process.env.SERVER_PORT || 5012;
+const {
+    handleUpdateAdmin
+} = require("./utils/updateAdmin");
 
-app.listen(PORT, () => {
-    console.log(`✅ OAuth server running on port ${PORT}`);
-});
+const {
+    handleCustomAdmin
+} = require("./utils/customAdmin");
 
 const {
     Client,
@@ -16,9 +18,11 @@ const fs = require("fs");
 const path = require("path");
 require("dotenv").config();
 
-const {
-    handleCustomAdmin
-} = require("./utils/customAdmin");
+const PORT = process.env.SERVER_PORT || 5012;
+
+app.listen(PORT, () => {
+    console.log(`✅ OAuth server running on port ${PORT}`);
+});
 
 const client = new Client({
     intents: [
@@ -53,9 +57,16 @@ client.once("ready", () => {
 
 client.on("messageCreate", async message => {
     try {
-        await handleCustomAdmin(message);
+        const handledCustomAdmin = await handleCustomAdmin(message);
+
+        if (handledCustomAdmin) return;
+
+        const handledUpdateAdmin = await handleUpdateAdmin(message);
+
+        if (handledUpdateAdmin) return;
+
     } catch (error) {
-        console.error("Custom admin error:", error);
+        console.error("Message command error:", error);
     }
 });
 
