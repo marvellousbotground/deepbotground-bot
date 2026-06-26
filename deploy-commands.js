@@ -1,29 +1,30 @@
+require("dotenv").config();
+
 const {
     REST,
     Routes
 } = require("discord.js");
 
 const fs = require("fs");
-require("dotenv").config();
+const path = require("path");
 
 const commands = [];
 
+const commandsPath = path.join(__dirname, "commands");
+
 const commandFiles = fs
-    .readdirSync("./commands")
+    .readdirSync(commandsPath)
     .filter(file => file.endsWith(".js"));
 
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
+    const filePath = path.join(commandsPath, file);
+    const command = require(filePath);
 
-    if (
-        !command.data ||
-        typeof command.data.toJSON !== "function"
-    ) {
-        console.log(`Skipping ${file}`);
-        continue;
+    if ("data" in command && "execute" in command) {
+        commands.push(command.data.toJSON());
+    } else {
+        console.log(`[WARNING] ${file} is missing data or execute.`);
     }
-
-    commands.push(command.data.toJSON());
 }
 
 const rest = new REST({
@@ -32,19 +33,20 @@ const rest = new REST({
 
 (async () => {
     try {
-        console.log("Registrando comandos del servidor...");
+        console.log(
+            `Started refreshing ${commands.length} global slash commands.`
+        );
 
         await rest.put(
-            Routes.applicationGuildCommands(
-                process.env.CLIENT_ID,
-                process.env.GUILD_ID
-            ),
+            Routes.applicationCommands(process.env.CLIENT_ID),
             {
                 body: commands
             }
         );
 
-        console.log("Comandos registrados.");
+        console.log(
+            "✅ Global slash commands registered."
+        );
 
     } catch (error) {
         console.error(error);
