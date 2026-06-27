@@ -258,12 +258,12 @@ module.exports = {
         .setDescription("View Marvellous BOTground commands and useful links."),
 
     async execute(interaction) {
-        const message = await interaction.reply({
-            embeds: [createHomeEmbed()],
-            components: createButtons("home"),
-            fetchReply: true
-        });
+        await interaction.deferReply();
 
+const message = await interaction.editReply({
+    embeds: [createHomeEmbed()],
+    components: createButtons("home")
+});
         const collector = message.createMessageComponentCollector({
             time: 120000
         });

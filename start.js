@@ -44,9 +44,19 @@ try {
     console.error("❌ Slash command deploy failed:", error.message);
 }
 
-const tunnel = spawn(cloudflaredPath, ["tunnel", "run", "marvellous"], {
-    stdio: "inherit"
-});
+const tunnel = spawn(
+    cloudflaredPath,
+    [
+        "tunnel",
+        "--protocol",
+        "http2",
+        "run",
+        "marvellous"
+    ],
+    {
+        stdio: "inherit"
+    }
+);
 
 tunnel.on("error", error => {
     console.error("Cloudflared error:", error);
