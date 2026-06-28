@@ -140,5 +140,13 @@
     }
   ],
 
+        "techs": [
+        {
+          "name": "Hammer of Doom",
+          "video": "https://youtu.be/uBc3TeDowv0?si=kJdpPlWqwsJfioo5",
+          "credits": "Washuu"
+        }
+],
+
   "lore": "Atom Eve is a superhero from the Invincible comic and animated series with the ability to manipulate matter and energy at the atomic level. Using powerful energy constructs, barriers, flight, and healing abilities, she is considered one of the most versatile heroes in the series."
 }

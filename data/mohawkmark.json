@@ -153,5 +153,13 @@
     }
   ],
 
+          "techs": [
+        {
+          "name": "Boulder Throw",
+          "video": "https://youtu.be/cO9Mh0_f_J4?si=GaTJsCCn3GEOMGxz",
+          "credits": "Spawn"
+        }
+],
+
   "lore": "The Invincible variants are alternate versions of Mark Grayson from the Invincible comic and animated series. Across different universes and timelines, these variants developed unique appearances and personalities while sharing the same Viltrumite heritage, super strength, flight, and brutal fighting abilities."
 }

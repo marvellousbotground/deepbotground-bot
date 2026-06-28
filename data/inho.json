@@ -163,5 +163,13 @@
     }
   ],
 
+        "techs": [
+        {
+          "name": "Spinning Tops",
+          "video": "https://youtu.be/2bcSLgYqtKw?si=NjGxPUsPLg7IXDDq",
+          "credits": "Spawn"
+        }
+],
+
   "lore": "Hwang In-Ho, also known as the Front Man, is a major character from Squid Game. As the mysterious overseer of the deadly games, he commands the masked guards with authority and ruthless efficiency while hiding a tragic past connected to the competition itself."
 }

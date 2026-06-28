@@ -88,5 +88,11 @@
     }
   ],
 
-  "techs": []
+        "techs": [
+        {
+          "name": "Annihilation Clap",
+          "video": "https://youtu.be/NVVnR7N7wV4?si=AqFCjPgxU4k7qXwk",
+          "credits": "Spawn"
+        }
+]
 }
