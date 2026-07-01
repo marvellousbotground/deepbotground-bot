@@ -22,6 +22,19 @@ const fs = require("fs");
 const path = require("path");
 require("dotenv").config();
 
+const uploadsPath = path.join(__dirname, "uploads");
+
+fs.mkdirSync(uploadsPath, {
+    recursive: true
+});
+
+fs.writeFileSync(
+    path.join(uploadsPath, "test.txt"),
+    "Hello!"
+);
+
+console.log("✅ uploads/test.txt creado");
+
 const PORT = process.env.SERVER_PORT || 5012;
 
 app.listen(PORT, () => {
