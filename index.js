@@ -28,12 +28,24 @@ fs.mkdirSync(uploadsPath, {
     recursive: true
 });
 
-fs.writeFileSync(
-    path.join(uploadsPath, "test.txt"),
-    "Hello!"
-);
+const testPath = path.join(uploadsPath, "test.txt");
 
-console.log("✅ uploads/test.txt creado");
+if (!fs.existsSync(testPath)) {
+
+    fs.writeFileSync(
+        testPath,
+        Date.now().toString()
+    );
+
+    console.log("✅ Test file created.");
+
+} else {
+
+    console.log(
+        "📄 Test file already exists:",
+        fs.readFileSync(testPath, "utf8")
+    );
+}
 
 const PORT = process.env.SERVER_PORT || 5012;
 
