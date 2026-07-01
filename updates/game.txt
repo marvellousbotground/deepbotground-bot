@@ -1,7 +1,15 @@
-Last Update: June 19, 2026
+Last Update: Jul 1, 2026
 
 
 Added:
-•MJ Complete rework
-•MJ new skins!
-•Homelander Clone Skin!
+•riddler
+
+Deleted:
+•lyle
+•zodiac
+•dropead batman skin
+
+others:
+•Kill text is now better visible
+•Game is more vibrant
+•Counter Priority: Grab counters now first check the player who activated them. The range check is also slightly larger than normal to make counters feel more consistent, if activated near someone from a too large range then it still grabs the nearest.
