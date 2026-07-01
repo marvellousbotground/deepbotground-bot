@@ -16,6 +16,8 @@ const {
 const THIRTY_DAYS = 30 * 24 * 60 * 60;
 
 const ATTRIBUTE_EMOJIS = {
+    pasive: "<:Pasive:1521914059157405928>",
+    clash: "<:Clash:1521913571041349863>",
     push: "<:Push:1510718003661111556>",
     noti: "<:Noticeable:1510718001517822142>",
     coun: "<:Counter:1510717999458418718>",

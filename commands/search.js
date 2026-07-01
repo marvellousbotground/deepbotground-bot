@@ -13,6 +13,8 @@ const path = require("path");
 const DATA_PATH = path.join(__dirname, "..", "data");
 
 const ATTRIBUTE_EMOJIS = {
+    pasive: "<:Pasive:1521914059157405928>",
+    clash: "<:Clash:1521913571041349863>",
     boost: "<:Boost:1518480719431733456>",
     lin: "<:Lingering:1517666297104699522>",
     pull: "<:Pull:1517666295133376562>",
@@ -51,6 +53,8 @@ const ATTRIBUTE_EMOJIS = {
 };
 
 const attributeChoices = [
+    { name: "Clash", value: "clash" },
+    { name: "Pasive", value: "pasive" },
     { name: "Boost", value: "boost" },
     { name: "Lingering", value: "lin" },
     { name: "Pull", value: "pull" },
@@ -92,6 +96,9 @@ const ATTRIBUTE_NAMES = Object.fromEntries(
 );
 
 const attributeAliases = {
+    pasive: "pasive",
+    clash: "clash",
+    
     ranged: "range",
     range: "range",
 

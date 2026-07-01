@@ -41,6 +41,8 @@ const SLOT_ORDER = [
 ];
 
 const ATTRIBUTE_CHOICES = [
+    { name: "Clash", value: "clash" },
+    { name: "Pasive", value: "pasive" },
     { name: "Noticeable", value: "noti" },
     { name: "Vanish", value: "inv" },
     { name: "Area", value: "area" },

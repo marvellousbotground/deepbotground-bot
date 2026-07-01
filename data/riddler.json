@@ -1,0 +1,141 @@
+{
+  "name": "Riddler",
+
+  "aliases": [
+    "Edward Nigma",
+    "El Acertijo"
+  ],
+
+  "origin": [
+    "comic",
+    "tmovie"
+  ],
+
+  "universe": "DC",
+
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1521956799597777127/5ffe424923329d4763b4551748441dbd.png?ex=6a46b839&is=6a4566b9&hm=965a1514fd2a7579c0a95a6a42b61d6021fcb977f8347d090e08769ed8b56e23&=&format=webp&quality=lossless",
+
+  "stats": {
+    "hp": 200,
+    "speed": "Normal",
+    "damage": 5,
+    "skills": 7,
+    "lowHpAnimation": true,
+    "canHeal": false
+  },
+
+  "attacks": [
+    {
+      "slot": "1",
+      "name": "Riddle me this",
+      "damage": 18,
+      "cooldown": "13s",
+      "attributes": [
+        "ignore",
+        "mele",
+        "lin",
+        "area",
+        "push",
+        "ex",
+        "clash",
+        "break"
+      ]
+    },
+
+    {
+      "slot": "2",
+      "name": "No More Lies",
+      "damage": 5,
+      "cooldown": "13s",
+      "attributes": [
+        "ignore",
+        "mele",
+        "blind",
+        "area"
+      ]
+    },
+
+    {
+      "slot": "3",
+      "name": "Under The Light Counter",
+      "damage": 20,
+      "cooldown": "14s",
+      "attributes": [
+        "ignore",
+        "coun",
+        "area",
+        "mele"
+      ]
+    },
+
+    {
+      "slot": "4",
+      "name": "Followers of Truth",
+      "damage": 16,
+      "cooldown": "21s",
+      "attributes": [
+        "block",
+        "lin",
+        "range"
+      ]
+    },
+
+    {
+      "slot": "5",
+      "name": "Forgiveness Finisher",
+      "damage": 0,
+      "cooldown": "0.5s",
+      "attributes": [
+        "finish",
+        "cine",
+        "ignore",
+        "heal"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Going Live",
+      "damage": 0,
+      "cooldown": "23.5s",
+      "attributes": [
+        "charge"
+      ]
+    },
+
+    {
+      "slot": "E",
+      "name": "Judgement Day",
+      "damage": 5,
+      "cooldown": "43s",
+      "attributes": [
+        "lr",
+        "area",
+        "ex",
+        "use"
+      ]
+    }
+  ],
+
+  "skins": [
+    {
+      "name": "Pumpkin Pie",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1521956800025333921/88dc9d52bb940c7c32ce25beda533197.png?ex=6a46b839&is=6a4566b9&hm=2f292b0e76e5e2bd2d56b97daaeb25824cca4197b53dc8a116ee3188ab16b67c&=&format=webp&quality=lossless",
+      "lore": "Riddler after he intentionally allows himself to be arrested. Confident that his plan is already complete, he surrenders without resistance, believing Batman will understand and witness the final stage of his revenge against Gotham."
+    },
+
+    {
+      "name": "Asylum",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1521956800436506634/ff5ea21dccdf10f7177ec8f015c29b37.png?ex=6a46b839&is=6a4566b9&hm=d6d30609ae7c8e3aa2d18a0710fda8a01370ce6f83d489e78adf96792f60b7b0&=&format=webp&quality=lossless",
+      "lore": "Riddler during his interrogation with Batman in Arkham State Hospital. Believing Batman is his ally, he calmly sings Ave Maria before realizing Batman does not share his beliefs, causing his composure to unravel."
+    },
+
+    {
+      "name": "Kramer",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1521956801023705260/66d20e6acd2a15ff05b8d9f1dae7b245.png?ex=6a46b839&is=6a4566b9&hm=e9388c0c837db89a50b81818781d681a3cd6a91607381deba06f2beb03d57ece&=&format=webp&quality=lossless",
+      "lore": "John Kramer is the mastermind behind the Jigsaw killings in the Saw series. Rather than seeing himself as a murderer, he creates deadly tests to push people into appreciating their lives, believing survival can lead to redemption and change."
+    }
+  ],
+
+  "lore": "The Riddler (2022) is the main antagonist of The Batman (2022). A brilliant but disturbed serial killer, he targets Gotham's corrupt elite through deadly riddles and elaborate traps, believing he is exposing the city's hidden truth."
+}

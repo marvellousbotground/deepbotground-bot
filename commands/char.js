@@ -31,6 +31,8 @@ function getSkinDataFolderPath() {
 const SKIN_DATA_PATH = getSkinDataFolderPath();
 
 const ATTRIBUTE_EMOJIS = {
+    pasive: "<:Pasive:1521914059157405928>",
+    clash: "<:Clash:1521913571041349863>",
     boost: "<:Boost:1518480719431733456>",
     lin: "<:Lingering:1517666297104699522>",
     pull: "<:Pull:1517666295133376562>",
@@ -69,6 +71,8 @@ const ATTRIBUTE_EMOJIS = {
 };
 
 const ATTRIBUTE_ALIASES = {
+    pasive: "pasive",
+    clash: "clash",
     boost: "boost",
 
     lingering: "lin",
