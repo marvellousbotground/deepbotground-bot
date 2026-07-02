@@ -17,6 +17,7 @@ try {
         "clean",
         "-fd",
         "-e", "database/",
+        "-e", "uploads/",
         "-e", ".env",
         "-e", ".cloudflared/",
         "-e", "cloudflared"
