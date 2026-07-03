@@ -1,4 +1,8 @@
 const {
+    startAttachmentLinkRefresher
+} = require("./utils/refreshAttachmentLinks");
+
+const {
     handleRPAdmin
 } = require("./utils/rpAdmin");
 
@@ -21,31 +25,6 @@ const {
 const fs = require("fs");
 const path = require("path");
 require("dotenv").config();
-
-const uploadsPath = path.join(__dirname, "uploads");
-
-fs.mkdirSync(uploadsPath, {
-    recursive: true
-});
-
-const testPath = path.join(uploadsPath, "test.txt");
-
-if (!fs.existsSync(testPath)) {
-
-    fs.writeFileSync(
-        testPath,
-        Date.now().toString()
-    );
-
-    console.log("✅ Test file created.");
-
-} else {
-
-    console.log(
-        "📄 Test file already exists:",
-        fs.readFileSync(testPath, "utf8")
-    );
-}
 
 const PORT = process.env.SERVER_PORT || 5012;
 
@@ -82,6 +61,8 @@ for (const file of commandFiles) {
 
 client.once("ready", () => {
     console.log(`Bot conectado como ${client.user.tag}`);
+
+    startAttachmentLinkRefresher(client);
 });
 
 client.on("messageCreate", async message => {
