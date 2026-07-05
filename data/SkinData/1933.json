@@ -17,6 +17,7 @@
       "attributes": [
         "ignore",
         "lin",
+        "clash",
         "mele"
       ]
     },
@@ -29,6 +30,7 @@
       "attributes": [
         "break",
         "charge",
+        "blind",
         "lr"
       ]
     },

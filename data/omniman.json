@@ -98,6 +98,7 @@
       "attributes": [
         "block",
         "move",
+        "clash",
         "lin",
         "push"
       ]

@@ -36,6 +36,7 @@
         "lin",
         "area",
         "push",
+        "clash",
         "ex",
         "clash",
         "break"
@@ -99,6 +100,7 @@
       "damage": 0,
       "cooldown": "23.5s",
       "attributes": [
+        "cine",
         "charge"
       ]
     },

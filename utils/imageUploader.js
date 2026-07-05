@@ -1,4 +1,16 @@
-const { AttachmentBuilder, EmbedBuilder } = require("discord.js");
+const {
+    AttachmentBuilder,
+    EmbedBuilder
+} = require("discord.js");
+
+function createAttachmentSource(message, attachmentIndex = 0) {
+    return {
+        guildId: message.guild?.id || null,
+        channelId: message.channel.id,
+        messageId: message.id,
+        attachmentIndex
+    };
+}
 
 async function uploadCustomImage(client, attachment, options) {
     const {
@@ -32,12 +44,12 @@ async function uploadCustomImage(client, attachment, options) {
         .setColor(type === "skin" ? 0x2ecc71 : 0x00ff99)
         .setTitle(type === "skin" ? "🎨 Custom Skin Image" : "🆕 Custom Character Image")
         .setDescription(
-    `**Character:** ${characterName}\n` +
-    (skinName ? `**Skin:** ${skinName}\n` : "") +
-    `**Custom ID:** \`${customId}\`\n` +
-    `**Creator:** <@${creatorId}>\n` +
-    `**Creator ID:** \`${creatorId}\``
-)
+            `**Character:** ${characterName}\n` +
+            (skinName ? `**Skin:** ${skinName}\n` : "") +
+            `**Custom ID:** \`${customId}\`\n` +
+            `**Creator:** <@${creatorId}>\n` +
+            `**Creator ID:** \`${creatorId}\``
+        )
         .setTimestamp();
 
     const message = await channel.send({
@@ -45,13 +57,17 @@ async function uploadCustomImage(client, attachment, options) {
         files: [file]
     });
 
-    const uploaded = message.attachments.first();
+    const uploadedAttachments = Array.from(message.attachments.values());
+    const uploaded = uploadedAttachments[0];
 
     if (!uploaded) {
         throw new Error("Image upload failed.");
     }
 
-    return uploaded.url;
+    return {
+        url: uploaded.url,
+        source: createAttachmentSource(message, 0)
+    };
 }
 
 module.exports = {

@@ -46,6 +46,7 @@
         "ignore",
         "area",
         "grab",
+        "clash",
         "range",
         "noti"
       ]

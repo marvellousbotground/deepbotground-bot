@@ -34,6 +34,7 @@
       "cooldown": "9s",
       "attributes": [
         "ignore",
+        "clash",
         "lin",
         "mele"
       ]
@@ -47,6 +48,7 @@
       "attributes": [
         "break",
         "charge",
+        "blind",
         "lr"
       ]
     },

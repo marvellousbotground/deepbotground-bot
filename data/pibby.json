@@ -43,6 +43,7 @@
       "cooldown": "13s",
       "attributes": [
         "block",
+        "clash",
         "move",
         "mele"
       ]
@@ -93,6 +94,7 @@
       "cooldown": "74s",
       "attributes": [
         "cine",
+        "pasive",
         "heal"
       ]
     }

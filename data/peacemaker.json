@@ -34,6 +34,7 @@
       "cooldown": "8s",
       "attributes": [
         "block",
+        "clash",
         "mele"
       ]
     },

@@ -103,6 +103,7 @@
         "block",
         "move",
         "lin",
+        "clash",
         "mele",
         "push"
       ]

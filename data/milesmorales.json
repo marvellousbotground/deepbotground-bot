@@ -15,7 +15,7 @@
 
   "universe": "Marvel",
 
-  "image": "https://media.discordapp.net/attachments/1518466128396025948/1518917144526454935/9b5a8a4d35445419da61d0331cb9f0f4.png?ex=6a3ba953&is=6a3a57d3&hm=70791fe320a6c05c6cc5bcbb0992622860dce5d8293a538da1f51512388724c0&=&format=webp&quality=lossless",
+  "image": "https://media.discordapp.net/attachments/1518466128396025948/1523112090020220958/image.png?ex=6a4aec2c&is=6a499aac&hm=17694ae87f6e66a227b5f2b172c43260366a361fc2ba20291f1251367e3bf35f&=&format=webp&quality=lossless",
 
   "stats": {
     "hp": 200,
@@ -68,11 +68,13 @@
     {
       "slot": "4",
       "name": "Invisible Kick",
-      "damage": 10,
+      "damage": 25,
       "cooldown": "10s",
       "attributes": [
         "ignore",
         "inv",
+        "lrp",
+        "lin",
         "move",
         "mele"
       ]
@@ -97,7 +99,7 @@
       "damage": 0,
       "cooldown": "55s",
       "attributes": [
-        "boost"
+        "pasive"
       ]
     }
   ],
@@ -116,9 +118,9 @@
     },
 
     {
-      "name": "Porky",
-      "image": "https://media.discordapp.net/attachments/1518466128396025948/1518917146619547738/9d4b996966de9d698237d99e497d76ef.png?ex=6a3ba953&is=6a3a57d3&hm=ed24c4a9b60c8407b918e8ad4d087d602da41275f38e8aac5737886f28ae8c04&=&format=webp&quality=lossless",
-      "lore": "Spider-Ham, the cartoon pig version of Spider-Man from the Spider-Verse movies."
+      "name": "Across",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1523112090800361512/133b30560eebfbccb3341e4123d4c2ad.png?ex=6a4aec2c&is=6a499aac&hm=62afe6a748655dbbfabcb29f95328a1a065ce78071aaa5b3c123aec0e7052e9d&=&format=webp&quality=lossless",
+      "lore": "Miles changes his suit to one with red stripes on the sides and a bracelet that lets him cross the Spider-Verse"
     },
 
     {
@@ -138,6 +140,12 @@
       "name": "Prowler",
       "image": "https://media.discordapp.net/attachments/1518466128396025948/1518917149492645898/5f1a1be06fe0f8375566f52d4d2d6beb.png?ex=6a3ba954&is=6a3a57d4&hm=55e299ddb988ca2529f3adcafb372950e0d8b9e6db8f9b54794458bc7bb47ad1&=&format=webp&quality=lossless",
       "lore": "The alternate universe version of Miles Morales seen at the end of Spider-Man: Across the Spider-Verse, where Miles became the Prowler instead of Spider-Man."
+    },
+
+      {
+      "name": "Spider Within",
+      "image": "https://media.discordapp.net/attachments/1518466128396025948/1523112090414612540/Untitled_Project_61.jpg?ex=6a4aec2c&is=6a499aac&hm=3f2963de92df92019154c3dc1704292933f0ee68822d546ea97497a10ab7561f&=&format=webp",
+      "lore": "Miles Morales' anxiety is shown in a terrifying version that haunts him in the short film"
     }
   ],
 

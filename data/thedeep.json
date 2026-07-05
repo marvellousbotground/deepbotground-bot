@@ -36,6 +36,7 @@
       "cooldown": "11s",
       "attributes": [
         "break",
+        "clash",
         "mele"
       ]
     },

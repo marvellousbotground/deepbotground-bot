@@ -85,6 +85,20 @@ function removeExpiredCustoms(customs, likes) {
     return removed;
 }
 
+function normalizeUploadedImageResult(result) {
+    if (typeof result === "string") {
+        return {
+            url: result,
+            source: null
+        };
+    }
+
+    return {
+        url: result?.url || result?.attachmentUrl || result?.image || null,
+        source: result?.source || result?.imageSource || null
+    };
+}
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("createcustomchar")
@@ -252,18 +266,20 @@ module.exports = {
 
         const id = generateUniqueCustomID(customs);
 
-        let permanentImageUrl;
+        let uploadedImage;
 
         try {
-            permanentImageUrl = await uploadCustomImage(
-                interaction.client,
-                image,
-                {
-                    type: "character",
-                    customId: id,
-                    characterName: name,
-                    creatorId: userId
-                }
+            uploadedImage = normalizeUploadedImageResult(
+                await uploadCustomImage(
+                    interaction.client,
+                    image,
+                    {
+                        type: "character",
+                        customId: id,
+                        characterName: name,
+                        creatorId: userId
+                    }
+                )
             );
         } catch (error) {
             console.log("Custom image upload error:", error.message);
@@ -275,6 +291,20 @@ module.exports = {
                         .setTitle("❌ Image upload failed")
                         .setDescription(
                             "The custom character could not be created because the image failed to upload to storage."
+                        )
+                ],
+                ephemeral: true
+            });
+        }
+
+        if (!uploadedImage.url) {
+            return interaction.reply({
+                embeds: [
+                    new EmbedBuilder()
+                        .setColor("Red")
+                        .setTitle("❌ Image upload failed")
+                        .setDescription(
+                            "The storage system did not return a valid image URL."
                         )
                 ],
                 ephemeral: true
@@ -294,7 +324,9 @@ module.exports = {
             featured: false,
 
             name,
-            image: permanentImageUrl,
+            image: uploadedImage.url,
+            imageSource: uploadedImage.source,
+
             universe,
 
             aliases: [],
@@ -327,7 +359,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor(0x00ff99)
             .setTitle("✅ Custom Character Created")
-            .setThumbnail(permanentImageUrl)
+            .setThumbnail(uploadedImage.url)
             .setDescription(
                 `**Name:** ${name}\n` +
                 `**Universe:** ${universe}\n` +

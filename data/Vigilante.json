@@ -45,6 +45,7 @@
       "cooldown": "12s",
       "attributes": [
         "ignore",
+        "clash",
         "mele"
       ]
     },

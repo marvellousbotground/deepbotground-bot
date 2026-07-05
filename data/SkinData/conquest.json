@@ -56,7 +56,8 @@
         "break",
         "range",
         "push",
-        "area"
+        "area",
+        "bruta"
       ]
     },
 
@@ -83,6 +84,7 @@
         "move",
         "lin",
         "push",
+        "clash",
         "mele"
       ]
     }

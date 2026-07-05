@@ -47,6 +47,7 @@
       "attributes": [
         "break",
         "push",
+        "clash",
         "mele"
       ]
     },
@@ -111,6 +112,7 @@
         "move",
         "push",
         "lin",
+        "clash",
         "mele"
       ]
     }

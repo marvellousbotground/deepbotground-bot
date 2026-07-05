@@ -41,7 +41,8 @@
       "attributes": [
         "break",
         "push",
-        "range"
+        "range",
+        "bruta"
       ]
     },
 
@@ -79,6 +80,7 @@
       "attributes": [
         "break",
         "area",
+        "clash",
         "mele"
       ]
     },

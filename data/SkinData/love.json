@@ -19,6 +19,7 @@
       "push",
       "lin",
       "move",
+      "clash",
       "mele"
     ]
   },
@@ -31,8 +32,7 @@
     "attributes": [
       "ignore",
       "grab",
-      "mele",
-      "bruta"
+      "mele"
     ]
   },
 

@@ -17,18 +17,20 @@
       "attributes": [
         "break",
         "mele",
+        "clash",
         "push"
       ]
     },
 
     {
       "slot": "2",
-      "name": "Vine Slammer",
+      "name": "Beatdown",
       "damage": 8,
       "cooldown": "13.5s",
       "attributes": [
         "block",
         "mele",
+        "clash",
         "lin",
         "bruta"
       ]

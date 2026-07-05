@@ -41,6 +41,7 @@
       "cooldown": "8.5s",
       "attributes": [
         "block",
+        "clash",
         "mele"
       ]
     },
@@ -62,7 +63,7 @@
       "damage": 0,
       "cooldown": "14s",
       "attributes": [
-        "coun"
+        "pasive"
       ]
     },
 

@@ -36,6 +36,7 @@
       "attributes": [
         "block",
         "grab",
+        "clash",
         "mele"
       ]
     },
@@ -47,7 +48,8 @@
       "cooldown": "13s",
       "attributes": [
         "break",
-        "area"
+        "area",
+        "bruta"
       ]
     },
 

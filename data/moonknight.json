@@ -254,6 +254,38 @@
     "lore": "Steven Grant finds himself carrying a mysterious golden scarab while being pursued by Arthur Harrow and his followers. As strange blackouts occur, another identity repeatedly takes control to protect him."
   }
 ],
+
+      "techs": [
+        {
+          "name": "Khonshu Slam",
+          "video": "https://youtu.be/9LCUjAuLCIw",
+          "credits": "AL3X"
+        },
+        {
+          "name": "Baseball Slam",
+          "video": "https://youtu.be/oX8HK7WedR0",
+          "credits": "AL3X"
+        },
+
+        {
+          "name": "Baseball Slam + Lockley grab",
+          "video": "https://youtu.be/FRWBd-_z6Fo?si=ywerRex1mhcuZtxf",
+          "credits": "Washuu"
+        },
+
+        {
+          "name": "Changing The Sky",
+          "video": "https://youtu.be/U0ns5prLfpw?si=JkwPwZ1-a6CvxfSN",
+          "credits": "Washuu"
+        },
+
+        {
+          "name": "Heavy Punch",
+          "video": "https://youtu.be/S9BQ__oH4GU?si=Y_SmO-b-YbjG03nG",
+          "credits": "Washuu"
+        }
+      ],
+
       "lore": "Moon Knight is the supernatural vigilante identity empowered by Khonshu. With enhanced strength, healing, and brutal fighting techniques, he serves as the protector of travelers of the night."
     },
 
@@ -357,6 +389,37 @@
     "lore": "Steven Grant finds himself carrying a mysterious golden scarab while being pursued by Arthur Harrow and his followers. As strange blackouts occur, another identity repeatedly takes control to protect him."
   }
 ],
+
+      "techs": [
+        {
+          "name": "Khonshu Slam",
+          "video": "https://youtu.be/9LCUjAuLCIw",
+          "credits": "AL3X"
+        },
+        {
+          "name": "Baseball Slam",
+          "video": "https://youtu.be/oX8HK7WedR0",
+          "credits": "AL3X"
+        },
+
+        {
+          "name": "Baseball Slam + Lockley grab",
+          "video": "https://youtu.be/FRWBd-_z6Fo?si=ywerRex1mhcuZtxf",
+          "credits": "Washuu"
+        },
+
+        {
+          "name": "Changing The Sky",
+          "video": "https://youtu.be/U0ns5prLfpw?si=JkwPwZ1-a6CvxfSN",
+          "credits": "Washuu"
+        },
+
+        {
+          "name": "Heavy Punch",
+          "video": "https://youtu.be/S9BQ__oH4GU?si=Y_SmO-b-YbjG03nG",
+          "credits": "Washuu"
+        }
+      ],
 
       "lore": "Mr. Knight is a more controlled and investigative identity of Moon Knight. Wearing a formal white suit and mask, he combines detective work with precise and efficient combat."
     }

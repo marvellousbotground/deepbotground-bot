@@ -3,6 +3,10 @@ const {
 } = require("discord.js");
 
 const {
+    refreshAttachmentLinks
+} = require("./refreshAttachmentLinks");
+
+const {
     loadCustomCharacters,
     saveCustomCharacters,
     loadCustomLikes,
@@ -17,6 +21,13 @@ const {
 const OWNER_ID = "612102125580713985";
 const FEATURED_CHANNEL_ID = "1517777686309769246";
 const ONE_WEEK = 7 * 24 * 60 * 60;
+
+const IMAGE_STORAGE_CHANNEL_ID =
+    process.env.CUSTOM_CHARACTER_IMAGES_CHANNEL;
+
+const FEATURED_REVIEW_CHANNEL_ID =
+    process.env.FEATURED_REVIEW_CHANNEL ||
+    process.env.CUSTOM_CHARACTER_IMAGES_CHANNEL;
 
 function now() {
     return Math.floor(Date.now() / 1000);
@@ -99,6 +110,167 @@ function formatBan(userId, ban) {
         `**Created:** <t:${ban.createdAt}:R>\n` +
         `**Expires:** ${ban.expiresAt ? `<t:${ban.expiresAt}:R>` : "Permanent"}`
     );
+}
+
+function createAttachmentSource(message, attachmentIndex = 0) {
+    return {
+        guildId: message.guild?.id || null,
+        channelId: message.channel.id,
+        messageId: message.id,
+        attachmentIndex
+    };
+}
+
+function messageContainsCustomId(message, id) {
+    const content = message.content || "";
+
+    const embedsText = message.embeds
+        .map(embed =>
+            [
+                embed.title,
+                embed.description,
+                ...(embed.fields || []).map(field => `${field.name} ${field.value}`)
+            ].join(" ")
+        )
+        .join(" ");
+
+    return (
+        content.includes(id) ||
+        embedsText.includes(id)
+    );
+}
+
+function messageContainsSlot(message, slot) {
+    const embedsText = message.embeds
+        .map(embed =>
+            [
+                embed.title,
+                embed.description,
+                ...(embed.fields || []).map(field => `${field.name} ${field.value}`)
+            ].join(" ")
+        )
+        .join(" ");
+
+    return (
+        embedsText.includes(`Slot: ${slot}`) ||
+        embedsText.includes(`**Slot:** ${slot}`) ||
+        embedsText.includes(`Slot ${slot}`) ||
+        embedsText.includes(`**Slot** ${slot}`)
+    );
+}
+
+async function findStorageMessage(client, channelId, id, slot = null) {
+    if (!channelId) return null;
+
+    const channel = await client.channels.fetch(channelId);
+
+    if (!channel || !channel.messages) return null;
+
+    let before;
+    let searched = 0;
+
+    while (searched < 500) {
+        const messages = await channel.messages.fetch({
+            limit: 100,
+            before
+        });
+
+        if (messages.size === 0) break;
+
+        const found = messages.find(message => {
+            if (!messageContainsCustomId(message, id)) return false;
+            if (slot && !messageContainsSlot(message, slot)) return false;
+            if (message.attachments.size === 0) return false;
+
+            return true;
+        });
+
+        if (found) return found;
+
+        before = messages.last().id;
+        searched += messages.size;
+    }
+
+    return null;
+}
+
+async function migrateCustomSources(client, id) {
+    const customs = loadCustomCharacters();
+    const custom = customs[id];
+
+    if (!custom) {
+        return {
+            found: false,
+            imageUpdated: false,
+            videosUpdated: 0
+        };
+    }
+
+    let imageUpdated = false;
+    let videosUpdated = 0;
+
+    const imageMessage = await findStorageMessage(
+        client,
+        IMAGE_STORAGE_CHANNEL_ID,
+        id
+    );
+
+    if (imageMessage) {
+        const attachment = Array.from(imageMessage.attachments.values())[0];
+
+        if (attachment) {
+            custom.image = attachment.url;
+            custom.imageSource = createAttachmentSource(imageMessage, 0);
+            imageUpdated = true;
+        }
+    }
+
+    if (Array.isArray(custom.attacks)) {
+        for (const attack of custom.attacks) {
+            const slot = String(attack.slot || "").toUpperCase();
+
+            if (!slot) continue;
+
+            const videoMessage = await findStorageMessage(
+                client,
+                FEATURED_REVIEW_CHANNEL_ID,
+                id,
+                slot
+            );
+
+            if (!videoMessage) continue;
+
+            const attachment = Array.from(videoMessage.attachments.values())[0];
+
+            if (!attachment) continue;
+
+            attack.video = attachment.url;
+            attack.videoSource = createAttachmentSource(videoMessage, 0);
+
+            if (!custom.website) {
+                custom.website = {};
+            }
+
+            if (!custom.website[slot]) {
+                custom.website[slot] = {};
+            }
+
+            custom.website[slot].attackName = attack.name;
+            custom.website[slot].video = attachment.url;
+            custom.website[slot].videoSource = createAttachmentSource(videoMessage, 0);
+            custom.website[slot].updatedAt = now();
+
+            videosUpdated++;
+        }
+    }
+
+    saveCustomCharacters(customs);
+
+    return {
+        found: true,
+        imageUpdated,
+        videosUpdated
+    };
 }
 
 async function sendFeaturedDM(client, custom, id) {
@@ -187,7 +359,9 @@ async function handleCustomAdmin(message) {
             "`MS!custom bans`\n\n" +
             "`MS!custom feature <customId>`\n" +
             "`MS!custom unfeature <customId>`\n" +
-            "`MS!custom web <customId>`"
+            "`MS!custom web <customId>`\n" +
+            "`MS!custom refreshlinks`\n" +
+            "`MS!custom migrate <customId>`"
         );
         return true;
     }
@@ -454,6 +628,43 @@ async function handleCustomAdmin(message) {
         await message.reply({
             embeds: [embed]
         });
+
+        return true;
+    }
+
+    if (subcommand === "refreshlinks") {
+        const result = await refreshAttachmentLinks(message.client);
+
+        await message.reply(
+            `✅ Featured links refreshed.\n\n` +
+            `**Checked:** ${result.checked}\n` +
+            `**Updated:** ${result.updated}`
+        );
+
+        return true;
+    }
+
+    if (subcommand === "migrate") {
+        const id = args[2]?.toUpperCase();
+
+        if (!id) {
+            await message.reply("❌ Usage: `MS!custom migrate <customId>`");
+            return true;
+        }
+
+        const result = await migrateCustomSources(message.client, id);
+
+        if (!result.found) {
+            await message.reply("❌ Custom character not found.");
+            return true;
+        }
+
+        await message.reply(
+            `✅ Custom source migration completed.\n\n` +
+            `**ID:** \`${id}\`\n` +
+            `**Image updated:** ${result.imageUpdated ? "Yes" : "No"}\n` +
+            `**Videos updated:** ${result.videosUpdated}`
+        );
 
         return true;
     }

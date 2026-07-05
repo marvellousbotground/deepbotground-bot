@@ -59,7 +59,24 @@ function getAttackBySlot(custom, slot) {
     ) || null;
 }
 
-async function uploadFeaturedReference(interaction, custom, id, slot, attack, description, attachment) {
+function createAttachmentSource(message, attachmentIndex = 0) {
+    return {
+        guildId: message.guild?.id || null,
+        channelId: message.channel.id,
+        messageId: message.id,
+        attachmentIndex
+    };
+}
+
+async function uploadFeaturedReference(
+    interaction,
+    custom,
+    id,
+    slot,
+    attack,
+    description,
+    attachment
+) {
     if (!REVIEW_CHANNEL_ID) {
         throw new Error("FEATURED_REVIEW_CHANNEL or CUSTOM_CHARACTER_IMAGES_CHANNEL is not set.");
     }
@@ -80,7 +97,7 @@ async function uploadFeaturedReference(interaction, custom, id, slot, attack, de
             `**Slot:** ${slot}\n` +
             `**Attack:** ${attack.name}\n\n` +
             `**Description:**\n${description}\n\n` +
-            `**Video:** ${attachment.url}`
+            `**Original Video:** ${attachment.url}`
         )
         .setFooter({
             text: "MarvellousBOTground"
@@ -101,18 +118,32 @@ async function uploadFeaturedReference(interaction, custom, id, slot, attack, de
             ]
         });
 
-        const uploadedVideo = sent.attachments.first();
+        const uploadedAttachments = Array.from(sent.attachments.values());
+        const uploadedVideo = uploadedAttachments[0];
 
-        return uploadedVideo?.url || attachment.url;
+        if (!uploadedVideo) {
+            return {
+                url: attachment.url,
+                source: null
+            };
+        }
+
+        return {
+            url: uploadedVideo.url,
+            source: createAttachmentSource(sent, 0)
+        };
 
     } catch (error) {
         console.log("Video reupload failed, sending URL only:", error.message);
 
-        await channel.send({
+        const sent = await channel.send({
             embeds: [embed]
         });
 
-        return attachment.url;
+        return {
+            url: attachment.url,
+            source: createAttachmentSource(sent, 0)
+        };
     }
 }
 
@@ -257,10 +288,10 @@ module.exports = {
             ephemeral: true
         });
 
-        let permanentVideoUrl;
+        let uploadedVideo;
 
         try {
-            permanentVideoUrl = await uploadFeaturedReference(
+            uploadedVideo = await uploadFeaturedReference(
                 interaction,
                 custom,
                 id,
@@ -281,10 +312,15 @@ module.exports = {
             custom.website = {};
         }
 
+        attack.description = description;
+        attack.video = uploadedVideo.url;
+        attack.videoSource = uploadedVideo.source;
+
         custom.website[slot] = {
             attackName: attack.name,
             description,
-            video: permanentVideoUrl,
+            video: uploadedVideo.url,
+            videoSource: uploadedVideo.source,
             videoName: attachment.name || "video",
             updatedAt: now()
         };

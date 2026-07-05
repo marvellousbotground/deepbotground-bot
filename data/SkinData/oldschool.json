@@ -16,6 +16,7 @@
       "cooldown": "8.5s",
       "attributes": [
         "ignore",
+        "clash",
         "mele"
       ]
     },
@@ -28,6 +29,7 @@
       "attributes": [
         "break",
         "charge",
+        "blind",
         "lr"
       ]
     },

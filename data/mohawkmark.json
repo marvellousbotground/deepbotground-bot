@@ -48,7 +48,8 @@
       "cooldown": "15.5s",
       "attributes": [
         "ignore",
-        "mele"
+        "mele",
+        "bruta"
       ]
     },
 
@@ -98,6 +99,7 @@
         "break",
         "move",
         "lin",
+        "clash",
         "push"
       ]
     }
