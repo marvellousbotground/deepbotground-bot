@@ -160,5 +160,19 @@
     }
   ],
 
+          "techs": [
+        {
+          "name": "Block Place",
+          "video": "https://youtu.be/v71uHVeWgLw",
+          "credits": "Washuu"
+        },
+        {
+          "name": "Bow",
+          "video": "https://youtu.be/83OKwg_UTCw",
+          "credits": "Washuu"
+        }
+
+],
+
   "lore": "Steve is the default protagonist of Minecraft and one of gaming's most iconic characters. Armed with limitless creativity and survival skills, he can craft tools, build structures, explore dangerous dimensions, and battle powerful enemies using resources gathered from the blocky world around him."
 }
