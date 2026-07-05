@@ -25,6 +25,10 @@ const ONE_WEEK = 7 * 24 * 60 * 60;
 const IMAGE_STORAGE_CHANNEL_ID =
     process.env.CUSTOM_CHARACTER_IMAGES_CHANNEL;
 
+const SKIN_IMAGE_STORAGE_CHANNEL_ID =
+    process.env.CUSTOM_SKIN_IMAGES_CHANNEL ||
+    process.env.CUSTOM_CHARACTER_IMAGES_CHANNEL;
+
 const FEATURED_REVIEW_CHANNEL_ID =
     process.env.FEATURED_REVIEW_CHANNEL ||
     process.env.CUSTOM_CHARACTER_IMAGES_CHANNEL;
@@ -121,7 +125,7 @@ function createAttachmentSource(message, attachmentIndex = 0) {
     };
 }
 
-function messageContainsCustomId(message, id) {
+function getMessageText(message) {
     const content = message.content || "";
 
     const embedsText = message.embeds
@@ -134,32 +138,86 @@ function messageContainsCustomId(message, id) {
         )
         .join(" ");
 
-    return (
-        content.includes(id) ||
-        embedsText.includes(id)
-    );
+    return `${content} ${embedsText}`;
+}
+
+function messageContainsCustomId(message, id) {
+    return getMessageText(message).includes(id);
 }
 
 function messageContainsSlot(message, slot) {
-    const embedsText = message.embeds
-        .map(embed =>
-            [
-                embed.title,
-                embed.description,
-                ...(embed.fields || []).map(field => `${field.name} ${field.value}`)
-            ].join(" ")
-        )
-        .join(" ");
+    const text = getMessageText(message);
 
     return (
-        embedsText.includes(`Slot: ${slot}`) ||
-        embedsText.includes(`**Slot:** ${slot}`) ||
-        embedsText.includes(`Slot ${slot}`) ||
-        embedsText.includes(`**Slot** ${slot}`)
+        text.includes(`Slot: ${slot}`) ||
+        text.includes(`**Slot:** ${slot}`) ||
+        text.includes(`Slot ${slot}`) ||
+        text.includes(`**Slot** ${slot}`)
     );
 }
 
-async function findStorageMessage(client, channelId, id, slot = null) {
+function messageContainsSkinName(message, skinName) {
+    if (!skinName) return false;
+
+    const text = getMessageText(message).toLowerCase();
+    return text.includes(String(skinName).toLowerCase());
+}
+
+function isImageAttachment(attachment) {
+    if (!attachment) return false;
+
+    if (attachment.contentType && attachment.contentType.startsWith("image/")) {
+        return true;
+    }
+
+    const filename = String(attachment.name || "").toLowerCase();
+
+    return (
+        filename.endsWith(".png") ||
+        filename.endsWith(".jpg") ||
+        filename.endsWith(".jpeg") ||
+        filename.endsWith(".webp") ||
+        filename.endsWith(".gif")
+    );
+}
+
+function isVideoAttachment(attachment) {
+    if (!attachment) return false;
+
+    if (attachment.contentType && attachment.contentType.startsWith("video/")) {
+        return true;
+    }
+
+    const filename = String(attachment.name || "").toLowerCase();
+
+    return (
+        filename.endsWith(".mp4") ||
+        filename.endsWith(".mov") ||
+        filename.endsWith(".webm") ||
+        filename.endsWith(".mkv")
+    );
+}
+
+function getFirstValidAttachment(message, type) {
+    const attachments = Array.from(message.attachments.values());
+
+    return attachments.find(attachment => {
+        if (type === "image") return isImageAttachment(attachment);
+        if (type === "video") return isVideoAttachment(attachment);
+        return true;
+    }) || null;
+}
+
+async function findStorageMessage(client, options) {
+    const {
+        channelId,
+        id,
+        slot = null,
+        skinName = null,
+        type = null,
+        limit = 500
+    } = options;
+
     if (!channelId) return null;
 
     const channel = await client.channels.fetch(channelId);
@@ -169,7 +227,7 @@ async function findStorageMessage(client, channelId, id, slot = null) {
     let before;
     let searched = 0;
 
-    while (searched < 500) {
+    while (searched < limit) {
         const messages = await channel.messages.fetch({
             limit: 100,
             before
@@ -180,9 +238,12 @@ async function findStorageMessage(client, channelId, id, slot = null) {
         const found = messages.find(message => {
             if (!messageContainsCustomId(message, id)) return false;
             if (slot && !messageContainsSlot(message, slot)) return false;
+            if (skinName && !messageContainsSkinName(message, skinName)) return false;
             if (message.attachments.size === 0) return false;
 
-            return true;
+            const attachment = getFirstValidAttachment(message, type);
+
+            return Boolean(attachment);
         });
 
         if (found) return found;
@@ -202,26 +263,51 @@ async function migrateCustomSources(client, id) {
         return {
             found: false,
             imageUpdated: false,
+            skinsUpdated: 0,
             videosUpdated: 0
         };
     }
 
     let imageUpdated = false;
+    let skinsUpdated = 0;
     let videosUpdated = 0;
 
-    const imageMessage = await findStorageMessage(
-        client,
-        IMAGE_STORAGE_CHANNEL_ID,
-        id
-    );
+    const imageMessage = await findStorageMessage(client, {
+        channelId: IMAGE_STORAGE_CHANNEL_ID,
+        id,
+        type: "image"
+    });
 
     if (imageMessage) {
-        const attachment = Array.from(imageMessage.attachments.values())[0];
+        const attachment = getFirstValidAttachment(imageMessage, "image");
 
         if (attachment) {
             custom.image = attachment.url;
             custom.imageSource = createAttachmentSource(imageMessage, 0);
             imageUpdated = true;
+        }
+    }
+
+    if (Array.isArray(custom.skins)) {
+        for (const skin of custom.skins) {
+            if (!skin || typeof skin !== "object") continue;
+
+            const skinMessage = await findStorageMessage(client, {
+                channelId: SKIN_IMAGE_STORAGE_CHANNEL_ID,
+                id,
+                skinName: skin.name,
+                type: "image"
+            });
+
+            if (!skinMessage) continue;
+
+            const attachment = getFirstValidAttachment(skinMessage, "image");
+
+            if (!attachment) continue;
+
+            skin.image = attachment.url;
+            skin.imageSource = createAttachmentSource(skinMessage, 0);
+            skinsUpdated++;
         }
     }
 
@@ -231,16 +317,16 @@ async function migrateCustomSources(client, id) {
 
             if (!slot) continue;
 
-            const videoMessage = await findStorageMessage(
-                client,
-                FEATURED_REVIEW_CHANNEL_ID,
+            const videoMessage = await findStorageMessage(client, {
+                channelId: FEATURED_REVIEW_CHANNEL_ID,
                 id,
-                slot
-            );
+                slot,
+                type: "video"
+            });
 
             if (!videoMessage) continue;
 
-            const attachment = Array.from(videoMessage.attachments.values())[0];
+            const attachment = getFirstValidAttachment(videoMessage, "video");
 
             if (!attachment) continue;
 
@@ -256,6 +342,11 @@ async function migrateCustomSources(client, id) {
             }
 
             custom.website[slot].attackName = attack.name;
+            custom.website[slot].description =
+                custom.website[slot].description ||
+                attack.description ||
+                "";
+
             custom.website[slot].video = attachment.url;
             custom.website[slot].videoSource = createAttachmentSource(videoMessage, 0);
             custom.website[slot].updatedAt = now();
@@ -269,6 +360,7 @@ async function migrateCustomSources(client, id) {
     return {
         found: true,
         imageUpdated,
+        skinsUpdated,
         videosUpdated
     };
 }
@@ -663,6 +755,7 @@ async function handleCustomAdmin(message) {
             `✅ Custom source migration completed.\n\n` +
             `**ID:** \`${id}\`\n` +
             `**Image updated:** ${result.imageUpdated ? "Yes" : "No"}\n` +
+            `**Skins updated:** ${result.skinsUpdated}\n` +
             `**Videos updated:** ${result.videosUpdated}`
         );
 
