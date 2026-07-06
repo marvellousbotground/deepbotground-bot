@@ -61,7 +61,7 @@ async function getFreshAttachmentUrl(client, source) {
         return null;
     }
 
-    return attachment.url;
+    return attachment.proxyURL || attachment.url;
 }
 
 async function refreshAttachmentLinks(client) {
@@ -107,6 +107,20 @@ async function refreshAttachmentLinks(client) {
                     if (freshUrl && freshUrl !== attack.video) {
                         attack.video = freshUrl;
                         updated++;
+                    }
+
+                    const slot = String(attack.slot || "").toUpperCase();
+
+                    if (
+                        freshUrl &&
+                        custom.website &&
+                        custom.website[slot]
+                    ) {
+                        if (custom.website[slot].video !== freshUrl) {
+                            custom.website[slot].video = freshUrl;
+                            custom.website[slot].videoSource = attack.videoSource;
+                            updated++;
+                        }
                     }
                 }
             }
